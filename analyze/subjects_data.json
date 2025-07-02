@@ -1,0 +1,2434 @@
+{
+  "1. 감리 및 사업관리": {
+    "analysis": "감리 및 사업관리 영역은 전체 25문항으로 구성되며, 프로젝트 관리 일반, 일정/범위 관리, 비용/품질 관리, 감리기준 등이 꾸준히 출제됩니다. 특히 정보시스템 감리기준, 감리수행 가이드, SW사업 대가산정 가이드 등 관련 지침과 감리 직무 및 제도에 관한 문항이 전체의 약 50%를 차지하고 있습니다. 최근에는 전자정부법, 소프트웨어 진흥법 등 관련 법령에 대한 문항도 꾸준히 출제되고 있습니다.",
+    "sub_subjects": {
+      "1.1 프로젝트 관리 일반": [
+        {
+          "year": 2021,
+          "question_num": 1,
+          "image_path": "2021/question/2021_1.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 2,
+          "image_path": "2021/question/2021_2.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 3,
+          "image_path": "2021/question/2021_3.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 1,
+          "image_path": "2022/question/2022_1.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 2,
+          "image_path": "2022/question/2022_2.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 3,
+          "image_path": "2022/question/2022_3.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 1,
+          "image_path": "2023/question/2023_1.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 2,
+          "image_path": "2023/question/2023_2.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 3,
+          "image_path": "2023/question/2023_3.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 1,
+          "image_path": "2024/question/2024_1.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 4,
+          "image_path": "2024/question/2024_4.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 20,
+          "image_path": "2024/question/2024_20.png"
+        }
+      ],
+      "1.2 프로젝트 일정/범위 관리": [
+        {
+          "year": 2021,
+          "question_num": 4,
+          "image_path": "2021/question/2021_4.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 8,
+          "image_path": "2021/question/2021_8.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 9,
+          "image_path": "2021/question/2021_9.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 4,
+          "image_path": "2022/question/2022_4.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 5,
+          "image_path": "2022/question/2022_5.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 9,
+          "image_path": "2022/question/2022_9.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 4,
+          "image_path": "2023/question/2023_4.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 6,
+          "image_path": "2023/question/2023_6.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 7,
+          "image_path": "2023/question/2023_7.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 2,
+          "image_path": "2024/question/2024_2.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 3,
+          "image_path": "2024/question/2024_3.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 5,
+          "image_path": "2024/question/2024_5.png"
+        }
+      ],
+      "1.3 프로젝트 비용/품질 관리": [
+        {
+          "year": 2021,
+          "question_num": 5,
+          "image_path": "2021/question/2021_5.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 7,
+          "image_path": "2021/question/2021_7.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 6,
+          "image_path": "2022/question/2022_6.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 7,
+          "image_path": "2022/question/2022_7.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 5,
+          "image_path": "2023/question/2023_5.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 8,
+          "image_path": "2023/question/2023_8.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 6,
+          "image_path": "2024/question/2024_6.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 8,
+          "image_path": "2024/question/2024_8.png"
+        }
+      ],
+      "1.4 팀 관리 및 리더십": [
+        {
+          "year": 2021,
+          "question_num": 6,
+          "image_path": "2021/question/2021_6.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 10,
+          "image_path": "2021/question/2021_10.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 8,
+          "image_path": "2022/question/2022_8.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 10,
+          "image_path": "2022/question/2022_10.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 9,
+          "image_path": "2023/question/2023_9.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 10,
+          "image_path": "2023/question/2023_10.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 12,
+          "image_path": "2023/question/2023_12.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 9,
+          "image_path": "2024/question/2024_9.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 11,
+          "image_path": "2024/question/2024_11.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 12,
+          "image_path": "2024/question/2024_12.png"
+        }
+      ],
+      "1.8 SW사업 대가산정/관리": [
+        {
+          "year": 2021,
+          "question_num": 11,
+          "image_path": "2021/question/2021_11.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 20,
+          "image_path": "2021/question/2021_20.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 22,
+          "image_path": "2021/question/2021_22.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 12,
+          "image_path": "2022/question/2022_12.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 16,
+          "image_path": "2022/question/2022_16.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 22,
+          "image_path": "2022/question/2022_22.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 11,
+          "image_path": "2023/question/2023_11.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 22,
+          "image_path": "2023/question/2023_22.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 23,
+          "image_path": "2023/question/2023_23.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 7,
+          "image_path": "2024/question/2024_7.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 10,
+          "image_path": "2024/question/2024_10.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 24,
+          "image_path": "2024/question/2024_24.png"
+        }
+      ],
+      "1.9 법령/규정": [
+        {
+          "year": 2021,
+          "question_num": 12,
+          "image_path": "2021/question/2021_12.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 23,
+          "image_path": "2021/question/2021_23.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 19,
+          "image_path": "2022/question/2022_19.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 23,
+          "image_path": "2022/question/2022_23.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 24,
+          "image_path": "2023/question/2023_24.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 25,
+          "image_path": "2023/question/2023_25.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 21,
+          "image_path": "2024/question/2024_21.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 25,
+          "image_path": "2024/question/2024_25.png"
+        }
+      ],
+      "1.5 감리기준/지침": [
+        {
+          "year": 2021,
+          "question_num": 13,
+          "image_path": "2021/question/2021_13.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 14,
+          "image_path": "2021/question/2021_14.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 17,
+          "image_path": "2021/question/2021_17.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 11,
+          "image_path": "2022/question/2022_11.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 14,
+          "image_path": "2022/question/2022_14.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 20,
+          "image_path": "2022/question/2022_20.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 13,
+          "image_path": "2023/question/2023_13.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 14,
+          "image_path": "2023/question/2023_14.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 20,
+          "image_path": "2023/question/2023_20.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 13,
+          "image_path": "2024/question/2024_13.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 14,
+          "image_path": "2024/question/2024_14.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 15,
+          "image_path": "2024/question/2024_15.png"
+        }
+      ],
+      "1.6 감리직무/방법론": [
+        {
+          "year": 2021,
+          "question_num": 15,
+          "image_path": "2021/question/2021_15.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 19,
+          "image_path": "2021/question/2021_19.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 25,
+          "image_path": "2021/question/2021_25.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 13,
+          "image_path": "2022/question/2022_13.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 15,
+          "image_path": "2022/question/2022_15.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 24,
+          "image_path": "2022/question/2022_24.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 15,
+          "image_path": "2023/question/2023_15.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 16,
+          "image_path": "2023/question/2023_16.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 19,
+          "image_path": "2023/question/2023_19.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 16,
+          "image_path": "2024/question/2024_16.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 17,
+          "image_path": "2024/question/2024_17.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 19,
+          "image_path": "2024/question/2024_19.png"
+        }
+      ],
+      "1.7 감리제도 및 행정": [
+        {
+          "year": 2021,
+          "question_num": 16,
+          "image_path": "2021/question/2021_16.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 18,
+          "image_path": "2021/question/2021_18.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 21,
+          "image_path": "2021/question/2021_21.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 17,
+          "image_path": "2022/question/2022_17.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 18,
+          "image_path": "2022/question/2022_18.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 21,
+          "image_path": "2022/question/2022_21.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 17,
+          "image_path": "2023/question/2023_17.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 18,
+          "image_path": "2023/question/2023_18.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 21,
+          "image_path": "2023/question/2023_21.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 18,
+          "image_path": "2024/question/2024_18.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 22,
+          "image_path": "2024/question/2024_22.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 23,
+          "image_path": "2024/question/2024_23.png"
+        }
+      ]
+    }
+  },
+  "2. 소프트웨어 공학": {
+    "analysis": "소프트웨어 공학 영역은 25문항으로 구성되며, 설계 원칙, 디자인 패턴, 애자일 방법론, 테스트 기법, 객체지향 및 UML, 리팩토링이 주요 출제 분야입니다. 특히 객체지향 설계와 UML 다이어그램, 테스트 기법, 애자일 방법론에 관한 문항이 높은 비중을 차지합니다. 최근에는 코드 품질과 복잡도, 형상관리에 대한 문항도 증가하는 추세입니다. 또한 실제 코드 이해와 분석 능력을 평가하는 문항도 출제되고 있습니다.",
+    "sub_subjects": {
+      "2.1 설계 원칙": [
+        {
+          "year": 2021,
+          "question_num": 26,
+          "image_path": "2021/question/2021_26.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 31,
+          "image_path": "2021/question/2021_31.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 48,
+          "image_path": "2021/question/2021_48.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 26,
+          "image_path": "2022/question/2022_26.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 31,
+          "image_path": "2022/question/2022_31.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 48,
+          "image_path": "2022/question/2022_48.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 27,
+          "image_path": "2023/question/2023_27.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 31,
+          "image_path": "2023/question/2023_31.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 48,
+          "image_path": "2023/question/2023_48.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 26,
+          "image_path": "2024/question/2024_26.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 32,
+          "image_path": "2024/question/2024_32.png"
+        }
+      ],
+      "2.2 디자인 패턴": [
+        {
+          "year": 2021,
+          "question_num": 27,
+          "image_path": "2021/question/2021_27.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 43,
+          "image_path": "2021/question/2021_43.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 27,
+          "image_path": "2022/question/2022_27.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 34,
+          "image_path": "2022/question/2022_34.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 43,
+          "image_path": "2024/question/2024_43.png"
+        }
+      ],
+      "2.3 애자일 방법론": [
+        {
+          "year": 2021,
+          "question_num": 28,
+          "image_path": "2021/question/2021_28.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 38,
+          "image_path": "2021/question/2021_38.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 28,
+          "image_path": "2022/question/2022_28.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 37,
+          "image_path": "2022/question/2022_37.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 50,
+          "image_path": "2022/question/2022_50.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 26,
+          "image_path": "2023/question/2023_26.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 37,
+          "image_path": "2023/question/2023_37.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 50,
+          "image_path": "2023/question/2023_50.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 27,
+          "image_path": "2024/question/2024_27.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 50,
+          "image_path": "2024/question/2024_50.png"
+        }
+      ],
+      "2.4 테스트 기법": [
+        {
+          "year": 2021,
+          "question_num": 29,
+          "image_path": "2021/question/2021_29.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 36,
+          "image_path": "2021/question/2021_36.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 44,
+          "image_path": "2021/question/2021_44.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 29,
+          "image_path": "2022/question/2022_29.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 36,
+          "image_path": "2022/question/2022_36.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 44,
+          "image_path": "2022/question/2022_44.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 29,
+          "image_path": "2023/question/2023_29.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 36,
+          "image_path": "2023/question/2023_36.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 44,
+          "image_path": "2023/question/2023_44.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 33,
+          "image_path": "2024/question/2024_33.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 36,
+          "image_path": "2024/question/2024_36.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 37,
+          "image_path": "2024/question/2024_37.png"
+        }
+      ],
+      "2.5 객체지향 프로그래밍/UML": [
+        {
+          "year": 2021,
+          "question_num": 30,
+          "image_path": "2021/question/2021_30.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 32,
+          "image_path": "2021/question/2021_32.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 45,
+          "image_path": "2021/question/2021_45.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 30,
+          "image_path": "2022/question/2022_30.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 39,
+          "image_path": "2022/question/2022_39.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 45,
+          "image_path": "2022/question/2022_45.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 30,
+          "image_path": "2023/question/2023_30.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 39,
+          "image_path": "2023/question/2023_39.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 45,
+          "image_path": "2023/question/2023_45.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 28,
+          "image_path": "2024/question/2024_28.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 35,
+          "image_path": "2024/question/2024_35.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 45,
+          "image_path": "2024/question/2024_45.png"
+        }
+      ],
+      "2.6 리팩토링": [
+        {
+          "year": 2021,
+          "question_num": 33,
+          "image_path": "2021/question/2021_33.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 35,
+          "image_path": "2021/question/2021_35.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 41,
+          "image_path": "2021/question/2021_41.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 32,
+          "image_path": "2022/question/2022_32.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 35,
+          "image_path": "2022/question/2022_35.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 32,
+          "image_path": "2023/question/2023_32.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 35,
+          "image_path": "2023/question/2023_35.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 31,
+          "image_path": "2024/question/2024_31.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 34,
+          "image_path": "2024/question/2024_34.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 40,
+          "image_path": "2024/question/2024_40.png"
+        }
+      ],
+      "2.9 요구공학": [
+        {
+          "year": 2021,
+          "question_num": 34,
+          "image_path": "2021/question/2021_34.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 39,
+          "image_path": "2021/question/2021_39.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 47,
+          "image_path": "2021/question/2021_47.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 38,
+          "image_path": "2022/question/2022_38.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 47,
+          "image_path": "2022/question/2022_47.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 38,
+          "image_path": "2023/question/2023_38.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 42,
+          "image_path": "2023/question/2023_42.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 47,
+          "image_path": "2023/question/2023_47.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 44,
+          "image_path": "2024/question/2024_44.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 46,
+          "image_path": "2024/question/2024_46.png"
+        }
+      ],
+      "2.8 형상관리": [
+        {
+          "year": 2021,
+          "question_num": 37,
+          "image_path": "2021/question/2021_37.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 40,
+          "image_path": "2021/question/2021_40.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 40,
+          "image_path": "2022/question/2022_40.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 43,
+          "image_path": "2022/question/2022_43.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 34,
+          "image_path": "2023/question/2023_34.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 40,
+          "image_path": "2023/question/2023_40.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 43,
+          "image_path": "2023/question/2023_43.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 29,
+          "image_path": "2024/question/2024_29.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 49,
+          "image_path": "2024/question/2024_49.png"
+        }
+      ],
+      "2.7 코드 품질 및 복잡도": [
+        {
+          "year": 2021,
+          "question_num": 42,
+          "image_path": "2021/question/2021_42.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 46,
+          "image_path": "2021/question/2021_46.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 33,
+          "image_path": "2022/question/2022_33.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 41,
+          "image_path": "2022/question/2022_41.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 42,
+          "image_path": "2022/question/2022_42.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 28,
+          "image_path": "2023/question/2023_28.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 33,
+          "image_path": "2023/question/2023_33.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 41,
+          "image_path": "2023/question/2023_41.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 38,
+          "image_path": "2024/question/2024_38.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 41,
+          "image_path": "2024/question/2024_41.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 42,
+          "image_path": "2024/question/2024_42.png"
+        }
+      ],
+      "2.10 프로그래밍 이해": [
+        {
+          "year": 2021,
+          "question_num": 49,
+          "image_path": "2021/question/2021_49.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 46,
+          "image_path": "2022/question/2022_46.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 46,
+          "image_path": "2023/question/2023_46.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 49,
+          "image_path": "2023/question/2023_49.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 30,
+          "image_path": "2024/question/2024_30.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 39,
+          "image_path": "2024/question/2024_39.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 47,
+          "image_path": "2024/question/2024_47.png"
+        }
+      ]
+    }
+  },
+  "3. 데이터베이스": {
+    "analysis": "데이터베이스 영역은 25문항으로 구성되며, DB 모델링/설계, 관계 대수/SQL, 정규화, 트랜잭션 관리, 데이터 무결성 등이 주요 출제 분야입니다. 최근에는 NoSQL, 빅데이터 관련 문항이 증가하고 있으며, 데이터 마이닝/분석 기법에 관한 문항도 꾸준히 출제되고 있습니다. 특히 인덱싱과 해싱, 데이터 보안과 복구 등 성능과 안정성에 관련된 문항도 중요한 비중을 차지합니다.",
+    "sub_subjects": {
+      "3.7 NoSQL/빅데이터": [
+        {
+          "year": 2021,
+          "question_num": 51,
+          "image_path": "2021/question/2021_51.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 62,
+          "image_path": "2021/question/2021_62.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 70,
+          "image_path": "2021/question/2021_70.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 51,
+          "image_path": "2022/question/2022_51.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 74,
+          "image_path": "2022/question/2022_74.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 51,
+          "image_path": "2023/question/2023_51.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 67,
+          "image_path": "2023/question/2023_67.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 74,
+          "image_path": "2023/question/2023_74.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 62,
+          "image_path": "2024/question/2024_62.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 69,
+          "image_path": "2024/question/2024_69.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 72,
+          "image_path": "2024/question/2024_72.png"
+        }
+      ],
+      "3.1 DB 모델링/설계": [
+        {
+          "year": 2021,
+          "question_num": 52,
+          "image_path": "2021/question/2021_52.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 56,
+          "image_path": "2021/question/2021_56.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 52,
+          "image_path": "2022/question/2022_52.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 53,
+          "image_path": "2022/question/2022_53.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 56,
+          "image_path": "2022/question/2022_56.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 53,
+          "image_path": "2023/question/2023_53.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 56,
+          "image_path": "2023/question/2023_56.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 65,
+          "image_path": "2023/question/2023_65.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 52,
+          "image_path": "2024/question/2024_52.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 55,
+          "image_path": "2024/question/2024_55.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 57,
+          "image_path": "2024/question/2024_57.png"
+        }
+      ],
+      "3.5 데이터 무결성": [
+        {
+          "year": 2021,
+          "question_num": 53,
+          "image_path": "2021/question/2021_53.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 55,
+          "image_path": "2021/question/2021_55.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 65,
+          "image_path": "2021/question/2021_65.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 60,
+          "image_path": "2022/question/2022_60.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 65,
+          "image_path": "2022/question/2022_65.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 72,
+          "image_path": "2022/question/2022_72.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 60,
+          "image_path": "2023/question/2023_60.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 68,
+          "image_path": "2023/question/2023_68.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 53,
+          "image_path": "2024/question/2024_53.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 59,
+          "image_path": "2024/question/2024_59.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 63,
+          "image_path": "2024/question/2024_63.png"
+        }
+      ],
+      "3.3 정규화": [
+        {
+          "year": 2021,
+          "question_num": 57,
+          "image_path": "2021/question/2021_57.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 74,
+          "image_path": "2021/question/2021_74.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 55,
+          "image_path": "2022/question/2022_55.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 57,
+          "image_path": "2022/question/2022_57.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 55,
+          "image_path": "2023/question/2023_55.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 57,
+          "image_path": "2023/question/2023_57.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 56,
+          "image_path": "2024/question/2024_56.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 61,
+          "image_path": "2024/question/2024_61.png"
+        }
+      ],
+      "3.6 인덱싱/해싱": [
+        {
+          "year": 2021,
+          "question_num": 58,
+          "image_path": "2021/question/2021_58.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 66,
+          "image_path": "2021/question/2021_66.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 54,
+          "image_path": "2022/question/2022_54.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 62,
+          "image_path": "2022/question/2022_62.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 66,
+          "image_path": "2022/question/2022_66.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 59,
+          "image_path": "2023/question/2023_59.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 62,
+          "image_path": "2023/question/2023_62.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 73,
+          "image_path": "2023/question/2023_73.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 58,
+          "image_path": "2024/question/2024_58.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 71,
+          "image_path": "2024/question/2024_71.png"
+        }
+      ],
+      "3.2 관계 대수/SQL": [
+        {
+          "year": 2021,
+          "question_num": 59,
+          "image_path": "2021/question/2021_59.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 60,
+          "image_path": "2021/question/2021_60.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 63,
+          "image_path": "2021/question/2021_63.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 58,
+          "image_path": "2022/question/2022_58.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 59,
+          "image_path": "2022/question/2022_59.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 63,
+          "image_path": "2022/question/2022_63.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 54,
+          "image_path": "2023/question/2023_54.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 61,
+          "image_path": "2023/question/2023_61.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 63,
+          "image_path": "2023/question/2023_63.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 51,
+          "image_path": "2024/question/2024_51.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 54,
+          "image_path": "2024/question/2024_54.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 60,
+          "image_path": "2024/question/2024_60.png"
+        }
+      ],
+      "3.4 트랜잭션 관리": [
+        {
+          "year": 2021,
+          "question_num": 64,
+          "image_path": "2021/question/2021_64.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 71,
+          "image_path": "2021/question/2021_71.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 64,
+          "image_path": "2022/question/2022_64.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 71,
+          "image_path": "2022/question/2022_71.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 64,
+          "image_path": "2023/question/2023_64.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 66,
+          "image_path": "2023/question/2023_66.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 71,
+          "image_path": "2023/question/2023_71.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 64,
+          "image_path": "2024/question/2024_64.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 65,
+          "image_path": "2024/question/2024_65.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 68,
+          "image_path": "2024/question/2024_68.png"
+        }
+      ],
+      "3.8 데이터 마이닝/분석": [
+        {
+          "year": 2021,
+          "question_num": 67,
+          "image_path": "2021/question/2021_67.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 69,
+          "image_path": "2021/question/2021_69.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 75,
+          "image_path": "2021/question/2021_75.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 67,
+          "image_path": "2022/question/2022_67.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 69,
+          "image_path": "2022/question/2022_69.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 75,
+          "image_path": "2022/question/2022_75.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 72,
+          "image_path": "2023/question/2023_72.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 75,
+          "image_path": "2023/question/2023_75.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 67,
+          "image_path": "2024/question/2024_67.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 70,
+          "image_path": "2024/question/2024_70.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 75,
+          "image_path": "2024/question/2024_75.png"
+        }
+      ],
+      "3.9 데이터 보안/복구": [
+        {
+          "year": 2021,
+          "question_num": 68,
+          "image_path": "2021/question/2021_68.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 72,
+          "image_path": "2021/question/2021_72.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 73,
+          "image_path": "2021/question/2021_73.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 61,
+          "image_path": "2022/question/2022_61.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 68,
+          "image_path": "2022/question/2022_68.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 73,
+          "image_path": "2022/question/2022_73.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 52,
+          "image_path": "2023/question/2023_52.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 69,
+          "image_path": "2023/question/2023_69.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 70,
+          "image_path": "2023/question/2023_70.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 66,
+          "image_path": "2024/question/2024_66.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 73,
+          "image_path": "2024/question/2024_73.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 74,
+          "image_path": "2024/question/2024_74.png"
+        }
+      ]
+    }
+  },
+  "4. 시스템 구조": {
+    "analysis": "시스템 구조 영역은 25문항으로 구성되며, 컴퓨터 구조, 운영체제, 네트워크 구조, 프로토콜이 주요 출제 분야입니다. 최근에는 머신러닝/AI, 가상화/클라우드 관련 문항이 증가하고 있으며, 저장장치/백업, 네트워크 보안에 관한 문항도 꾸준히 출제되고 있습니다. 특히 SDN, 마이크로서비스 아키텍처, 컨테이너 기술 등 새로운 IT 기술에 관한 문항도 중요한 비중을 차지합니다.",
+    "sub_subjects": {
+      "4.1 컴퓨터 구조": [
+        {
+          "year": 2021,
+          "question_num": 76,
+          "image_path": "2021/question/2021_76.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 81,
+          "image_path": "2021/question/2021_81.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 82,
+          "image_path": "2021/question/2021_82.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 76,
+          "image_path": "2022/question/2022_76.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 81,
+          "image_path": "2022/question/2022_81.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 85,
+          "image_path": "2022/question/2022_85.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 76,
+          "image_path": "2023/question/2023_76.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 81,
+          "image_path": "2023/question/2023_81.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 82,
+          "image_path": "2023/question/2023_82.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 76,
+          "image_path": "2024/question/2024_76.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 79,
+          "image_path": "2024/question/2024_79.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 82,
+          "image_path": "2024/question/2024_82.png"
+        }
+      ],
+      "4.6 가상화/클라우드": [
+        {
+          "year": 2021,
+          "question_num": 77,
+          "image_path": "2021/question/2021_77.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 90,
+          "image_path": "2021/question/2021_90.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 96,
+          "image_path": "2021/question/2021_96.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 90,
+          "image_path": "2022/question/2022_90.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 95,
+          "image_path": "2022/question/2022_95.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 96,
+          "image_path": "2022/question/2022_96.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 85,
+          "image_path": "2023/question/2023_85.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 90,
+          "image_path": "2023/question/2023_90.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 95,
+          "image_path": "2023/question/2023_95.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 81,
+          "image_path": "2024/question/2024_81.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 90,
+          "image_path": "2024/question/2024_90.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 93,
+          "image_path": "2024/question/2024_93.png"
+        }
+      ],
+      "4.3 네트워크 구조": [
+        {
+          "year": 2021,
+          "question_num": 78,
+          "image_path": "2021/question/2021_78.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 84,
+          "image_path": "2021/question/2021_84.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 91,
+          "image_path": "2021/question/2021_91.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 79,
+          "image_path": "2022/question/2022_79.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 84,
+          "image_path": "2022/question/2022_84.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 87,
+          "image_path": "2022/question/2022_87.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 77,
+          "image_path": "2023/question/2023_77.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 84,
+          "image_path": "2023/question/2023_84.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 87,
+          "image_path": "2023/question/2023_87.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 80,
+          "image_path": "2024/question/2024_80.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 84,
+          "image_path": "2024/question/2024_84.png"
+        }
+      ],
+      "4.5 머신러닝/AI": [
+        {
+          "year": 2021,
+          "question_num": 79,
+          "image_path": "2021/question/2021_79.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 86,
+          "image_path": "2021/question/2021_86.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 98,
+          "image_path": "2021/question/2021_98.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 86,
+          "image_path": "2022/question/2022_86.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 93,
+          "image_path": "2022/question/2022_93.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 86,
+          "image_path": "2023/question/2023_86.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 94,
+          "image_path": "2023/question/2023_94.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 96,
+          "image_path": "2023/question/2023_96.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 86,
+          "image_path": "2024/question/2024_86.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 94,
+          "image_path": "2024/question/2024_94.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 96,
+          "image_path": "2024/question/2024_96.png"
+        }
+      ],
+      "4.7 저장장치/백업": [
+        {
+          "year": 2021,
+          "question_num": 80,
+          "image_path": "2021/question/2021_80.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 83,
+          "image_path": "2021/question/2021_83.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 88,
+          "image_path": "2021/question/2021_88.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 82,
+          "image_path": "2022/question/2022_82.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 83,
+          "image_path": "2022/question/2022_83.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 88,
+          "image_path": "2022/question/2022_88.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 79,
+          "image_path": "2023/question/2023_79.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 83,
+          "image_path": "2023/question/2023_83.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 92,
+          "image_path": "2023/question/2023_92.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 88,
+          "image_path": "2024/question/2024_88.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 89,
+          "image_path": "2024/question/2024_89.png"
+        }
+      ],
+      "4.9 신기술": [
+        {
+          "year": 2021,
+          "question_num": 85,
+          "image_path": "2021/question/2021_85.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 93,
+          "image_path": "2021/question/2021_93.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 99,
+          "image_path": "2021/question/2021_99.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 91,
+          "image_path": "2022/question/2022_91.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 99,
+          "image_path": "2022/question/2022_99.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 98,
+          "image_path": "2023/question/2023_98.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 99,
+          "image_path": "2023/question/2023_99.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 97,
+          "image_path": "2024/question/2024_97.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 99,
+          "image_path": "2024/question/2024_99.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 100,
+          "image_path": "2024/question/2024_100.png"
+        }
+      ],
+      "4.4 프로토콜": [
+        {
+          "year": 2021,
+          "question_num": 89,
+          "image_path": "2021/question/2021_89.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 92,
+          "image_path": "2021/question/2021_92.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 89,
+          "image_path": "2022/question/2022_89.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 92,
+          "image_path": "2022/question/2022_92.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 88,
+          "image_path": "2023/question/2023_88.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 89,
+          "image_path": "2023/question/2023_89.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 91,
+          "image_path": "2023/question/2023_91.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 85,
+          "image_path": "2024/question/2024_85.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 87,
+          "image_path": "2024/question/2024_87.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 91,
+          "image_path": "2024/question/2024_91.png"
+        }
+      ],
+      "4.8 네트워크 보안": [
+        {
+          "year": 2021,
+          "question_num": 94,
+          "image_path": "2021/question/2021_94.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 97,
+          "image_path": "2021/question/2021_97.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 94,
+          "image_path": "2022/question/2022_94.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 97,
+          "image_path": "2022/question/2022_97.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 93,
+          "image_path": "2023/question/2023_93.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 97,
+          "image_path": "2023/question/2023_97.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 100,
+          "image_path": "2023/question/2023_100.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 92,
+          "image_path": "2024/question/2024_92.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 95,
+          "image_path": "2024/question/2024_95.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 98,
+          "image_path": "2024/question/2024_98.png"
+        }
+      ],
+      "4.2 운영체제": [
+        {
+          "year": 2022,
+          "question_num": 77,
+          "image_path": "2022/question/2022_77.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 78,
+          "image_path": "2022/question/2022_78.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 78,
+          "image_path": "2023/question/2023_78.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 80,
+          "image_path": "2023/question/2023_80.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 77,
+          "image_path": "2024/question/2024_77.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 78,
+          "image_path": "2024/question/2024_78.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 83,
+          "image_path": "2024/question/2024_83.png"
+        }
+      ]
+    }
+  },
+  "5. 보안": {
+    "analysis": "보안 영역은 25문항으로 구성되며, 암호학 기초, 해시/전자서명, 접근통제/인증, 네트워크 보안, 웹/애플리케이션 보안이 주요 출제 분야입니다. 최근에는 개인정보보호와 관련된 법규 및 기술에 관한 문항이 증가하고 있으며, SW 취약점 분석 및 대응에 관한 문항도 꾸준히 출제되고 있습니다. 특히 블록체인 기술, 비식별화 기법 등 새로운 보안 위협과 기술에 관한 문항도 중요한 비중을 차지합니다.",
+    "sub_subjects": {
+      "5.6 시스템 보안": [
+        {
+          "year": 2021,
+          "question_num": 101,
+          "image_path": "2021/question/2021_101.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 110,
+          "image_path": "2021/question/2021_110.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 110,
+          "image_path": "2022/question/2022_110.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 101,
+          "image_path": "2023/question/2023_101.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 111,
+          "image_path": "2024/question/2024_111.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 117,
+          "image_path": "2024/question/2024_117.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 118,
+          "image_path": "2024/question/2024_118.png"
+        }
+      ],
+      "5.1 암호학 기초": [
+        {
+          "year": 2021,
+          "question_num": 102,
+          "image_path": "2021/question/2021_102.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 102,
+          "image_path": "2022/question/2022_102.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 103,
+          "image_path": "2022/question/2022_103.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 102,
+          "image_path": "2023/question/2023_102.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 104,
+          "image_path": "2023/question/2023_104.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 102,
+          "image_path": "2024/question/2024_102.png"
+        }
+      ],
+      "5.2 해시/전자서명": [
+        {
+          "year": 2021,
+          "question_num": 103,
+          "image_path": "2021/question/2021_103.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 106,
+          "image_path": "2021/question/2021_106.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 117,
+          "image_path": "2021/question/2021_117.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 101,
+          "image_path": "2022/question/2022_101.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 106,
+          "image_path": "2022/question/2022_106.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 103,
+          "image_path": "2023/question/2023_103.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 106,
+          "image_path": "2023/question/2023_106.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 101,
+          "image_path": "2024/question/2024_101.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 103,
+          "image_path": "2024/question/2024_103.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 116,
+          "image_path": "2024/question/2024_116.png"
+        }
+      ],
+      "5.5 웹/애플리케이션 보안": [
+        {
+          "year": 2021,
+          "question_num": 104,
+          "image_path": "2021/question/2021_104.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 104,
+          "image_path": "2022/question/2022_104.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 105,
+          "image_path": "2023/question/2023_105.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 111,
+          "image_path": "2023/question/2023_111.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 113,
+          "image_path": "2023/question/2023_113.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 108,
+          "image_path": "2024/question/2024_108.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 109,
+          "image_path": "2024/question/2024_109.png"
+        }
+      ],
+      "5.7 SW 취약점": [
+        {
+          "year": 2021,
+          "question_num": 105,
+          "image_path": "2021/question/2021_105.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 116,
+          "image_path": "2021/question/2021_116.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 119,
+          "image_path": "2021/question/2021_119.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 105,
+          "image_path": "2022/question/2022_105.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 113,
+          "image_path": "2022/question/2022_113.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 119,
+          "image_path": "2022/question/2022_119.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 116,
+          "image_path": "2023/question/2023_116.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 118,
+          "image_path": "2023/question/2023_118.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 119,
+          "image_path": "2023/question/2023_119.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 113,
+          "image_path": "2024/question/2024_113.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 115,
+          "image_path": "2024/question/2024_115.png"
+        }
+      ],
+      "5.3 접근통제/인증": [
+        {
+          "year": 2021,
+          "question_num": 107,
+          "image_path": "2021/question/2021_107.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 115,
+          "image_path": "2021/question/2021_115.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 118,
+          "image_path": "2021/question/2021_118.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 107,
+          "image_path": "2022/question/2022_107.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 118,
+          "image_path": "2022/question/2022_118.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 107,
+          "image_path": "2023/question/2023_107.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 114,
+          "image_path": "2023/question/2023_114.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 115,
+          "image_path": "2023/question/2023_115.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 107,
+          "image_path": "2024/question/2024_107.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 114,
+          "image_path": "2024/question/2024_114.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 119,
+          "image_path": "2024/question/2024_119.png"
+        }
+      ],
+      "5.4 네트워크 보안": [
+        {
+          "year": 2021,
+          "question_num": 108,
+          "image_path": "2021/question/2021_108.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 109,
+          "image_path": "2021/question/2021_109.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 111,
+          "image_path": "2021/question/2021_111.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 108,
+          "image_path": "2022/question/2022_108.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 109,
+          "image_path": "2022/question/2022_109.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 111,
+          "image_path": "2022/question/2022_111.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 109,
+          "image_path": "2023/question/2023_109.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 110,
+          "image_path": "2023/question/2023_110.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 105,
+          "image_path": "2024/question/2024_105.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 110,
+          "image_path": "2024/question/2024_110.png"
+        }
+      ],
+      "5.9 새로운 보안 위협/기술": [
+        {
+          "year": 2021,
+          "question_num": 112,
+          "image_path": "2021/question/2021_112.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 113,
+          "image_path": "2021/question/2021_113.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 112,
+          "image_path": "2022/question/2022_112.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 117,
+          "image_path": "2022/question/2022_117.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 112,
+          "image_path": "2023/question/2023_112.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 117,
+          "image_path": "2023/question/2023_117.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 104,
+          "image_path": "2024/question/2024_104.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 120,
+          "image_path": "2024/question/2024_120.png"
+        }
+      ],
+      "5.8 개인정보보호": [
+        {
+          "year": 2021,
+          "question_num": 114,
+          "image_path": "2021/question/2021_114.png"
+        },
+        {
+          "year": 2021,
+          "question_num": 120,
+          "image_path": "2021/question/2021_120.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 114,
+          "image_path": "2022/question/2022_114.png"
+        },
+        {
+          "year": 2022,
+          "question_num": 120,
+          "image_path": "2022/question/2022_120.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 108,
+          "image_path": "2023/question/2023_108.png"
+        },
+        {
+          "year": 2023,
+          "question_num": 120,
+          "image_path": "2023/question/2023_120.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 106,
+          "image_path": "2024/question/2024_106.png"
+        },
+        {
+          "year": 2024,
+          "question_num": 112,
+          "image_path": "2024/question/2024_112.png"
+        }
+      ]
+    }
+  }
+}

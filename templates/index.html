@@ -3,350 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보시스템감리사 기출문제</title>
+    <title>정보시스템감리사 기출문제 - 연도별 보기</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        
-        .nav-tabs {
-            display: flex;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .nav-tab {
-            flex: 1;
-            padding: 15px 20px;
-            background: #f8f9fa;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        .nav-tab.active {
-            background: #007bff;
-            color: white;
-        }
-        
-        .nav-tab:hover:not(.active) {
-            background: #e9ecef;
-        }
-        
-        .year-content {
-            display: none;
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .year-content.active {
-            display: block;
-        }
-        
-        .subject-filter {
-            margin-bottom: 20px;
-        }
-        
-        .filter-btn {
-            padding: 8px 16px;
-            margin: 5px;
-            background: #6c757d;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .filter-btn.active {
-            background: #28a745;
-        }
-        
-        .filter-btn:hover {
-            opacity: 0.8;
-        }
-        
-        .questions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
+        body { background-color: #f8f9fa; }
         .question-card {
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .question-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        
-        .question-header {
-            background: #f8f9fa;
-            padding: 10px 15px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .question-number {
-            font-weight: bold;
-            color: #007bff;
-        }
-        
-        .question-subject {
-            font-size: 14px;
-            color: #6c757d;
-            margin-left: 10px;
-        }
-        
-        .question-image {
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .question-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
             cursor: pointer;
             transition: transform 0.2s;
+            display: flex; /* flexbox 사용 */
+            flex-direction: column; /* 세로 정렬 */
         }
-        
-        .question-image img:hover {
-            transform: scale(1.02);
+        .question-card:hover {
+            transform: scale(1.05);
         }
-        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
+        .card-img-top {
+            object-fit: contain; /* 이미지가 잘리지 않도록 contain 유지 */
+            background-color: #fff; /* 이미지 배경을 흰색으로 처리 */
+            width: 100%; /* 너비 100% */
+            height: auto; /* 높이 자동 */
+            flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
         }
-        
-        .modal-content {
-            position: relative;
-            margin: 5% auto;
+        .card-header {
+            border-bottom: none !important; /* 헤더 하단 경계선 제거 */
+            padding-bottom: 0.25rem; /* 하단 패딩 최소화 */
+        }
+        .modal-lg {
             max-width: 90%;
-            max-height: 90%;
         }
-        
-        .modal-content img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 8px;
-        }
-        
-        .close {
-            position: absolute;
-            top: -40px;
-            right: 0;
-            color: white;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .close:hover {
-            opacity: 0.7;
-        }
-        
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #e9ecef;
-            border-radius: 8px;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 24px;
-            font-weight: bold;
-            color: #007bff;
-        }
-        
-        .stat-label {
-            font-size: 14px;
-            color: #6c757d;
-        }
-        
-        @media (max-width: 768px) {
-            .nav-tabs {
-                flex-direction: column;
-            }
-            
-            .questions-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats {
-                flex-direction: column;
-                gap: 10px;
-            }
+        .modal-body img {
+            max-height: 80vh;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>정보시스템감리사 기출문제</h1>
-            <p>2021년~2024년 기출문제를 과목별로 정리했습니다.</p>
-        </header>
-        
-        <div class="nav-tabs">
-            {% for year in years %}
-            <button class="nav-tab {% if loop.first %}active{% endif %}" onclick="showYear({{ year }})">
-                {{ year }}년
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">정보시스템감리사 기출문제</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">연도별 보기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subjects.html">과목별 보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <ul class="nav nav-tabs" id="yearTab" role="tablist">
+            {% for year in years %}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {% if loop.first %}active{% endif %}" id="tab-{{year}}" data-bs-toggle="tab" data-bs-target="#content-{{year}}" type="button">{{year}}년</button>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div class="tab-content" id="yearTabContent">
+            {% for year, data in year_data.items() %}
+            <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="content-{{year}}">
+                <div class="p-3 border border-top-0">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <button class="btn btn-primary filter-btn active" onclick="filterQuestions('{{year}}', 'all')">전체</button>
+                        {% for subject in data.subjects %}
+                        <button class="btn btn-outline-secondary filter-btn" onclick="filterQuestions('{{year}}', '{{subject}}')">{{subject}}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="grid-{{year}}">
+                        {% for page in data.pages %}
+                            {% for q in page.questions %}
+                            <div class="col question-item" data-subject="{{q.subject}}">
+                                <div class="card h-100 question-card" data-bs-toggle="modal" data-bs-target="#questionModal" data-image-src="{{year}}/question/{{year}}_{{q.question_num}}.png" data-title="{{year}}년 {{q.question_num}}번">
+                                                                         <div class="card-header text-center py-2 border-0">
+                                         <p class="card-text fw-bold mb-0">{{q.question_num}}번 <span class="badge bg-info ms-2">{{q.subject}}</span></p>
+                                     </div>
+                                     <img src="{{year}}/question/{{year}}_{{q.question_num}}.png" class="card-img-top" alt="{{year}}년 {{q.question_num}}번">
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
             {% endfor %}
         </div>
-        
-        {% for year, data in year_data.items() %}
-        <div id="year-{{ year }}" class="year-content {% if loop.first %}active{% endif %}">
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">{{ data.total_questions }}</div>
-                    <div class="stat-label">총 문항</div>
+    </div>
+
+    <!-- 이미지 확대 모달 -->
+    <div class="modal fade" id="questionModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="questionModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">{{ data.subjects|length }}</div>
-                    <div class="stat-label">과목 수</div>
+                <div class="modal-body text-center">
+                    <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">{{ data.pages|length }}</div>
-                    <div class="stat-label">페이지 수</div>
-                </div>
-            </div>
-            
-            <div class="subject-filter">
-                <button class="filter-btn active" onclick="filterSubject('{{ year }}', 'all')">전체</button>
-                {% for subject in data.subjects %}
-                <button class="filter-btn" onclick="filterSubject('{{ year }}', '{{ subject }}')">{{ subject }}</button>
-                {% endfor %}
-            </div>
-            
-            <div class="questions-grid" id="questions-{{ year }}">
-                {% for page in data.pages %}
-                    {% for question in page.questions %}
-                    <div class="question-card" data-subject="{{ question.subject }}">
-                        <div class="question-header">
-                            <span class="question-number">{{ question.question_num }}번</span>
-                            <span class="question-subject">{{ question.subject }}</span>
-                        </div>
-                        <div class="question-image">
-                            <img src="{{ year }}/question/{{ year }}_{{ question.question_num }}.png" 
-                                 alt="문항 {{ question.question_num }}"
-                                 onclick="openModal(this.src)">
-                        </div>
-                    </div>
-                    {% endfor %}
-                {% endfor %}
             </div>
         </div>
-        {% endfor %}
     </div>
-    
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modalImage" src="" alt="확대 이미지">
-        </div>
-    </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function showYear(year) {
-            // 모든 탭과 컨텐츠 비활성화
-            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.year-content').forEach(content => content.classList.remove('active'));
+        function filterQuestions(year, subject) {
+            const items = document.querySelectorAll(`#grid-${year} .question-item`);
+            const filterButtons = document.querySelectorAll(`#content-${year} .filter-btn`);
             
-            // 선택된 탭과 컨텐츠 활성화
-            event.target.classList.add('active');
-            document.getElementById(`year-${year}`).classList.add('active');
+            // 모든 필터 버튼에서 'active'와 'btn-primary' 클래스를 제거하고 'btn-outline-secondary'를 추가합니다.
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'btn-primary');
+                btn.classList.add('btn-outline-secondary');
+            });
             
-            // 필터 초기화
-            filterSubject(year, 'all');
-        }
-        
-        function filterSubject(year, subject) {
-            const container = document.getElementById(`questions-${year}`);
-            const cards = container.querySelectorAll('.question-card');
-            const filterBtns = container.parentElement.querySelectorAll('.filter-btn');
-            
-            // 필터 버튼 상태 업데이트
-            filterBtns.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // 문항 카드 필터링
-            cards.forEach(card => {
-                if (subject === 'all' || card.dataset.subject === subject) {
-                    card.style.display = 'block';
+            // 클릭된 버튼에 'active'와 'btn-primary' 클래스를 추가하고 'btn-outline-secondary'를 제거합니다.
+            const clickedButton = event.target;
+            clickedButton.classList.add('active', 'btn-primary');
+            clickedButton.classList.remove('btn-outline-secondary');
+
+            items.forEach(item => {
+                if (subject === 'all' || item.dataset.subject === subject) {
+                    item.style.display = 'block';
                 } else {
-                    card.style.display = 'none';
+                    item.style.display = 'none';
                 }
             });
         }
-        
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImg.src = imageSrc;
-        }
-        
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-        }
-        
-        // ESC 키로 모달 닫기
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
+
+        const questionModal = document.getElementById('questionModal');
+        questionModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget;
+            const imageSrc = button.getAttribute('data-image-src');
+            const title = button.getAttribute('data-title');
+            
+            const modalTitle = questionModal.querySelector('.modal-title');
+            const modalImage = questionModal.querySelector('#modalImage');
+            
+            modalTitle.textContent = title;
+            modalImage.src = imageSrc;
         });
     </script>
 </body>

@@ -1,6 +1,11 @@
+import sys
+import io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
+
 #!/usr/bin/env python3
 import argparse
-import sys
 import os
 import time
 import json
