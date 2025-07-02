@@ -1,12 +1,11 @@
-
-
+from collections import OrderedDict
 import json
 import os
 import re
 from typing import Dict, List, Tuple
 
 class DetailedSubjectAggregator:
-    def parse_md_file(self, md_path: str) -> Tuple[Dict, Dict, Dict]:
+    def parse_md_file(self, md_path: str) -> Tuple[OrderedDict, Dict, Dict]:
         if not os.path.exists(md_path):
             raise FileNotFoundError(f"Markdown file not found: {md_path}")
 
@@ -15,7 +14,7 @@ class DetailedSubjectAggregator:
 
         major_sections = re.split(r'\n## (\d+\. [^\n]+)\n', content)[1:]
         
-        structured_data = {}
+        structured_data = OrderedDict() # 순서 유지를 위해 OrderedDict 사용
         question_to_sub_subject = {}
         analysis_texts = {}
 
@@ -23,7 +22,8 @@ class DetailedSubjectAggregator:
             major_subject_name = major_sections[i].strip()
             section_content = major_sections[i+1]
             
-            structured_data[major_subject_name] = {}
+            # 대분류의 OrderedDict 초기화
+            structured_data[major_subject_name] = OrderedDict()
 
             # 출제경향 분석 텍스트 추출
             analysis_match = re.search(r'\*\*영역별 출제경향 분석:\*\*\s*([\s\S]+)', section_content)
@@ -46,7 +46,8 @@ class DetailedSubjectAggregator:
                     continue
                 
                 sub_subject_name = cols[0]
-                structured_data[major_subject_name][sub_subject_name] = {}
+                # 세부 과목의 OrderedDict 초기화 (순서 유지)
+                structured_data[major_subject_name][sub_subject_name] = OrderedDict()
 
                 for idx, year_str in enumerate(years):
                     year = int(year_str)
@@ -63,8 +64,18 @@ class DetailedSubjectAggregator:
 
         return structured_data, question_to_sub_subject, analysis_texts
 
-    def aggregate_data(self, years: List[int], question_map: Dict, analysis_map: Dict, base_dir: str = ".") -> Dict:
-        aggregated_data = {}
+    def aggregate_data(self, years: List[int], question_map: Dict, analysis_map: Dict, structured_md_data: OrderedDict, base_dir: str = ".") -> OrderedDict:
+        # 최종 데이터를 저장할 구조 초기화
+        # structured_md_data에서 얻은 순서를 유지하기 위해 OrderedDict 사용
+        aggregated_data = OrderedDict()
+        for major_subject in structured_md_data.keys():
+            aggregated_data[major_subject] = {
+                "analysis": analysis_map.get(major_subject, "분석 내용이 없습니다."),
+                "sub_subjects": OrderedDict() # 순서 유지를 위해 OrderedDict 사용
+            }
+            # 마크다운에서 파싱한 세부범위 순서대로 초기화
+            for sub_subject in structured_md_data[major_subject].keys():
+                aggregated_data[major_subject]["sub_subjects"][sub_subject] = []
 
         for year in years:
             metadata_path = os.path.join(base_dir, str(year), f"{year}_data.json")
@@ -83,20 +94,14 @@ class DetailedSubjectAggregator:
                     if lookup_key in question_map:
                         major_subject, sub_subject = question_map[lookup_key]
                         
-                        if major_subject not in aggregated_data:
-                            aggregated_data[major_subject] = {
-                                "analysis": analysis_map.get(major_subject, "분석 내용이 없습니다."),
-                                "sub_subjects": {}
-                            }
-                        if sub_subject not in aggregated_data[major_subject]["sub_subjects"]:
-                            aggregated_data[major_subject]["sub_subjects"][sub_subject] = []
-
+                        # 이미 순서대로 초기화되었으므로 바로 접근
                         aggregated_data[major_subject]["sub_subjects"][sub_subject].append({
                             "year": year,
                             "question_num": q_num,
                             "image_path": f"{year}/question/{year}_{q_num}.png"
                         })
         
+        # 각 과목 내에서 연도와 문제 번호로 정렬
         for major, data in aggregated_data.items():
             for sub, questions in data["sub_subjects"].items():
                 questions.sort(key=lambda x: (x['year'], x['question_num']))
@@ -115,10 +120,10 @@ if __name__ == "__main__":
     md_file_path = os.path.join("analyze", "0.시험범위 및 기출분석.md")
 
     try:
-        _, question_map, analysis_map = aggregator.parse_md_file(md_file_path)
+        structured_md_data, question_map, analysis_map = aggregator.parse_md_file(md_file_path)
         print("마크다운 분석 완료.")
 
-        aggregated_data = aggregator.aggregate_data(years_to_process, question_map, analysis_map)
+        aggregated_data = aggregator.aggregate_data(years_to_process, question_map, analysis_map, structured_md_data)
         print("데이터 통합 완료.")
 
         output_file = os.path.join("analyze", "subjects_data.json")
