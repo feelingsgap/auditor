@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보시스템감리사 기출문제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .nav-tab.active {
+            background: #007bff;
+            color: white;
+        }
+        
+        .nav-tab:hover:not(.active) {
+            background: #e9ecef;
+        }
+        
+        .year-content {
+            display: none;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .year-content.active {
+            display: block;
+        }
+        
+        .subject-filter {
+            margin-bottom: 20px;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            margin: 5px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .filter-btn.active {
+            background: #28a745;
+        }
+        
+        .filter-btn:hover {
+            opacity: 0.8;
+        }
+        
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .question-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .question-header {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .question-number {
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .question-subject {
+            font-size: 14px;
+            color: #6c757d;
+            margin-left: 10px;
+        }
+        
+        .question-image {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .question-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .question-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .modal-content img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+        
+        .close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            opacity: 0.7;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .questions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>정보시스템감리사 기출문제</h1>
+            <p>2021년~2024년 기출문제를 과목별로 정리했습니다.</p>
+        </header>
+        
+        <div class="nav-tabs">
+            {% for year in years %}
+            <button class="nav-tab {% if loop.first %}active{% endif %}" onclick="showYear({{ year }})">
+                {{ year }}년
+            </button>
+            {% endfor %}
+        </div>
+        
+        {% for year, data in year_data.items() %}
+        <div id="year-{{ year }}" class="year-content {% if loop.first %}active{% endif %}">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">{{ data.total_questions }}</div>
+                    <div class="stat-label">총 문항</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ data.subjects|length }}</div>
+                    <div class="stat-label">과목 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">{{ data.pages|length }}</div>
+                    <div class="stat-label">페이지 수</div>
+                </div>
+            </div>
+            
+            <div class="subject-filter">
+                <button class="filter-btn active" onclick="filterSubject('{{ year }}', 'all')">전체</button>
+                {% for subject in data.subjects %}
+                <button class="filter-btn" onclick="filterSubject('{{ year }}', '{{ subject }}')">{{ subject }}</button>
+                {% endfor %}
+            </div>
+            
+            <div class="questions-grid" id="questions-{{ year }}">
+                {% for page in data.pages %}
+                    {% for question in page.questions %}
+                    <div class="question-card" data-subject="{{ question.subject }}">
+                        <div class="question-header">
+                            <span class="question-number">{{ question.question_num }}번</span>
+                            <span class="question-subject">{{ question.subject }}</span>
+                        </div>
+                        <div class="question-image">
+                            <img src="{{ year }}/question/{{ year }}_{{ question.question_num }}.png" 
+                                 alt="문항 {{ question.question_num }}"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="확대 이미지">
+        </div>
+    </div>
+    
+    <script>
+        function showYear(year) {
+            // 모든 탭과 컨텐츠 비활성화
+            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.year-content').forEach(content => content.classList.remove('active'));
+            
+            // 선택된 탭과 컨텐츠 활성화
+            event.target.classList.add('active');
+            document.getElementById(`year-${year}`).classList.add('active');
+            
+            // 필터 초기화
+            filterSubject(year, 'all');
+        }
+        
+        function filterSubject(year, subject) {
+            const container = document.getElementById(`questions-${year}`);
+            const cards = container.querySelectorAll('.question-card');
+            const filterBtns = container.parentElement.querySelectorAll('.filter-btn');
+            
+            // 필터 버튼 상태 업데이트
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // 문항 카드 필터링
+            cards.forEach(card => {
+                if (subject === 'all' || card.dataset.subject === subject) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+        
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+        
+        // ESC 키로 모달 닫기
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1561 @@
+{
+  "year": 2022,
+  "total_questions": 120,
+  "pages": [
+    {
+      "page_num": 2,
+      "questions": [
+        {
+          "question_num": 1,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            150.53369140625,
+            347,
+            255.73370361328125
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 2,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            265.73370361328125,
+            347,
+            505.33367919921875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 3,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            515.3336791992188,
+            347,
+            678.1336669921875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 4,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            688.1336669921875,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 5,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            308.1736755371094
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 6,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            318.1736755371094,
+            666,
+            659.4136352539062
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 7,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            669.4136352539062,
+            666,
+            846.6136474609375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 8,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            856.6136474609375,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 3,
+      "questions": [
+        {
+          "question_num": 9,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            237.73370361328125
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 10,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            247.73370361328125,
+            347,
+            410.53369140625
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 11,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            420.53369140625,
+            347,
+            721.8136596679688
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 12,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            731.8136596679688,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 13,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            292.09368896484375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 14,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            302.09368896484375,
+            666,
+            576.9736328125
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 15,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            586.9736328125,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 4,
+      "questions": [
+        {
+          "question_num": 16,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            333.7336730957031
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 17,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            343.7336730957031,
+            347,
+            557.5336303710938
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 18,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            567.5336303710938,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 19,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            352.9336853027344
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 20,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            362.9336853027344,
+            666,
+            640.9336547851562
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 21,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            650.9336547851562,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 5,
+      "questions": [
+        {
+          "question_num": 22,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            596.6536254882812
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 23,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            57,
+            606.6536254882812,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 24,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            314.53369140625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 25,
+          "subject": "감리 및 사업관리",
+          "bbox": [
+            376,
+            324.53369140625,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 6,
+      "questions": [
+        {
+          "question_num": 26,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            150.53369140625,
+            347,
+            549.013671875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 27,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            559.013671875,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 28,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            113.33369445800781,
+            666,
+            537.013671875
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 29,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            547.013671875,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 7,
+      "questions": [
+        {
+          "question_num": 30,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            638.1736450195312
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 31,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            648.1736450195312,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 32,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            586.3336791992188
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 33,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            596.3336791992188,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 8,
+      "questions": [
+        {
+          "question_num": 34,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            553.0936279296875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 35,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            563.0936279296875,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 36,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            591.8536376953125
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 37,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            601.8536376953125,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 9,
+      "questions": [
+        {
+          "question_num": 38,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            478.6936950683594
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 39,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            488.6936950683594,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 40,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            439.8136901855469
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 41,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            449.8136901855469,
+            666,
+            699.013671875
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 42,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            709.013671875,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 10,
+      "questions": [
+        {
+          "question_num": 43,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            469.6936950683594
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 44,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            479.6936950683594,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 45,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            709.6936645507812
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 46,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            719.6936645507812,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 11,
+      "questions": [
+        {
+          "question_num": 47,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            369.85369873046875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 48,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            379.85369873046875,
+            347,
+            655.6936645507812
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 49,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            57,
+            665.6936645507812,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 50,
+          "subject": "소프트웨어 공학",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 12,
+      "questions": [
+        {
+          "question_num": 51,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            150.53369140625,
+            347,
+            379.33367919921875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 52,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            389.33367919921875,
+            347,
+            685.213623046875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 53,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            695.213623046875,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 54,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            151.7336883544922,
+            666,
+            548.6536254882812
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 55,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            558.6536254882812,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 13,
+      "questions": [
+        {
+          "question_num": 56,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            620.2936401367188
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 57,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            630.2936401367188,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 58,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            305.45367431640625,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 14,
+      "questions": [
+        {
+          "question_num": 59,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            448.45367431640625
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 60,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            458.45367431640625,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 61,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            450.7336730957031
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 62,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            460.7336730957031,
+            666,
+            642.733642578125
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 63,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            652.733642578125,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 15,
+      "questions": [
+        {
+          "question_num": 64,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 65,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            397.6936950683594
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 66,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            407.6936950683594,
+            666,
+            713.0536499023438
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 67,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            723.0536499023438,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 16,
+      "questions": [
+        {
+          "question_num": 68,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            425.0536804199219
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 69,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            435.0536804199219,
+            347,
+            778.6936645507812
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 70,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            788.6936645507812,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 71,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            636.3736572265625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 72,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            646.3736572265625,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 17,
+      "questions": [
+        {
+          "question_num": 73,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            398.773681640625
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 74,
+          "subject": "데이터베이스",
+          "bbox": [
+            57,
+            408.773681640625,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 75,
+          "subject": "데이터베이스",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 18,
+      "questions": [
+        {
+          "question_num": 76,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            150.53369140625,
+            347,
+            317.4136962890625
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 77,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            327.4136962890625,
+            347,
+            576.733642578125
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 78,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            586.733642578125,
+            347,
+            749.5336303710938
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 79,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            759.5336303710938,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 80,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            218.53369140625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 81,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            228.53369140625,
+            666,
+            488.6536560058594
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 82,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            498.6536560058594,
+            666,
+            757.4536743164062
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 83,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            767.4536743164062,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 19,
+      "questions": [
+        {
+          "question_num": 84,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            213.7336883544922
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 85,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            223.7336883544922,
+            347,
+            362.53369140625
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 86,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            372.53369140625,
+            347,
+            535.3336791992188
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 87,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            545.3336791992188,
+            347,
+            650.5336303710938
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 88,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            660.5336303710938,
+            347,
+            804.1336669921875
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 89,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            814.1336669921875,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 90,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            268.09368896484375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 91,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            278.09368896484375,
+            666,
+            392.8936767578125
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 92,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            402.8936767578125,
+            666,
+            692.2936401367188
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 93,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            702.2936401367188,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 20,
+      "questions": [
+        {
+          "question_num": 94,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            237.73370361328125
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 95,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            247.73370361328125,
+            347,
+            545.0536499023438
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 96,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            555.0536499023438,
+            347,
+            756.253662109375
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 97,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            57,
+            766.253662109375,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 98,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            314.53369140625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 99,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            324.53369140625,
+            666,
+            544.9336547851562
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 100,
+          "subject": "시스템 분석설계",
+          "bbox": [
+            376,
+            554.9336547851562,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 21,
+      "questions": [
+        {
+          "question_num": 101,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            150.53369140625,
+            347,
+            294.1336975097656
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 102,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            304.1336975097656,
+            347,
+            601.3336791992188
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 103,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            611.3336791992188,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 104,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            151.7336883544922,
+            666,
+            388.09368896484375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 105,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            398.09368896484375,
+            666,
+            573.49365234375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 106,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            583.49365234375,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 22,
+      "questions": [
+        {
+          "question_num": 107,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            566.2936401367188
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 108,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            576.2936401367188,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 109,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            256.9336853027344
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 110,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            266.9336853027344,
+            666,
+            448.9336853027344
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 111,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            458.9336853027344,
+            666,
+            775.3336181640625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 112,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            785.3336181640625,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 23,
+      "questions": [
+        {
+          "question_num": 113,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            334.09368896484375
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 114,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            344.09368896484375,
+            347,
+            679.6936645507812
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 115,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            689.6936645507812,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 116,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            94.1336898803711,
+            666,
+            365.773681640625
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 117,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            375.773681640625,
+            666,
+            666.49365234375
+          ],
+          "column": "right",
+          "verified": true
+        },
+        {
+          "question_num": 118,
+          "subject": "정보통신개론",
+          "bbox": [
+            376,
+            676.49365234375,
+            666,
+            981.0
+          ],
+          "column": "right",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "page_num": 24,
+      "questions": [
+        {
+          "question_num": 119,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            94.1336898803711,
+            347,
+            377.1736755371094
+          ],
+          "column": "left",
+          "verified": true
+        },
+        {
+          "question_num": 120,
+          "subject": "정보통신개론",
+          "bbox": [
+            57,
+            387.1736755371094,
+            347,
+            981.0
+          ],
+          "column": "left",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
