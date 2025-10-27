@@ -143,13 +143,15 @@ class QuestionCropper:
         return self.crop_questions_from_metadata(pdf_path, metadata, output_dir)
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="정보시스템감리사 기출문제 PDF 이미지 크롭 스크립트")
+    parser.add_argument('--year', type=int, required=True, help='크롭할 연도')
+    args = parser.parse_args()
+
     cropper = QuestionCropper()
     
-    # 테스트용
-    year = 2024
-    
     try:
-        total = cropper.crop_questions_by_year(year)
-        print(f"{year}년 문항 크롭 완료: {total}개")
+        total = cropper.crop_questions_by_year(args.year)
+        print(f"{args.year}년 문항 크롭 완료: {total}개")
     except Exception as e:
         print(f"오류 발생: {e}")
