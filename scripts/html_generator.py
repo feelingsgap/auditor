@@ -70,7 +70,7 @@ class HTMLGenerator:
     def generate_for_single_year(self, year: int, base_dir: str = "."):
         return self.generate_html([year], f"{year}_questions.html", base_dir)
     
-    def generate_for_all_years(self, start_year: int = 2021, end_year: int = 2024, base_dir: str = "."):
+    def generate_for_all_years(self, start_year: int = 2021, end_year: int = 2025, base_dir: str = "."):
         years = list(range(start_year, end_year + 1))
         return self.generate_html(years, "index.html", base_dir)
 
