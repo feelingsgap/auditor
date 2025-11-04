@@ -15,7 +15,14 @@
             270.94415283203125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "소프트웨어 개발사업의 적정 사업기간 산정 기준에\n따라 다음 조건의 사업에 대하여 산정한 적정 사업\n기간은?",
+          "question_choice": [
+            "6개월",
+            "8개월",
+            "10개월",
+            "12개월 ·기능점수 : 1,320 FP ·1인 생산성 : 22 FP/MM ·적정 개발인력 수 : 6명"
+          ]
         },
         {
           "question_num": 2,
@@ -27,7 +34,14 @@
             568.4590454101562
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「SW사업 대가산정 가이드」(한국소프트웨어산업협회\n2023년 개정판)에 따른 계약금액 조정 방식으로 가장\n적절한 것은?",
+          "question_choice": [
+            "대가산정 방식(기능점수, 투입공수 등), 보정계수 제경비/기술료, 이윤, 할인율 등의 제비율은 변경 요청 시점의 기준을 적용",
+            "대가산정 방식(기능점수, 투입공수 등), 보정계수 제경비/기술료, 이윤, 할인율 등의 제비율은 당초 계약 시의 기준을 동일하게 적용",
+            "대가산정 방식(기능점수, 투입공수 등)은 변경요청 시점의 기준을 적용하고, 보정계수, 제경비/기술료 이윤, 할인율 등의 제비율은 당초 계약 시의 기준을 동일하게 적용",
+            "대가산정 방식(기능점수, 투입공수 등)은 당초 계약 시의 기준을 동일하게 적용하고, 보정계수, 제경 비/기술료, 이윤, 할인율 등의 제비율은 변경요청 시점의 기준을 적용"
+          ]
         },
         {
           "question_num": 3,
@@ -39,7 +53,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「공공기관의 데이터베이스 표준화 지침」에 따라\n데이터베이스 표준 수립 및 적용을 점검하는 경우\n가장 적절하지 않은 것은?",
+          "question_choice": [
+            "운영 중인 DB의 비표준 데이터는 재구축 이전에 공통 표준을 적용해야 한다.",
+            "기관표준용어 정의 시 공통표준용어를 우선적으로 적용하여야 한다.",
+            "정보화사업 감리시 감리법인에게 공공데이터 베이스 표준화 업무를 점검하게 요구하여야 한다.",
+            "공공데이터베이스의 표준화 수준을 매년 1회 이상 정기적으로 점검한다."
+          ]
         },
         {
           "question_num": 4,
@@ -51,7 +72,14 @@
             201.5399932861328
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「인공지능 학습용 데이터 품질관리 가이드라인 및\n구축안내서 v3.0」에 제시된 품질관리 활동 중 가장\n나중에 수행되는 것은?",
+          "question_choice": [
+            "품질 목표 및 점검 기준 수립",
+            "수집 도구 및 저장 환경 검토",
+            "라벨링 방법 및 기준 현행화",
+            "개인정보/민감정보 비식별화 등 법적 준거 확보"
+          ]
         },
         {
           "question_num": 5,
@@ -63,7 +91,14 @@
             457.3404541015625
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「용역계약일반조건」(기획재정부 계약예규 제582호)에\n관한 설명으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "공유자 일방이 계약목적물에 대한 지식재산권 지분을 제3자에게 양도하는 경우에는 반드시 타공유자의 동의를 받아야 한다.",
+            "계약서에 반영되어 있지 않더라도 공공복리를 위해 필요한 경우 발주기관은 개발된 소프트 웨어를 타기관과 공동으로 활용할 수 있다.",
+            "핵심 개발인력이 아닌 지원인력의 근무장소는 보안 등 특별한 사유가 있는 경우를 제외하고는 계약상대자가 달리 정할 수 있다.",
+            "과업내용 변경에 따른 계약금액의 조정액이 당초 계약금액의 100분의 10 이상으로 추정될 경우에는 과업변경심의위원회를 설치하여 과업변경 심의를 하여야 한다."
+          ]
         },
         {
           "question_num": 6,
@@ -75,7 +110,14 @@
             586.5592651367188
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「CBD SW개발 표준 산출물 관리 가이드」(한국지능\n정보사회진흥원, (구)한국정보화진흥원)에서 제시한\n단계별 산출물로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "분석단계: 유스케이스 명세서",
+            "설계단계: 단위시험 케이스",
+            "구현단계: 데이터베이스 테이블",
+            "시험단계: 통합시험 시나리오"
+          ]
         },
         {
           "question_num": 7,
@@ -87,7 +129,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "감리법인의 위법 행위에 대하여 「전자정부법」에 따른\n행정처분 수위가 가장 높은 것은?\n가. 감리법인 등록 조건인 감리원 5명 중 1명이 \n퇴사하였으나 기간 내 미신고\n나. 감리계획서에 제출한 감리원 1명을 다른 전문\n가로 대신 참여시켜 감리 수행\n다. 감리기준에서 요구한 종료단계 시정조치 확인 \n미수행",
+          "question_choice": [
+            "가",
+            "나",
+            "다",
+            "모두 동일"
+          ]
         }
       ]
     },
@@ -104,7 +153,14 @@
             206.69436645507812
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「정보시스템 감리기준」(행정안전부 고시) [별표 1]의\n감리대가 산정 기준에서 보정 전 기본감리비에\n영향을 주는 항목이 아닌 것은?",
+          "question_choice": [
+            "FP 단가",
+            "난이도계수 합",
+            "IT감리 평균임금",
+            "감리대상사업비 보정금액"
+          ]
         },
         {
           "question_num": 9,
@@ -116,7 +172,14 @@
             347.66033935546875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「정보시스템 감리 수행가이드」(한국지능정보사회\n진흥원)에서 제시한 과업이행여부 점검결과, 부적합\n판정 평가 기준으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "원인이 규명되지 않은 결함",
+            "다른 기능 수행에 영향을 미치는 결함",
+            "중요 과업 요건이 구현되지 않은 경우",
+            "선행 기능의 결함으로 점검하지 못한 경우"
+          ]
         },
         {
           "question_num": 10,
@@ -128,7 +191,14 @@
             535.6149291992188
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「정보시스템 감리 수행가이드」(한국지능정보사회\n진흥원)에서 제시한 객체지향/컴포넌트기반 개발\n모델의 응용시스템 감리영역(요구분석 감리시점)에\n대한 점검항목으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "사용자 요구사항 도출 및 분석의 충분성, 적정성",
+            "개념수준의 분석 클래스를 충분히 도출하였는지 여부",
+            "프로세스, 이벤트 모델링 및 기능 도출의 충분성 적정성",
+            "시스템 기능에 대한 유스케이스 모형 상세화 수준 및 적정성"
+          ]
         },
         {
           "question_num": 11,
@@ -140,7 +210,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「지능정보기술 감리 실무 가이드」(한국지능정보\n사회진흥원)의 정보시스템 운영단계 점검항목으로\n가장 적절한 것은?",
+          "question_choice": [
+            "사용자지원 활동을 위한 절차 및 계획을 수립하여 수행하고 있는가?",
+            "개발 소프트웨어 장애관리 활동 절차 및 계획을 수립하여 이행하고 있는가?",
+            "응용 서비스 모니터링 활동을 위한 절차 및 계획을 수립하여 수행하고 있는가?",
+            "개발 소프트웨어 성능관리 활동을 위한 절차 및 계획을 수립하여 수행하고 있는가?"
+          ]
         },
         {
           "question_num": 12,
@@ -152,7 +229,14 @@
             236.06227111816406
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "설계단계 감리수행결과보고서에 지적한 개선권고\n사항에 대하여 개선유형 및 개선시점을 가장 적정\n하게 판정한 것은?\nDB 테이블정의서에 일부 데이터 컬럼 누락이 발견되어 \n프로그램 개발 단계 착수 이전에 반드시 수정하여야 함",
+          "question_choice": [
+            "필수, 단기",
+            "협의, 단기",
+            "권고, 장기",
+            "필수, 장기"
+          ]
         },
         {
           "question_num": 13,
@@ -164,7 +248,14 @@
             340.46820068359375
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「정보시스템 감리기준」(행정안전부 고시) [별표 2\n감리제안서 기술평가 기준의 평가항목으로 가장\n적절하지 않은 것은?",
+          "question_choice": [
+            "점검내용",
+            "감리인력 구성",
+            "감리일정 및 절차",
+            "감리법인의 실적"
+          ]
         },
         {
           "question_num": 14,
@@ -176,7 +267,14 @@
             450.46820068359375
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「정보시스템 감리원 윤리 가이드」(한국지능정보\n사회진흥원, (구)한국정보화진흥원)에서 제시한\n감리원 윤리 준수 요소로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "객관성과 공정성 유지",
+            "공익의 달성",
+            "성실성과 책임감 유지",
+            "전문성 유지"
+          ]
         },
         {
           "question_num": 15,
@@ -188,7 +286,14 @@
             616.2867431640625
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「SW 사업자를 위한 정보시스템 감리준비 가이드」(한국\n지능정보사회진흥원)에 따라 SW 사업자가 감리 대응을\n위하여 작성하는 문서를 모두 고르면 몇 개인가?\n가. 과업대비표\n나. 검사기준서\n다. 감리시정조치결과서\n라. 감리시정조치확인보고서",
+          "question_choice": [
+            "1개",
+            "2개",
+            "3개",
+            "4개"
+          ]
         },
         {
           "question_num": 16,
@@ -200,7 +305,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "정보시스템 감리 사업에 대하여 적용되는 제도로\n올바른 것을 모두 고르시오.",
+          "question_choice": [
+            "가, 나",
+            "나, 다",
+            "가, 다",
+            "가, 나, 다 가. 감리 사업에 대한 과업 심의는 간소화 방식을 적용 나. 감리 사업은 금액에 관계없이 사전협의 대상에서 제외 다. 감리 사업은 투입인력 관리 금지 대상에서 예외"
+          ]
         }
       ]
     },
@@ -217,7 +329,14 @@
             389.4945983886719
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「총사업비 관리지침」(기획재정부훈령 제668호\n2023. 9. 20)에 관한 설명으로 가장 적절하지 않은\n것은?",
+          "question_choice": [
+            "중앙관서의 장은 예비타당성조사 후 시스템 구축 이전에 ISMP를 수립해야 하며, ISMP 수립이 완 료되면 기획재정부장관과 사업규모, 총사업비 사업기간 등을 협의해야 한다.",
+            "중앙관서의 장은 구축 단계에서 분석 및 설계가 완료되면 각 단계별로 계약 체결 이전에 기획재 정부장관과 사업규모, 총사업비, 사업기간 등을 협의해야 한다.",
+            "정보화사업에 대한 총사업비의 조정은 ISMP에서 수립된 구축비, 보상비, 부대경비, 시스템 구축 후 10년 간 운영‧유지관리비, 추가 구축비를 대상 으로 한다.",
+            "추가구축비는 시스템 구축 완료 후 기능의 변경 ‧추가‧보완, 소프트웨어 및 하드웨어 증설 등 시스템의 개선 및 고도화에 소요되는 비용을 포함한다."
+          ]
         },
         {
           "question_num": 18,
@@ -229,7 +348,14 @@
             480.83477783203125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "일정 활동에 대한 기간 추정치를 산정하는 경우\n다음 도구 또는 기법 중 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "전문가 판단",
+            "상향식 산정법",
+            "3점 산정",
+            "비용편익 분석"
+          ]
         },
         {
           "question_num": 19,
@@ -241,7 +367,14 @@
             619.1636352539062
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "프로젝트관리자는 프로젝트 의사소통의 복잡성에\n대한 지침으로서, 가능한 의사소통 채널 또는\n경로의 수를 고려해야 한다. 어떤 프로젝트에서\n이해관계자의 수가 10명일 경우에 가능한 의사소통\n채널의 총 수는 몇 개인가?",
+          "question_choice": [
+            "10개",
+            "45개",
+            "50개",
+            "90개"
+          ]
         },
         {
           "question_num": 20,
@@ -253,7 +386,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "상황론적 리더십 이론에서 구성원의 성숙도가 낮음\n에서 높음으로 변화함에 따라 적절한 리더십 유형을\n순서대로 가장 적절하게 나열한 것은?",
+          "question_choice": [
+            "지시형 → 설득형 → 참여형 → 위임형",
+            "지시형 → 설득형 → 위임형 → 참여형",
+            "지시형 → 참여형 → 설득형 → 위임형",
+            "지시형 → 참여형 → 위임형 → 설득형"
+          ]
         },
         {
           "question_num": 21,
@@ -265,7 +405,14 @@
             222.39720153808594
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "인도 측정(delivery measurements)은 작업 진척과\n관련이 있으며, 이러한 측정은 적응형 접근 방식을\n사용하는 프로젝트에서 자주 사용된다. 다음 중 인도\n측정 항목으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "주기 시간(cycle time)",
+            "대기열 크기(queue size)",
+            "배치 크기(batch size)",
+            "프로세스 크기(process size)"
+          ]
         },
         {
           "question_num": 22,
@@ -277,7 +424,14 @@
             316.37451171875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 정량적 리스크 분석을 위한 데이터 분석\n기법으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "데이터 품질 평가",
+            "시뮬레이션",
+            "민감도 분석",
+            "영향관계도"
+          ]
         },
         {
           "question_num": 23,
@@ -289,7 +443,14 @@
             456.3815002441406
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "위협에 대한 대응 전략과 기회에 대한 대응 전략을\n순서대로 나열한 것은?",
+          "question_choice": [
+            "공유(share) － 증대(enhance)",
+            "수용(accept) － 전가(transfer)",
+            "공유(share) － 수용(accept)",
+            "수용(accept) － 수용(accept)"
+          ]
         },
         {
           "question_num": 24,
@@ -301,7 +462,14 @@
             581.6445922851562
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "프로젝트 계획을 세울 때 단기적으로 범위의 매우\n구체적인 측면을 알고 있지만 장기적인 세부 사항은\n아직 명확하지 않은 경우가 많다. 이때 고려해야 할\n방법으로 가장 적절한 것은?",
+          "question_choice": [
+            "연동 기획",
+            "요구사항 수집",
+            "대안 분석",
+            "대체 분석"
+          ]
         },
         {
           "question_num": 25,
@@ -313,7 +481,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "목표에 의한 관리(MBO)의 주요 특성이 아닌 것은?",
+          "question_choice": [
+            "다면평가",
+            "의사결정의 참가",
+            "실적에 대한 피드백",
+            "목표달성 기간 명시"
+          ]
         }
       ]
     },
@@ -330,7 +505,14 @@
             330.99853515625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 애자일 소프트웨어 개발 방법론에 대한\n설명으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "Extreme programming에서 시스템 고객은 개발 팀의 일부이고 다른 팀원들과 시나리오에 대해 토론한다.",
+            "사용사례 또는 사용자 스토리 단위로 조금씩 반 복적으로 release를 한다.",
+            "Scrum approach에서는 제품 백로그 작성, 스프 린트 계획 회의, 스프린트 수행, 스프린트 검토 및 회고 등의 프로세스를 가진다.",
+            "Sprint cycle은 inception, elaboration, construct -ion, transition이 반복적으로 수행되어 진다."
+          ]
         },
         {
           "question_num": 27,
@@ -342,7 +524,14 @@
             597.2276000976562
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 소프트웨어 비용산정 모델인 COCOMO I\n에 대한 설명으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "COCOMO II 2000 계수조정모델에서 소프트웨어 개발에 소요되는 노력의 양은 소프트웨어 규모 에 대해 규모의 경제(Scale of Economy) 효과를 가지지 못한다.",
+            "외부입력(EI)의 복잡도 가중치와 외부질의(EQ)의 복잡도 가중치는 같다.",
+            "재사용 모델에서 변경률(AAF)의 산정시 코드 변 경률(CM)에 대한 가중치가 설계 변경률(DM)에 대한 가중치와 재사용 소프트웨어에 대한 통합 노력률(IM)에 대한 가중치 보다 높다.",
+            "재사용 모델에서 설계 변경률(DM) 또는 코드 변 경률(CM)이 0이면, 소프트웨어에 대한 이해도 (SU)는 0이 된다."
+          ]
         },
         {
           "question_num": 28,
@@ -354,7 +543,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 상황에서 사용할 수 있는 UML 다이어그램\n으로 가장 적절한 것은? \n가. 전체 시스템 수준에서 시스템과 상호작용하는 \n각 액터의 관점에서 모델링하고자 함 \n나. 시스템 객체사이의 어떤 제어흐름 및 알고리즘 \n설계, 동기화의 필요성 또는 병렬수행 가능성을 \n파악하고자 함",
+          "question_choice": [
+            "Activity Diagram",
+            "State Diagram",
+            "Class Diagram",
+            "Use Case Diagram"
+          ]
         },
         {
           "question_num": 29,
@@ -366,7 +562,14 @@
             299.7127380371094
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "마스터 브랜치에서 bugFix01의 새로운 브랜치를\n생성한 다음, HEAD 포인터가 이 새로운 브랜치\n를 가리키게 하기 위한 Git 명령어로 가장 적절\n한 것은?",
+          "question_choice": [
+            "git add bugFix01",
+            "git branch bugFix01",
+            "git checkout bugFix01",
+            "git merge bugFix01"
+          ]
         },
         {
           "question_num": 30,
@@ -378,7 +581,14 @@
             531.5393676757812
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 코드의 (가)와 (나)에 나타난 객체지향 개념\n으로 가장 적절한 것은?\n ClosedFigure closedFigure;\n Rectangle r = new Rectangle();\n Circle c = new circle();\n closedFigure = r;\n closedFigure.getArea();  …………  (가)\n closedFigure = c;\n closedFigure.getArea();  …………  (나)",
+          "question_choice": [
+            "상속(inheritance)",
+            "정보은닉(information hiding)",
+            "다형성(polymorphism)",
+            "의존성(dependency)"
+          ]
         },
         {
           "question_num": 31,
@@ -390,7 +600,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에서 설명하는 특징을 제공하는 SysML 다이\n어그램으로 가장 적절한 것은?\n가. 운영 시스템에 유효한 시스템 변수 값을 표현\n할 수 있어 예외 상황의 발생을 탐지할 수 있\n도록 한다.\n나. 제약 조건 변수와 값 속성 간의 바인딩을 통해 \n값 속성 집합에 수학적 관계를 지정한다.",
+          "question_choice": [
+            "Parametric diagram",
+            "Package diagram",
+            "State machine diagram",
+            "Block definition diagram"
+          ]
         }
       ]
     },
@@ -407,7 +624,14 @@
             366.719482421875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음의 코드에 적용된 코드 리팩토링 기법으로\n가장 적절한 것은? \n<적용 전>\nint increment(int inValue, int Qty, int amount) {\n  if (inValue > 50) inValues++;\n  ....\n<적용 후>\nint increment(int inValue, int Qty, int amount) {\n  int grade = inValue;\n  if (inValue > 50) grade++;\n  ....",
+          "question_choice": [
+            "임시변수 분리 기법(Split temporary variable)",
+            "매개변수 할당 제거 기법(Remove assignments to parameters)",
+            "중간자 제거 기법(Remove middle man)",
+            "조건 다형성 대체 기법(Replace conditional with polymorphism)"
+          ]
         },
         {
           "question_num": 33,
@@ -419,7 +643,14 @@
             620.3623046875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 C 프로그램의 출력 결과로 가장 적절한 것은?\n#include <stdio.h>\nint main() {\n   int a, b, c, ary[][4] = {{10, 20, 30, 40}, {50, 60, \n70, 80}}; \n   int (*ptr)[4] = ary;\n   \n   a = *(*(ptr + 1) + 3);\n   b = **ptr++;\n   c = **ptr;\n   printf(\"%d\\n\", a+b+c); \n      \n   return 0;\n}",
+          "question_choice": [
+            "80",
+            "100",
+            "120",
+            "140"
+          ]
         },
         {
           "question_num": 34,
@@ -431,7 +662,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "ISO/IEC/IEEE 29119 Part 4에서는 Cause-effect\ngraphing 방법을 설명하고 있다. Cause-effect\ngraphing에서는 여러 개의 Cause들간의 제약 사\n항을 표현할 수 있다. 다음 중 Cause간의 제약\n사항으로서 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "Mask",
+            "Requires",
+            "Exclusive",
+            "One and only one"
+          ]
         },
         {
           "question_num": 35,
@@ -443,7 +681,9 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음의 Video 클래스는 2개의 type code를 가지\n고 있다. kindCode는 VHS, CD를 의미하며\npriceCode는 Normal, Discount를 의미한다. 이에\n대한 Refactoring 후의 클래스 다이어그램으로서\n가장 적절한 것은?",
+          "question_choice": []
         }
       ]
     },
@@ -460,7 +700,14 @@
             281.0131530761719
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "IEEE 29119에서는 combinatorial test design 방법\n으로서 base choice 방법을 제시하고 있다. 다음\n과 같이 4개의 글꼴 이름, 5개의 글꼴 크기, 3개\n의 스타일에 대한 테스트를 base choice 방법을\n사용할 때 테스트케이스 수로서 가장 적절한 것\n은?\n·글꼴 이름: 궁서, 굴림, 바탕, 고딕\n·글꼴 크기: 10, 12, 14, 16, 18\n·스타일: 밑줄, 기울임, 보통",
+          "question_choice": [
+            "5개",
+            "10개",
+            "20개",
+            "60개"
+          ]
         },
         {
           "question_num": 37,
@@ -472,7 +719,14 @@
             546.5230102539062
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 테스트케이스 설계 기법을 적용한 예이다\n이 설명에서 적용된 테스트케이스 설계 기법으로\n서 가장 적절한 것은?\n함수 getDistance()는 양방향 그래프의 시작위치와\n목적지위치를 인자로 한다. 시작위치를 A로 하고\n목적지위치를 B로 하였을 때의 거리 D를 첫 번째\n테스트케이스로 결정하였다. 그리고 이를 바탕으로\n시작위치를 B로 하고 목적지위치를 A로 하였을 때\n동일한 거리 D를 두 번째 테스트케이스로 결정하였\n다.",
+          "question_choice": [
+            "Equivalence partitioning",
+            "Decision table testing",
+            "Metamorphic testing",
+            "Requirement-based testing"
+          ]
         },
         {
           "question_num": 38,
@@ -484,7 +738,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 소프트웨어 유지관리 용이성을 향상시키\n는 개발 활동으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "표준과 지침을 개발하여 실시하는 분석 활동",
+            "복수 엔트리, 복수 엑시트 구조를 사용한 구현 활동",
+            "정보은닉, 자료 추상화, 하향식 계층 분배 원리 를 관할한 기본 설계 활동",
+            "각 루틴에 대한 부작용과 예외조치 방안을 정립 한 상세 설계 활동"
+          ]
         },
         {
           "question_num": 39,
@@ -496,7 +757,14 @@
             187.1557159423828
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "ISO/IEC 5055에서는 품질 특성을 평가하기 위한\n소스코드의 weakness를 제시하고 있다. 다음 중\n에서 ISO/IEC 5055에서 제시하고 있는 품질 특성\n으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "Maintainability",
+            "Security",
+            "Reliability",
+            "Usability"
+          ]
         },
         {
           "question_num": 40,
@@ -508,7 +776,14 @@
             515.5968017578125
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 코드 스멜과 이를 해결하기 위한 리팩토링\n방법을 가장 적절하게 연결한 것만으로 짝지은 것은?",
+          "question_choice": [
+            "(가) - (a), (다) - (c)",
+            "(가) - (b), (다) - (d)",
+            "(나) - (a), (라) - (d)",
+            "(나) - (b), (라) - (c) 코드 스멜 리팩토링 (가) 다른 클래스를 지나 치게 애용 (Feature Envey) (a) 여러 클래스에 흩어 진 유사한 기능을 한 곳으로 모은다. (나) 여러 클래스를 동시 에 수정 (Shotgun Surgery) (b) 메소드를 그들이 애 용하는 데이터가 있 는 클래스로 옮긴다. (다) 유사 데이터의 중복 (Data Clumps) (c) 다형성으로 바꾼다. (같은 메소드를 가진 여러 개의 클래스를 구현한다.) (라) 너무 많은 Switch, if 문장 (d) 해당 데이터들을 독 립된 클래스로 정의 한다."
+          ]
         },
         {
           "question_num": 41,
@@ -520,7 +795,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 Python 프로그램의 출력 결과로 가장 적절한 것은?\nlanguage = ['python', 'java', 'go', 'ruby', 'c']\npop = language.pop()\npop2 = language.pop(1)\nlanguage.insert(1, pop)\nlanguage.insert(2, pop2)\nprint(language.index('go'))",
+          "question_choice": [
+            "3",
+            "2",
+            "1",
+            "0"
+          ]
         }
       ]
     },
@@ -537,7 +819,14 @@
             352.814697265625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 특정 함수의 논리 흐름 그래프이다. 이 함\n수의 사이클로매틱 복잡도로 가장 적절한 것은?",
+          "question_choice": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
         },
         {
           "question_num": 43,
@@ -549,7 +838,14 @@
             547.362060546875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "TMMi(Test Maturity Model Integration)는 소프트\n웨어 테스트 프로세스 등급 척도 모델로 소프트\n웨어 테스트 조직이 갖추고 있는 성숙도를 평가\n하고 프로세스를 개선하기 위한 모델이다. 다음\n중 TMMi 레벨 2에서 테스트 계획(test planning)\n프로세스 영역의 세부 목표로 가장 적절하지 않\n은 것은?",
+          "question_choice": [
+            "제품 위험 평가 수행(perform a product risk assessment)",
+            "테스트 접근 방식 설정 (establish a test approach)",
+            "테스트 추정치 설정(establish test estimates)",
+            "테스트 성능 지표 설정(establish test performance indicators)"
+          ]
         },
         {
           "question_num": 44,
@@ -561,7 +857,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음의 상황에서 사용할 수 있는 요구사항 추출\n방법으로 가장 적절한 것은?\n가. 고객이 자신의 요구사항에 대하여 구체적으로 \n파악하고 있지 못한 상태임\n나. 최종 시스템의 예상 기능 중 일부를 빠르게 구\n현하여 고객의 피드백을 조기에 받고자함\n다. 발굴된 아이디어를 시험하고 검증하여 새로운 \n아이디어를 얻고자함",
+          "question_choice": [
+            "관찰(Observation)",
+            "인터뷰(Interview)",
+            "브레인스토밍(Brainstorming)",
+            "프로토타이핑(Prototyping)"
+          ]
         },
         {
           "question_num": 45,
@@ -573,7 +876,14 @@
             416.928466796875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 스프링 MVC의 구조를 나타낸다. (가)~(라\n에 해당하는 가장 적절한 것은?",
+          "question_choice": [
+            "(가) DispatcherServlet (나) HandlerMapping (다) ModelAndView (라) ViewResolver",
+            "(가) DispatcherServlet (나) ModelAndView (다) HandlerMapping (라) ViewResolver",
+            "(가) ViewResolver (나) HandlerMapping (다) ModelAndView (라) DispatcherServle",
+            "(가) ViewResolver (나) ModelAndView (다) HandlerMapping (라) DispatcherServle"
+          ]
         },
         {
           "question_num": 46,
@@ -585,7 +895,14 @@
             596.612060546875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 설명에 해당하는 객체지향 설계 원칙으로 가장\n적절한 것은?\n추상 클래스와 인터페이스는 구체적인 클래스보다\n덜 변하기 때문에 외부에서 해당 클래스를 참조하\n기 위해서는 가능한 추상 클래스에 의존한다.",
+          "question_choice": [
+            "ISP(Interface Segration Principle)",
+            "DIP(Dependency Inversion Principle)",
+            "OCP(Open/Close Principle)",
+            "LSP(Liskov Substitution Principle)"
+          ]
         },
         {
           "question_num": 47,
@@ -597,7 +914,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 SP(SW 프로세스 품질) 인증에 관한 설명\n으로 가장 적절한 것은?",
+          "question_choice": [
+            "프로세스 평가는 프로세스와 수행 능력 수준 단 계를 기준으로 하여 2차원으로 이루어진다.",
+            "한국지능정보사회진흥원(NIA)이 인증을 담당하는 기관이다.",
+            "3등급을 신청하였으나, 2등급 영역만을 인정받은 경우에는 2등급을 부여한다.",
+            "총 5개 영역, 14개 영역별 평가항목, 60개 세부 평가항목으로 품질인증 기준을 구성한다."
+          ]
         }
       ]
     },
@@ -614,7 +938,14 @@
             415.01055908203125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "IFPUG의 기능점수는 개발 기능점수(DFP), 개선\n기능점수(EFP), 어플리케이션 기능점수(AFP)로 구\n분된다. 다음과 같은 조건이 주어졌을 때, 개선\n기능점수(EFP)를 구하는 식으로 가장 적절한 것\n은?\n·ADD = 개선 프로젝트에 의해 추가된 기능의 미\n조정 기능점수값\n·CHGA = 개선 프로젝트에 의해 수정된 기능의 \n미조정 기능점수값\n·CFP = 데이터 변환에 의해 포함된 기능점수값\n·VAFA = 개선 프로젝트 종료 후의 어플리케이션 \n값 조정인자\n·DEL = 개선 프로젝트에 의해 삭제된 기능의 미\n조정 기능점수값\n·VAFB = 개선 프로젝트 이전의 어플리케이션 값 \n조정인자",
+          "question_choice": [
+            "EFP = [(ADD+CHGA+CFP+DEL)×VAFA]",
+            "EFP = [(ADD+CHGA+CFP-DEL)×VAFA]",
+            "EFP = [(ADD+CHGA+CFP)×VAFA]-(DEL×VAFB)",
+            "EFP = [(ADD+CHGA+CFP)×VAFA]+(DEL×VAFB)"
+          ]
         },
         {
           "question_num": 49,
@@ -626,7 +957,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 Java 프로그램의 출력 결과로 가장 적절한 것은?\npublic class Test\n{\n  public final int a = 10;\n  public void runIt()\n  {\n     int a = 20;\n     Runnable b = new Runnable(){\n        public final int a = 30;\n public void run(){\n           int a = 40;\n           System.out.println(this.a);\n        }\n      };\n      b.run(); \n  }\n  public static void main(String...args)\n  {       \n      Test c = new Test();\n      c.runIt();   \n  }\n}",
+          "question_choice": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
         },
         {
           "question_num": 50,
@@ -638,7 +976,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 애자일 성과지표와 해당 지표의 정의를 나\n타낸다. (가)~(라)에 해당하는 가장 적절한 것은?\n지표\n정의\n(가)\n전체 제품 백로그 대비 현재까지 완료\n한 제품 백로그 개수\n(나)\n시간 경과에 따른 남은 작업량을 그래\n프로 표시한 도표\n(다)\n시간 경과에 따른 완료된 작업량을 그\n래프로 표시한 도표\n(라)\n스프린트 기간에 수행된 제품 백로그\n들의 스토리 포인트 합",
+          "question_choice": [
+            "(가) 백로그 진척률 (나) 번업 차트 (다) 번다운 차트 (라) 속도",
+            "(가) 백로그 진척률 (나) 번다운 차트 (다) 번업 차트 (라) 속도",
+            "(가) 속도 (나) 번다운 차트 (다) 번업 차트 (라) 백로그 진척률",
+            "(가) 속도 (나) 번업 차트 (다) 번다운 차트 (라) 백로그 진척률"
+          ]
         }
       ]
     },
@@ -655,7 +1000,14 @@
             321.64874267578125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 빅데이터 시스템의 NoSQL 데이터 모델\n중 하나를 설명한다. 이 데이터 모델의 명칭으로\n가장 올바른 것은?\n· JSON(JavaScript Object Notation)을 기반으로 \n하여 복잡한 구조의 객체를 데이터로 저장한다.\n· 대표적인 제품으로는 MongoDB가 있다.",
+          "question_choice": [
+            "문서 기반 데이터 모델(document based data model)",
+            "객체 지향 데이터 모델(object-oriented data model)",
+            "구조 기반 데이터 모델(structure based data model)",
+            "자바 기반 데이터 모델(Java based data model)"
+          ]
         },
         {
           "question_num": 52,
@@ -667,7 +1019,14 @@
             625.9961547851562
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에 주어진 관계 대수(relational algebra) 연산의\n결과에서 결과 테이블의 카디널리티(cardinality)가\n가장 큰 것과 가장 작은 것의 합으로 옳은 것은?\nR\nA\nB\n1\n10\n1\n30\n2\n10\n2\n30\n2\n20\n3\n30\nS\nB\nC\n10\na\n20\nb\n30\nc\nR÷(∏B(S)) \nR⋈NS \nR⋈R.B<S.BS \n σB=10(R)",
+          "question_choice": [
+            "6",
+            "7",
+            "8",
+            "11"
+          ]
         },
         {
           "question_num": 53,
@@ -679,7 +1038,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "릴레이션 R과 S의 속성 A를 통한 이원 조인\n(two-way join)의 구현 방법 중에서 릴레이션 R과\nS가 조인 속성 A에 대해 오름차순으로 정렬되어\n있을 경우에만 적용 가능한 방법은?",
+          "question_choice": [
+            "중첩 루프",
+            "인덱스 검사",
+            "해시 검사",
+            "정렬 합병"
+          ]
         },
         {
           "question_num": 54,
@@ -691,7 +1057,14 @@
             378.1070556640625
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "낙관적 로킹(optimistic locking)과 비관적 로킹\n(pessimistic locking)에 대한 설명 중 옳지 않은 것은?",
+          "question_choice": [
+            "일반적으로 인터넷은 비정형적이고 체계화되지 않은 곳이므로 사용자들이 트랜잭션 수행 중에 작업을 중단하는 등의 예상치 못한 행동을 하여 비관적 로킹을 사용하는 것이 더 효율적이다.",
+            "만약 트랜잭션이 복잡하거나 클라이언트의 속도 가 느린 경우 낙관적 로킹을 사용하면 극적으로 생산성을 향상시킬 수 있다.",
+            "낙관적 로킹의 장점은 작업이 종료된 후에만 로 크를 획득하기 때문에 비관적 로킹보다 로크를 가지고 있는 시간이 훨씬 짧다는 것이다.",
+            "응용의 특성상 특정한 행에 많은 작업을 해야 하는 트랜잭션의 경우에는 비관적 로킹을 사용 하는 것이 더 효율적이다."
+          ]
         },
         {
           "question_num": 55,
@@ -703,7 +1076,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "세 개의 릴레이션 스키마가 고객(고객번호, 이름\n주소), 계좌(계좌번호, 지점명, 잔고), 예금자(고객\n번호, 계좌번호, 계좌생성날짜)이고 각각의 기본\n키는 밑줄 친 속성이라고 하자. 계좌 릴레이션의\n투플이 삭제되면 해당 예금자 릴레이션의 투플도\n같이 삭제되도록 하는 방법으로 옳은 것은?",
+          "question_choice": [
+            "예금자 릴레이션을 생성할 때 FOREIGN KEY(계좌 번호) REFERENCES 계좌(계좌번호) ON DELETE CASCADE 명령어를 추가한다.",
+            "예금자 릴레이션을 생성할 때 FOREIGN KEY(계좌 번호) REFERENCES 계좌(계좌번호) IN DELETE CASCADE 명령어를 추가한다.",
+            "계좌 릴레이션을 생성할 때 FOREIGN KEY(계좌번 호) REFERENCES 예금자(계좌번호) ON DELETE CASCADE 명령어를 추가한다.",
+            "계좌 릴레이션을 생성할 때 FOREIGN KEY(계좌번 호) REFERENCES 예금자(계좌번호) IN DELETE CASCADE 명령어를 추가한다."
+          ]
         }
       ]
     },
@@ -720,7 +1100,14 @@
             348.6192932128906
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 E-R 다이어그램을 관계 모델로 표현한 결과\n로 가장 적절한 것은? (단, 밑줄은 기본 키, 이탤\n릭체는 외래 키를 의미한다.)",
+          "question_choice": [
+            "STUDENT(SNO, Name, CNO, Grade), COURSE(CNO CName)",
+            "STUDENT(SNO, Name), COURSE(CNO, CName SNO, Grade)",
+            "STUDENT(SNO, Name), COURSE(CNO, CName) ENROL(Grade)",
+            "STUDENT(SNO, Name), COURSE(CNO, CName) ENROL(SNO, CNO, Grade)"
+          ]
         },
         {
           "question_num": 57,
@@ -732,7 +1119,14 @@
             567.8596801757812
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 릴레이션 R(A, B, C, D)에 대하여 <함수적\n종속성>과 <분해>를 각각 보인 것이다. 분해한 후 릴\n레이션 R1, R2의 정규형이 모두 BCNF 이상인 것은\n어느 것인가?",
+          "question_choice": [
+            "<함수적 종속성> (A, B)→D, B→C, C→D <분해> R1(A, B), R2(B, C, D)",
+            "<함수적 종속성> A→B, B→C, C→D <분해> R1(A, B, C), R2(C, D)",
+            "<함수적 종속성> (A, B)→C, C→D, C→A <분해> R1(A, B, C), R2(C, D)",
+            "<함수적 종속성> (A, B)→CD, C→A <분해> R1(A, C), R2(B, C, D)"
+          ]
         },
         {
           "question_num": 58,
@@ -744,7 +1138,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음과 같은 다치 종속과 함수 종속이 존재한다고\n할 때 제4정규형(4NF)에 해당하는 테이블로 옳은\n것은?\n직원이름↠학위명, 직원이름↠형제이름, \n직원이름↠담당상품번호,  \n파트키트명↠파트명, 파트키트명→가격",
+          "question_choice": [
+            "직원_학위(직원이름, 학위명)",
+            "직원_학위_형제(직원이름, 학위명, 형제이름)",
+            "파트키트_파트_가격(파트키트명, 파트명, 가격)",
+            "직원_상품_학위(직원이름, 담당상품번호, 학위명)"
+          ]
         },
         {
           "question_num": 59,
@@ -756,7 +1157,14 @@
             409.15313720703125
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "인덱스에 저장되어 있는 ROWID는 오브젝트 번호\n데이터 파일 번호, 블록 번호와 같은 물리적 요소\n들로 구성되어 있다. <보기>는 인덱스 ROWID를\n이용해 테이블 블록을 읽는 전체 메커니즘 중 일\n부 과정을 보여준다. 이를 순서대로 올바르게 나\n열한 것은?\n<보기>\nㄱ. LRU 리스트를 스캔하면서 빈 버퍼를 찾는다.\nㄴ. 디스크에서 블록을 읽어 버퍼 캐시에 적재한다.\nㄷ. 해시 버켓에 연결된 해시 체인을 스캔하면서 \n블록 헤더를 찾는다.\nㄹ. 인덱스에서 하나의 ROWID를 읽고 디스크상의 \n블록위치정보를 해시 함수에 적용해 해시값을 \n확인한다.\nㅁ. Dirty 버퍼를 디스크에 기록해 빈 버퍼를 확보\n한다.",
+          "question_choice": [
+            "ㅁ – ㄱ - ㄴ – ㄹ - ㄷ",
+            "ㄹ - ㄷ - ㄱ - ㅁ - ㄴ",
+            "ㄷ - ㄹ - ㄱ – ㄴ - ㅁ",
+            "ㄹ - ㄷ - ㅁ – ㄱ – ㄴ"
+          ]
         },
         {
           "question_num": 60,
@@ -768,7 +1176,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "아래와 같은 STUDENT 테이블과 ENROLL 테이블에\n대한 <SQL 질의문>이 수행될 때, 생성되는 결과 테\n이블의 카디널리티(cardinality)로 옳은 것은?\nSTUDENT \nSNO\nSNAME\nAGE\nS01\nKim\n20\nS02\nPark\n22\nS03\nLee\n21\nS04\nHong\n23\nS05\nHwang\n20\nENROLL\nENO\nSNO\nGRADE\nE01\nS01\nB\nE03\nS05\nA\nE04\nS03\nC\nE05\nS03\nB\nE06\nS06\nA\n<SQL 질의문>\nSELECT STUDENT.SNO, ENROLL.ENO, ENROLL.GRADE\nFROM STUDENT LEFT OUTER JOIN ENROLL\nON STUDENT.SNO = ENROLL.SNO;",
+          "question_choice": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
         }
       ]
     },
@@ -785,7 +1200,14 @@
             510.32257080078125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음의 세 테이블로 구성된 회사 데이터베이스에\n서 <보기>의 질의문이 실행되었을 때 질의 결과\n의 내용을 설명한 것으로 옳은 것은? (단, 테이블\n의 기본 키는 밑줄로 표시되어 있다.)\n \n<보기>\nSELECT 이름\nFROM 직원\nWHERE EXISTS (SELECT *\n                FROM 부양가족\n                WHERE 직원번호 = 부양직원번호)\n        AND \n        EXISTS (SELECT *\n                FROM 부서\n                WHERE 직원번호 = 관리자_직원번호);",
+          "question_choice": [
+            "적어도 한 명의 부양가족을 가진 직원의 이름을 검색하라.",
+            "적어도 한 명의 부양가족을 가진 관리자의 이름 을 검색하라.",
+            "부양가족이 있거나 관리자 역할을 하는 직원의 이름을 검색하라.",
+            "관리자인 직원의 부양가족의 이름을 검색하라. 직원(직원번호, 이름, 생일, 주소, 부서번호) 부서(부서번호, 부서명, 관리자_직원번호) 부양가족(부양직원번호, 부양가족이름, 성별, 관계)"
+          ]
         },
         {
           "question_num": 62,
@@ -797,7 +1219,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "검색 엔진의 평가 척도에 대한 설명으로 적절하지\n않은 것은?",
+          "question_choice": [
+            "리콜(recall)은 데이터베이스에 있는 전체 관련 문 서 중에서 실제 검색된 관련 문서의 비율이다.",
+            "주어진 질의에 대한 관련 문서가 10개라고 할 때, 5개의 문서를 검색했는데 관련된 문서가 3 개라면 정확도(precision)는 60%이고 리콜(recall) 은 30%이다.",
+            "랭킹(ranking)이 주어된 검색 결과에서 평균 정확 도(average precision)는 검색 결과 중 관련이 있 는 문서들의 정확도 값의 평균을 구한 것이다.",
+            "F-스코어(F-score)는 정확도(precision)와 리콜 (recall)의 조화 평균으로 두 값 중 더 큰 쪽으 로 가까워지는 경향이 있다."
+          ]
         },
         {
           "question_num": 63,
@@ -809,7 +1238,9 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "63. 다음의 데이터베이스에서 (가)는 VIEW를 생성한\n것이고 (나)는 생성된 VIEW에 대한 검색 명령어\n이다. 이 검색 명령어가 실제 실행되기 위해서\n질의 변경(query modification)되는 SQL 명령어로\n옳은 것은? (단, Students, Enrolled 릴레이션 각\n각의 기본 키는 밑줄 친 속성이다.)\nStudents\nsid\nname\nage\n53666\nJones\n18\n53688\nSmith\n18\n53650\nSmith\n19\nEnrolled\ncid\nsid\nname\ngrade\n101\n53666\nDB\nB\n101\n53688\nDB\nC\n102\n53666\nOS\nA\n(가) CREATE VIEW BStudents (name, sid, cid)  \nAS SELECT S.name, S.sid, E.cid\nFROM  Students S, Enrolled E\nWHERE S.sid=E.sid AND E.grade=‘B’;\n(나) SELECT name\nFROM BStudents\nWHERE cid=‘101’;\n①SELECT\nS.name\nFROM\nStudents S, Enrolled E\nWHERE\nE.grade=‘B’ AND E.cid=‘101’;\n②SELECT\nE.name\nFROM\nStudents S, Enrolled E\nWHERE\nE.grade=‘B’ AND E.cid=‘101’;\n③SELECT\nS.name\nFROM\nStudents S, Enrolled E\nWHERE\nS.sid=E.sid AND E.grade=‘B’\nAND E.cid=‘101’;\n④SELECT\nE.name\nFROM\nStudents S, Enrolled E\nWHERE\nS.sid=E.sid AND E.grade=‘B’\nAND E.cid=‘101’;",
+          "question_choice": []
         }
       ]
     },
@@ -826,7 +1257,14 @@
             343.58477783203125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 자동차 소유주(OWNER)와 차량(VEHICLE)의\n관계를 EER 모델로 표현한 것이다. 이 EER 모델에\n서 사람(PERSON), 은행(BANK), 회사(COMPANY) 개\n체가 자동차 소유주가 될 수 있음을 표현하기 위해\n사용된 모델링 개념으로 옳은 것은?",
+          "question_choice": [
+            "세분화(specialization)",
+            "일반화(generalization)",
+            "범주(category)",
+            "집단화(aggregation)"
+          ]
         },
         {
           "question_num": 65,
@@ -838,7 +1276,14 @@
             578.6478881835938
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "<보기>는 트리거(trigger)와 저장 프로시저(stored\nprocedure)의 특성을 설명한 것이다. 저장 프로시\n저에 해당하는 특성만을 모아놓은 것으로 가장\n적절한 것은?\n<보기>\nㄱ. 입력 인자를 받을 수 있고 결과를 돌려줄 수 있다.\nㄴ. 테이블이나 뷰에 할당된다.\nㄷ. INSERT, DELETE, UPDATE 명령 실행시 DBMS에 \n의하여 수행된다.\nㄹ. 데이터베이스에 저장되어 필요시 컴파일되며 데이\n터베이스에 부속된다.",
+          "question_choice": [
+            "ㄱ, ㄴ",
+            "ㄴ, ㄷ",
+            "ㄱ, ㄹ",
+            "ㄷ, ㄹ"
+          ]
         },
         {
           "question_num": 66,
@@ -850,7 +1295,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "정보검색(information retrieval)을 위한 텍스트 전\n처리 과정 중 스테밍(stemming) 단계의 결과로 옳\n은 것은?",
+          "question_choice": [
+            "중요한 개념들의 리스트와 각 개념을 기술하는 주요 단어들로 구성된다.",
+            "매우 자주 사용되는 단어들이나 문장 의미에는 거의 기여하지 못한다.",
+            "원래 단어의 접두사나 접미사를 잘라낸 후에 얻 는 단어이다.",
+            "문서 컬렉션에서 80% 이상 등장하는 단어들이다"
+          ]
         },
         {
           "question_num": 67,
@@ -862,7 +1314,14 @@
             344.7834777832031
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "질의 최적화에서는 주어진 식을 다른 식으로 변\n경하기 위해 동등 규칙(equivalence rule, ≡)을\n사용한다. 관계 대수(relational algebra)에 대한\n다음 규칙 중에서 올바른 동등 규칙을 모두 나열\n한 것은?\n가. \n나. \n다. \n라.",
+          "question_choice": [
+            "가, 다",
+            "가, 나, 다",
+            "나, 다, 라",
+            "가, 나, 다, 라"
+          ]
         },
         {
           "question_num": 68,
@@ -874,7 +1333,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에서 ⓐ는 EMPLOYEE의 스키마와 속성을 설\n명하고, 질의 ⓑ는 “5번 부서에 근무하는 모든\n사원보다 급여가 많은 사원을 검색하라”를, 질의\nⓒ는 “5번 부서에 근무하는 어느 한 사원보다\n급여가 많은 사원을 검색하라”를 각각 나타낸다\n다음 질의에서 ㉮와 ㉯에 들어갈 내용으로 가장\n올바른 것은? \nⓐ\nEMPLOYEE\nEID\nNAME\nSALARY\nDNO\n사원 번호\n이름\n급여\n부서 번호\nⓑ\nSELECT\nNAME\nFROM\nEMPLOYEE\nWHERE\nSALARY ㉮ ( SELECT SALARY\nFROM EMPLYEE\nWHERE DNO=5);\nⓒ\nSELECT\nNAME\nFROM\nEMPLOYEE\nWHERE\nSALARY ㉯ ( SELECT SALARY\nFROM EMPLYEE\nWHERE DNO=5);\n㉮\n㉯",
+          "question_choice": [
+            "> EVERY > ONE",
+            "> ALL > ONE",
+            "> EVERY > ANY",
+            "> ALL > ANY"
+          ]
         }
       ]
     },
@@ -891,7 +1357,14 @@
             394.64898681640625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "부서(DEPARTMENT) 개체와 직원(EMPLOYEE) 개체\n사이에 1:N 소속 관계가 존재하고, 부서는 이 관계\n에 부분 참여하고, 직원은 이 관계에 전체 참여한\n다고 하자. 즉, 부서에는 최소 0명, 최대 N명의 직\n원이 소속되고, 직원은 최소 1개, 최대 1개의 부서\n에 소속이 된다. 이러한 상황을 반영하여 부서(부서\n명, 예산코드), 직원(직원번호, 이름, 이메일, 입사\n일, 부서명) 테이블을 생성하려 한다고 하자. 최소\n카디널리티(cardinality)를 준수하도록 하기 위한 조\n치로 가장 적절한 것은? (여기서, 밑줄은 기본 키\n이탤릭체는 외래 키를 의미한다.)",
+          "question_choice": [
+            "전형적인 1:N 관계로 특별히 문제될 것이 없는 상황이다.",
+            "직원 테이블의 부서명 속성을 ‘NOT NULL’인 외 래 키로 정의한다.",
+            "부서 테이블에 대한 투플 입력시 직원 테이블에 투플을 삽입하는 트리거(trigger)를 작성한다.",
+            "복잡한 트리거의 조합을 필요로 하고 트리거는 서로에게 로크를 걸 수 있다."
+          ]
         },
         {
           "question_num": 70,
@@ -903,7 +1376,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 릴레이션 R1(id, age), R2(id, age)와 <SQL\n질의문>이다. <SQL 질의문>의 실행결과로 가장 적\n절한 것은?\nR1\nid\nage\n1\n10\n2\n20\n3\n30\n4\nNULL\n \nR2\nid\nage\n3\n30\n4\n40\n5\nNULL",
+          "question_choice": [
+            "id age 1 10 2 20 4 NULL",
+            "id age 1 10 2 20",
+            "id age",
+            "id age 1 10 2 20 3 30 4 NULL <SQL 질의문> SELECT * FROM R1 WHERE R1.age NOT IN (SELECT age FROM R2);"
+          ]
         },
         {
           "question_num": 71,
@@ -915,7 +1395,14 @@
             461.6557312011719
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 확장성 해시(extendible hash) 파일에서 전역\n깊이(global depth)를 (가)로 나타내고 지역 깊이\n(local depth)를 (나)로 나타낸다고 할 때, 모조키\n가 000010인 레코드가 삽입된 후, 변경된 확장성\n해시 파일에 대해 전역 깊이(가)와 모든 버킷의\n지역 깊이(나)의 합을 각각 옳게 나열한 것은\n(단, 한 버킷에는 최대 4개의 레코드가 포함된다.)",
+          "question_choice": [
+            "전역 깊이 3, 지역 깊이의 합 11",
+            "전역 깊이 4, 지역 깊이의 합 11",
+            "전역 깊이 3, 지역 깊이의 합 14",
+            "전역 깊이 4, 지역 깊이의 합 14"
+          ]
         },
         {
           "question_num": 72,
@@ -927,7 +1414,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음은 Apache Spark에서 사용하는 데이터 구조에\n대한 설명이다. 다음 설명에서 ㉮에 들어갈 용어로\n가장 올바른 것은?\n관계형 데이터베이스가 데이터 표현을 위한 추상화\n로 릴레이션을 사용하는 것처럼 Apache Spark은\n㉮라 불리는 데이터 표현 방식을 사용한다. Spark\n에서 연산자는 하나 이상의 ㉮를 입력으로 받아 출\n력으로 ㉮를 반환하는 방식으로 계산을 수행한다.",
+          "question_choice": [
+            "HDFS(Hadoop Distributed File System)",
+            "HDFS(Hadoop Duplicated File System)",
+            "RDD(Resilient Distributed Dataset)",
+            "RDD(Reproducible Duplicated Dataset)"
+          ]
         }
       ]
     },
@@ -944,7 +1438,14 @@
             233.9046173095703
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 데이터가 순서대로 삽입되어 만들어진 차수\n가 3인 B-트리에 대한 설명으로 옳지 않은 것은?\n 17, 20, 5, 15, 7, 18, 16, 19",
+          "question_choice": [
+            "루트 노드의 키 값은 16이다.",
+            "리프 노드의 개수는 4개이다.",
+            "전체 노드의 개수는 7개이다.",
+            "루트 노드의 레벨이 1이라고 할 때, 트리의 높 이는 3이다."
+          ]
         },
         {
           "question_num": 74,
@@ -956,7 +1457,14 @@
             437.56207275390625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "WAL(Write-Ahead Logging) 기법은 두 가지 로그\n엔트리를 사용한다. 먼저 항목의 AFIM(After\nImage)을 기록하는데 이는 트랜잭션의 (가)에 대\n비하기 위함이며, 항목의 BFIM(Before Image)을\n기록하는데 이는 트랜잭션의 (나)에 대비하기 위\n함이다. 이때, (가)와 (나)에 들어갈 용어로 가장\n올바른 것은?",
+          "question_choice": [
+            "(가) VOLATILE (나) PERSISTENT",
+            "(가) PERSISTENT (나) VOLATILE",
+            "(가) REDO (나) UNDO",
+            "(가) UNDO (나) REDO"
+          ]
         },
         {
           "question_num": 75,
@@ -968,7 +1476,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 조건에서 k-Means 군집화를 수행한다고 할\n때, 유사도(점과 점 사이의 거리) 계산 횟수로 가\n장 가까운 것은?\n· 군집 대상인 점의 개수 = 100개\n· 군집의 개수 k = 5\n· k-Means 알고리즘의 반복(loop) 횟수 = 5\n· 주의: 각 군집의 중심(centroid)은 항시 군집 대\n상인 100개의 점 중에서 선택한다.",
+          "question_choice": [
+            "125",
+            "1025",
+            "1495",
+            "2375"
+          ]
         }
       ]
     },
@@ -985,7 +1500,14 @@
             268.3070373535156
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "「디지털서비스 제공역량(디지털서비스 심사∙선정\n등에 관한 고시(과학기술정보통신부고시 제2023-43\n호))」에서 제공하는 서비스제공자의 가용률 보장\n정책으로 가장 적절한 것은?",
+          "question_choice": [
+            "PaaS : 99.9% 이상",
+            "IaaS : 99.5% 이상",
+            "SaaS : 99.9% 이상",
+            "그 외 서비스 : 99.9% 이상"
+          ]
         },
         {
           "question_num": 77,
@@ -997,7 +1519,14 @@
             378.3070373535156
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "디지털논리회로 중에서 다수의 입력 단자 중에서\n조건에 맞는 하나를 선택하여 단일 출력 단자로\n연결하는 조합회로로 가장 적절한 것은?",
+          "question_choice": [
+            "인코더",
+            "디코더",
+            "멀티플렉서",
+            "디멀티플렉서"
+          ]
         },
         {
           "question_num": 78,
@@ -1009,7 +1538,14 @@
             471.9644775390625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 리눅스의 파일 종류로 가장 적절하지 않은\n것은?",
+          "question_choice": [
+            "FIFO 파일",
+            "가상 파일",
+            "일반 파일",
+            "디렉토리 파일"
+          ]
         },
         {
           "question_num": 79,
@@ -1021,7 +1557,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 그림은 전가산기(full adder) 4개를 사용한 4비\n트 가산기를 나타낸 것이다. 2의 보수로 표현된 수\n들 간의 덧셈에서 상태 비트 제어 회로의 오버플로\n우 플래그(V) 논리식으로 가장 적절한 것은?",
+          "question_choice": [
+            "",
+            "⋅",
+            "  ",
+            "⊕"
+          ]
         },
         {
           "question_num": 80,
@@ -1033,7 +1576,14 @@
             222.39720153808594
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "시스템 업타임은 시스템이 액세스 가능한 상태인\n시간이다. 액세스 가능하지 않은 시간은 시스템\n다운타임이다. 어떤 서비스가 “5개의 9 가용성”\n이라고 하면 1년에 99.999% 시간 동안 사용 가능\n함을 의미한다. “5개의 9 가용성”일 때 1년당\n다운 타임으로 가장 적절한 것은?",
+          "question_choice": [
+            "31.5초",
+            "5.25분",
+            "52.5분",
+            "8시간 45분"
+          ]
         },
         {
           "question_num": 81,
@@ -1045,7 +1595,14 @@
             363.3631591796875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "SSD의 구성요소인 플래시 메모리는 블록 단위의\n삭제만 가능하기 때문에 쓰레기 수집(garbage\ncollection) 과정이 요구된다. 이 과정의 효율성을\n증대시키기 위해 운영체제 차원에서 지원하는 기\n능으로 가장 적절한 것은?",
+          "question_choice": [
+            "TRIM",
+            "미러링",
+            "마모 평준화",
+            "캐시 교체 정책"
+          ]
         },
         {
           "question_num": 82,
@@ -1057,7 +1614,14 @@
             535.6149291992188
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "큰 데이터 블록을 전송하는 경우에는 CPU가 그\n동작들을 수행하는데 많은 시간을 소모해야 하\n고, 시스템 버스도 대부분의 시간 동안 그러한\nI/O 동작들을 위해 사용될 수 밖에 없다. 이 문제\n점을 해결하기 위해, CPU의 개입 없이 I/O 장치\n와 기억장치 간에 데이터 전송을 수행하도록 지\n원하는 메커니즘으로 가장 적절한 것은?",
+          "question_choice": [
+            "DMA",
+            "Daisy-chain",
+            "Software polling",
+            "Memory-mapped I/O"
+          ]
         },
         {
           "question_num": 83,
@@ -1069,7 +1633,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "RAID(Redundant Array of Independant Disk)의 특성에\n대한 설명으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "RAID-0은 성능을 추구하고 RAID-1은 안정성을 추구한 방식이다.",
+            "RAID-2와 RAID-3은 성능향상을 위해 실제 데이 터를 저장하는 디스크를 RAID-0으로 구성한 방 식이다.",
+            "RAID-3은 데이터 복구를 위해 해밍코드를 사용하고 RAID-4는 패리티 코드를 이용한다.",
+            "RAID-5와 RAID-6은 데이터 복구를 위해 다른 디 스크에 패리티 정보를 함께 저장해 안정성을 높 인 방식이다."
+          ]
         }
       ]
     },
@@ -1086,7 +1657,14 @@
             269.3858642578125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 광역 통신망의 데이터 송수신(교환) 방법\n중에서 회선 교환(Circuit Switching)에 대한 설명\n으로 옳은 것은?",
+          "question_choice": [
+            "축적 전송 방식(Store-and-Forward)이라고도 한다.",
+            "데이터를 전송하지 않는 유휴 시간에도 회선을 점유하므로 비효율적이다.",
+            "전송할 메시지를 패킷 단위로 나누어 우선순위 가 높은 패킷을 먼저 전송할 수 있다.",
+            "실시간 통신이나 대화형 통신보다는 지연이 상 대적으로 중요하지 않은 이메일·파일 전송 등 에 적합하다."
+          ]
         },
         {
           "question_num": 85,
@@ -1098,7 +1676,14 @@
             388.775390625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 데이터 통신에서 사용하는 에러검출 방식\n으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "블록합검사(Block Sum Check)",
+            "패리티검사(Parity Check)",
+            "순환중복검사(Cyclic Redundancy Check)",
+            "허프만코딩검사(Huffman Coding Check)"
+          ]
         },
         {
           "question_num": 86,
@@ -1110,7 +1695,14 @@
             593.5116577148438
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에서 설명하는 라우팅 기법으로 가장 적절한 것은?",
+          "question_choice": [
+            "계층라우팅(Hierarchical Routing)",
+            "분산라우팅(Distributed Routing)",
+            "소스라우팅(Source Routing)",
+            "중앙라우팅(Centralized Routing) Ÿ 패킷을 전송하는 호스트가 목적지 호스트까지 전달경로를 스스로 결정하는 방식 Ÿ 이 방식을 지원하려면 송신 호스트의 라우팅 테이블에서 패킷을 수신 호스트까지 전달하기 위한 정보경로를 관리하여야 하며, 경로 정보를 패킷에 기록해야 함"
+          ]
         },
         {
           "question_num": 87,
@@ -1122,7 +1714,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 보기의 IP주소를 가진 노드가 속하는 LAN에서\n디폴트 게이트웨이 IP주소로 가장 적절한 것은? (단\n디폴트 게이트웨이의 IP주소에서 호스트 아이디 부\n분은 1로 가정한다.)",
+          "question_choice": [
+            "182.75.187.1",
+            "182.75.187.5",
+            "182.75.187.65",
+            "182.75.187.255 182.75.187.69/27"
+          ]
         },
         {
           "question_num": 88,
@@ -1134,7 +1733,14 @@
             269.3858642578125
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 IP에 대한 설명으로 가장 적절한 것은?",
+          "question_choice": [
+            "IPv4 헤더는 옵션이 없을 경우 20바이트이다.",
+            "IPv6 헤더의 크기는 40바이트이며 IPv4와 마찬 가지로 옵션을 가진다.",
+            "IPv6 헤더에도 IPv4에서 패킷 단편화에 필요했던 ID Number, Don’t Fragment, More Fragmen 필드가 존재한다.",
+            "IPv4 패킷 단편화와 관련된 3가지 필드 중 분할 된 패킷이 여러 개 있는 경우, 같은 원본 패킷 에 속한 것인지를 확인할 수 있는 것은 More Fragment이다."
+          ]
         },
         {
           "question_num": 89,
@@ -1146,7 +1752,14 @@
             473.0433044433594
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "NAT(Network Address Translation)와 사설 IP주소에\n대한 설명으로 옳지 않은 것은?",
+          "question_choice": [
+            "13.234.23.87은 사설 IP주소로 활용할 수 있다.",
+            "사설 IP주소와 공인 IP주소를 1대1로 고정적으 로 매핑하는 것을 Static NAT라고 한다.",
+            "내부 네트워크(LAN)에서 사용하는 사설 IP주소 와 외부 인터넷에서 사용하는 공인 IP주소를 변 환하는 것을 의미한다.",
+            "IP주소뿐만 아니라 포트 번호를 사용하는 NAPT (Network Address Port Translation) 또는 PAT(Por Address Translation) 방법이 있다."
+          ]
         },
         {
           "question_num": 90,
@@ -1158,7 +1771,14 @@
             621.9205932617188
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에 해당하는 장비로 가장 적합한 것은?",
+          "question_choice": [
+            "모뎀(MODEM)",
+            "리피터(Repeater)",
+            "L2 스위치(L2 Switch)",
+            "USB 허브(USB Hub) 하나의 LAN 내부에 속하는 여러 단말노드를 연결 하기 위한 장비로서, 이더넷(Ethernet) 방식의 네 트워크에서는 충돌 도메인(Collision Domain)을 나 누는 역할을 수행할 수 있다."
+          ]
         },
         {
           "question_num": 91,
@@ -1170,7 +1790,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "FSK(Frequency Shift Keying)에 대한 설명으로 가\n장 적절한 것은?",
+          "question_choice": [
+            "주파수와 위상이 일정하게 유지된다.",
+            "최대진폭과 위상이 일정하게 유지된다.",
+            "최대진폭과 주파수가 일정하게 유지된다.",
+            "ASK(Amplitude Shift Keying)에 비해 잡음과 간섭 에 매우 민감하다."
+          ]
         }
       ]
     },
@@ -1187,7 +1814,14 @@
             214.605712890625
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 RIP(Routing Information Protocol)에 대한\n설명으로 옳지 않은 것은?",
+          "question_choice": [
+            "정적(Static) 라우팅 프로토콜이다.",
+            "일반적으로 도착 가능한 최대 홉 카운트는 15이다.",
+            "거리 벡터(Distance Vector) 알고리즘을 기반으 로 한다.",
+            "RIP를 사용하는 라우터에서는 일반적으로 일정 주기로 라우팅 테이블을 업데이트한다."
+          ]
         },
         {
           "question_num": 93,
@@ -1199,7 +1833,14 @@
             373.1924133300781
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 GPU 컴퓨팅에 대한 설명으로 가장 적합\n하지 않은 것은?",
+          "question_choice": [
+            "GPU는 자체 지역메모리를 사용한다.",
+            "GPU는 고도의 하드웨어 멀티스레딩(multi-threading) 을 사용한다.",
+            "GPU를 사용하기 위해 CUDA와 같은 플랫폼을 사용할 수 있다.",
+            "GPU는 메모리 지연시간을 극복하기 위해 중앙처 리장치를 사용한다."
+          ]
         },
         {
           "question_num": 94,
@@ -1211,7 +1852,14 @@
             529.8612060546875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 트랜스포머 모델에 대한 설명으로 가장\n적절한 것은?",
+          "question_choice": [
+            "가, 나",
+            "나, 다",
+            "가, 라",
+            "다, 라 가. 멀티 헤드 어텐션 기법을 사용할 수 있다. 나. 대표적인 트랜스포머 모델에는 RNN이 있다. 다. 인코더는 생성문장을 출력한다. 라. 인코더와 디코더로 구성된 모델이다."
+          ]
         },
         {
           "question_num": 95,
@@ -1223,7 +1871,14 @@
             658.6005249023438
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "BERT(Bidirectional Encoder Representation from\nTransformer)에 대한 설명으로 가장 적절하지 않은\n것은?",
+          "question_choice": [
+            "위치 임베딩을 사용한다.",
+            "인코더와 디코더를 갖는다.",
+            "트랜스포머 모델을 기반으로 한다.",
+            "자연어 처리를 위한 딥러닝 아키텍처 중 하나이다"
+          ]
         },
         {
           "question_num": 96,
@@ -1235,7 +1890,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 신경망 기반의 기계학습알고리즘으로 가장\n적절하지 않은 것은?",
+          "question_choice": [
+            "DBN(Deep Belief Network)",
+            "SVM(Support Vector Machine)",
+            "VAE(Variational Auto Encoder)",
+            "GAN(Generative Adversarial Network)"
+          ]
         },
         {
           "question_num": 97,
@@ -1247,7 +1909,14 @@
             191.11138916015625
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 UDP 기반의 응용계층 프로토콜에 가장\n적합한 것은?",
+          "question_choice": [
+            "telnet",
+            "IMAP(Internet Message Access Protocol)",
+            "SMTP(Simple Mail Transfer Protocol)",
+            "SNMP(Simple Network Management Protocol)"
+          ]
         },
         {
           "question_num": 98,
@@ -1259,7 +1928,14 @@
             301.11138916015625
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "TCP 프로토콜 애플리케이션과 잘 알려진 포트\n(Well-known Port)번호를 연결한 것으로 가장 적\n절하지 않은 것은?",
+          "question_choice": [
+            "DNS-53",
+            "FTP-21",
+            "POP3-25",
+            "HTTPS-433"
+          ]
         },
         {
           "question_num": 99,
@@ -1271,7 +1947,14 @@
             523.0286865234375
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에서 송신자가 ARP Request를 발송할 때, A~D\n중 해당 패킷을 수신하는 노드로 가장 적절한 것은\n(단, 스위치는 L2 스위치로 가정한다.)",
+          "question_choice": [
+            "수신 노드가 없음",
+            "A, B",
+            "C, D",
+            "A, B, C, D"
+          ]
         },
         {
           "question_num": 100,
@@ -1283,7 +1966,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음에 제시된 TCP 기반의 연결 설정 과정에서\n빈칸에 들어갈 내용의 합(ⓐ+ⓑ+ⓒ)으로 옳은 것\n은? (단, 숫자는 모두 10진수이다.)",
+          "question_choice": [
+            "52",
+            "53",
+            "54",
+            "55"
+          ]
         }
       ]
     },
@@ -1300,7 +1990,14 @@
             237.02122497558594
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 리눅스 명령어 혹은 서비스 중 외부에서 시\n스템에 등록된 사용자의 정보를 확인하기 위해\n직접적으로 활용되며 권한탈취를 위한 사전조사\n용도로 사용되는 것으로 가장 적절한 것은?",
+          "question_choice": [
+            "finger",
+            "echo",
+            "NFS",
+            "talk"
+          ]
         },
         {
           "question_num": 102,
@@ -1312,7 +2009,14 @@
             518.953125
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "제로 트러스트(Zero Trust) 개념에 대한 설명으로\n가장 적절하지 않은 것은?",
+          "question_choice": [
+            "정보시스템 및 서비스에 대한 접속요구가 있을 때 네트워크가 이미 침해된 것으로 간주하고 불 확실성을 최소화하도록 설계된 개념이다.",
+            "악의적인 상대에 의해 지속적으로 노출되고 잠 재적으로 침해될 수 있는 시스템의 구성요소 서비스 및 사용자를 다루는 일련의 원칙으로 정 의할 수 있다.",
+            "보안위협이 언제 어디서든 발생 가능하다는 전 제하에 요건(신뢰도 평가, 인증, 권한부여 등)을 갖추지 않은 사용자·기기는 데이터, 컴퓨팅 서 비스 등의 접근을 제한한다.",
+            "내부 데이터 보호보다는 기관·기업의 경계 기 반 보안체계 구축을 더욱 강화하여야 한다는 개 념이다."
+          ]
         },
         {
           "question_num": 103,
@@ -1324,7 +2028,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "보안 솔루션에 대한 설명으로 가장 적절한 것은?",
+          "question_choice": [
+            "DNS : 메일 서버 앞단에 위치하여 프록시 메일 서버로 동작하며 SMTP 프로토콜을 이용한 DoS 공격이나 폭탄 메일, 스팸 메일을 차단한다.",
+            "DLP : 문서 보안에 초점을 둔 기술로 문서의 열 람, 편집, 인쇄에 접근권한을 설정하여 통제하는 방식을 이용한다.",
+            "DRM : 사용자 수준에서 조직의 기밀정보가 유 출되는 것을 막는 솔루션으로 사용자의 다양한 데이터 전송 인터페이스를 제어하는 방식을 이 용한다.",
+            "NAC : 네트워크 접근제어 솔루션으로 엔드 포 인트 단말기가 회사의 내부 네트워크에 접속을 시도할 때 이를 제어하고 통제한다."
+          ]
         },
         {
           "question_num": 104,
@@ -1336,7 +2047,14 @@
             300.67169189453125
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "웹서버 보안을 위해 위험한 형식의 파일 업로드를\n막기 위한 보안 대책으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "파일들이 서버에서 실행될 수 없도록 실행 속성 을 제거한다.",
+            "화이트 리스트 방식으로 허용된 형식의 파일만 업로드 되도록 한다.",
+            "파일들이 저장되는 경로가 웹 서버의 문서 디렉 터리 내부에 고정되도록 설정한다.",
+            "서버에 파일을 저장할 때 파일 이름과 경로를 사용자가 유추할 수 없는 임의의 문자열로 변 경하여 저장한다."
+          ]
         },
         {
           "question_num": 105,
@@ -1348,7 +2066,14 @@
             593.7514038085938
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 C언어 코드가 갖는 문제점을 지칭하는 취약\n점으로 가장 적절한 것은?\n#include <stdio.h>\nint main() {\n    char name[100];\n    printf(\"Enter your name: \");\n    scanf(\"%99s\", name);\n    printf(name);\n    ...\n    return 0;\n}",
+          "question_choice": [
+            "스택 오버플로우 취약점",
+            "경쟁 조건 취약점",
+            "포맷 스트링 취약점",
+            "명령어 주입 취약점"
+          ]
         },
         {
           "question_num": 106,
@@ -1360,7 +2085,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "블록 암호 시스템의 운용 모드 중 GCM(Galois\nCounter Mode)에 대한 설명으로 가장 적절하지\n않은 것은?",
+          "question_choice": [
+            "메시지 암호화를 위해 CTR 모드를 이용한다.",
+            "메시지 인증코드(MAC) 값을 생성하기 위해서는 해시 함수를 사용한다.",
+            "각 블록을 병렬처리 하는 게 가능하므로 실행 속도를 높일 수 있다.",
+            "전송하는 메시지에 대한 기밀성은 제공하지만 메시지 무결성은 보장하지 않는다."
+          ]
         }
       ]
     },
@@ -1377,7 +2109,14 @@
             192.42994689941406
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 설명에 해당하는 것으로 가장 적절한 것은?\n조직이 자신에게 적합한 보안 정책을 수립하고 \n수립된 보안 정책에 의해 보안 관련 조직을 구성\n하여 일련의 보안 활동을 수행하는 것",
+          "question_choice": [
+            "권한관리",
+            "보안 거버넌스",
+            "위험분석",
+            "접근통제"
+          ]
         },
         {
           "question_num": 108,
@@ -1389,7 +2128,14 @@
             497.856201171875
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 「개인정보보호법」 제3절 가명정보의 처\n리에 관한 특례 사항에 대한 설명으로 가장 적\n절하지 않은 것은?",
+          "question_choice": [
+            "개인정보처리자는 통계작성, 과학적 연구, 공익 적 기록보존 등을 위하여 정보주체의 동의 없 이 가명정보를 처리할 수 있다.",
+            "개인정보처리자는 가명정보를 처리하는 과정에 서 특정 개인을 알아볼 수 있는 정보가 생성된 경우에는 지체 없이 정보주체에게 통지한 후 정보를 처리할 수 있다.",
+            "가명정보를 처리하는 자는 특정 개인을 알아보 기 위한 목적으로 가명정보를 처리해서는 아니 된다.",
+            "개인정보처리자는 가명정보를 처리하고자 하는 경우에는 가명정보의 처리 목적, 제3자 제공 시 제공받는 자 등 가명정보의 처리 내용을 관리 하기 위하여 대통령령으로 정하는 사항에 대한 관련 기록을 작성하여 보관하여야 한다."
+          ]
         },
         {
           "question_num": 109,
@@ -1401,7 +2147,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 VLAN에 대한 설명으로 가장 적절하지\n않은 것은?",
+          "question_choice": [
+            "하나의 VLAN내 ARP Request, NetBIOS Name Query와 같은 브로드캐스트 패킷을 분할된 여 러 개의 전체 네트워크로 확장·전송하는 기능 을 제공한다.",
+            "웜과 같은 악성 코드가 발생하는 경우 범위는 제한할 수 있어 목적별로 네트워크를 분리하여 보안 수준을 높일 수 있다.",
+            "하나의 스위치에 연결된 2계층 네트워크를 VLAN 으로 분할하면 여러개로 구별되는 브로드캐스 트 도메인을 만들 수 있다.",
+            "클라이언트가 특정 VLAN에 할당되어 있을 때 클라이언트는 자신이 속한 VLAN을 인식하지 못 한 채 일반적인 통신을 할 때와 똑같이 프레임 을 스위치에 전달한다."
+          ]
         },
         {
           "question_num": 110,
@@ -1413,7 +2166,14 @@
             262.9129333496094
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "외부 IP 주소의 임의 포트에서 내부 ftp 서버로\n접속하려는 트래픽을 탐지 및 차단하기 위한\nSnort 탐지규칙으로 가장 적절한 것은?",
+          "question_choice": [
+            "alert tcp !192.168.0.0/24 any → 192.168.0.0/24 21 (msg:“illegal ftp attempt”)",
+            "drop tcp !192.168.0.0/24 any → 192.168.0.0/24 21 (msg:“illegal ftp attempt”)",
+            "alert tcp 192.168.0.0/24 any → !192.168.0.0/24 21 (msg:“illegal ftp attempt”)",
+            "drop tcp 192.168.0.0/24 any → !192.168.0.0/24 21 (msg:“illegal ftp attempt”)"
+          ]
         },
         {
           "question_num": 111,
@@ -1425,7 +2185,14 @@
             459.9775695800781
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "「개인정보보호법」에 따라 개인정보처리자는\n개인정보가 분실·도난·유출되었음을 알게 되\n었을 때, 지체없이 정보주체에게 알려야 할 사\n항으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "정보주체에게 피해가 발생한 경우 신고 등을 접 수할 수 있는 담당 부서 및 연락처",
+            "유출 등이 된 시점과 그 경위",
+            "유출된 개인정보의 규모 및 피해액",
+            "유출 등으로 인하여 발생할 수 있는 피해를 최 소화하기 위하여 정보주체가 할 수 있는 방법 등에 관한 정보"
+          ]
         },
         {
           "question_num": 112,
@@ -1437,7 +2204,14 @@
             632.3491821289062
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음과 같은 업무 환경에서 사용자들이 활용하게 할\n수 있는 정보보호 시스템으로 가장 적절한 것은? \n감리 대상 기업 A는 외주 근로자가 많아 이들이 \n내부망에 접속 시 안전하게 관리해야 하는 필요성\n이 있음. 서울시에 본사 및 세종시에 지사가 존재\n하는 기업이며 이 두 개 지역의 네트워크를 안전\n하게 연결해야 함",
+          "question_choice": [
+            "Firewall",
+            "VPN",
+            "PGP",
+            "IPS"
+          ]
         },
         {
           "question_num": 113,
@@ -1449,7 +2223,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "스푸핑을 통해 공격자는 자신의 신분을 위장하여\n정보시스템에서 허가되지 않은 정보의 열람 혹은\n거짓정보의 전송이 가능해진다. 이러한 스푸핑 기\n술 중 IP 주소와 해당 MAC 주소의 매핑 정보를 위\n조하는 기법을 사용하는 것으로 가장 적절한 것은",
+          "question_choice": [
+            "ARP 스푸핑",
+            "IP 스푸핑",
+            "ICMP 리다이렉트",
+            "DNS 스푸핑"
+          ]
         }
       ]
     },
@@ -1466,7 +2247,14 @@
             279.8144836425781
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "SSO(Single Sign On)에 대한 설명으로 가장 적절\n하지 않은 것은?",
+          "question_choice": [
+            "SSO 서버로부터 인증에 성공하면 SSO 서버가 관리하는 다른 시스템에 대한 접근권한을 모두 얻을 수 있다.",
+            "대표적인 인증 방법으로는 커버로스(Kerberos)를 이용한 윈도우 액티브 디렉터리가 있다.",
+            "보안을 강화하기 위해 중요 정보에 접근할 때는 지속적인 재인증을 요구하기도 한다.",
+            "각 시스템마다 인증 정보를 저장하므로 단일 장 애점(single point of failure) 문제가 존재하지 않는다."
+          ]
         },
         {
           "question_num": 115,
@@ -1478,7 +2266,14 @@
             557.9105834960938
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "공개키 암호 시스템에 대한 설명으로 가장 적절\n하지 않은 것은?",
+          "question_choice": [
+            "공개키 암호 방식에서는 공개키와 개인키 키 쌍 이 존재하며, 암복호화에 서로 다른 키를 사용 하므로 비대칭키 암호 방식이라고도 한다.",
+            "송신자가 수신자의 공개키를 이용하여 암호화 한 메시지를 전송하면 수신자는 자신의 개인키 를 이용하여 복호화를 수행한다.",
+            "공개키 암호 방식은 대칭키 암호화 방식에 비해 관리해야 할 키의 개수가 많지만, 계산 속도가 빨라 메시지 암호화에 주로 사용한다.",
+            "타원곡선 상의 이산대수 문제를 이용하는 ECC (Elliptic curve cryptography) 알고리즘은 RSA 등에 비해 상대적으로 짧은 길이의 키를 사용 하여 대등한 수준의 안전성을 제공할 수 있다 는 장점이 있다."
+          ]
         },
         {
           "question_num": 116,
@@ -1490,7 +2285,14 @@
             791.0
           ],
           "column": "left",
-          "verified": true
+          "verified": true,
+          "question_text": "해시 함수를 이용하는 메시지 인증 코드(HMAC \nHashed MAC)에 대한 설명으로 가장 적절하지\n않은 것은?",
+          "question_choice": [
+            "수신자는 메시지의 변경 여부 뿐만 아니라 올바 른 송신자가 생성한 메시지임을 확인할 수 있다.",
+            "송신자와 수신자 사이에 메시지 인증을 제공하 지만, 제3자를 위한 증명은 제공할 수 없다.",
+            "송신자가 메시지를 보낸 사실을 부인하는 경우 수신자는 송신자가 메시지를 보낸 사실을 증명 할 수 있다.",
+            "메시지 인증코드를 생성하기 위해 송신자와 수 신자는 사전에 공통의 비밀키를 공유해야 한다."
+          ]
         },
         {
           "question_num": 117,
@@ -1502,7 +2304,14 @@
             281.1330261230469
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "하이브리드 암호 시스템에 대한 설명으로 가장\n적절하지 않은 것은?",
+          "question_choice": [
+            "대칭키 암호화 방식에서 사용하는 세션키는 공 격자의 추측 공격에 대응하기 위해 의사난수 생 성기를 이용하여 생성한다.",
+            "메시지를 암호화할 때는 공개키 암호 시스템을 이용하므로 별도의 키 분배 과정을 필요로 하지 않는다.",
+            "메시지 암호화에 사용한 세션키는 수신자의 공개 키로 암호화하여 암호문과 결합하여 전송한다.",
+            "전자메일 암호화 도구인 PGP에서도 하이브리드 암호 시스템을 이용하여 암호화를 수행한다."
+          ]
         },
         {
           "question_num": 118,
@@ -1514,7 +2323,14 @@
             543.5262451171875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 인증 방식에 대한 설명으로 가장 적절\n하지 않은 것은?",
+          "question_choice": [
+            "사용자가 알고있는 정보에 의존하는 지식 기반 인증방식은 관리 비용이 상대적으로 저렴하지만 공격자에 의한 추측 가능성의 위험이 있다.",
+            "사용자가 가지고 있는 인증 수단을 이용하는 소 유 기반 인증 방식은 복제 가능성이 있고 분 실·파손·고장 등이 발생하는 경우 인증이 불 가능하다는 단점이 있다.",
+            "지문, 망막, 홍채 등을 이용하는 생체 인증방식은 생체 템플릿이라고 불리는 자신의 생체 정보를 데이터베이스 등에 등록 없이 인증이 가능하다.",
+            "지식, 소유, 존재 및 행위에 의한 인증 수단 중 2가지의 인증 수단을 결합하여 사용하는 인증 방식을 이중(Two-factor) 인증이라 한다."
+          ]
         },
         {
           "question_num": 119,
@@ -1526,7 +2342,14 @@
             653.5262451171875
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 정상적인 네트워크 접근을 공격시도로\n오인하여 가용성이 침해받는 경우에 해당하는\n것으로 가장 적절한 것은?",
+          "question_choice": [
+            "True-Positive",
+            "True-Negative",
+            "False-Positive",
+            "False-Negative"
+          ]
         },
         {
           "question_num": 120,
@@ -1538,7 +2361,14 @@
             791.0
           ],
           "column": "right",
-          "verified": true
+          "verified": true,
+          "question_text": "다음 중 블록체인을 대상으로 한 보안 공격 유\n형으로 가장 적절하지 않은 것은?",
+          "question_choice": [
+            "이중 지불 공격(Double Spending Attack)",
+            "허위 정보 전파 공격(Eclipse Attack)",
+            "재진입 공격(Reentrancy Attack)",
+            "스머프 공격(Smurf Attack)"
+          ]
         }
       ]
     }
