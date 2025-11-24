@@ -56,7 +56,10 @@ class DetailedSubjectAggregator:
                     numbers_match = re.search(r'\(([^\)]+)\)', year_data_col)
                     if numbers_match:
                         numbers_str = numbers_match.group(1).replace(' ', '')
-                        q_numbers = [int(n) for n in numbers_str.split(',')]
+                        if numbers_str == '-':
+                            q_numbers = []
+                        else:
+                            q_numbers = [int(n) for n in numbers_str.split(',')]
                         structured_data[major_subject_name][sub_subject_name][year] = q_numbers
                         
                         for q_num in q_numbers:
@@ -116,7 +119,7 @@ class DetailedSubjectAggregator:
 
 if __name__ == "__main__":
     aggregator = DetailedSubjectAggregator()
-    years_to_process = list(range(2021, 2025))
+    years_to_process = list(range(2021, 2026))
     md_file_path = os.path.join("analyze", "0.시험범위 및 기출분석.md")
 
     try:
