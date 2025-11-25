@@ -1239,8 +1239,13 @@
           ],
           "column": "right",
           "verified": true,
-          "question_text": "63. 다음의 데이터베이스에서 (가)는 VIEW를 생성한\n것이고 (나)는 생성된 VIEW에 대한 검색 명령어\n이다. 이 검색 명령어가 실제 실행되기 위해서\n질의 변경(query modification)되는 SQL 명령어로\n옳은 것은? (단, Students, Enrolled 릴레이션 각\n각의 기본 키는 밑줄 친 속성이다.)\nStudents\nsid\nname\nage\n53666\nJones\n18\n53688\nSmith\n18\n53650\nSmith\n19\nEnrolled\ncid\nsid\nname\ngrade\n101\n53666\nDB\nB\n101\n53688\nDB\nC\n102\n53666\nOS\nA\n(가) CREATE VIEW BStudents (name, sid, cid)  \nAS SELECT S.name, S.sid, E.cid\nFROM  Students S, Enrolled E\nWHERE S.sid=E.sid AND E.grade=‘B’;\n(나) SELECT name\nFROM BStudents\nWHERE cid=‘101’;\n①SELECT\nS.name\nFROM\nStudents S, Enrolled E\nWHERE\nE.grade=‘B’ AND E.cid=‘101’;\n②SELECT\nE.name\nFROM\nStudents S, Enrolled E\nWHERE\nE.grade=‘B’ AND E.cid=‘101’;\n③SELECT\nS.name\nFROM\nStudents S, Enrolled E\nWHERE\nS.sid=E.sid AND E.grade=‘B’\nAND E.cid=‘101’;\n④SELECT\nE.name\nFROM\nStudents S, Enrolled E\nWHERE\nS.sid=E.sid AND E.grade=‘B’\nAND E.cid=‘101’;",
-          "question_choice": []
+          "question_text": "다음의 데이터베이스에서 (가)는 VIEW를 생성한\n것이고 (나)는 생성된 VIEW에 대한 검색 명령어\n이다. 이 검색 명령어가 실제 실행되기 위해서\n질의 변경(query modification)되는 SQL 명령어로\n옳은 것은? (단, Students, Enrolled 릴레이션 각\n각의 기본 키는 밑줄 친 속성이다.)\nStudents\nsid\nname\nage\n53666\nJones\n18\n53688\nSmith\n18\n53650\nSmith\n19\nEnrolled\ncid\nsid\nname\ngrade\n101\n53666\nDB\nB\n101\n53688\nDB\nC\n102\n53666\nOS\nA\n(가) CREATE VIEW BStudents (name, sid, cid)  \nAS SELECT S.name, S.sid, E.cid\nFROM  Students S, Enrolled E\nWHERE S.sid=E.sid AND E.grade=‘B’;\n(나) SELECT name\nFROM BStudents\nWHERE cid=‘101’;",
+          "question_choice": [
+            "SELECT S.name FROM Students S, Enrolled E WHERE E.grade=‘B’ AND E.cid=‘101’;",
+            "SELECT E.name FROM Students S, Enrolled E WHERE E.grade=‘B’ AND E.cid=‘101’;",
+            "SELECT S.name FROM Students S, Enrolled E WHERE S.sid=E.sid AND E.grade=‘B’ AND E.cid=‘101’;",
+            "SELECT E.name FROM Students S, Enrolled E WHERE S.sid=E.sid AND E.grade=‘B’ AND E.cid=‘101’;"
+          ]
         }
       ]
     },

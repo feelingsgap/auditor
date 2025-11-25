@@ -11,7 +11,6 @@ def check_ranges():
         data = json.load(f)
 
     # Define expected ranges (standard)
-    # Note: This is a heuristic. Some years might vary, but usually it's fixed.
     ranges = {
         "1. 감리 및 사업관리": (1, 25),
         "2. 소프트웨어 공학": (26, 50),
