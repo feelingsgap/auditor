@@ -49,12 +49,40 @@
             /* 하단 패딩 최소화 */
         }
 
-        .modal-lg {
-            max-width: 90%;
+        .modal-xl {
+            max-width: 98%;
+            margin: 0.5rem auto;
         }
 
-        .modal-body img {
-            max-height: 80vh;
+        .modal-two-col {
+            display: flex;
+            min-height: 0;
+        }
+
+        .modal-image-panel {
+            width: 35%;
+            flex-shrink: 0;
+            border-right: 1px solid #dee2e6;
+            overflow-y: auto;
+            max-height: calc(97vh - 64px);
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .modal-image-panel img {
+            width: 100%;
+            height: auto;
+            border-radius: .25rem;
+        }
+
+        .modal-expl-panel {
+            flex: 1;
+            overflow-y: auto;
+            max-height: calc(97vh - 64px);
+            padding: 1rem;
         }
 
         .accordion-button:not(.collapsed) {
@@ -174,39 +202,45 @@
         </div>
     </div>
 
-    <!-- 이미지 확대 모달 -->
+    <!-- 문제 모달 -->
     <div class="modal fade" id="questionModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header py-2">
                     <h5 class="modal-title" id="questionModalLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="text-center mb-3">
-                        <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
-                    </div>
-                    <!-- 정답 표시 -->
-                    <div id="modalAnswerBlock" class="p-3 mb-3 border rounded bg-light d-none">
-                        <h6 class="mb-0">
-                            <span class="badge bg-success">정답</span>
-                            <span id="modalAnswer" class="fw-bold ms-2 fs-5"></span>
-                        </h6>
-                    </div>
-                    <!-- Claude 해설 -->
-                    <div id="explClaudeBlock" class="p-3 mb-2 border rounded d-none">
-                        <h6 class="mb-2"><span class="badge bg-primary">Claude 해설</span></h6>
-                        <p id="modalExplClaude" class="mb-0 small" style="white-space: pre-wrap;"></p>
-                    </div>
-                    <!-- Gemini 해설 -->
-                    <div id="explGeminiBlock" class="p-3 mb-2 border rounded d-none">
-                        <h6 class="mb-2"><span class="badge bg-warning text-dark">Gemini 해설</span></h6>
-                        <p id="modalExplGemini" class="mb-0 small" style="white-space: pre-wrap;"></p>
-                    </div>
-                    <!-- GPT 해설 -->
-                    <div id="explGptBlock" class="p-3 mb-0 border rounded d-none">
-                        <h6 class="mb-2"><span class="badge bg-info text-dark">GPT 해설</span></h6>
-                        <p id="modalExplGpt" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                <div class="modal-body p-0">
+                    <div class="modal-two-col">
+                        <!-- 좌측: 문제 이미지 -->
+                        <div class="modal-image-panel">
+                            <img src="" id="modalImage" alt="문제 이미지">
+                        </div>
+                        <!-- 우측: 정답 + 해설 -->
+                        <div class="modal-expl-panel">
+                            <!-- 정답 표시 -->
+                            <div id="modalAnswerBlock" class="p-3 mb-3 border rounded bg-light d-none">
+                                <h6 class="mb-0">
+                                    <span class="badge bg-success">정답</span>
+                                    <span id="modalAnswer" class="fw-bold ms-2 fs-5"></span>
+                                </h6>
+                            </div>
+                            <!-- Claude 해설 -->
+                            <div id="explClaudeBlock" class="p-3 mb-2 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-primary">Claude 해설</span></h6>
+                                <p id="modalExplClaude" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                            </div>
+                            <!-- Gemini 해설 -->
+                            <div id="explGeminiBlock" class="p-3 mb-2 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-warning text-dark">Gemini 해설</span></h6>
+                                <p id="modalExplGemini" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                            </div>
+                            <!-- GPT 해설 -->
+                            <div id="explGptBlock" class="p-3 mb-0 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-info text-dark">GPT 해설</span></h6>
+                                <p id="modalExplGpt" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
