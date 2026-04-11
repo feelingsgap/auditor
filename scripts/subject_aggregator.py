@@ -197,7 +197,11 @@ class DetailedSubjectAggregator:
                         aggregated_data[major_subject]["sub_subjects"][sub_subject]["questions"].append({
                             "year": year,
                             "question_num": q_num,
-                            "image_path": f"{year}/question/{year}_{q_num}.png"
+                            "image_path": f"{year}/question/{year}_{q_num}.png",
+                            "answer": question.get("answer"),
+                            "expl_claude": question.get("expl_claude", ""),
+                            "expl_gemini": question.get("expl_gemini", ""),
+                            "expl_gpt": question.get("expl_gpt", ""),
                         })
         
         # 각 과목 내에서 연도와 문제 번호로 정렬

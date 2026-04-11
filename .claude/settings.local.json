@@ -28,7 +28,8 @@
       "Bash(pdftotext -layout -f 1 -l 15 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_toc.txt)",
       "Read(//private/tmp/**)",
       "Bash(pdftotext -layout -f 1 -l 267 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_full.txt)",
-      "Bash(pdftoppm -png -r 150 -f 1 -l 3 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_pg)"
+      "Bash(pdftoppm -png -r 150 -f 1 -l 3 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_pg)",
+      "Bash(open:*)"
     ],
     "deny": []
   }

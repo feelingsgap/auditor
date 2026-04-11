@@ -146,8 +146,13 @@
                                         <div class="question-grid">
                                             {% for q in sub_data.questions %}
                                             <div class="card question-card h-100" data-bs-toggle="modal"
-                                                data-bs-target="#questionModal" data-image-src="{{ q.image_path }}"
-                                                data-title="{{ q.year }}년 {{ q.question_num }}번">
+                                                data-bs-target="#questionModal"
+                                                data-image-src="{{ q.image_path }}"
+                                                data-title="{{ q.year }}년 {{ q.question_num }}번"
+                                                data-answer="{{ q.answer|default('') }}"
+                                                data-expl-claude="{{ q.expl_claude|default('')|e }}"
+                                                data-expl-gemini="{{ q.expl_gemini|default('')|e }}"
+                                                data-expl-gpt="{{ q.expl_gpt|default('')|e }}">
                                                 <div class="card-header text-center py-2 border-0">
                                                     <p class="card-text fw-bold mb-0">{{ q.year }}년 {{ q.question_num
                                                         }}번</p>
@@ -177,8 +182,32 @@
                     <h5 class="modal-title" id="questionModalLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body text-center">
-                    <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
+                    </div>
+                    <!-- 정답 표시 -->
+                    <div id="modalAnswerBlock" class="p-3 mb-3 border rounded bg-light d-none">
+                        <h6 class="mb-0">
+                            <span class="badge bg-success">정답</span>
+                            <span id="modalAnswer" class="fw-bold ms-2 fs-5"></span>
+                        </h6>
+                    </div>
+                    <!-- Claude 해설 -->
+                    <div id="explClaudeBlock" class="p-3 mb-2 border rounded d-none">
+                        <h6 class="mb-2"><span class="badge bg-primary">Claude 해설</span></h6>
+                        <p id="modalExplClaude" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                    </div>
+                    <!-- Gemini 해설 -->
+                    <div id="explGeminiBlock" class="p-3 mb-2 border rounded d-none">
+                        <h6 class="mb-2"><span class="badge bg-warning text-dark">Gemini 해설</span></h6>
+                        <p id="modalExplGemini" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                    </div>
+                    <!-- GPT 해설 -->
+                    <div id="explGptBlock" class="p-3 mb-0 border rounded d-none">
+                        <h6 class="mb-2"><span class="badge bg-info text-dark">GPT 해설</span></h6>
+                        <p id="modalExplGpt" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,17 +215,44 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        const CHOICE_LABELS = ['', '①', '②', '③', '④'];
+
         const questionModal = document.getElementById('questionModal');
         questionModal.addEventListener('show.bs.modal', event => {
-            const button = event.relatedTarget;
-            const imageSrc = button.getAttribute('data-image-src');
-            const title = button.getAttribute('data-title');
+            const btn = event.relatedTarget;
 
-            const modalTitle = questionModal.querySelector('.modal-title');
-            const modalImage = questionModal.querySelector('#modalImage');
+            // 이미지 & 제목
+            questionModal.querySelector('.modal-title').textContent = btn.getAttribute('data-title');
+            questionModal.querySelector('#modalImage').src = btn.getAttribute('data-image-src');
 
-            modalTitle.textContent = title;
-            modalImage.src = imageSrc;
+            // 정답
+            const answerRaw = btn.getAttribute('data-answer');
+            const answerNum = parseInt(answerRaw, 10);
+            const answerBlock = document.getElementById('modalAnswerBlock');
+            const answerSpan = document.getElementById('modalAnswer');
+            if (!isNaN(answerNum) && answerNum >= 1 && answerNum <= 4) {
+                answerSpan.textContent = CHOICE_LABELS[answerNum] + ' (' + answerNum + '번)';
+                answerBlock.classList.remove('d-none');
+            } else {
+                answerBlock.classList.add('d-none');
+            }
+
+            // 해설 블록 공통 처리
+            const explFields = [
+                ['modalExplClaude', 'explClaudeBlock', btn.getAttribute('data-expl-claude')],
+                ['modalExplGemini', 'explGeminiBlock', btn.getAttribute('data-expl-gemini')],
+                ['modalExplGpt', 'explGptBlock', btn.getAttribute('data-expl-gpt')],
+            ];
+            for (const [pId, divId, text] of explFields) {
+                const block = document.getElementById(divId);
+                const para = document.getElementById(pId);
+                if (text && text.trim()) {
+                    para.textContent = text;
+                    block.classList.remove('d-none');
+                } else {
+                    block.classList.add('d-none');
+                }
+            }
         });
     </script>
 </body>

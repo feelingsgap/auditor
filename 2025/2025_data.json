@@ -22,7 +22,11 @@
             "관계기관에장애사실의즉시통보",
             "사업자에게외부전문가활용체계구성을요구",
             "장애등급조정및원격백업"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 2,
@@ -41,7 +45,11 @@
             "민간의자본과기술을활용하여개발하고사업자가 일정기간수익을얻는방식으로사업을추진할 수있다.",
             "디지털서비스심사위원회에서사전에선정한디지털 서비스는수의계약을체결할수있다.",
             "공개SW가사용되는사업에서는직접구매방 식을적용하고민간SW 시장침해여부를조사 해야한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 3,
@@ -60,7 +68,11 @@
             "과업내용변경에따른계약금액의조정액이당초 계약금액의100분의10이상으로추정될경우에는 위원회를설치하여과업변경심의를하여야한다.",
             "용역을완성한후인수가완료된때에인력의 투입도종료된다.",
             "해당계약에따른계약목적물에대한지식재산권 은발주기관과계약상대자가공동으로소유하며, 별도의정함이없는한지분은균등한것으로 한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 4,
@@ -79,7 +91,11 @@
             "업무측면의 성과측정은 기능활용도·업무성과 달성도를고려하여측정한다.",
             "성과평가결과가총점40점미만이라도서비스운영 개시후3년이하는폐기하지않을수있다.",
             "성과평가결과가총점60점미만은통폐합, 기능 고도화, 전면재개발시행을권고할수있다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 5,
@@ -98,7 +114,11 @@
             "소프트웨어개발공정에서필요한분석, 설계등 개발프로세스에관한사항",
             "소프트웨어개발관련법령, 지침및국내외표 준적용에관한사항",
             "조직의프로세스표준화및이의적용ㆍ확산등에 관한조직관리사항"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 6,
@@ -117,7 +137,11 @@
             "총사업금액이1억원이하사업은과업심의위원회 위원2인이심의할수있다.",
             "계약대상자는과업내용변경의결결과를통지받은 날부터14일이내에재심의를요청할수있다.",
             "계약금액을조정하는경우에는과업내용변경 관리내역서를작성하여관리하여야한다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -141,7 +165,11 @@
             "2개",
             "3개",
             "4개 가. 소프트웨어사업영향평가 나. 요구사항상세화 다. 적정사업기간산정 라. 과업심의위원회설치·운영"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 8,
@@ -160,7 +188,11 @@
             "데이터는엑셀, XML, JSON과같은구조화된 형태의오픈포맷으로등록·개방하는것이원칙 이다.",
             "공공데이터목록을등록할때업무단위는정부기능 분류(BRM)의단위과제수준에서선정한다.",
             "비정형데이터는데이터분석이나학습등에활용 가능한형태로등록해야한다."
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 9,
@@ -179,7 +211,11 @@
             "서비스이용료는이용지원시스템(과기정통부), 디지털 서비스몰(조달청) 등인증된공공서비스마켓플 레이스가격표또는견적서를참고하여산정한다.",
             "전문작업비는데이터수집및전처리에대한비용도 포함한다.",
             "시스템통합기반사업으로추진할경우, 기능 개발비는기존FP 방식에인공지능보정계수를 적용하여대가를산정한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 10,
@@ -198,7 +234,11 @@
             "적용된기술의실용화사례조사·분석",
             "복수의대안별경제성비교분석",
             "유관기관과연계·통합이필요한경우, 각기관별 역할과수행업무등협조체계를기술"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 11,
@@ -217,7 +257,11 @@
             "유사성중내용중복성",
             "의미정확성중답변적정성",
             "편향성중유해성"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 12,
@@ -236,7 +280,11 @@
             "추가학습을위한데이터준비여부",
             "파운데이션모델고도화및기대성능모니터링 검토",
             "모델버전관리및배포방안마련검토"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 13,
@@ -255,7 +303,11 @@
             "사업자는요구사항정의서가세부항목별로과업 내용을반영하고있는지여부를확인할수있도록 대비표를작성하여야한다.",
             "사업자는감리점검결과에따라시정조치를수 행하고그결과를발주자에게제출하여야한다.",
             "발주자는감리수행결과보고서를감리계약종료일 로부터5년간보관하여야한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -279,7 +331,11 @@
             "다양한플랫폼환경에서의이식성보장",
             "코딩-빌드-테스트-배포파이프라인자동화",
             "단일애플리케이션과대규모DB 구성"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 15,
@@ -300,7 +356,11 @@
             "(가): 검사전, (나): 감리법인확인을거쳐발주자",
             "(가): 검사요청전, (나): 발주자확인을거쳐감리법인",
             "(가): 검사요청전, (나): 감리법인확인을거쳐발주자"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 16,
@@ -319,7 +379,11 @@
             "사업자면담",
             "발주기관면담",
             "문제점및개선방향확정"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 17,
@@ -338,7 +402,11 @@
             "테스트지원",
             "서비스수준관리",
             "릴리즈및배포관리"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 18,
@@ -357,7 +425,11 @@
             "지식정보자원ㆍ행정정보등데이터베이스구축비",
             "소프트웨어개발비및유지관리비, 정보시스템 운영용역비",
             "기타전산설비ㆍ시설물등의공사ㆍ이전ㆍ임차 관련비용, 센서ㆍ단말장치설치비, 통신회선ㆍ 전기사용료, 재료비등"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 19,
@@ -376,7 +448,11 @@
             "준법성유지",
             "전문성유지",
             "사명감과품위유지"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 20,
@@ -395,7 +471,11 @@
             "2개",
             "3개",
             "4개 가. 피드백은정직, 지지적및구체적이어야효과 적이다. 나. 명료화는상대방의이야기를명확하게이해할 때까지질문하는것이다. 다. 확인적경청은상대방의말의내용과목소리의톤 및얼굴표정등이일치하는가를관찰하거나 확인하면서듣는것이다. 라. 개방적경청은선입관이나편견으로판단하는 것이아니라상대방의이야기를있는그대로 경청하는것이다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -419,7 +499,11 @@
             "욕구이론(theory of needs)",
             "목표설정이론(goal-setting theory)",
             "인지적평가이론(cognitive evaluation theory)"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 22,
@@ -438,7 +522,11 @@
             "1일",
             "2일",
             "3일"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 23,
@@ -457,7 +545,11 @@
             "기술적성과측정",
             "차이및추세분석",
             "리스크재평가"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 24,
@@ -476,7 +568,11 @@
             "삼각분포: 8, 베타분포: 10",
             "삼각분포: 8, 베타분포: 7",
             "삼각분포: 10, 베타분포: 8"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 25,
@@ -495,7 +591,11 @@
             "인트라넷",
             "상태보고서",
             "회의"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -519,7 +619,11 @@
             "0.4",
             "0.5",
             "0.6"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 27,
@@ -538,7 +642,11 @@
             "시스템에대한테스트기준(criteria)을설정하고이 기준의충족여부를효과적으로테스트할수있 어야한다.",
             "새로운결함을유발하거나기존의품질을악화 시키지않으면서시스템을효과적으로변경할 수있어야한다.",
             "특정컴포넌트에가해진변경이다른컴포넌트에 미치는영향을최소화할수있어야한다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 28,
@@ -557,7 +665,11 @@
             "Decision table testing",
             "Scenario testing",
             "Requirement-based testing"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 29,
@@ -576,7 +688,11 @@
             "Master-Slave",
             "Front Controller",
             "MVC(Model View Controller)"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 30,
@@ -593,7 +709,11 @@
           "question_choice": [
             "class Class2 extends Class1 { private int attr1; private int attr2; } class Class2 implements Class1 { private int attr1; private static int attr2; }",
             "class Class2 implements Class1 { private final int attr1; private int attr2; } class Class2 extends Class1 { private final int attr1; private static int attr2; }"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -617,7 +737,11 @@
             "나, 다",
             "다, 라",
             "가, 다"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 32,
@@ -636,7 +760,11 @@
             "가, 다, 라",
             "나, 다, 마",
             "다, 라, 마"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 33,
@@ -655,7 +783,11 @@
             "나- 커버리지테스트기법(coverage testing)",
             "다- 뉴런커버리지테스트기법(neuron coverage testing)",
             "라- 적대적공격기법(adversarial attack)"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 34,
@@ -674,7 +806,11 @@
             "나– 세이프거리(Safe distance)",
             "나– 체비쇼프거리(Chebyshev distance)",
             "다– 맨해튼거리(Manhattan distance)"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 35,
@@ -693,7 +829,11 @@
             "GPL(General Public License)",
             "LGPL(Lesser General Public License)",
             "BSD(Berkeley Software Distribution)"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -717,7 +857,11 @@
             "가, 라, 마",
             "가, 나, 마, 바",
             "가, 라, 마, 바"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 37,
@@ -736,7 +880,11 @@
             "나- 다- 가- 라",
             "다- 나- 가– 라",
             "라- 나- 다- 가"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 38,
@@ -755,7 +903,11 @@
             "클라이언트-서버뷰(Client-Server View)",
             "파이프와필터뷰(Pipe and Filter View)",
             "발행-구독뷰(Publish-Subscribe View) Ÿ 데이터처리가일련의흐름을가지고있고, 데이터는 이흐름상에서중간에처리된다. Ÿ 흐름에따른데이터의변환이이루어지고데이터는 변환이완료되어최종목적지에다다르게된다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 39,
@@ -774,7 +926,11 @@
             "4",
             "5",
             "6"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 40,
@@ -793,7 +949,11 @@
             "Change Control",
             "IT Asset Management",
             "Software Deployment and Management"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 41,
@@ -812,7 +972,11 @@
             "AI Resilience",
             "AI Controllability",
             "AI Explainability"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -836,7 +1000,11 @@
             "Every Statement Coverage만만족",
             "Every Branch Coverage와 Every Statement Coverage 모두만족",
             "Every Branch Coverage와 Every Statement Coverage 모두만족하지않음"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 43,
@@ -855,7 +1023,11 @@
             "가- 실현성점검, 나- 완전성점검",
             "다- 완전성점검, 라- 유효성점검",
             "다- 일관성점검, 라- 실현성점검"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 44,
@@ -869,7 +1041,11 @@
           "column": "right",
           "verified": true,
           "question_text": "다음Java 코드의생략부분은고려하지않고클래스\n다이어그램으로가장적절하게표현한것은?\ninterface Service { public void doWork(); }\nclass Person { ... }\nclass Task { ... }\nclass Staff extends Person implements Service {\npublic void doWork() { Task t = new Task(); ... }\n}",
-          "question_choice": []
+          "question_choice": [],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 45,
@@ -883,7 +1059,11 @@
           "column": "right",
           "verified": true,
           "question_text": "보통의경우Normal 유스케이스시나리오가사용\n되지만특정조건하에서Conditional 유스케이스\n시나리오가사용된다는UML 표기법으로가장적절한\n것은?",
-          "question_choice": []
+          "question_choice": [],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -907,7 +1087,11 @@
             "70%",
             "80%",
             "100%"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 47,
@@ -926,7 +1110,11 @@
             "가, 다",
             "나, 라",
             "나, 다, 라 가. 회원정보를알고싶은경우, READ http://localhost:8080/rest/api/v1/user/1 나. 회원가입을하는경우, POST http://localhost:8080/rest/api/v1/user { \"username\": \"박혜자\", \"password\": \"5798\", \"email\": \"hyeja@google.com\", ... } 다. 회원정보를수정하고싶은경우, UPDATE http://localhost:8080/rest/api/v1/user/1 { \"\"password\": \"9057\" } 라. 회원을탈퇴처리하고싶은경우, DELETE http://localhost:8080/rest/api/v1/user/1"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 48,
@@ -945,7 +1133,11 @@
             "Adapter Patterm",
             "Builder Patterm",
             "Template Method Patterm (가) class 경비시스템{ 금고사용시호출되는메소드(){ if(주간) { 경비센터에사용기록 } else if (야간) { 경비센터에비상상황통보 } } 비상벨사용시호출되는메소드(){ 경비센터에비상벨통보 } 일반통화시호출되는메소드(){ if(주간) { 경비센터호출 } else if (야간) { 경비센터자동응답기호출 } } } (나) 주간을표현한클래스{ 금고사용시호출되는메소드(){ 경비센터에사용기록 } 비상벨사용시호출되는메소드(){ 경비센터에비상벨통보 } 일반통화시호출되는메소드(){ 경비센터호출 } } 야간을표현한클래스{ 금고사용시호출되는메소드(){ 경비센터에비상상황통보 } 비상벨사용시호출되는메소드(){ 경비센터에비상벨통보 } 일반통화시호출되는메소드(){ 경비센터자동응답기호출 } }"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -969,7 +1161,11 @@
             "Replace Type Code with Class",
             "Replace Parameter with Method",
             "Replace Type Code with Subclasses"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 50,
@@ -988,7 +1184,11 @@
             "B",
             "C",
             "D, E"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1012,7 +1212,11 @@
             "CF",
             "AC",
             "AFC"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 52,
@@ -1031,7 +1235,11 @@
             "(함수적종속성) A →B, B →C, C →D (분해된릴레이션) R1(A, B, C), R2(C, D)",
             "(함수적종속성) (A, B) →C, A →C (분해된릴레이션) R1(A, C), R2(A, B)",
             "(함수적종속성) (A, B) →C, C →D, C →A (분해된릴레이션) R1(A, B), R2(A, C, D)"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 53,
@@ -1050,7 +1258,11 @@
             "- b1 c2 d2",
             "a4 b2 c3 -",
             "- b3 c3 d3"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 54,
@@ -1069,7 +1281,11 @@
             "2",
             "3",
             "4"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 55,
@@ -1088,7 +1304,11 @@
             "E1 E2 PK1 A1 FK2 PK2 A2 K1 K2 K2",
             "E1 E2 PK1 A1 PK2 A2 K1 K2",
             "E1_E2 PK1 A1 PK2 A2 K1 K2"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 56,
@@ -1107,7 +1327,11 @@
             "400,000",
             "50,000",
             "8,000"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1131,7 +1355,11 @@
             "SELECT cs.custid, cs.name, (SELECT SUM(saleprice) FROM orders od WHERE cs.custid = od.custid) total_sales FROM customer cs;",
             "SELECT cs.custid, cs.name, SUM(od.saleprice) total_sales FROM customer cs LEFT JOIN orders od ON cs.custid = od.custid GROUP BY cs.custid, cs.name HAVING total_sales >= 0;",
             "SELECT cs.custid, cs.name, s FROM customer cs LEFT JOIN (SELECT custid, SUM(saleprice) AS s FROM orders GROUP BY custid) od ON cs.custid = od.custid; customer(custid, name) orders(orderid, custid, bookid, saleprice)"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 58,
@@ -1150,7 +1378,11 @@
             "1번부서(DNO=1)가수행하는모든프로젝트에참 가한직원의번호(ENO)를검색하는질의이다.",
             "두번째부속질의는상관(correlated) 질의로현재고려 중인특정직원(E)이참가한모든프로젝트를선택한다.",
             "관계대수(∏ENO, PNO(W)) ÷ (∏PNO(σDNO=1(P)))를 이용하면동일한결과를얻을수있다. SELECT ENO FROM E WHERE NOT EXISTS ((SELECT PNO FROM P WHERE DNO=1) EXCEPT (SELECT PNO FROM W WHERE E.ENO=ENO));"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 59,
@@ -1169,7 +1401,11 @@
             "가: 80 나: 3 다: 3",
             "가: 100 나: 4 다: 3",
             "가: 100 나: 4 다: 4"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 60,
@@ -1188,7 +1424,11 @@
             "가, 나, 라",
             "가, 다, 라",
             "나, 다, 라"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 61,
@@ -1207,7 +1447,11 @@
             "σ, ∪, ρ, -, ×",
             "∏, -, ×",
             "∏, ∪, -, ×"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1231,7 +1475,11 @@
             "100번직원이속한부서가부서릴레이션에서 삭제되면100번직원도연쇄적으로삭제된다.",
             "100번직원이속한부서번호가부서릴레이션에 서 5에서 6으로 변경되면 직원 릴레이션에서 100번직원의부서번호도5에서6으로변경된다.",
             "100번직원의상사의직원번호가직원릴레이션에 서200번에서300번으로변경되면100번직원투플 의상사번호도300번으로변경된다. CREATE TABLE EMPLOYEE (ENO INT NOT NULL, Name VARCHAR(15) NOT NULL, Super_ENO INT, DNO INT NOT NULL DEFAULT 1, PRIMARY KEY(ENO), CONSTRAINT EMPSUPERFK FOREIGN KEY (Super_ENO) REFERENCES EMPLOYEE(ENO) ON DELETE SET NULL ON UPDATE CASCADE, CONSTRAINT EMPDEPTFK FOREIGN KEY (DNO) REFERENCES DEPARTMENT(DNO) ON DELETE SET DEFAULT ON UPDATE CASCADE);"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 63,
@@ -1250,7 +1498,11 @@
             "가, 나, 라",
             "나, 다, 라",
             "가, 나, 다, 라 69, 15, 110, 90, 20, 120, 40, 125"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 64,
@@ -1269,7 +1521,11 @@
             "전역깊이는2로변경된다.",
             "3개의모조키를포함한버킷이존재한다.",
             "디렉터리가오름차순으로정렬될때, 가장아래버킷에는 모조키110100 한개만포함한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 65,
@@ -1288,7 +1544,11 @@
             "CREATE VIEW size(year, t_size) AS SELECT year, count(*) FROM student GROUP BY year;",
             "CREATE VIEW size(dept, t_size) AS SELECT dept, count(*) FROM student;",
             "CREATE VIEW size(dept, t_size) AS SELECT dept, count(*) FROM student GROUP BY dept;"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1312,7 +1572,11 @@
             "허용 허용 허용 대기",
             "허용 허용 대기 대기",
             "허용 대기 대기 대기"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 67,
@@ -1331,7 +1595,11 @@
             "읽기는모든DataNode에서데이터를수집해야 하므로느리고, 쓰기는특정DataNode에만기 록하면되므로빠르다.",
             "HDFS는데이터를항상NameNode에서읽고 쓰므로읽기와쓰기에서의성능차이가없다.",
             "HDFS는쓰기가완료된후에만읽기가가능하기 때문에쓰기에비해읽기가느리다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 68,
@@ -1350,7 +1618,11 @@
             "항목집합의크기가증가할수록지지도(support) 도증가한다.",
             "빈발한항목집합의모든상위집합(superset) 또한 빈발하다.",
             "지지도가 낮은 항목집합은 높은 항목집합에 비해연관규칙이될가능성이높다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 69,
@@ -1369,7 +1641,11 @@
             "0.3",
             "0.4",
             "0.6"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 70,
@@ -1388,7 +1664,11 @@
             "B : 5",
             "C : 8",
             "D : 14 <start, T1> <T1, A, 10, 15> <start, T2> <T2, B, 5, 7> <commit, T1> <checkpoint> <start, T3> <T3, C, 8, 9> <T2, A, 15, 20> <T3, D, 12, 14> <commit, T3> *system crash*"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 71,
@@ -1407,7 +1687,11 @@
             "<x> <a /> <d /> </x>",
             "<x> <a /> <b /> <d /> </x>",
             "<x> <a /> <b /> <d /> <a /> <c /> <d /> </x>"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1431,7 +1715,11 @@
             "마- 라- 가- 다- 나",
             "다- 마- 라- 가- 나",
             "다- 마- 나- 가– 라 가. SQLExecute를이용하여SQL 문장을실행 나. 질의스트링에있는매개변수를SQL/CLI 함수 SQLBindParameter를이용하여프로그램변수에 연결 다. 환경변수를설정 라. 질의결과가리턴되면SQLBindCol 함수를이용하여 질의결과의각열을C 프로그램변수에연결 마. SQL/CLI 함수SQLPrepare를이용하여SQL 문장을준비"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 73,
@@ -1450,7 +1738,11 @@
             "가, 나, 다, 라",
             "나, 다, 마",
             "나, 다, 라, 마 가. 원자성(atomicity) 나. 일관성(consistency) 다. 분할감내성(partition tolerance) 라. 격리성(isolation) 마. 가용성(availability)"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 74,
@@ -1469,7 +1761,11 @@
             "두클래스를구분하는현재노드에서각클래스의 해당개수가1개, 5개라면Gini Index의값은0 보다크다.",
             "두클래스를구분하는현재노드에서각클래스의 해당개수가3개, 3개라면분류오류(classification error) 비율은0.5이다.",
             "두클래스를구분하는현재노드에서각클래스의 해당개수가3개, 3개라면Gini Index는1이다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 75,
@@ -1488,7 +1784,11 @@
             "JSON(JavaScript Object Notation): 속성-이름 쌍으로데이터를저장하며, 트리구조를가지며 XML과유사한역할을한다. 문자열기반의 데이터표현방식이며, 네트워크통신에서자주 사용된다.",
             "XML(eXtensible Markup Language): 태그를사 용하여계층적구조의데이터를표현하며, 문서 형식의데이터저장과교환에주로사용된다.",
             "CSV(Comma-Separated Values): 쉼표(,) 또는탭 (Tab)으로데이터를구분하여저장하며, 행(row) 과열(column) 구조를갖는다. 정형데이터저장에 적합하며, 중첩구조를표현할수있다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1512,7 +1812,11 @@
             "WAS 서버는전체업무중연계업무가없는경우 에는추가적인보정치를적용하지않는다.",
             "WAS 서버는전체업무중연계업무가단순 조회업무만있는경우에전체부하의20%를 추가적용한다.",
             "WAS 서버전체업무중연계업무가대내/대외 갱신업무가있는경우에전체부하의30%를추가 적용한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 77,
@@ -1531,7 +1835,11 @@
             "유용성",
             "유효성",
             "준비성"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 78,
@@ -1550,7 +1858,11 @@
             "지수조정",
             "지수덧셈",
             "가수덧셈"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 79,
@@ -1569,7 +1881,11 @@
             "A′B + A′C + BC",
             "A′C + A′B + BC",
             "A′B′C′ + A′B′C + BC"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 80,
@@ -1588,7 +1904,11 @@
             "38.095",
             "66.666",
             "72.727"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 81,
@@ -1607,7 +1927,11 @@
             "가, 다",
             "나, 다",
             "가, 나, 다"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 82,
@@ -1626,7 +1950,11 @@
             "Flow Label",
             "Time to Live",
             "Traffic Class"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 83,
@@ -1645,7 +1973,11 @@
             "큐마다서로다른CPU 할당시간(time quantum) 을설정할수있다.",
             "프로세스는CPU를할당받기까지처음배정된큐에 계속머무르며, 다른큐로이동할수없다.",
             "가장높은우선순위큐가비어있지않다면, CPU는항상가장높은우선순위큐에있는 프로세스에할당된다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 84,
@@ -1664,7 +1996,11 @@
             "하나의CPU가한클록사이클동안여러개의 명령어를동시에실행하는기술이다.",
             "하나의명령어가여러개의독립적인연산을 포함하는기술이다.",
             "하나의명령어를동시에여러데이터에적용하는 기술로벡터연산등을처리할때활용된다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1688,7 +2024,11 @@
             "4 ns",
             "6 ns",
             "8 ns"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 86,
@@ -1707,7 +2047,11 @@
             "프로그램이 적재되는 주기억 장치의 주소를 물리주소라고한다.",
             "가상주소가주기억장치에존재하지않는경우에는 페이지부재(fault)가발생한다.",
             "LFU은최근까지가장오랫동안사용하지않은 페이지를선택하여교체한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 87,
@@ -1726,7 +2070,11 @@
             "블록검사",
             "다항코드",
             "패리티비트"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 88,
@@ -1745,7 +2093,11 @@
             "데이터의압축정도는원래데이터패턴에영 향을받는데, 중복정보가많으면압축률이낮 다.",
             "비손실압축은압축과정에서원래데이터의 내용을분실하지않는다.",
             "손실압축은압축해제한데이터가원래데이터와 동일하지않다."
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 89,
@@ -1764,7 +2116,11 @@
             "10,000m",
             "100,000m",
             "1,000,000m"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 90,
@@ -1783,7 +2139,11 @@
             "패킷손실(packet loss)",
             "지연시간(latency)",
             "전파지연(propagation delay) 서로다른데이터패킷이서로다른지연시간을 갖게되는것으로, 패킷의전달에있어서고르지 못한지연시간을의미한다. 즉, 패킷도착시간에서 편차를언급하는것으로패킷지연시간이일정하지 않고, 수시로변하고, 패킷간의간격이일정하지 않은현상을의미한다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 91,
@@ -1802,7 +2162,11 @@
             "LIST + <일련번호>",
             "MAIL + <송신자메일주소>",
             "RCPT + <수신자메일주소>"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 92,
@@ -1821,7 +2185,11 @@
             "x² + 1",
             "x⁴+ x³ + x",
             "x³ + x"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -1845,7 +2213,11 @@
             "0111001",
             "1000111",
             "1010001 보기"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 94,
@@ -1864,7 +2236,11 @@
             "IEEE 802.1Q",
             "IEEE 802.3af",
             "IEEE 802.15.1 여러VLAN 스위치를사용하는경우, 어떤VLAN 그룹에 속하는지뿐만아니라다른스위치에연결된시스템중 에서같은VLAN 그룹에속하는지를알아야한다. 프레임 태깅을정의한이프로토콜은MAC 프레임에추가적인 헤더를사용하여목적지VLAN을정의할수있다."
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 95,
@@ -1883,7 +2259,11 @@
             "SDN은OpenFlow와같은소프트웨어기반컨트롤러 를네트워크장비에내장하여, 트래픽전달동작을 하드웨어에서직접제어하는방식이다.",
             "Control Data Plane Interface는데이터평면의포 워딩제어및정보수집을위한인터페이스로 OpenFlow가대표적인프로토콜이다.",
             "데이터평면은SDN 컨트롤러가직접구성한고정 라우팅테이블을사용해자율적으로트래픽을 제어하며, 제어 평면과는 별도의 연결 없이 독립적으로동작한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 96,
@@ -1902,7 +2282,11 @@
             "netstat -p",
             "netstat –r",
             "netstat –s"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 97,
@@ -1921,7 +2305,11 @@
             "정규화를사용한가중치규제는과적합을해결하는 방법이다.",
             "역전파알고리즘은손실함수를계산하며가중치를 갱신한다.",
             "경사소실은학습모델의은닉층을증가시켜해결할 수있다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 98,
@@ -1940,7 +2328,11 @@
             "나이브베이즈분류",
             "서포트벡터머신",
             "선형회귀"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 99,
@@ -1959,7 +2351,11 @@
             "양자컴퓨터는특정함수를평가할때다수의 입력값을동시에처리할수있다.",
             "양자컴퓨터는중첩상태의큐비트를측정하면 값에영향을줄수있다.",
             "양자컴퓨터는큐비트전송과정에서오류가 발생하지않는장점이있다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 100,
@@ -1978,7 +2374,11 @@
             "임베딩",
             "토큰화",
             "파인튜닝"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -2002,7 +2402,11 @@
             "ElGamal 암호시스템은이산대수문제의어려움을 이용하여만든암호방식으로평문과암호문의 길이가동일하다.",
             "공개키 암호 방식에서는 공개키와 개인키가 존재하며, 공개키는누구나알수있지만개인키는 소유자만이알수있어야한다.",
             "ECC 암호시스템은RSA 알고리즘보다적은 비트수를가지고동일한암호강도를보장할수 있다."
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 102,
@@ -2021,7 +2425,11 @@
             "암호학적해시함수를이용하여계산한해시값으 로부터원래의입력값인메시지를구하는것은 계산상불가능해야한다.",
             "충돌저항성을만족하는암호학적해시함수는 동일한해시값을갖는서로다른두개의메시지를 구하는것이계산상불가능하다.",
             "암호학적해시함수는특정메시지와그메시지의 해시값이주어지더라도, 같은해시값을갖는다른 메시지를생성하는것이어려워야한다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 103,
@@ -2040,7 +2448,11 @@
             "Egress 필터링",
             "Blackhole 필터링",
             "Unicast RPF(Reverse Path Forwarding) 필터링"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 104,
@@ -2059,7 +2471,11 @@
             "초기벡터(IV) 값은 송·수신자사이에 미리 약속되어있어야하지만공개된값을사용해도 무방하다.",
             "암호문블록1개가손상되는경우, 복호화수행시 평문블록에미치는영향은2개의블록에그친다.",
             "이전단계에서암호화한결과로출력된암호화 블록에대해서는이번단계평문블록과XOR한후 암호화과정을수행한다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 105,
@@ -2078,7 +2494,11 @@
             "서버인증",
             "HTTP 전송데이터에대한MAC 계산및암호화",
             "암호알고리즘협상"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 106,
@@ -2097,7 +2517,11 @@
             "공격자는DNS 스푸핑을수행하기위해공격대상이 보내는메시지를스니핑해야한다.",
             "공격대상에게전달되는DNS 질의메시지를조 작하거나DNS 서버의캐시정보를삭제하는방 법을이용한다.",
             "공격이 성공하는 경우, 공격대상은 정상적인 URL로접속하지만실제로는공격자가만든가짜 사이트로접속하게된다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -2121,7 +2545,11 @@
             "L2TP – PAP, SSTP – SSH",
             "L2TP – TLS, SSTP – PAP",
             "L2TP – SSH, SSTP – IPSec"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 108,
@@ -2140,7 +2568,11 @@
             "VLAN (Virtual Local Area Network)",
             "DRM (Digital Right Management)",
             "NAC (Network Access Control) 과거의 IP 관리 시스템에서 발전한 솔루션으로, MAC 주소를기반으로접근제어및인증을수행 하여임의의사용자가접속하는것을차단한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 109,
@@ -2159,7 +2591,11 @@
             "Keylogger",
             "Adware",
             "Spyware 자신의내부에압축또는암호화된형태로포함되어 있는데이터를이용하여악성코드를생성하는방식 으로동작하며, 백신프로그램을통한탐지가어렵고 실제실행을해보지않고서는악성코드여부를확인 하는것이어렵다."
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 110,
@@ -2178,7 +2614,11 @@
             "De­synchronization",
             "Sybil",
             "Eavesdropping Device Pool에잘못된시간정보를송신하여디바이스 가계속적으로시간을교정하는데자원을소모하도록 하는공격이다."
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 111,
@@ -2197,7 +2637,11 @@
             "SQL 삽입",
             "파일업로드",
             "취약한비밀번호"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 112,
@@ -2216,7 +2660,11 @@
             "API 방식은DB 서버에영향을주지않아DB 서 버의성능저하는적은편이지만, 구축시응용 프로그램전체또는일부의수정이필요하다.",
             "Plug-In 방식은암복호화모듈이라이브러리형 태로각애플리케이션서버에설치되고, 응용프 로그램에서해당암복호화모듈을호출하는방식 이다.",
             "API 방식과Plug-In 방식의장점을혼용한하이 브리드 방식에서는 대용량 트랜잭션 처리에 Plug-In 방식을사용하고, 성능저하가발생할 수있는부분은API 방식을사용한다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 113,
@@ -2235,7 +2683,11 @@
             "XPath Injection",
             "Cross-Site Request Forgery(CSRF)",
             "Cross Site Scripting(XSS) 웹애플리케이션을사용해서다른최종사용자의클라 이언트에서임의의스크립트가실행되는취약점이다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 114,
@@ -2254,7 +2706,11 @@
             "블록체인상의트랜잭션유효성에대한검증은 어떤참여자라도수행할수있다.",
             "블록체인상의트랜잭션에대한취소는해당트 랜잭션의삭제를통해이루어진다.",
             "블록체인을보호하기위해공개키암호, 해시함수 등과같은기술을사용할수있다."
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     },
@@ -2278,7 +2734,11 @@
             "신뢰되지않은URL주소로자동접속연결",
             "경쟁조건",
             "메모리버퍼오버플로우"
-          ]
+          ],
+          "answer": 3,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 116,
@@ -2297,7 +2757,11 @@
             "OpenVAS",
             "OllyDbg",
             "SpotBugs"
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 117,
@@ -2316,7 +2780,11 @@
             "처리하는개인정보의수",
             "개인정보의제3자제공여부",
             "정보주체의권리를해할가능성및그위험정도"
-          ]
+          ],
+          "answer": 1,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 118,
@@ -2335,7 +2803,11 @@
             "정보제공시사용하는보안조치",
             "제공하는개인정보의항목",
             "개인정보를제공받는자"
-          ]
+          ],
+          "answer": 2,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 119,
@@ -2354,7 +2826,11 @@
             "정보정확성의원칙: 이용목적상필요한범위 내에서개인정보의정확성, 완전성, 최신성이확보 되어야한다.",
             "안전성확보의원칙: 개인정보의침해, 누설, 도용 등을 방지하기 위한 물리적·조직적·기술적 안전 조치를확보해야한다.",
             "비공개의원칙: 개인정보의처리및보호를위한 정책과관리자의정보는비공개하여야한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         },
         {
           "question_num": 120,
@@ -2373,7 +2849,11 @@
             "가명정보처리자는추가정보의분리보관, 접근권한 관리, 접근통제및접속기록의보관/점검등의 기술적보호조치를취한다.",
             "추가정보의활용목적달성및불필요한경우에는 추가정보를파기할수있으며파기에대한기록을 작성하고보관한다.",
             "개인정보처리자는가명정보또는추가정보에접 근할수있는담당자를업무목적달성에필요 한적정인원으로지정하며, 접근권한은업무에 상관없이균등부여한다."
-          ]
+          ],
+          "answer": 4,
+          "expl_claude": "",
+          "expl_gemini": "",
+          "expl_gpt": ""
         }
       ]
     }

@@ -7,117 +7,209 @@
           {
             "year": 2021,
             "question_num": 13,
-            "image_path": "2021/question/2021_13.png"
+            "image_path": "2021/question/2021_13.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 14,
-            "image_path": "2021/question/2021_14.png"
+            "image_path": "2021/question/2021_14.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 17,
-            "image_path": "2021/question/2021_17.png"
+            "image_path": "2021/question/2021_17.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 18,
-            "image_path": "2021/question/2021_18.png"
+            "image_path": "2021/question/2021_18.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 24,
-            "image_path": "2021/question/2021_24.png"
+            "image_path": "2021/question/2021_24.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 11,
-            "image_path": "2022/question/2022_11.png"
+            "image_path": "2022/question/2022_11.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 12,
-            "image_path": "2022/question/2022_12.png"
+            "image_path": "2022/question/2022_12.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 13,
-            "image_path": "2022/question/2022_13.png"
+            "image_path": "2022/question/2022_13.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 16,
-            "image_path": "2022/question/2022_16.png"
+            "image_path": "2022/question/2022_16.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 22,
-            "image_path": "2022/question/2022_22.png"
+            "image_path": "2022/question/2022_22.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 23,
-            "image_path": "2022/question/2022_23.png"
+            "image_path": "2022/question/2022_23.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 25,
-            "image_path": "2022/question/2022_25.png"
+            "image_path": "2022/question/2022_25.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 14,
-            "image_path": "2023/question/2023_14.png"
+            "image_path": "2023/question/2023_14.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 18,
-            "image_path": "2023/question/2023_18.png"
+            "image_path": "2023/question/2023_18.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 19,
-            "image_path": "2023/question/2023_19.png"
+            "image_path": "2023/question/2023_19.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 20,
-            "image_path": "2023/question/2023_20.png"
+            "image_path": "2023/question/2023_20.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 7,
-            "image_path": "2024/question/2024_7.png"
+            "image_path": "2024/question/2024_7.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 8,
-            "image_path": "2024/question/2024_8.png"
+            "image_path": "2024/question/2024_8.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 13,
-            "image_path": "2024/question/2024_13.png"
+            "image_path": "2024/question/2024_13.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 16,
-            "image_path": "2024/question/2024_16.png"
+            "image_path": "2024/question/2024_16.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 13,
-            "image_path": "2025/question/2025_13.png"
+            "image_path": "2025/question/2025_13.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 15,
-            "image_path": "2025/question/2025_15.png"
+            "image_path": "2025/question/2025_15.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 18,
-            "image_path": "2025/question/2025_18.png"
+            "image_path": "2025/question/2025_18.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -147,77 +239,137 @@
           {
             "year": 2021,
             "question_num": 15,
-            "image_path": "2021/question/2021_15.png"
+            "image_path": "2021/question/2021_15.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 19,
-            "image_path": "2021/question/2021_19.png"
+            "image_path": "2021/question/2021_19.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 25,
-            "image_path": "2021/question/2021_25.png"
+            "image_path": "2021/question/2021_25.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 15,
-            "image_path": "2022/question/2022_15.png"
+            "image_path": "2022/question/2022_15.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 17,
-            "image_path": "2022/question/2022_17.png"
+            "image_path": "2022/question/2022_17.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 13,
-            "image_path": "2023/question/2023_13.png"
+            "image_path": "2023/question/2023_13.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 9,
-            "image_path": "2024/question/2024_9.png"
+            "image_path": "2024/question/2024_9.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 10,
-            "image_path": "2024/question/2024_10.png"
+            "image_path": "2024/question/2024_10.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 11,
-            "image_path": "2024/question/2024_11.png"
+            "image_path": "2024/question/2024_11.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 12,
-            "image_path": "2024/question/2024_12.png"
+            "image_path": "2024/question/2024_12.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 14,
-            "image_path": "2024/question/2024_14.png"
+            "image_path": "2024/question/2024_14.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 15,
-            "image_path": "2024/question/2024_15.png"
+            "image_path": "2024/question/2024_15.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 16,
-            "image_path": "2025/question/2025_16.png"
+            "image_path": "2025/question/2025_16.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 17,
-            "image_path": "2025/question/2025_17.png"
+            "image_path": "2025/question/2025_17.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 19,
-            "image_path": "2025/question/2025_19.png"
+            "image_path": "2025/question/2025_19.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -245,82 +397,146 @@
           {
             "year": 2021,
             "question_num": 16,
-            "image_path": "2021/question/2021_16.png"
+            "image_path": "2021/question/2021_16.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 20,
-            "image_path": "2021/question/2021_20.png"
+            "image_path": "2021/question/2021_20.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 14,
-            "image_path": "2022/question/2022_14.png"
+            "image_path": "2022/question/2022_14.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 18,
-            "image_path": "2022/question/2022_18.png"
+            "image_path": "2022/question/2022_18.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 20,
-            "image_path": "2022/question/2022_20.png"
+            "image_path": "2022/question/2022_20.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 24,
-            "image_path": "2022/question/2022_24.png"
+            "image_path": "2022/question/2022_24.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 16,
-            "image_path": "2023/question/2023_16.png"
+            "image_path": "2023/question/2023_16.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 23,
-            "image_path": "2023/question/2023_23.png"
+            "image_path": "2023/question/2023_23.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 1,
-            "image_path": "2024/question/2024_1.png"
+            "image_path": "2024/question/2024_1.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 2,
-            "image_path": "2024/question/2024_2.png"
+            "image_path": "2024/question/2024_2.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 5,
-            "image_path": "2024/question/2024_5.png"
+            "image_path": "2024/question/2024_5.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 2,
-            "image_path": "2025/question/2025_2.png"
+            "image_path": "2025/question/2025_2.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 3,
-            "image_path": "2025/question/2025_3.png"
+            "image_path": "2025/question/2025_3.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 6,
-            "image_path": "2025/question/2025_6.png"
+            "image_path": "2025/question/2025_6.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 7,
-            "image_path": "2025/question/2025_7.png"
+            "image_path": "2025/question/2025_7.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 9,
-            "image_path": "2025/question/2025_9.png"
+            "image_path": "2025/question/2025_9.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -345,62 +561,110 @@
           {
             "year": 2021,
             "question_num": 12,
-            "image_path": "2021/question/2021_12.png"
+            "image_path": "2021/question/2021_12.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 22,
-            "image_path": "2021/question/2021_22.png"
+            "image_path": "2021/question/2021_22.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 23,
-            "image_path": "2021/question/2021_23.png"
+            "image_path": "2021/question/2021_23.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 19,
-            "image_path": "2022/question/2022_19.png"
+            "image_path": "2022/question/2022_19.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 21,
-            "image_path": "2023/question/2023_21.png"
+            "image_path": "2023/question/2023_21.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 25,
-            "image_path": "2023/question/2023_25.png"
+            "image_path": "2023/question/2023_25.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 6,
-            "image_path": "2024/question/2024_6.png"
+            "image_path": "2024/question/2024_6.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 17,
-            "image_path": "2024/question/2024_17.png"
+            "image_path": "2024/question/2024_17.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 1,
-            "image_path": "2025/question/2025_1.png"
+            "image_path": "2025/question/2025_1.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 4,
-            "image_path": "2025/question/2025_4.png"
+            "image_path": "2025/question/2025_4.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 5,
-            "image_path": "2025/question/2025_5.png"
+            "image_path": "2025/question/2025_5.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 10,
-            "image_path": "2025/question/2025_10.png"
+            "image_path": "2025/question/2025_10.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -422,67 +686,119 @@
           {
             "year": 2021,
             "question_num": 11,
-            "image_path": "2021/question/2021_11.png"
+            "image_path": "2021/question/2021_11.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 21,
-            "image_path": "2021/question/2021_21.png"
+            "image_path": "2021/question/2021_21.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 21,
-            "image_path": "2022/question/2022_21.png"
+            "image_path": "2022/question/2022_21.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 15,
-            "image_path": "2023/question/2023_15.png"
+            "image_path": "2023/question/2023_15.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 17,
-            "image_path": "2023/question/2023_17.png"
+            "image_path": "2023/question/2023_17.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 22,
-            "image_path": "2023/question/2023_22.png"
+            "image_path": "2023/question/2023_22.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 24,
-            "image_path": "2023/question/2023_24.png"
+            "image_path": "2023/question/2023_24.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 3,
-            "image_path": "2024/question/2024_3.png"
+            "image_path": "2024/question/2024_3.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 4,
-            "image_path": "2024/question/2024_4.png"
+            "image_path": "2024/question/2024_4.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 8,
-            "image_path": "2025/question/2025_8.png"
+            "image_path": "2025/question/2025_8.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 11,
-            "image_path": "2025/question/2025_11.png"
+            "image_path": "2025/question/2025_11.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 12,
-            "image_path": "2025/question/2025_12.png"
+            "image_path": "2025/question/2025_12.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 14,
-            "image_path": "2025/question/2025_14.png"
+            "image_path": "2025/question/2025_14.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -503,57 +819,101 @@
           {
             "year": 2021,
             "question_num": 10,
-            "image_path": "2021/question/2021_10.png"
+            "image_path": "2021/question/2021_10.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 1,
-            "image_path": "2022/question/2022_1.png"
+            "image_path": "2022/question/2022_1.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 2,
-            "image_path": "2022/question/2022_2.png"
+            "image_path": "2022/question/2022_2.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 3,
-            "image_path": "2022/question/2022_3.png"
+            "image_path": "2022/question/2022_3.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 7,
-            "image_path": "2022/question/2022_7.png"
+            "image_path": "2022/question/2022_7.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 9,
-            "image_path": "2022/question/2022_9.png"
+            "image_path": "2022/question/2022_9.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 2,
-            "image_path": "2023/question/2023_2.png"
+            "image_path": "2023/question/2023_2.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 4,
-            "image_path": "2023/question/2023_4.png"
+            "image_path": "2023/question/2023_4.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 5,
-            "image_path": "2023/question/2023_5.png"
+            "image_path": "2023/question/2023_5.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 8,
-            "image_path": "2023/question/2023_8.png"
+            "image_path": "2023/question/2023_8.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 21,
-            "image_path": "2024/question/2024_21.png"
+            "image_path": "2024/question/2024_21.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -575,72 +935,128 @@
           {
             "year": 2021,
             "question_num": 1,
-            "image_path": "2021/question/2021_1.png"
+            "image_path": "2021/question/2021_1.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 4,
-            "image_path": "2021/question/2021_4.png"
+            "image_path": "2021/question/2021_4.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 7,
-            "image_path": "2021/question/2021_7.png"
+            "image_path": "2021/question/2021_7.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 8,
-            "image_path": "2021/question/2021_8.png"
+            "image_path": "2021/question/2021_8.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 4,
-            "image_path": "2022/question/2022_4.png"
+            "image_path": "2022/question/2022_4.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 8,
-            "image_path": "2022/question/2022_8.png"
+            "image_path": "2022/question/2022_8.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 1,
-            "image_path": "2023/question/2023_1.png"
+            "image_path": "2023/question/2023_1.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 3,
-            "image_path": "2023/question/2023_3.png"
+            "image_path": "2023/question/2023_3.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 6,
-            "image_path": "2023/question/2023_6.png"
+            "image_path": "2023/question/2023_6.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 7,
-            "image_path": "2023/question/2023_7.png"
+            "image_path": "2023/question/2023_7.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 18,
-            "image_path": "2024/question/2024_18.png"
+            "image_path": "2024/question/2024_18.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 24,
-            "image_path": "2024/question/2024_24.png"
+            "image_path": "2024/question/2024_24.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 22,
-            "image_path": "2025/question/2025_22.png"
+            "image_path": "2025/question/2025_22.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 24,
-            "image_path": "2025/question/2025_24.png"
+            "image_path": "2025/question/2025_24.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -662,22 +1078,38 @@
           {
             "year": 2022,
             "question_num": 5,
-            "image_path": "2022/question/2022_5.png"
+            "image_path": "2022/question/2022_5.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 22,
-            "image_path": "2024/question/2024_22.png"
+            "image_path": "2024/question/2024_22.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 23,
-            "image_path": "2024/question/2024_23.png"
+            "image_path": "2024/question/2024_23.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 23,
-            "image_path": "2025/question/2025_23.png"
+            "image_path": "2025/question/2025_23.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -692,82 +1124,146 @@
           {
             "year": 2021,
             "question_num": 2,
-            "image_path": "2021/question/2021_2.png"
+            "image_path": "2021/question/2021_2.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 5,
-            "image_path": "2021/question/2021_5.png"
+            "image_path": "2021/question/2021_5.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 6,
-            "image_path": "2021/question/2021_6.png"
+            "image_path": "2021/question/2021_6.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 9,
-            "image_path": "2021/question/2021_9.png"
+            "image_path": "2021/question/2021_9.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 6,
-            "image_path": "2022/question/2022_6.png"
+            "image_path": "2022/question/2022_6.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 10,
-            "image_path": "2022/question/2022_10.png"
+            "image_path": "2022/question/2022_10.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 9,
-            "image_path": "2023/question/2023_9.png"
+            "image_path": "2023/question/2023_9.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 10,
-            "image_path": "2023/question/2023_10.png"
+            "image_path": "2023/question/2023_10.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 11,
-            "image_path": "2023/question/2023_11.png"
+            "image_path": "2023/question/2023_11.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 12,
-            "image_path": "2023/question/2023_12.png"
+            "image_path": "2023/question/2023_12.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 19,
-            "image_path": "2024/question/2024_19.png"
+            "image_path": "2024/question/2024_19.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 20,
-            "image_path": "2024/question/2024_20.png"
+            "image_path": "2024/question/2024_20.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 25,
-            "image_path": "2024/question/2024_25.png"
+            "image_path": "2024/question/2024_25.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 20,
-            "image_path": "2025/question/2025_20.png"
+            "image_path": "2025/question/2025_20.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 21,
-            "image_path": "2025/question/2025_21.png"
+            "image_path": "2025/question/2025_21.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 25,
-            "image_path": "2025/question/2025_25.png"
+            "image_path": "2025/question/2025_25.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -791,7 +1287,11 @@
           {
             "year": 2021,
             "question_num": 3,
-            "image_path": "2021/question/2021_3.png"
+            "image_path": "2021/question/2021_3.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -817,42 +1317,74 @@
           {
             "year": 2021,
             "question_num": 28,
-            "image_path": "2021/question/2021_28.png"
+            "image_path": "2021/question/2021_28.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 38,
-            "image_path": "2021/question/2021_38.png"
+            "image_path": "2021/question/2021_38.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 31,
-            "image_path": "2022/question/2022_31.png"
+            "image_path": "2022/question/2022_31.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 38,
-            "image_path": "2022/question/2022_38.png"
+            "image_path": "2022/question/2022_38.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 37,
-            "image_path": "2023/question/2023_37.png"
+            "image_path": "2023/question/2023_37.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 26,
-            "image_path": "2024/question/2024_26.png"
+            "image_path": "2024/question/2024_26.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 50,
-            "image_path": "2024/question/2024_50.png"
+            "image_path": "2024/question/2024_50.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 37,
-            "image_path": "2025/question/2025_37.png"
+            "image_path": "2025/question/2025_37.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -869,17 +1401,29 @@
           {
             "year": 2024,
             "question_num": 27,
-            "image_path": "2024/question/2024_27.png"
+            "image_path": "2024/question/2024_27.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 48,
-            "image_path": "2024/question/2024_48.png"
+            "image_path": "2024/question/2024_48.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 50,
-            "image_path": "2025/question/2025_50.png"
+            "image_path": "2025/question/2025_50.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -892,37 +1436,65 @@
           {
             "year": 2021,
             "question_num": 37,
-            "image_path": "2021/question/2021_37.png"
+            "image_path": "2021/question/2021_37.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 47,
-            "image_path": "2021/question/2021_47.png"
+            "image_path": "2021/question/2021_47.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 26,
-            "image_path": "2022/question/2022_26.png"
+            "image_path": "2022/question/2022_26.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 27,
-            "image_path": "2022/question/2022_27.png"
+            "image_path": "2022/question/2022_27.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 44,
-            "image_path": "2024/question/2024_44.png"
+            "image_path": "2024/question/2024_44.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 32,
-            "image_path": "2025/question/2025_32.png"
+            "image_path": "2025/question/2025_32.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 43,
-            "image_path": "2025/question/2025_43.png"
+            "image_path": "2025/question/2025_43.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -936,182 +1508,326 @@
           {
             "year": 2021,
             "question_num": 26,
-            "image_path": "2021/question/2021_26.png"
+            "image_path": "2021/question/2021_26.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 27,
-            "image_path": "2021/question/2021_27.png"
+            "image_path": "2021/question/2021_27.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 31,
-            "image_path": "2021/question/2021_31.png"
+            "image_path": "2021/question/2021_31.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 33,
-            "image_path": "2021/question/2021_33.png"
+            "image_path": "2021/question/2021_33.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 36,
-            "image_path": "2021/question/2021_36.png"
+            "image_path": "2021/question/2021_36.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 39,
-            "image_path": "2021/question/2021_39.png"
+            "image_path": "2021/question/2021_39.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 42,
-            "image_path": "2021/question/2021_42.png"
+            "image_path": "2021/question/2021_42.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 43,
-            "image_path": "2021/question/2021_43.png"
+            "image_path": "2021/question/2021_43.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 45,
-            "image_path": "2021/question/2021_45.png"
+            "image_path": "2021/question/2021_45.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 48,
-            "image_path": "2021/question/2021_48.png"
+            "image_path": "2021/question/2021_48.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 49,
-            "image_path": "2021/question/2021_49.png"
+            "image_path": "2021/question/2021_49.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 32,
-            "image_path": "2022/question/2022_32.png"
+            "image_path": "2022/question/2022_32.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 36,
-            "image_path": "2022/question/2022_36.png"
+            "image_path": "2022/question/2022_36.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 41,
-            "image_path": "2022/question/2022_41.png"
+            "image_path": "2022/question/2022_41.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 43,
-            "image_path": "2022/question/2022_43.png"
+            "image_path": "2022/question/2022_43.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 45,
-            "image_path": "2022/question/2022_45.png"
+            "image_path": "2022/question/2022_45.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 49,
-            "image_path": "2022/question/2022_49.png"
+            "image_path": "2022/question/2022_49.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 26,
-            "image_path": "2023/question/2023_26.png"
+            "image_path": "2023/question/2023_26.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 28,
-            "image_path": "2023/question/2023_28.png"
+            "image_path": "2023/question/2023_28.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 31,
-            "image_path": "2023/question/2023_31.png"
+            "image_path": "2023/question/2023_31.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 33,
-            "image_path": "2023/question/2023_33.png"
+            "image_path": "2023/question/2023_33.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 35,
-            "image_path": "2023/question/2023_35.png"
+            "image_path": "2023/question/2023_35.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 36,
-            "image_path": "2023/question/2023_36.png"
+            "image_path": "2023/question/2023_36.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 39,
-            "image_path": "2023/question/2023_39.png"
+            "image_path": "2023/question/2023_39.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 40,
-            "image_path": "2023/question/2023_40.png"
+            "image_path": "2023/question/2023_40.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 28,
-            "image_path": "2024/question/2024_28.png"
+            "image_path": "2024/question/2024_28.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 30,
-            "image_path": "2024/question/2024_30.png"
+            "image_path": "2024/question/2024_30.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 31,
-            "image_path": "2024/question/2024_31.png"
+            "image_path": "2024/question/2024_31.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 46,
-            "image_path": "2024/question/2024_46.png"
+            "image_path": "2024/question/2024_46.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 29,
-            "image_path": "2025/question/2025_29.png"
+            "image_path": "2025/question/2025_29.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 30,
-            "image_path": "2025/question/2025_30.png"
+            "image_path": "2025/question/2025_30.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 38,
-            "image_path": "2025/question/2025_38.png"
+            "image_path": "2025/question/2025_38.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 44,
-            "image_path": "2025/question/2025_44.png"
+            "image_path": "2025/question/2025_44.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 45,
-            "image_path": "2025/question/2025_45.png"
+            "image_path": "2025/question/2025_45.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 47,
-            "image_path": "2025/question/2025_47.png"
+            "image_path": "2025/question/2025_47.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 48,
-            "image_path": "2025/question/2025_48.png"
+            "image_path": "2025/question/2025_48.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1132,102 +1848,182 @@
           {
             "year": 2021,
             "question_num": 32,
-            "image_path": "2021/question/2021_32.png"
+            "image_path": "2021/question/2021_32.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 34,
-            "image_path": "2021/question/2021_34.png"
+            "image_path": "2021/question/2021_34.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 35,
-            "image_path": "2021/question/2021_35.png"
+            "image_path": "2021/question/2021_35.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 41,
-            "image_path": "2021/question/2021_41.png"
+            "image_path": "2021/question/2021_41.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 50,
-            "image_path": "2021/question/2021_50.png"
+            "image_path": "2021/question/2021_50.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 28,
-            "image_path": "2022/question/2022_28.png"
+            "image_path": "2022/question/2022_28.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 30,
-            "image_path": "2022/question/2022_30.png"
+            "image_path": "2022/question/2022_30.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 34,
-            "image_path": "2022/question/2022_34.png"
+            "image_path": "2022/question/2022_34.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 37,
-            "image_path": "2022/question/2022_37.png"
+            "image_path": "2022/question/2022_37.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 39,
-            "image_path": "2022/question/2022_39.png"
+            "image_path": "2022/question/2022_39.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 32,
-            "image_path": "2024/question/2024_32.png"
+            "image_path": "2024/question/2024_32.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 33,
-            "image_path": "2024/question/2024_33.png"
+            "image_path": "2024/question/2024_33.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 35,
-            "image_path": "2024/question/2024_35.png"
+            "image_path": "2024/question/2024_35.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 40,
-            "image_path": "2024/question/2024_40.png"
+            "image_path": "2024/question/2024_40.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 41,
-            "image_path": "2024/question/2024_41.png"
+            "image_path": "2024/question/2024_41.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 45,
-            "image_path": "2024/question/2024_45.png"
+            "image_path": "2024/question/2024_45.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 49,
-            "image_path": "2024/question/2024_49.png"
+            "image_path": "2024/question/2024_49.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 35,
-            "image_path": "2025/question/2025_35.png"
+            "image_path": "2025/question/2025_35.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 36,
-            "image_path": "2025/question/2025_36.png"
+            "image_path": "2025/question/2025_36.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 49,
-            "image_path": "2025/question/2025_49.png"
+            "image_path": "2025/question/2025_49.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1245,97 +2041,173 @@
           {
             "year": 2021,
             "question_num": 29,
-            "image_path": "2021/question/2021_29.png"
+            "image_path": "2021/question/2021_29.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 44,
-            "image_path": "2021/question/2021_44.png"
+            "image_path": "2021/question/2021_44.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 33,
-            "image_path": "2022/question/2022_33.png"
+            "image_path": "2022/question/2022_33.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 44,
-            "image_path": "2022/question/2022_44.png"
+            "image_path": "2022/question/2022_44.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 27,
-            "image_path": "2023/question/2023_27.png"
+            "image_path": "2023/question/2023_27.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 29,
-            "image_path": "2023/question/2023_29.png"
+            "image_path": "2023/question/2023_29.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 34,
-            "image_path": "2023/question/2023_34.png"
+            "image_path": "2023/question/2023_34.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 45,
-            "image_path": "2023/question/2023_45.png"
+            "image_path": "2023/question/2023_45.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 46,
-            "image_path": "2023/question/2023_46.png"
+            "image_path": "2023/question/2023_46.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 47,
-            "image_path": "2023/question/2023_47.png"
+            "image_path": "2023/question/2023_47.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 34,
-            "image_path": "2024/question/2024_34.png"
+            "image_path": "2024/question/2024_34.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 36,
-            "image_path": "2024/question/2024_36.png"
+            "image_path": "2024/question/2024_36.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 37,
-            "image_path": "2024/question/2024_37.png"
+            "image_path": "2024/question/2024_37.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 43,
-            "image_path": "2024/question/2024_43.png"
+            "image_path": "2024/question/2024_43.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 28,
-            "image_path": "2025/question/2025_28.png"
+            "image_path": "2025/question/2025_28.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 33,
-            "image_path": "2025/question/2025_33.png"
+            "image_path": "2025/question/2025_33.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 34,
-            "image_path": "2025/question/2025_34.png"
+            "image_path": "2025/question/2025_34.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 42,
-            "image_path": "2025/question/2025_42.png"
+            "image_path": "2025/question/2025_42.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 46,
-            "image_path": "2025/question/2025_46.png"
+            "image_path": "2025/question/2025_46.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1352,12 +2224,20 @@
           {
             "year": 2023,
             "question_num": 48,
-            "image_path": "2023/question/2023_48.png"
+            "image_path": "2023/question/2023_48.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 40,
-            "image_path": "2025/question/2025_40.png"
+            "image_path": "2025/question/2025_40.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1372,152 +2252,272 @@
           {
             "year": 2021,
             "question_num": 30,
-            "image_path": "2021/question/2021_30.png"
+            "image_path": "2021/question/2021_30.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 40,
-            "image_path": "2021/question/2021_40.png"
+            "image_path": "2021/question/2021_40.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 46,
-            "image_path": "2021/question/2021_46.png"
+            "image_path": "2021/question/2021_46.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 29,
-            "image_path": "2022/question/2022_29.png"
+            "image_path": "2022/question/2022_29.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 35,
-            "image_path": "2022/question/2022_35.png"
+            "image_path": "2022/question/2022_35.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 40,
-            "image_path": "2022/question/2022_40.png"
+            "image_path": "2022/question/2022_40.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 42,
-            "image_path": "2022/question/2022_42.png"
+            "image_path": "2022/question/2022_42.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 46,
-            "image_path": "2022/question/2022_46.png"
+            "image_path": "2022/question/2022_46.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 47,
-            "image_path": "2022/question/2022_47.png"
+            "image_path": "2022/question/2022_47.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 48,
-            "image_path": "2022/question/2022_48.png"
+            "image_path": "2022/question/2022_48.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 50,
-            "image_path": "2022/question/2022_50.png"
+            "image_path": "2022/question/2022_50.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 30,
-            "image_path": "2023/question/2023_30.png"
+            "image_path": "2023/question/2023_30.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 32,
-            "image_path": "2023/question/2023_32.png"
+            "image_path": "2023/question/2023_32.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 38,
-            "image_path": "2023/question/2023_38.png"
+            "image_path": "2023/question/2023_38.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 41,
-            "image_path": "2023/question/2023_41.png"
+            "image_path": "2023/question/2023_41.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 42,
-            "image_path": "2023/question/2023_42.png"
+            "image_path": "2023/question/2023_42.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 43,
-            "image_path": "2023/question/2023_43.png"
+            "image_path": "2023/question/2023_43.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 44,
-            "image_path": "2023/question/2023_44.png"
+            "image_path": "2023/question/2023_44.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 49,
-            "image_path": "2023/question/2023_49.png"
+            "image_path": "2023/question/2023_49.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 50,
-            "image_path": "2023/question/2023_50.png"
+            "image_path": "2023/question/2023_50.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 29,
-            "image_path": "2024/question/2024_29.png"
+            "image_path": "2024/question/2024_29.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 38,
-            "image_path": "2024/question/2024_38.png"
+            "image_path": "2024/question/2024_38.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 39,
-            "image_path": "2024/question/2024_39.png"
+            "image_path": "2024/question/2024_39.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 42,
-            "image_path": "2024/question/2024_42.png"
+            "image_path": "2024/question/2024_42.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 47,
-            "image_path": "2024/question/2024_47.png"
+            "image_path": "2024/question/2024_47.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 26,
-            "image_path": "2025/question/2025_26.png"
+            "image_path": "2025/question/2025_26.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 27,
-            "image_path": "2025/question/2025_27.png"
+            "image_path": "2025/question/2025_27.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 31,
-            "image_path": "2025/question/2025_31.png"
+            "image_path": "2025/question/2025_31.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 39,
-            "image_path": "2025/question/2025_39.png"
+            "image_path": "2025/question/2025_39.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 41,
-            "image_path": "2025/question/2025_41.png"
+            "image_path": "2025/question/2025_41.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1539,57 +2539,101 @@
           {
             "year": 2021,
             "question_num": 58,
-            "image_path": "2021/question/2021_58.png"
+            "image_path": "2021/question/2021_58.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 66,
-            "image_path": "2021/question/2021_66.png"
+            "image_path": "2021/question/2021_66.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 51,
-            "image_path": "2022/question/2022_51.png"
+            "image_path": "2022/question/2022_51.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 62,
-            "image_path": "2022/question/2022_62.png"
+            "image_path": "2022/question/2022_62.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 52,
-            "image_path": "2023/question/2023_52.png"
+            "image_path": "2023/question/2023_52.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 59,
-            "image_path": "2024/question/2024_59.png"
+            "image_path": "2024/question/2024_59.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 71,
-            "image_path": "2024/question/2024_71.png"
+            "image_path": "2024/question/2024_71.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 73,
-            "image_path": "2024/question/2024_73.png"
+            "image_path": "2024/question/2024_73.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 56,
-            "image_path": "2025/question/2025_56.png"
+            "image_path": "2025/question/2025_56.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 63,
-            "image_path": "2025/question/2025_63.png"
+            "image_path": "2025/question/2025_63.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 64,
-            "image_path": "2025/question/2025_64.png"
+            "image_path": "2025/question/2025_64.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1608,117 +2652,209 @@
           {
             "year": 2021,
             "question_num": 52,
-            "image_path": "2021/question/2021_52.png"
+            "image_path": "2021/question/2021_52.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 53,
-            "image_path": "2021/question/2021_53.png"
+            "image_path": "2021/question/2021_53.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 72,
-            "image_path": "2021/question/2021_72.png"
+            "image_path": "2021/question/2021_72.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 74,
-            "image_path": "2021/question/2021_74.png"
+            "image_path": "2021/question/2021_74.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 52,
-            "image_path": "2022/question/2022_52.png"
+            "image_path": "2022/question/2022_52.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 53,
-            "image_path": "2022/question/2022_53.png"
+            "image_path": "2022/question/2022_53.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 54,
-            "image_path": "2022/question/2022_54.png"
+            "image_path": "2022/question/2022_54.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 55,
-            "image_path": "2022/question/2022_55.png"
+            "image_path": "2022/question/2022_55.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 56,
-            "image_path": "2022/question/2022_56.png"
+            "image_path": "2022/question/2022_56.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 53,
-            "image_path": "2023/question/2023_53.png"
+            "image_path": "2023/question/2023_53.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 55,
-            "image_path": "2023/question/2023_55.png"
+            "image_path": "2023/question/2023_55.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 56,
-            "image_path": "2023/question/2023_56.png"
+            "image_path": "2023/question/2023_56.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 58,
-            "image_path": "2023/question/2023_58.png"
+            "image_path": "2023/question/2023_58.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 61,
-            "image_path": "2023/question/2023_61.png"
+            "image_path": "2023/question/2023_61.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 56,
-            "image_path": "2024/question/2024_56.png"
+            "image_path": "2024/question/2024_56.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 57,
-            "image_path": "2024/question/2024_57.png"
+            "image_path": "2024/question/2024_57.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 58,
-            "image_path": "2024/question/2024_58.png"
+            "image_path": "2024/question/2024_58.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 64,
-            "image_path": "2024/question/2024_64.png"
+            "image_path": "2024/question/2024_64.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 69,
-            "image_path": "2024/question/2024_69.png"
+            "image_path": "2024/question/2024_69.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 51,
-            "image_path": "2025/question/2025_51.png"
+            "image_path": "2025/question/2025_51.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 52,
-            "image_path": "2025/question/2025_52.png"
+            "image_path": "2025/question/2025_52.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 54,
-            "image_path": "2025/question/2025_54.png"
+            "image_path": "2025/question/2025_54.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 55,
-            "image_path": "2025/question/2025_55.png"
+            "image_path": "2025/question/2025_55.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1737,207 +2873,371 @@
           {
             "year": 2021,
             "question_num": 54,
-            "image_path": "2021/question/2021_54.png"
+            "image_path": "2021/question/2021_54.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 55,
-            "image_path": "2021/question/2021_55.png"
+            "image_path": "2021/question/2021_55.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 59,
-            "image_path": "2021/question/2021_59.png"
+            "image_path": "2021/question/2021_59.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 60,
-            "image_path": "2021/question/2021_60.png"
+            "image_path": "2021/question/2021_60.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 61,
-            "image_path": "2021/question/2021_61.png"
+            "image_path": "2021/question/2021_61.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 63,
-            "image_path": "2021/question/2021_63.png"
+            "image_path": "2021/question/2021_63.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 65,
-            "image_path": "2021/question/2021_65.png"
+            "image_path": "2021/question/2021_65.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 67,
-            "image_path": "2021/question/2021_67.png"
+            "image_path": "2021/question/2021_67.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 68,
-            "image_path": "2021/question/2021_68.png"
+            "image_path": "2021/question/2021_68.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 57,
-            "image_path": "2022/question/2022_57.png"
+            "image_path": "2022/question/2022_57.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 58,
-            "image_path": "2022/question/2022_58.png"
+            "image_path": "2022/question/2022_58.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 59,
-            "image_path": "2022/question/2022_59.png"
+            "image_path": "2022/question/2022_59.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 60,
-            "image_path": "2022/question/2022_60.png"
+            "image_path": "2022/question/2022_60.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 61,
-            "image_path": "2022/question/2022_61.png"
+            "image_path": "2022/question/2022_61.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 64,
-            "image_path": "2022/question/2022_64.png"
+            "image_path": "2022/question/2022_64.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 68,
-            "image_path": "2022/question/2022_68.png"
+            "image_path": "2022/question/2022_68.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 54,
-            "image_path": "2023/question/2023_54.png"
+            "image_path": "2023/question/2023_54.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 57,
-            "image_path": "2023/question/2023_57.png"
+            "image_path": "2023/question/2023_57.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 59,
-            "image_path": "2023/question/2023_59.png"
+            "image_path": "2023/question/2023_59.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 60,
-            "image_path": "2023/question/2023_60.png"
+            "image_path": "2023/question/2023_60.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 62,
-            "image_path": "2023/question/2023_62.png"
+            "image_path": "2023/question/2023_62.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 63,
-            "image_path": "2023/question/2023_63.png"
+            "image_path": "2023/question/2023_63.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 65,
-            "image_path": "2023/question/2023_65.png"
+            "image_path": "2023/question/2023_65.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 52,
-            "image_path": "2024/question/2024_52.png"
+            "image_path": "2024/question/2024_52.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 55,
-            "image_path": "2024/question/2024_55.png"
+            "image_path": "2024/question/2024_55.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 60,
-            "image_path": "2024/question/2024_60.png"
+            "image_path": "2024/question/2024_60.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 61,
-            "image_path": "2024/question/2024_61.png"
+            "image_path": "2024/question/2024_61.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 63,
-            "image_path": "2024/question/2024_63.png"
+            "image_path": "2024/question/2024_63.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 65,
-            "image_path": "2024/question/2024_65.png"
+            "image_path": "2024/question/2024_65.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 67,
-            "image_path": "2024/question/2024_67.png"
+            "image_path": "2024/question/2024_67.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 68,
-            "image_path": "2024/question/2024_68.png"
+            "image_path": "2024/question/2024_68.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 70,
-            "image_path": "2024/question/2024_70.png"
+            "image_path": "2024/question/2024_70.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 53,
-            "image_path": "2025/question/2025_53.png"
+            "image_path": "2025/question/2025_53.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 57,
-            "image_path": "2025/question/2025_57.png"
+            "image_path": "2025/question/2025_57.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 58,
-            "image_path": "2025/question/2025_58.png"
+            "image_path": "2025/question/2025_58.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 59,
-            "image_path": "2025/question/2025_59.png"
+            "image_path": "2025/question/2025_59.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 60,
-            "image_path": "2025/question/2025_60.png"
+            "image_path": "2025/question/2025_60.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 61,
-            "image_path": "2025/question/2025_61.png"
+            "image_path": "2025/question/2025_61.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 62,
-            "image_path": "2025/question/2025_62.png"
+            "image_path": "2025/question/2025_62.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 65,
-            "image_path": "2025/question/2025_65.png"
+            "image_path": "2025/question/2025_65.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 72,
-            "image_path": "2025/question/2025_72.png"
+            "image_path": "2025/question/2025_72.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -1961,82 +3261,146 @@
           {
             "year": 2021,
             "question_num": 56,
-            "image_path": "2021/question/2021_56.png"
+            "image_path": "2021/question/2021_56.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 64,
-            "image_path": "2021/question/2021_64.png"
+            "image_path": "2021/question/2021_64.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 71,
-            "image_path": "2021/question/2021_71.png"
+            "image_path": "2021/question/2021_71.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 63,
-            "image_path": "2022/question/2022_63.png"
+            "image_path": "2022/question/2022_63.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 65,
-            "image_path": "2022/question/2022_65.png"
+            "image_path": "2022/question/2022_65.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 66,
-            "image_path": "2022/question/2022_66.png"
+            "image_path": "2022/question/2022_66.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 64,
-            "image_path": "2023/question/2023_64.png"
+            "image_path": "2023/question/2023_64.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 66,
-            "image_path": "2023/question/2023_66.png"
+            "image_path": "2023/question/2023_66.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 67,
-            "image_path": "2023/question/2023_67.png"
+            "image_path": "2023/question/2023_67.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 68,
-            "image_path": "2023/question/2023_68.png"
+            "image_path": "2023/question/2023_68.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 70,
-            "image_path": "2023/question/2023_70.png"
+            "image_path": "2023/question/2023_70.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 53,
-            "image_path": "2024/question/2024_53.png"
+            "image_path": "2024/question/2024_53.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 54,
-            "image_path": "2024/question/2024_54.png"
+            "image_path": "2024/question/2024_54.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 74,
-            "image_path": "2024/question/2024_74.png"
+            "image_path": "2024/question/2024_74.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 66,
-            "image_path": "2025/question/2025_66.png"
+            "image_path": "2025/question/2025_66.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 70,
-            "image_path": "2025/question/2025_70.png"
+            "image_path": "2025/question/2025_70.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2058,172 +3422,308 @@
           {
             "year": 2021,
             "question_num": 51,
-            "image_path": "2021/question/2021_51.png"
+            "image_path": "2021/question/2021_51.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 57,
-            "image_path": "2021/question/2021_57.png"
+            "image_path": "2021/question/2021_57.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 62,
-            "image_path": "2021/question/2021_62.png"
+            "image_path": "2021/question/2021_62.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 69,
-            "image_path": "2021/question/2021_69.png"
+            "image_path": "2021/question/2021_69.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 70,
-            "image_path": "2021/question/2021_70.png"
+            "image_path": "2021/question/2021_70.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 73,
-            "image_path": "2021/question/2021_73.png"
+            "image_path": "2021/question/2021_73.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 75,
-            "image_path": "2021/question/2021_75.png"
+            "image_path": "2021/question/2021_75.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 67,
-            "image_path": "2022/question/2022_67.png"
+            "image_path": "2022/question/2022_67.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 69,
-            "image_path": "2022/question/2022_69.png"
+            "image_path": "2022/question/2022_69.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 70,
-            "image_path": "2022/question/2022_70.png"
+            "image_path": "2022/question/2022_70.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 71,
-            "image_path": "2022/question/2022_71.png"
+            "image_path": "2022/question/2022_71.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 72,
-            "image_path": "2022/question/2022_72.png"
+            "image_path": "2022/question/2022_72.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 73,
-            "image_path": "2022/question/2022_73.png"
+            "image_path": "2022/question/2022_73.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 74,
-            "image_path": "2022/question/2022_74.png"
+            "image_path": "2022/question/2022_74.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 75,
-            "image_path": "2022/question/2022_75.png"
+            "image_path": "2022/question/2022_75.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 51,
-            "image_path": "2023/question/2023_51.png"
+            "image_path": "2023/question/2023_51.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 69,
-            "image_path": "2023/question/2023_69.png"
+            "image_path": "2023/question/2023_69.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 71,
-            "image_path": "2023/question/2023_71.png"
+            "image_path": "2023/question/2023_71.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 72,
-            "image_path": "2023/question/2023_72.png"
+            "image_path": "2023/question/2023_72.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 73,
-            "image_path": "2023/question/2023_73.png"
+            "image_path": "2023/question/2023_73.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 74,
-            "image_path": "2023/question/2023_74.png"
+            "image_path": "2023/question/2023_74.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 75,
-            "image_path": "2023/question/2023_75.png"
+            "image_path": "2023/question/2023_75.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 51,
-            "image_path": "2024/question/2024_51.png"
+            "image_path": "2024/question/2024_51.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 62,
-            "image_path": "2024/question/2024_62.png"
+            "image_path": "2024/question/2024_62.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 66,
-            "image_path": "2024/question/2024_66.png"
+            "image_path": "2024/question/2024_66.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 72,
-            "image_path": "2024/question/2024_72.png"
+            "image_path": "2024/question/2024_72.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 75,
-            "image_path": "2024/question/2024_75.png"
+            "image_path": "2024/question/2024_75.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 67,
-            "image_path": "2025/question/2025_67.png"
+            "image_path": "2025/question/2025_67.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 68,
-            "image_path": "2025/question/2025_68.png"
+            "image_path": "2025/question/2025_68.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 69,
-            "image_path": "2025/question/2025_69.png"
+            "image_path": "2025/question/2025_69.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 71,
-            "image_path": "2025/question/2025_71.png"
+            "image_path": "2025/question/2025_71.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 73,
-            "image_path": "2025/question/2025_73.png"
+            "image_path": "2025/question/2025_73.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 74,
-            "image_path": "2025/question/2025_74.png"
+            "image_path": "2025/question/2025_74.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 75,
-            "image_path": "2025/question/2025_75.png"
+            "image_path": "2025/question/2025_75.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2258,107 +3758,191 @@
           {
             "year": 2021,
             "question_num": 76,
-            "image_path": "2021/question/2021_76.png"
+            "image_path": "2021/question/2021_76.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 81,
-            "image_path": "2021/question/2021_81.png"
+            "image_path": "2021/question/2021_81.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 83,
-            "image_path": "2021/question/2021_83.png"
+            "image_path": "2021/question/2021_83.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 88,
-            "image_path": "2021/question/2021_88.png"
+            "image_path": "2021/question/2021_88.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 80,
-            "image_path": "2022/question/2022_80.png"
+            "image_path": "2022/question/2022_80.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 84,
-            "image_path": "2022/question/2022_84.png"
+            "image_path": "2022/question/2022_84.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 87,
-            "image_path": "2022/question/2022_87.png"
+            "image_path": "2022/question/2022_87.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 100,
-            "image_path": "2022/question/2022_100.png"
+            "image_path": "2022/question/2022_100.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 79,
-            "image_path": "2023/question/2023_79.png"
+            "image_path": "2023/question/2023_79.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 81,
-            "image_path": "2023/question/2023_81.png"
+            "image_path": "2023/question/2023_81.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 82,
-            "image_path": "2023/question/2023_82.png"
+            "image_path": "2023/question/2023_82.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 77,
-            "image_path": "2024/question/2024_77.png"
+            "image_path": "2024/question/2024_77.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 79,
-            "image_path": "2024/question/2024_79.png"
+            "image_path": "2024/question/2024_79.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 82,
-            "image_path": "2024/question/2024_82.png"
+            "image_path": "2024/question/2024_82.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 83,
-            "image_path": "2024/question/2024_83.png"
+            "image_path": "2024/question/2024_83.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 93,
-            "image_path": "2024/question/2024_93.png"
+            "image_path": "2024/question/2024_93.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 78,
-            "image_path": "2025/question/2025_78.png"
+            "image_path": "2025/question/2025_78.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 79,
-            "image_path": "2025/question/2025_79.png"
+            "image_path": "2025/question/2025_79.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 81,
-            "image_path": "2025/question/2025_81.png"
+            "image_path": "2025/question/2025_81.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 84,
-            "image_path": "2025/question/2025_84.png"
+            "image_path": "2025/question/2025_84.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 85,
-            "image_path": "2025/question/2025_85.png"
+            "image_path": "2025/question/2025_85.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2378,37 +3962,65 @@
           {
             "year": 2022,
             "question_num": 81,
-            "image_path": "2022/question/2022_81.png"
+            "image_path": "2022/question/2022_81.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 76,
-            "image_path": "2023/question/2023_76.png"
+            "image_path": "2023/question/2023_76.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 83,
-            "image_path": "2023/question/2023_83.png"
+            "image_path": "2023/question/2023_83.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 78,
-            "image_path": "2024/question/2024_78.png"
+            "image_path": "2024/question/2024_78.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 81,
-            "image_path": "2024/question/2024_81.png"
+            "image_path": "2024/question/2024_81.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 83,
-            "image_path": "2025/question/2025_83.png"
+            "image_path": "2025/question/2025_83.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 86,
-            "image_path": "2025/question/2025_86.png"
+            "image_path": "2025/question/2025_86.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2424,197 +4036,353 @@
           {
             "year": 2021,
             "question_num": 78,
-            "image_path": "2021/question/2021_78.png"
+            "image_path": "2021/question/2021_78.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 80,
-            "image_path": "2021/question/2021_80.png"
+            "image_path": "2021/question/2021_80.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 84,
-            "image_path": "2021/question/2021_84.png"
+            "image_path": "2021/question/2021_84.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 89,
-            "image_path": "2021/question/2021_89.png"
+            "image_path": "2021/question/2021_89.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 93,
-            "image_path": "2021/question/2021_93.png"
+            "image_path": "2021/question/2021_93.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 94,
-            "image_path": "2021/question/2021_94.png"
+            "image_path": "2021/question/2021_94.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 100,
-            "image_path": "2021/question/2021_100.png"
+            "image_path": "2021/question/2021_100.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 76,
-            "image_path": "2022/question/2022_76.png"
+            "image_path": "2022/question/2022_76.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 77,
-            "image_path": "2022/question/2022_77.png"
+            "image_path": "2022/question/2022_77.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 78,
-            "image_path": "2022/question/2022_78.png"
+            "image_path": "2022/question/2022_78.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 82,
-            "image_path": "2022/question/2022_82.png"
+            "image_path": "2022/question/2022_82.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 83,
-            "image_path": "2022/question/2022_83.png"
+            "image_path": "2022/question/2022_83.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 89,
-            "image_path": "2022/question/2022_89.png"
+            "image_path": "2022/question/2022_89.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 90,
-            "image_path": "2022/question/2022_90.png"
+            "image_path": "2022/question/2022_90.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 91,
-            "image_path": "2022/question/2022_91.png"
+            "image_path": "2022/question/2022_91.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 92,
-            "image_path": "2022/question/2022_92.png"
+            "image_path": "2022/question/2022_92.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 93,
-            "image_path": "2022/question/2022_93.png"
+            "image_path": "2022/question/2022_93.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 99,
-            "image_path": "2022/question/2022_99.png"
+            "image_path": "2022/question/2022_99.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 77,
-            "image_path": "2023/question/2023_77.png"
+            "image_path": "2023/question/2023_77.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 84,
-            "image_path": "2023/question/2023_84.png"
+            "image_path": "2023/question/2023_84.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 88,
-            "image_path": "2023/question/2023_88.png"
+            "image_path": "2023/question/2023_88.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 89,
-            "image_path": "2023/question/2023_89.png"
+            "image_path": "2023/question/2023_89.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 90,
-            "image_path": "2023/question/2023_90.png"
+            "image_path": "2023/question/2023_90.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 92,
-            "image_path": "2023/question/2023_92.png"
+            "image_path": "2023/question/2023_92.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 100,
-            "image_path": "2023/question/2023_100.png"
+            "image_path": "2023/question/2023_100.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 84,
-            "image_path": "2024/question/2024_84.png"
+            "image_path": "2024/question/2024_84.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 86,
-            "image_path": "2024/question/2024_86.png"
+            "image_path": "2024/question/2024_86.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 87,
-            "image_path": "2024/question/2024_87.png"
+            "image_path": "2024/question/2024_87.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 88,
-            "image_path": "2024/question/2024_88.png"
+            "image_path": "2024/question/2024_88.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 89,
-            "image_path": "2024/question/2024_89.png"
+            "image_path": "2024/question/2024_89.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 90,
-            "image_path": "2024/question/2024_90.png"
+            "image_path": "2024/question/2024_90.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 92,
-            "image_path": "2024/question/2024_92.png"
+            "image_path": "2024/question/2024_92.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 98,
-            "image_path": "2024/question/2024_98.png"
+            "image_path": "2024/question/2024_98.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 99,
-            "image_path": "2024/question/2024_99.png"
+            "image_path": "2024/question/2024_99.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 100,
-            "image_path": "2024/question/2024_100.png"
+            "image_path": "2024/question/2024_100.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 82,
-            "image_path": "2025/question/2025_82.png"
+            "image_path": "2025/question/2025_82.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 88,
-            "image_path": "2025/question/2025_88.png"
+            "image_path": "2025/question/2025_88.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 94,
-            "image_path": "2025/question/2025_94.png"
+            "image_path": "2025/question/2025_94.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 96,
-            "image_path": "2025/question/2025_96.png"
+            "image_path": "2025/question/2025_96.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2633,17 +4401,29 @@
           {
             "year": 2023,
             "question_num": 80,
-            "image_path": "2023/question/2023_80.png"
+            "image_path": "2023/question/2023_80.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 97,
-            "image_path": "2024/question/2024_97.png"
+            "image_path": "2024/question/2024_97.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 91,
-            "image_path": "2025/question/2025_91.png"
+            "image_path": "2025/question/2025_91.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2657,57 +4437,101 @@
           {
             "year": 2022,
             "question_num": 79,
-            "image_path": "2022/question/2022_79.png"
+            "image_path": "2022/question/2022_79.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 85,
-            "image_path": "2023/question/2023_85.png"
+            "image_path": "2023/question/2023_85.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 87,
-            "image_path": "2023/question/2023_87.png"
+            "image_path": "2023/question/2023_87.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 91,
-            "image_path": "2023/question/2023_91.png"
+            "image_path": "2023/question/2023_91.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 85,
-            "image_path": "2024/question/2024_85.png"
+            "image_path": "2024/question/2024_85.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 91,
-            "image_path": "2024/question/2024_91.png"
+            "image_path": "2024/question/2024_91.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 87,
-            "image_path": "2025/question/2025_87.png"
+            "image_path": "2025/question/2025_87.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 89,
-            "image_path": "2025/question/2025_89.png"
+            "image_path": "2025/question/2025_89.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 90,
-            "image_path": "2025/question/2025_90.png"
+            "image_path": "2025/question/2025_90.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 92,
-            "image_path": "2025/question/2025_92.png"
+            "image_path": "2025/question/2025_92.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 93,
-            "image_path": "2025/question/2025_93.png"
+            "image_path": "2025/question/2025_93.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2724,72 +4548,128 @@
           {
             "year": 2021,
             "question_num": 77,
-            "image_path": "2021/question/2021_77.png"
+            "image_path": "2021/question/2021_77.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 86,
-            "image_path": "2021/question/2021_86.png"
+            "image_path": "2021/question/2021_86.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 90,
-            "image_path": "2021/question/2021_90.png"
+            "image_path": "2021/question/2021_90.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 91,
-            "image_path": "2021/question/2021_91.png"
+            "image_path": "2021/question/2021_91.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 95,
-            "image_path": "2021/question/2021_95.png"
+            "image_path": "2021/question/2021_95.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 96,
-            "image_path": "2021/question/2021_96.png"
+            "image_path": "2021/question/2021_96.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 99,
-            "image_path": "2021/question/2021_99.png"
+            "image_path": "2021/question/2021_99.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 85,
-            "image_path": "2022/question/2022_85.png"
+            "image_path": "2022/question/2022_85.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 88,
-            "image_path": "2022/question/2022_88.png"
+            "image_path": "2022/question/2022_88.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 98,
-            "image_path": "2022/question/2022_98.png"
+            "image_path": "2022/question/2022_98.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 95,
-            "image_path": "2023/question/2023_95.png"
+            "image_path": "2023/question/2023_95.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 96,
-            "image_path": "2023/question/2023_96.png"
+            "image_path": "2023/question/2023_96.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 76,
-            "image_path": "2024/question/2024_76.png"
+            "image_path": "2024/question/2024_76.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 95,
-            "image_path": "2025/question/2025_95.png"
+            "image_path": "2025/question/2025_95.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2807,92 +4687,164 @@
           {
             "year": 2021,
             "question_num": 79,
-            "image_path": "2021/question/2021_79.png"
+            "image_path": "2021/question/2021_79.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 85,
-            "image_path": "2021/question/2021_85.png"
+            "image_path": "2021/question/2021_85.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 98,
-            "image_path": "2021/question/2021_98.png"
+            "image_path": "2021/question/2021_98.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 86,
-            "image_path": "2022/question/2022_86.png"
+            "image_path": "2022/question/2022_86.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 94,
-            "image_path": "2022/question/2022_94.png"
+            "image_path": "2022/question/2022_94.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 96,
-            "image_path": "2022/question/2022_96.png"
+            "image_path": "2022/question/2022_96.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 93,
-            "image_path": "2023/question/2023_93.png"
+            "image_path": "2023/question/2023_93.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 94,
-            "image_path": "2023/question/2023_94.png"
+            "image_path": "2023/question/2023_94.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 97,
-            "image_path": "2023/question/2023_97.png"
+            "image_path": "2023/question/2023_97.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 98,
-            "image_path": "2023/question/2023_98.png"
+            "image_path": "2023/question/2023_98.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 99,
-            "image_path": "2023/question/2023_99.png"
+            "image_path": "2023/question/2023_99.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 94,
-            "image_path": "2024/question/2024_94.png"
+            "image_path": "2024/question/2024_94.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 95,
-            "image_path": "2024/question/2024_95.png"
+            "image_path": "2024/question/2024_95.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 96,
-            "image_path": "2024/question/2024_96.png"
+            "image_path": "2024/question/2024_96.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 77,
-            "image_path": "2025/question/2025_77.png"
+            "image_path": "2025/question/2025_77.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 97,
-            "image_path": "2025/question/2025_97.png"
+            "image_path": "2025/question/2025_97.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 98,
-            "image_path": "2025/question/2025_98.png"
+            "image_path": "2025/question/2025_98.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 100,
-            "image_path": "2025/question/2025_100.png"
+            "image_path": "2025/question/2025_100.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2911,62 +4863,110 @@
           {
             "year": 2021,
             "question_num": 82,
-            "image_path": "2021/question/2021_82.png"
+            "image_path": "2021/question/2021_82.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 87,
-            "image_path": "2021/question/2021_87.png"
+            "image_path": "2021/question/2021_87.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 92,
-            "image_path": "2021/question/2021_92.png"
+            "image_path": "2021/question/2021_92.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 97,
-            "image_path": "2021/question/2021_97.png"
+            "image_path": "2021/question/2021_97.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 95,
-            "image_path": "2022/question/2022_95.png"
+            "image_path": "2022/question/2022_95.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 97,
-            "image_path": "2022/question/2022_97.png"
+            "image_path": "2022/question/2022_97.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 78,
-            "image_path": "2023/question/2023_78.png"
+            "image_path": "2023/question/2023_78.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 86,
-            "image_path": "2023/question/2023_86.png"
+            "image_path": "2023/question/2023_86.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 80,
-            "image_path": "2024/question/2024_80.png"
+            "image_path": "2024/question/2024_80.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 76,
-            "image_path": "2025/question/2025_76.png"
+            "image_path": "2025/question/2025_76.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 80,
-            "image_path": "2025/question/2025_80.png"
+            "image_path": "2025/question/2025_80.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 99,
-            "image_path": "2025/question/2025_99.png"
+            "image_path": "2025/question/2025_99.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -2987,92 +4987,164 @@
           {
             "year": 2021,
             "question_num": 102,
-            "image_path": "2021/question/2021_102.png"
+            "image_path": "2021/question/2021_102.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 103,
-            "image_path": "2021/question/2021_103.png"
+            "image_path": "2021/question/2021_103.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 104,
-            "image_path": "2021/question/2021_104.png"
+            "image_path": "2021/question/2021_104.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 106,
-            "image_path": "2021/question/2021_106.png"
+            "image_path": "2021/question/2021_106.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 117,
-            "image_path": "2021/question/2021_117.png"
+            "image_path": "2021/question/2021_117.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 101,
-            "image_path": "2022/question/2022_101.png"
+            "image_path": "2022/question/2022_101.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 102,
-            "image_path": "2022/question/2022_102.png"
+            "image_path": "2022/question/2022_102.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 103,
-            "image_path": "2022/question/2022_103.png"
+            "image_path": "2022/question/2022_103.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 104,
-            "image_path": "2022/question/2022_104.png"
+            "image_path": "2022/question/2022_104.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 101,
-            "image_path": "2023/question/2023_101.png"
+            "image_path": "2023/question/2023_101.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 103,
-            "image_path": "2023/question/2023_103.png"
+            "image_path": "2023/question/2023_103.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 106,
-            "image_path": "2024/question/2024_106.png"
+            "image_path": "2024/question/2024_106.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 115,
-            "image_path": "2024/question/2024_115.png"
+            "image_path": "2024/question/2024_115.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 116,
-            "image_path": "2024/question/2024_116.png"
+            "image_path": "2024/question/2024_116.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 117,
-            "image_path": "2024/question/2024_117.png"
+            "image_path": "2024/question/2024_117.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 101,
-            "image_path": "2025/question/2025_101.png"
+            "image_path": "2025/question/2025_101.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 102,
-            "image_path": "2025/question/2025_102.png"
+            "image_path": "2025/question/2025_102.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 104,
-            "image_path": "2025/question/2025_104.png"
+            "image_path": "2025/question/2025_104.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -3097,82 +5169,146 @@
           {
             "year": 2021,
             "question_num": 105,
-            "image_path": "2021/question/2021_105.png"
+            "image_path": "2021/question/2021_105.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 115,
-            "image_path": "2021/question/2021_115.png"
+            "image_path": "2021/question/2021_115.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 107,
-            "image_path": "2022/question/2022_107.png"
+            "image_path": "2022/question/2022_107.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 110,
-            "image_path": "2022/question/2022_110.png"
+            "image_path": "2022/question/2022_110.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 120,
-            "image_path": "2022/question/2022_120.png"
+            "image_path": "2022/question/2022_120.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 102,
-            "image_path": "2023/question/2023_102.png"
+            "image_path": "2023/question/2023_102.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 104,
-            "image_path": "2023/question/2023_104.png"
+            "image_path": "2023/question/2023_104.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 109,
-            "image_path": "2024/question/2024_109.png"
+            "image_path": "2024/question/2024_109.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 110,
-            "image_path": "2024/question/2024_110.png"
+            "image_path": "2024/question/2024_110.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 112,
-            "image_path": "2024/question/2024_112.png"
+            "image_path": "2024/question/2024_112.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 114,
-            "image_path": "2024/question/2024_114.png"
+            "image_path": "2024/question/2024_114.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 118,
-            "image_path": "2024/question/2024_118.png"
+            "image_path": "2024/question/2024_118.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 103,
-            "image_path": "2025/question/2025_103.png"
+            "image_path": "2025/question/2025_103.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 105,
-            "image_path": "2025/question/2025_105.png"
+            "image_path": "2025/question/2025_105.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 107,
-            "image_path": "2025/question/2025_107.png"
+            "image_path": "2025/question/2025_107.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 108,
-            "image_path": "2025/question/2025_108.png"
+            "image_path": "2025/question/2025_108.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -3195,57 +5331,101 @@
           {
             "year": 2021,
             "question_num": 107,
-            "image_path": "2021/question/2021_107.png"
+            "image_path": "2021/question/2021_107.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 108,
-            "image_path": "2021/question/2021_108.png"
+            "image_path": "2021/question/2021_108.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 109,
-            "image_path": "2021/question/2021_109.png"
+            "image_path": "2021/question/2021_109.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 109,
-            "image_path": "2022/question/2022_109.png"
+            "image_path": "2022/question/2022_109.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 112,
-            "image_path": "2022/question/2022_112.png"
+            "image_path": "2022/question/2022_112.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 119,
-            "image_path": "2022/question/2022_119.png"
+            "image_path": "2022/question/2022_119.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 113,
-            "image_path": "2023/question/2023_113.png"
+            "image_path": "2023/question/2023_113.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 116,
-            "image_path": "2023/question/2023_116.png"
+            "image_path": "2023/question/2023_116.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 103,
-            "image_path": "2024/question/2024_103.png"
+            "image_path": "2024/question/2024_103.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 119,
-            "image_path": "2024/question/2024_119.png"
+            "image_path": "2024/question/2024_119.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 112,
-            "image_path": "2025/question/2025_112.png"
+            "image_path": "2025/question/2025_112.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -3266,152 +5446,272 @@
           {
             "year": 2021,
             "question_num": 101,
-            "image_path": "2021/question/2021_101.png"
+            "image_path": "2021/question/2021_101.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 110,
-            "image_path": "2021/question/2021_110.png"
+            "image_path": "2021/question/2021_110.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 111,
-            "image_path": "2021/question/2021_111.png"
+            "image_path": "2021/question/2021_111.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 113,
-            "image_path": "2021/question/2021_113.png"
+            "image_path": "2021/question/2021_113.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 116,
-            "image_path": "2021/question/2021_116.png"
+            "image_path": "2021/question/2021_116.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 119,
-            "image_path": "2021/question/2021_119.png"
+            "image_path": "2021/question/2021_119.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 105,
-            "image_path": "2022/question/2022_105.png"
+            "image_path": "2022/question/2022_105.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 106,
-            "image_path": "2022/question/2022_106.png"
+            "image_path": "2022/question/2022_106.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 108,
-            "image_path": "2022/question/2022_108.png"
+            "image_path": "2022/question/2022_108.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 111,
-            "image_path": "2022/question/2022_111.png"
+            "image_path": "2022/question/2022_111.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 115,
-            "image_path": "2022/question/2022_115.png"
+            "image_path": "2022/question/2022_115.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 105,
-            "image_path": "2023/question/2023_105.png"
+            "image_path": "2023/question/2023_105.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 106,
-            "image_path": "2023/question/2023_106.png"
+            "image_path": "2023/question/2023_106.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 109,
-            "image_path": "2023/question/2023_109.png"
+            "image_path": "2023/question/2023_109.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 110,
-            "image_path": "2023/question/2023_110.png"
+            "image_path": "2023/question/2023_110.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 111,
-            "image_path": "2023/question/2023_111.png"
+            "image_path": "2023/question/2023_111.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 114,
-            "image_path": "2023/question/2023_114.png"
+            "image_path": "2023/question/2023_114.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 115,
-            "image_path": "2023/question/2023_115.png"
+            "image_path": "2023/question/2023_115.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 117,
-            "image_path": "2023/question/2023_117.png"
+            "image_path": "2023/question/2023_117.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 118,
-            "image_path": "2023/question/2023_118.png"
+            "image_path": "2023/question/2023_118.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 101,
-            "image_path": "2024/question/2024_101.png"
+            "image_path": "2024/question/2024_101.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 104,
-            "image_path": "2024/question/2024_104.png"
+            "image_path": "2024/question/2024_104.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 105,
-            "image_path": "2024/question/2024_105.png"
+            "image_path": "2024/question/2024_105.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 113,
-            "image_path": "2024/question/2024_113.png"
+            "image_path": "2024/question/2024_113.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 106,
-            "image_path": "2025/question/2025_106.png"
+            "image_path": "2025/question/2025_106.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 109,
-            "image_path": "2025/question/2025_109.png"
+            "image_path": "2025/question/2025_109.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 111,
-            "image_path": "2025/question/2025_111.png"
+            "image_path": "2025/question/2025_111.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 113,
-            "image_path": "2025/question/2025_113.png"
+            "image_path": "2025/question/2025_113.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 115,
-            "image_path": "2025/question/2025_115.png"
+            "image_path": "2025/question/2025_115.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 116,
-            "image_path": "2025/question/2025_116.png"
+            "image_path": "2025/question/2025_116.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -3441,77 +5741,137 @@
           {
             "year": 2021,
             "question_num": 114,
-            "image_path": "2021/question/2021_114.png"
+            "image_path": "2021/question/2021_114.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 118,
-            "image_path": "2021/question/2021_118.png"
+            "image_path": "2021/question/2021_118.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2021,
             "question_num": 120,
-            "image_path": "2021/question/2021_120.png"
+            "image_path": "2021/question/2021_120.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 113,
-            "image_path": "2022/question/2022_113.png"
+            "image_path": "2022/question/2022_113.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 114,
-            "image_path": "2022/question/2022_114.png"
+            "image_path": "2022/question/2022_114.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 108,
-            "image_path": "2023/question/2023_108.png"
+            "image_path": "2023/question/2023_108.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 119,
-            "image_path": "2023/question/2023_119.png"
+            "image_path": "2023/question/2023_119.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 120,
-            "image_path": "2023/question/2023_120.png"
+            "image_path": "2023/question/2023_120.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 107,
-            "image_path": "2024/question/2024_107.png"
+            "image_path": "2024/question/2024_107.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 108,
-            "image_path": "2024/question/2024_108.png"
+            "image_path": "2024/question/2024_108.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 111,
-            "image_path": "2024/question/2024_111.png"
+            "image_path": "2024/question/2024_111.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 117,
-            "image_path": "2025/question/2025_117.png"
+            "image_path": "2025/question/2025_117.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 118,
-            "image_path": "2025/question/2025_118.png"
+            "image_path": "2025/question/2025_118.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 119,
-            "image_path": "2025/question/2025_119.png"
+            "image_path": "2025/question/2025_119.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 120,
-            "image_path": "2025/question/2025_120.png"
+            "image_path": "2025/question/2025_120.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
@@ -3533,52 +5893,92 @@
           {
             "year": 2021,
             "question_num": 112,
-            "image_path": "2021/question/2021_112.png"
+            "image_path": "2021/question/2021_112.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 116,
-            "image_path": "2022/question/2022_116.png"
+            "image_path": "2022/question/2022_116.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 117,
-            "image_path": "2022/question/2022_117.png"
+            "image_path": "2022/question/2022_117.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2022,
             "question_num": 118,
-            "image_path": "2022/question/2022_118.png"
+            "image_path": "2022/question/2022_118.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 107,
-            "image_path": "2023/question/2023_107.png"
+            "image_path": "2023/question/2023_107.png",
+            "answer": 1,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2023,
             "question_num": 112,
-            "image_path": "2023/question/2023_112.png"
+            "image_path": "2023/question/2023_112.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 102,
-            "image_path": "2024/question/2024_102.png"
+            "image_path": "2024/question/2024_102.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2024,
             "question_num": 120,
-            "image_path": "2024/question/2024_120.png"
+            "image_path": "2024/question/2024_120.png",
+            "answer": 4,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 110,
-            "image_path": "2025/question/2025_110.png"
+            "image_path": "2025/question/2025_110.png",
+            "answer": 2,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           },
           {
             "year": 2025,
             "question_num": 114,
-            "image_path": "2025/question/2025_114.png"
+            "image_path": "2025/question/2025_114.png",
+            "answer": 3,
+            "expl_claude": "",
+            "expl_gemini": "",
+            "expl_gpt": ""
           }
         ],
         "study_contents": [
