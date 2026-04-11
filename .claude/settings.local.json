@@ -17,7 +17,18 @@
       "Bash(mv:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(/usr/bin/mdls:*)",
+      "Bash(pdftotext -layout -f 6 -l 8 /Users/feelingsgap/work/git/auditor/jung/2026_시구01.pdf -)",
+      "Bash(pdftotext -layout -f 312 -l 315 /Users/feelingsgap/work/git/auditor/jung/2026_시구01.pdf -)",
+      "Bash(pdfinfo /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf)",
+      "Bash(pdftotext -layout -f 1 -l 5 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf -)",
+      "Bash(pdftotext -layout -f 1 -l 3 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_toc.txt)",
+      "Read(//tmp/**)",
+      "Bash(pdftotext -layout -f 1 -l 15 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_toc.txt)",
+      "Read(//private/tmp/**)",
+      "Bash(pdftotext -layout -f 1 -l 267 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_full.txt)",
+      "Bash(pdftoppm -png -r 150 -f 1 -l 3 /Users/feelingsgap/work/git/auditor/jung/2026_소공01.pdf /tmp/soogong_pg)"
     ],
     "deny": []
   }
