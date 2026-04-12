@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@page {
+    size: A4 landscape;
+    margin: 12mm 14mm 12mm 14mm;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 9pt;
+    color: #1a1a1a;
+    background: white;
+}
+
+/* 문제 블록: 페이지 시작 강제, 높이 제한 없음 */
+.question-page {
+    width: 100%;
+    break-before: page;
+    page-break-before: always;
+}
+
+.question-page:first-child {
+    break-before: auto;
+    page-break-before: auto;
+}
+
+/* 헤더: 소분류 | 연도+번호+정답 */
+.page-header {
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #2c5282;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.page-header-left {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.page-header-right {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.sub-subject-label {
+    font-size: 8.5pt;
+    color: #2c5282;
+    font-weight: bold;
+    background: #ebf4ff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.question-title {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #1a202c;
+    margin-right: 8px;
+}
+
+.answer-badge {
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    background: #2c5282;
+    border-radius: 4px;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+/* 본문: table 레이아웃으로 자연스러운 페이지 흐름 허용 */
+.page-body {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.image-panel {
+    display: table-cell;
+    width: 44%;
+    vertical-align: top;
+    padding-right: 8mm;
+}
+
+/* 이미지는 한 페이지 안에 유지 */
+.image-wrapper {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    text-align: center;
+}
+
+.image-panel img {
+    max-width: 100%;
+    max-height: 168mm;
+    object-fit: contain;
+    display: inline-block;
+}
+
+/* 해설 패널: 높이 제한·overflow 없음 → 자유롭게 다음 페이지로 */
+.expl-panel {
+    display: table-cell;
+    width: 56%;
+    vertical-align: top;
+}
+
+.expl-block {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 6px 8px;
+    background: #fafbfc;
+    margin-bottom: 6px;
+}
+
+.expl-block:last-child {
+    margin-bottom: 0;
+}
+
+.expl-label {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 4px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.expl-label.claude { color: #7b2d8b; }
+.expl-label.gemini { color: #1a73e8; }
+
+.expl-content {
+    font-size: 8pt;
+    line-height: 1.55;
+    color: #2d3748;
+}
+
+.expl-content p {
+    margin: 0 0 4px 0;
+}
+
+.expl-content ul, .expl-content ol {
+    margin: 2px 0 4px 14px;
+    padding: 0;
+}
+
+.expl-content li {
+    margin-bottom: 2px;
+}
+
+.expl-content strong {
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.expl-content h1, .expl-content h2, .expl-content h3 {
+    font-size: 8.5pt;
+    font-weight: bold;
+    margin: 4px 0 2px 0;
+}
+
+.expl-content code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 7.5pt;
+    background: #f0f0f0;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+.no-expl {
+    color: #a0aec0;
+    font-style: italic;
+    font-size: 8pt;
+}
+</style>
+</head>
+<body>
+
+{% for q in questions %}
+<div class="question-page">
+    <div class="page-header">
+        <div class="page-header-left">
+            <span class="sub-subject-label">{{ q.sub_subject }}</span>
+        </div>
+        <div class="page-header-right">
+            <span class="question-title">{{ q.year }}년 제{{ q.question_num }}번</span>
+            <span class="answer-badge">정답 {{ q.answer_str }}</span>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="image-panel">
+            <div class="image-wrapper">
+                <img src="{{ q.image_abs_path }}" alt="{{ q.year }}년 {{ q.question_num }}번 문제">
+            </div>
+        </div>
+        <div class="expl-panel">
+            {% if q.expl_claude_html %}
+            <div class="expl-block">
+                <div class="expl-label claude">Claude 해설</div>
+                <div class="expl-content">{{ q.expl_claude_html | safe }}</div>
+            </div>
+            {% endif %}
+            {% if q.expl_gemini_html %}
+            <div class="expl-block">
+                <div class="expl-label gemini">Gemini 해설</div>
+                <div class="expl-content">{{ q.expl_gemini_html | safe }}</div>
+            </div>
+            {% endif %}
+            {% if not q.expl_claude_html and not q.expl_gemini_html %}
+            <div class="expl-block">
+                <span class="no-expl">해설이 없습니다.</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+</body>
+</html>
