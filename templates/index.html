@@ -27,11 +27,49 @@
             border-bottom: none !important; /* 헤더 하단 경계선 제거 */
             padding-bottom: 0.25rem; /* 하단 패딩 최소화 */
         }
-        .modal-lg {
-            max-width: 90%;
+        .modal-xl {
+            max-width: 98%;
         }
-        .modal-body img {
-            max-height: 80vh;
+        .modal-two-col {
+            display: flex;
+            height: 97vh;
+        }
+        .modal-image-panel {
+            width: 35%;
+            min-width: 280px;
+            overflow-y: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 1rem;
+            border-right: 1px solid #dee2e6;
+        }
+        .modal-image-panel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: .25rem;
+        }
+        .modal-expl-panel {
+            flex: 1;
+            overflow-y: auto;
+            max-height: calc(97vh - 64px);
+            padding: 1rem;
+        }
+        .markdown-body ul, .markdown-body ol {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .markdown-body li {
+            margin-bottom: 0.15rem;
+        }
+        .markdown-body p {
+            margin-bottom: 0.5rem;
+        }
+        .markdown-body p:last-child {
+            margin-bottom: 0;
+        }
+        .markdown-body strong {
+            font-weight: 600;
         }
     </style>
 </head>
@@ -78,7 +116,7 @@
                         {% for page in data.pages %}
                             {% for q in page.questions %}
                             <div class="col question-item" data-subject="{{q.subject}}">
-                                <div class="card h-100 question-card" data-bs-toggle="modal" data-bs-target="#questionModal" data-image-src="{{year}}/question/{{year}}_{{q.question_num}}.png" data-title="{{year}}년 {{q.question_num}}번">
+                                <div class="card h-100 question-card" data-bs-toggle="modal" data-bs-target="#questionModal" data-image-src="{{year}}/question/{{year}}_{{q.question_num}}.png" data-title="{{year}}년 {{q.question_num}}번" data-answer="{{ q.answer|default('')|e }}" data-expl-claude="{{ q.expl_claude|default('')|e }}" data-expl-gemini="{{ q.expl_gemini|default('')|e }}" data-expl-gpt="{{ q.expl_gpt|default('')|e }}">
                                                                          <div class="card-header text-center py-2 border-0">
                                          <p class="card-text fw-bold mb-0">{{q.question_num}}번 <span class="badge bg-info ms-2">{{q.subject}}</span></p>
                                      </div>
@@ -96,21 +134,53 @@
 
     <!-- 이미지 확대 모달 -->
     <div class="modal fade" id="questionModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header py-2">
                     <h5 class="modal-title" id="questionModalLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body text-center">
-                    <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
+                <div class="modal-body p-0">
+                    <div class="modal-two-col">
+                        <div class="modal-image-panel">
+                            <img src="" class="img-fluid rounded" id="modalImage" alt="문제 이미지">
+                        </div>
+                        <div class="modal-expl-panel">
+                            <!-- 정답 표시 -->
+                            <div id="modalAnswerBlock" class="p-3 mb-3 border rounded bg-light d-none">
+                                <h6 class="mb-0">
+                                    <span class="badge bg-success">정답</span>
+                                    <span id="modalAnswer" class="fw-bold ms-2 fs-5"></span>
+                                </h6>
+                            </div>
+                            <!-- Claude 해설 -->
+                            <div id="explClaudeBlock" class="p-3 mb-2 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-primary">Claude 해설</span></h6>
+                                <div id="modalExplClaude" class="mb-0 small markdown-body"></div>
+                            </div>
+                            <!-- Gemini 해설 -->
+                            <div id="explGeminiBlock" class="p-3 mb-2 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-warning text-dark">Gemini 해설</span></h6>
+                                <div id="modalExplGemini" class="mb-0 small markdown-body"></div>
+                            </div>
+                            <!-- GPT 해설 -->
+                            <div id="explGptBlock" class="p-3 mb-0 border rounded d-none">
+                                <h6 class="mb-2"><span class="badge bg-info text-dark">GPT 해설</span></h6>
+                                <div id="modalExplGpt" class="mb-0 small markdown-body"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        marked.setOptions({ breaks: true });
+        const CHOICE_LABELS = ['', '①', '②', '③', '④'];
+
         function filterQuestions(year, subject) {
             const items = document.querySelectorAll(`#grid-${year} .question-item`);
             const filterButtons = document.querySelectorAll(`#content-${year} .filter-btn`);
@@ -137,15 +207,40 @@
 
         const questionModal = document.getElementById('questionModal');
         questionModal.addEventListener('show.bs.modal', event => {
-            const button = event.relatedTarget;
-            const imageSrc = button.getAttribute('data-image-src');
-            const title = button.getAttribute('data-title');
-            
-            const modalTitle = questionModal.querySelector('.modal-title');
-            const modalImage = questionModal.querySelector('#modalImage');
-            
-            modalTitle.textContent = title;
-            modalImage.src = imageSrc;
+            const btn = event.relatedTarget;
+
+            // 이미지 & 제목
+            questionModal.querySelector('.modal-title').textContent = btn.getAttribute('data-title');
+            questionModal.querySelector('#modalImage').src = btn.getAttribute('data-image-src');
+
+            // 정답
+            const answerRaw = btn.getAttribute('data-answer');
+            const answerNum = parseInt(answerRaw, 10);
+            const answerBlock = document.getElementById('modalAnswerBlock');
+            const answerSpan = document.getElementById('modalAnswer');
+            if (!isNaN(answerNum) && answerNum >= 1 && answerNum <= 4) {
+                answerSpan.textContent = CHOICE_LABELS[answerNum] + ' (' + answerNum + '번)';
+                answerBlock.classList.remove('d-none');
+            } else {
+                answerBlock.classList.add('d-none');
+            }
+
+            // 해설 블록 공통 처리
+            const explFields = [
+                ['modalExplClaude', 'explClaudeBlock', btn.getAttribute('data-expl-claude')],
+                ['modalExplGemini', 'explGeminiBlock', btn.getAttribute('data-expl-gemini')],
+                ['modalExplGpt', 'explGptBlock', btn.getAttribute('data-expl-gpt')],
+            ];
+            for (const [pId, divId, text] of explFields) {
+                const block = document.getElementById(divId);
+                const para = document.getElementById(pId);
+                if (text && text.trim()) {
+                    para.innerHTML = marked.parse(text);
+                    block.classList.remove('d-none');
+                } else {
+                    block.classList.add('d-none');
+                }
+            }
         });
     </script>
 </body>
