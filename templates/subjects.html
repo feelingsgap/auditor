@@ -90,6 +90,27 @@
             background-color: #0d6efd;
         }
 
+        .markdown-body ul, .markdown-body ol {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-body li {
+            margin-bottom: 0.15rem;
+        }
+
+        .markdown-body p {
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .markdown-body strong {
+            font-weight: 600;
+        }
+
         .analysis-block {
             background-color: #e9ecef;
             padding: 1rem;
@@ -228,17 +249,17 @@
                             <!-- Claude 해설 -->
                             <div id="explClaudeBlock" class="p-3 mb-2 border rounded d-none">
                                 <h6 class="mb-2"><span class="badge bg-primary">Claude 해설</span></h6>
-                                <p id="modalExplClaude" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                                <div id="modalExplClaude" class="mb-0 small markdown-body"></div>
                             </div>
                             <!-- Gemini 해설 -->
                             <div id="explGeminiBlock" class="p-3 mb-2 border rounded d-none">
                                 <h6 class="mb-2"><span class="badge bg-warning text-dark">Gemini 해설</span></h6>
-                                <p id="modalExplGemini" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                                <div id="modalExplGemini" class="mb-0 small markdown-body"></div>
                             </div>
                             <!-- GPT 해설 -->
                             <div id="explGptBlock" class="p-3 mb-0 border rounded d-none">
                                 <h6 class="mb-2"><span class="badge bg-info text-dark">GPT 해설</span></h6>
-                                <p id="modalExplGpt" class="mb-0 small" style="white-space: pre-wrap;"></p>
+                                <div id="modalExplGpt" class="mb-0 small markdown-body"></div>
                             </div>
                         </div>
                     </div>
@@ -248,7 +269,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        marked.setOptions({ breaks: true });
         const CHOICE_LABELS = ['', '①', '②', '③', '④'];
 
         const questionModal = document.getElementById('questionModal');
@@ -281,7 +304,7 @@
                 const block = document.getElementById(divId);
                 const para = document.getElementById(pId);
                 if (text && text.trim()) {
-                    para.textContent = text;
+                    para.innerHTML = marked.parse(text);
                     block.classList.remove('d-none');
                 } else {
                     block.classList.add('d-none');
