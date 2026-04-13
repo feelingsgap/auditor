@@ -199,6 +199,7 @@ class DetailedSubjectAggregator:
                             "question_num": q_num,
                             "image_path": f"{year}/question/{year}_{q_num}.png",
                             "answer": question.get("answer"),
+                            "disputed": question.get("disputed", False),
                             "expl_claude": question.get("expl_claude", ""),
                             "expl_gemini": question.get("expl_gemini", ""),
                             "expl_gpt": question.get("expl_gpt", ""),

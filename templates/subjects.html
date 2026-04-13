@@ -194,17 +194,17 @@
 
                                         <div class="question-grid">
                                             {% for q in sub_data.questions %}
-                                            <div class="card question-card h-100" data-bs-toggle="modal"
+                                            <div class="card question-card h-100 {% if q.disputed %}border-warning border-2{% endif %}" data-bs-toggle="modal"
                                                 data-bs-target="#questionModal"
                                                 data-image-src="{{ q.image_path }}"
                                                 data-title="{{ q.year }}년 {{ q.question_num }}번"
                                                 data-answer="{{ q.answer|default('') }}"
                                                 data-expl-claude="{{ q.expl_claude|default('')|e }}"
                                                 data-expl-gemini="{{ q.expl_gemini|default('')|e }}"
-                                                data-expl-gpt="{{ q.expl_gpt|default('')|e }}">
+                                                data-expl-gpt="{{ q.expl_gpt|default('')|e }}"
+                                                data-disputed="{{ 'true' if q.disputed else 'false' }}">
                                                 <div class="card-header text-center py-2 border-0">
-                                                    <p class="card-text fw-bold mb-0">{{ q.year }}년 {{ q.question_num
-                                                        }}번</p>
+                                                    <p class="card-text fw-bold mb-0">{{ q.year }}년 {{ q.question_num }}번{% if q.disputed %} <span class="badge bg-warning text-dark">⚠</span>{% endif %}</p>
                                                 </div>
                                                 <img src="{{ q.image_path }}" class="card-img-top"
                                                     alt="{{ q.year }}년 {{ q.question_num }}번">
@@ -244,6 +244,7 @@
                                 <h6 class="mb-0">
                                     <span class="badge bg-success">정답</span>
                                     <span id="modalAnswer" class="fw-bold ms-2 fs-5"></span>
+                                    <span id="modalDisputedBadge" class="badge bg-warning text-dark ms-2 d-none">⚠ 이의제기</span>
                                 </h6>
                             </div>
                             <!-- Claude 해설 -->
@@ -292,6 +293,14 @@
                 answerBlock.classList.remove('d-none');
             } else {
                 answerBlock.classList.add('d-none');
+            }
+
+            // 이의제기 배지
+            const disputedBadge = document.getElementById('modalDisputedBadge');
+            if (btn.getAttribute('data-disputed') === 'true') {
+                disputedBadge.classList.remove('d-none');
+            } else {
+                disputedBadge.classList.add('d-none');
             }
 
             // 해설 블록 공통 처리

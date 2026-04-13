@@ -81,6 +81,18 @@ body {
     display: inline-block;
 }
 
+.disputed-badge {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #7b4200;
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 4px;
+    padding: 2px 8px;
+    display: inline-block;
+    margin-left: 6px;
+}
+
 /* 본문: table 레이아웃으로 자연스러운 페이지 흐름 허용 */
 .page-body {
     display: table;
@@ -196,6 +208,7 @@ body {
         <div class="page-header-right">
             <span class="question-title">{{ q.year }}년 제{{ q.question_num }}번</span>
             <span class="answer-badge">정답 {{ q.answer_str }}</span>
+            {% if q.disputed %}<span class="disputed-badge">⚠ 이의제기</span>{% endif %}
         </div>
     </div>
     <div class="page-body">

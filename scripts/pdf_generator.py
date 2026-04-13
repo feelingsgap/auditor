@@ -58,6 +58,7 @@ def generate_subject_pdf(subject_name: str, subject_data: dict, output_path: str
                 'sub_subject': sub_subject_name,
                 'image_abs_path': f'file://{image_abs_path}' if image_abs_path else '',
                 'answer_str': answer_str,
+                'disputed': q.get('disputed', False),
                 'expl_claude_html': md_to_html(q.get('expl_claude', '')),
                 'expl_gemini_html': md_to_html(q.get('expl_gemini', '')),
             })
@@ -102,6 +103,7 @@ def generate_year_pdf(year: int, output_path: str, base_dir: str, env: Environme
                 'sub_subject': q.get('subject', ''),
                 'image_abs_path': f'file://{image_abs_path}' if image_abs_path else '',
                 'answer_str': answer_str,
+                'disputed': q.get('disputed', False),
                 'expl_claude_html': md_to_html(q.get('expl_claude', '')),
                 'expl_gemini_html': md_to_html(q.get('expl_gemini', '')),
             })
