@@ -61,6 +61,7 @@ def generate_subject_pdf(subject_name: str, subject_data: dict, output_path: str
                 'disputed': q.get('disputed', False),
                 'expl_claude_html': md_to_html(q.get('expl_claude', '')),
                 'expl_gemini_html': md_to_html(q.get('expl_gemini', '')),
+                'expl_gpt_html': md_to_html(q.get('expl_gpt', '')),
             })
 
     print(f"  {subject_name}: {len(questions)}개 문항 렌더링 중...")
@@ -106,6 +107,7 @@ def generate_year_pdf(year: int, output_path: str, base_dir: str, env: Environme
                 'disputed': q.get('disputed', False),
                 'expl_claude_html': md_to_html(q.get('expl_claude', '')),
                 'expl_gemini_html': md_to_html(q.get('expl_gemini', '')),
+                'expl_gpt_html': md_to_html(q.get('expl_gpt', '')),
             })
 
     print(f"  {year}년: {len(questions)}개 문항 렌더링 중...")

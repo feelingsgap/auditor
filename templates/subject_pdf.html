@@ -151,6 +151,7 @@ body {
 
 .expl-label.claude { color: #7b2d8b; }
 .expl-label.gemini { color: #1a73e8; }
+.expl-label.gpt { color: #0ea5e9; }
 
 .expl-content {
     font-size: 11pt;
@@ -230,7 +231,13 @@ body {
                 <div class="expl-content">{{ q.expl_gemini_html | safe }}</div>
             </div>
             {% endif %}
-            {% if not q.expl_claude_html and not q.expl_gemini_html %}
+            {% if q.expl_gpt_html %}
+            <div class="expl-block">
+                <div class="expl-label gpt">GPT 해설</div>
+                <div class="expl-content">{{ q.expl_gpt_html | safe }}</div>
+            </div>
+            {% endif %}
+            {% if not q.expl_claude_html and not q.expl_gemini_html and not q.expl_gpt_html %}
             <div class="expl-block">
                 <span class="no-expl">해설이 없습니다.</span>
             </div>
