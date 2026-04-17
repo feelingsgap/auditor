@@ -50,7 +50,10 @@ def generate_subject_pdf(subject_name: str, subject_data: dict, output_path: str
                 image_abs_path = ''
 
             answer_num = q.get('answer')
-            answer_str = ANSWER_CIRCLES.get(answer_num, str(answer_num)) if answer_num else '?'
+            if isinstance(answer_num, list):
+                answer_str = '·'.join(ANSWER_CIRCLES.get(n, str(n)) for n in answer_num)
+            else:
+                answer_str = ANSWER_CIRCLES.get(answer_num, str(answer_num)) if answer_num else '?'
 
             questions.append({
                 'year': q['year'],
@@ -96,7 +99,10 @@ def generate_year_pdf(year: int, output_path: str, base_dir: str, env: Environme
                 image_abs_path = ''
 
             answer_num = q.get('answer')
-            answer_str = ANSWER_CIRCLES.get(answer_num, str(answer_num)) if answer_num else '?'
+            if isinstance(answer_num, list):
+                answer_str = '·'.join(ANSWER_CIRCLES.get(n, str(n)) for n in answer_num)
+            else:
+                answer_str = ANSWER_CIRCLES.get(answer_num, str(answer_num)) if answer_num else '?'
 
             questions.append({
                 'year': year,
