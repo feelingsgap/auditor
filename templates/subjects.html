@@ -117,6 +117,75 @@
             border-radius: .25rem;
             margin-bottom: 1rem;
         }
+
+        /* 핵심 공부 내역 */
+        .study-notes {
+            margin-bottom: 1rem;
+        }
+
+        .study-notes-header {
+            font-weight: 700;
+            color: #0d6efd;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 0.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .study-cluster {
+            background-color: #f4f9ff;
+            border-left: 4px solid #0d6efd;
+            padding: 0.65rem 1rem 0.75rem;
+            margin-bottom: 0.6rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 1px 2px rgba(13, 110, 253, 0.06);
+        }
+
+        .study-cluster-title {
+            font-weight: 700;
+            color: #084298;
+            font-size: 0.98rem;
+            margin-bottom: 0.45rem;
+            letter-spacing: -0.01em;
+        }
+
+        .study-cluster-items {
+            margin: 0;
+            padding-left: 1.25rem;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .study-cluster-items li {
+            margin-bottom: 0.22rem;
+            line-height: 1.55;
+        }
+
+        .study-subgroup {
+            margin-top: 0.55rem;
+            padding: 0.4rem 0.6rem 0.45rem 0.75rem;
+            background-color: #fff;
+            border-left: 3px solid #6ea8fe;
+            border-radius: 0.25rem;
+        }
+
+        .study-subgroup-title {
+            font-weight: 600;
+            color: #0969da;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .study-subgroup-entries {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: #333;
+            font-size: 0.88rem;
+        }
+
+        .study-subgroup-entries li {
+            margin-bottom: 0.2rem;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
@@ -182,31 +251,31 @@
                                     data-bs-parent="#subSubjectsAccordion-{{ major_loop_index }}">
                                     <div class="accordion-body">
                                         {% if sub_data.study_contents and sub_data.study_contents|length > 0 %}
-                                        <div class="alert alert-info mb-3">
-                                            <h6 class="alert-heading mb-2"><strong>📚 핵심 공부 내역</strong></h6>
-                                            <ul class="mb-0 small">
-                                                {% for group in sub_data.study_contents %}
-                                                <li class="mb-2">
-                                                    <strong>{{ group.cluster }}</strong>
-                                                    {% if group.sub_groups %}
-                                                        {% for sg in group.sub_groups %}
-                                                        <div class="mt-2"><em class="text-primary">{{ sg.title }}</em></div>
-                                                        <ul>
+                                        <div class="study-notes">
+                                            <div class="study-notes-header">📚 핵심 공부 내역</div>
+                                            {% for group in sub_data.study_contents %}
+                                            <div class="study-cluster">
+                                                <div class="study-cluster-title">{{ group.cluster }}</div>
+                                                {% if group.sub_groups %}
+                                                    {% for sg in group.sub_groups %}
+                                                    <div class="study-subgroup">
+                                                        <div class="study-subgroup-title">{{ sg.title }}</div>
+                                                        <ul class="study-subgroup-entries">
                                                             {% for item in sg.entries %}
                                                             <li>{{ item }}</li>
                                                             {% endfor %}
                                                         </ul>
-                                                        {% endfor %}
-                                                    {% elif group.sub_items %}
-                                                    <ul class="mt-1">
-                                                        {% for item in group.sub_items %}
-                                                        <li>{{ item }}</li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                    {% endif %}
-                                                </li>
-                                                {% endfor %}
-                                            </ul>
+                                                    </div>
+                                                    {% endfor %}
+                                                {% elif group.sub_items %}
+                                                <ul class="study-cluster-items">
+                                                    {% for item in group.sub_items %}
+                                                    <li>{{ item }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                                {% endif %}
+                                            </div>
+                                            {% endfor %}
                                         </div>
                                         {% endif %}
 

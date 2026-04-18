@@ -563,7 +563,7 @@
                 "title": "OO/CBD 모델 요구분석 감리 점검항목",
                 "entries": [
                   "핵심: 사용자 요구사항 도출 및 분석 충분성·적정성, 분석 클래스 도출 충분성, 유스케이스 모형 상세화 수준.",
-                  "오분류 주의: 프로세스·이벤트 모델링은 구조적 방법론(SA/SD) 산출물로 OO/CBD 점검 항목 아님."
+                  "오분류 주의: 프로세스·이벤트 모델링은 구조적 방법론 (SA/SD) 산출물로 OO/CBD 점검 항목 아님."
                 ]
               }
             ]
@@ -583,7 +583,7 @@
                 "title": "개발SW 운영단계 점검분야",
                 "entries": [
                   "포함: 장애관리, 테스트 지원, 릴리즈 및 배포관리, 용량·성능관리, 보안관리.",
-                  "제외: 서비스수준관리(SLM, Service Level Management)는 인프라·서비스 운영 관리 영역이라 개발SW 운영단계 분야 아님."
+                  "제외: 서비스수준관리 (SLM, Service Level Management)는 인프라·서비스 운영 관리 영역이라 개발SW 운영단계 분야 아님."
                 ]
               },
               {
@@ -608,10 +608,10 @@
               {
                 "title": "윤리 위협 4유형",
                 "entries": [
-                  "이기적 위협(self-interest threat): 감리원 본인의 재무적·기타 이해관계.",
-                  "자기검토 위협(self-review threat): 자신의 과거 작업·판단을 검토해야 하는 경우.",
-                  "유착 위협(familiarity/advocacy threat): 밀접한 관계로 인한 지나친 동정.",
-                  "압력 위협(intimidation threat): 현실적·잠재적 협박으로 인한 공정성 훼손.",
+                  "이기적 위협 (self-interest threat): 감리원 본인의 재무적·기타 이해관계.",
+                  "자기검토 위협 (self-review threat): 자신의 과거 작업·판단을 검토해야 하는 경우.",
+                  "유착 위협 (familiarity/advocacy threat): 밀접한 관계로 인한 지나친 동정.",
+                  "압력 위협 (intimidation threat): 현실적·잠재적 협박으로 인한 공정성 훼손.",
                   "함정: '경험적 검토 위협'은 존재하지 않는 유형."
                 ]
               },
@@ -808,9 +808,9 @@
                 "title": "대가산정 유형별 방법",
                 "entries": [
                   "ISP·BPR 수립: 컨설팅업무량(M/M × 단가) 방식 — 직접인건비 + 제경비 + 기술료 + 직접경비.",
-                  "SW 개발·재개발: 기능점수(FP) 방식 기본 — 기능점수 방식 SW개발비 = 개발원가 + 직접경비(제경비·기술료는 투입공수 방식에 해당).",
+                  "SW 개발·재개발: 기능점수 (FP) 방식 기본 — 기능점수 방식 SW개발비 = 개발원가 + 직접경비(제경비·기술료는 투입공수 방식에 해당).",
                   "SW 유지관리: 요율제(구축비 × 요율).",
-                  "운영·DB 구축: 투입공수(M/M) 방식."
+                  "운영·DB 구축: 투입공수 (M/M) 방식."
                 ]
               },
               {
@@ -818,17 +818,17 @@
                 "entries": [
                   "공식: 적정 사업기간 = (총 FP ÷ 1인 생산성 FP/MM) ÷ 적정 개발인원.",
                   "예시: 1,320 FP ÷ 22 FP/MM ÷ 6명 = 10개월.",
-                  "1인 생산성 구간(FP/MM): 1,000 미만 19, 1,000~2,000 미만 22, 2,000~3,000 미만 24, 3,000 이상 22.",
+                  "1인 생산성 구간 (FP/MM): 1,000 미만 19, 1,000~2,000 미만 22, 2,000~3,000 미만 24, 3,000 이상 22.",
                   "1,200 FP → 22 FP/MM 적용(19는 1,000 미만 구간 값)."
                 ]
               },
               {
                 "title": "SW 유지관리 4유형",
                 "entries": [
-                  "완전(Perfective) 유지관리: 기능 개선, 성능 향상 등 능력 향상.",
-                  "적응(Adaptive) 유지관리: 운영 환경 변화 대응(OS·HW 업그레이드, 법령 변경, 대외 연계, 데이터 전환·이관).",
-                  "수리(Corrective) 유지관리: 기능사양과 설계 불일치 등 결함·오류 수정.",
-                  "예방(Preventive) 유지관리: 미래 결함 방지를 위한 선제적 개선."
+                  "완전 (Perfective) 유지관리: 기능 개선, 성능 향상 등 능력 향상.",
+                  "적응 (Adaptive) 유지관리: 운영 환경 변화 대응(OS·HW 업그레이드, 법령 변경, 대외 연계, 데이터 전환·이관).",
+                  "수리 (Corrective) 유지관리: 기능사양과 설계 불일치 등 결함·오류 수정.",
+                  "예방 (Preventive) 유지관리: 미래 결함 방지를 위한 선제적 개선."
                 ]
               },
               {
@@ -914,7 +914,7 @@
                 ]
               },
               {
-                "title": "상용SW 서비스(SaaS) 계약 제외 가능 항목 (4개 전부)",
+                "title": "상용SW 서비스 (SaaS) 계약 제외 가능 항목 (4개 전부)",
                 "entries": [
                   "SW사업 영향평가, 요구사항 상세화, 적정 사업기간 산정, 과업심의위원회 설치·운영.",
                   "배경: SaaS는 개발 없는 구독 계약이라 개발 중심 절차 전면 생략 가능."
@@ -941,9 +941,9 @@
             "cluster": "공공 정보화 사업 발주 방식 (소프트웨어 진흥법·국가계약법)",
             "sub_items": [
               "분리발주: 상세 요구사항 작성을 위해 분석 또는 설계 사업을 분리 발주 가능.",
-              "민간투자사업(BTO 등): 민간 자본·기술을 활용하고 사업자가 일정기간 수익을 얻는 방식 허용.",
+              "민간투자사업 (BTO 등): 민간 자본·기술을 활용하고 사업자가 일정기간 수익을 얻는 방식 허용.",
               "디지털서비스 수의계약: 디지털서비스 심사위원회 사전 선정 서비스는 수의계약 가능.",
-              "함정: 공개SW(오픈소스)는 직접구매 의무 대상이 아니며, 민간SW 시장 침해여부 조사 의무도 없음(직접구매·침해조사는 상용SW에 적용)."
+              "함정: 공개SW (오픈소스)는 직접구매 의무 대상이 아니며, 민간SW 시장 침해여부 조사 의무도 없음(직접구매·침해조사는 상용SW에 적용)."
             ],
             "sub_groups": []
           }
@@ -1160,7 +1160,7 @@
                 ]
               },
               {
-                "title": "제외: 소프트웨어 개발 관련 법령·지침·국내외 표준 적용은 규정 준수(compliance) 영역이라 품질인증 기준 영역 아님.",
+                "title": "제외: 소프트웨어 개발 관련 법령·지침·국내외 표준 적용은 규정 준수 (compliance) 영역이라 품질인증 기준 영역 아님.",
                 "entries": []
               },
               {
@@ -1384,8 +1384,8 @@
                 "title": "제공 방식 권고",
                 "entries": [
                   "빈번 업데이트 대용량: 오픈 API.",
-                  "주기적 갱신 파일: 파일데이터(CSV 등).",
-                  "정적·고연관 데이터: LOD(Linked Open Data)."
+                  "주기적 갱신 파일: 파일데이터 (CSV 등).",
+                  "정적·고연관 데이터: LOD (Linked Open Data)."
                 ]
               },
               {
@@ -1395,7 +1395,7 @@
               {
                 "title": "공공데이터 목록 등록",
                 "entries": [
-                  "업무단위: 정부기능분류(BRM)의 단위과제 수준에서 선정.",
+                  "업무단위: 정부기능분류 (BRM)의 단위과제 수준에서 선정.",
                   "비정형데이터: 데이터 분석·학습 등에 활용 가능한 형태로 등록."
                 ]
               },
@@ -1471,7 +1471,7 @@
               {
                 "title": "적합성 검토 항목",
                 "entries": [
-                  "포함: 접속지연·서비스 장애 신속 해결(자동 복구·HA), 다양한 플랫폼 이식성(컨테이너), 코딩-빌드-테스트-배포 파이프라인 자동화(CI/CD).",
+                  "포함: 접속지연·서비스 장애 신속 해결(자동 복구·HA), 다양한 플랫폼 이식성(컨테이너), 코딩-빌드-테스트-배포 파이프라인 자동화 (CI/CD).",
                   "제외: 단일 애플리케이션(모놀리식) + 대규모 중앙 DB 구성(클라우드 네이티브 반대 개념 — MSA 지향)."
                 ]
               }
@@ -1601,32 +1601,32 @@
                 "title": "PMO (Project Management Office, 프로젝트 관리 오피스)",
                 "entries": [
                   "역할: 주요 프로그램 범위 변화 관리, 프로젝트 간 의사소통 조정, 기업 수준 리스크 통합 관리, 발주자 사업관리 위탁 형태 운영.",
-                  "PMO 통제 수준 순서: 지원형(supportive) < 통제형(controlling) < 지시형(directive).",
-                  "최고 통제형은 지시형(directive) PMO — '제어(controlling)'가 최고가 아님."
+                  "PMO 통제 수준 순서: 지원형 (supportive) < 통제형 (controlling) < 지시형 (directive).",
+                  "최고 통제형은 지시형 (directive) PMO — '제어 (controlling)'가 최고가 아님."
                 ]
               },
               {
                 "title": "PMBOK 7판 성과영역 (8개)",
                 "entries": [
-                  "이해관계자(Stakeholders), 팀(Team), 개발 접근법 및 생애주기(Development Approach & Life Cycle), 기획(Planning), 프로젝트 작업(Project Work), 인도(Delivery), 측정(Measurement), 불확실성(Uncertainty).",
-                  "가치(Value)는 8개 성과영역이 아닌 12개 프로젝트 관리 원칙 중 하나."
+                  "이해관계자 (Stakeholders), 팀 (Team), 개발 접근법 및 생애주기 (Development Approach & Life Cycle), 기획 (Planning), 프로젝트 작업 (Project Work), 인도 (Delivery), 측정 (Measurement), 불확실성 (Uncertainty).",
+                  "가치 (Value)는 8개 성과영역이 아닌 12개 프로젝트 관리 원칙 중 하나."
                 ]
               },
               {
                 "title": "프로젝트 생애주기 4유형",
                 "entries": [
-                  "예측형(predictive, 폭포수): 사전 방대한 계획 후 한 번의 순차 실행.",
-                  "반복적(iterative): 미완성 작업에 대한 피드백을 수용하여 반복적으로 개선·수정.",
-                  "점증적(incremental): 각 증분마다 고객이 즉시 사용 가능한 완성된 인도물 제공.",
-                  "애자일(agile): 반복적 + 점증적 특성 복합."
+                  "예측형 (predictive, 폭포수): 사전 방대한 계획 후 한 번의 순차 실행.",
+                  "반복적 (iterative): 미완성 작업에 대한 피드백을 수용하여 반복적으로 개선·수정.",
+                  "점증적 (incremental): 각 증분마다 고객이 즉시 사용 가능한 완성된 인도물 제공.",
+                  "애자일 (agile): 반복적 + 점증적 특성 복합."
                 ]
               },
               {
                 "title": "인도 측정 (delivery measurements)",
                 "entries": [
                   "적응형 접근방식의 작업 진척·흐름 측정 지표.",
-                  "포함: 주기 시간(cycle time), 대기열 크기(queue size), 배치 크기(batch size), 처리량(throughput), WIP.",
-                  "제외: 프로세스 크기(process size)는 FP·LOC 등 SW 규모 측정 개념으로 인도 측정 아님."
+                  "포함: 주기 시간 (cycle time), 대기열 크기 (queue size), 배치 크기 (batch size), 처리량 (throughput), WIP.",
+                  "제외: 프로세스 크기 (process size)는 FP·LOC 등 SW 규모 측정 개념으로 인도 측정 아님."
                 ]
               }
             ]
@@ -1647,15 +1647,15 @@
               {
                 "title": "범위관리 산출물 생성 순서",
                 "entries": [
-                  "순서: 요구사항문서 → WBS 사전(WBS Dictionary) → 활동목록 → 변경요청서.",
+                  "순서: 요구사항문서 → WBS 사전 (WBS Dictionary) → 활동목록 → 변경요청서.",
                   "기준: 요구사항 수집 → WBS 작성 → 일정 계획 → 변경 통제."
                 ]
               },
               {
                 "title": "WBS (Work Breakdown Structure, 작업분류체계)",
                 "entries": [
-                  "계층적 접근(Hierarchical Approach)의 대표 기법 — 전체를 단계적으로 세분화하는 하향식 분해.",
-                  "작업패키지(Work Package): WBS 최하위 단위이자 실제 수행 단위, 비용·일정 산정 기본 단위.",
+                  "계층적 접근 (Hierarchical Approach)의 대표 기법 — 전체를 단계적으로 세분화하는 하향식 분해.",
+                  "작업패키지 (Work Package): WBS 최하위 단위이자 실제 수행 단위, 비용·일정 산정 기본 단위.",
                   "8/80시간 규칙: 작업패키지 크기는 8~80 공수시간 권고.",
                   "패키지가 클수록 진척 관리 어려움 — 보고주기보다 짧게 정하는 것이 권장."
                 ]
@@ -1663,26 +1663,26 @@
               {
                 "title": "범위 분해 계층",
                 "entries": [
-                  "애자일: 테마(theme) → 에픽(epic) → 사용자 스토리(user story) → 태스크.",
+                  "애자일: 테마 (theme) → 에픽 (epic) → 사용자 스토리 (user story) → 태스크.",
                   "예측형: WBS → 작업패키지.",
-                  "포함 아님: 가치흐름 맵(value flow map)은 린 방법론 프로세스 분석 도구이지 범위 분해 도구가 아님."
+                  "포함 아님: 가치흐름 맵 (value flow map)은 린 방법론 프로세스 분석 도구이지 범위 분해 도구가 아님."
                 ]
               },
               {
                 "title": "요구사항 분류 체계",
                 "entries": [
-                  "비즈니스 요구사항(Business Requirements): 조직 목표·결과.",
-                  "이해관계자 요구사항(Stakeholder Requirements): 특정 이해관계자 필요.",
-                  "비기능적 요구사항(Non-functional Requirements): 성능·보안·가용성 등 품질 속성.",
-                  "전환 요구사항(Transition Requirements): 현재→미래 상태 전환에 필요한 임시 역량(데이터 이전, 교육훈련, 마이그레이션 등)."
+                  "비즈니스 요구사항 (Business Requirements): 조직 목표·결과.",
+                  "이해관계자 요구사항 (Stakeholder Requirements): 특정 이해관계자 필요.",
+                  "비기능적 요구사항 (Non-functional Requirements): 성능·보안·가용성 등 품질 속성.",
+                  "전환 요구사항 (Transition Requirements): 현재→미래 상태 전환에 필요한 임시 역량(데이터 이전, 교육훈련, 마이그레이션 등)."
                 ]
               },
               {
                 "title": "집단 창의성 기법",
                 "entries": [
                   "브레인스토밍: 자유 아이디어 발산, 비판 배제.",
-                  "명목 집단 기법(Nominal Group Technique, NGT): 개별 작성 → 순환 발표 → 토론 → 투표로 우선순위 결정 (투표 기반 신속 결정 + 전 구성원 의견 반영).",
-                  "친화도(Affinity Diagram): 대량 아이디어를 유사성으로 그룹화.",
+                  "명목 집단 기법 (Nominal Group Technique, NGT): 개별 작성 → 순환 발표 → 토론 → 투표로 우선순위 결정 (투표 기반 신속 결정 + 전 구성원 의견 반영).",
+                  "친화도 (Affinity Diagram): 대량 아이디어를 유사성으로 그룹화.",
                   "요구사항 워크숍: 이해관계자 협의 구조화 회의."
                 ]
               },
@@ -1691,7 +1691,7 @@
                 "entries": [
                   "근접 작업: 상세 계획(WBS 하위 수준).",
                   "원거리 작업: 개략 계획(WBS 상위 수준).",
-                  "시간 경과에 따라 점진적 상세화(Progressive Elaboration과 유사).",
+                  "시간 경과에 따라 점진적 상세화 (Progressive Elaboration과 유사).",
                   "가까운 시일 정보 추가 확인 시 작업패키지를 여러 활동으로 분할 가능."
                 ]
               }
@@ -1859,14 +1859,14 @@
                 "title": "GERT (Graphical Evaluation and Review Technique, 그래픽 평가 검토 기법)",
                 "entries": [
                   "PERT 확장형 확률적 네트워크.",
-                  "특징: 마디(node) 분기 화살표가 확률적으로 발생, 마디 이벤트가 항상 확정적이지 않음, 네트워크에 루프 허용.",
+                  "특징: 마디 (node) 분기 화살표가 확률적으로 발생, 마디 이벤트가 항상 확정적이지 않음, 네트워크에 루프 허용.",
                   "함정: 작업시간 분포를 항상 베타분포로 가정하는 것은 PERT의 특징이지 GERT가 아님(GERT는 분포 강제 없음)."
                 ]
               },
               {
                 "title": "자원 평준화 (Resource Leveling)",
                 "entries": [
-                  "비임계 활동의 여유 시간(float)을 활용해 자원 투입을 고르게 분산.",
+                  "비임계 활동의 여유 시간 (float)을 활용해 자원 투입을 고르게 분산.",
                   "임계경로 활동은 지연 불가 — 여유 범위 내에서만 조정.",
                   "예: a(2일, 여유 3일) + b(3일, 여유 2일) + c(5일, 임계) → b를 2일 늦게 시작하여 평준화."
                 ]
@@ -1874,8 +1874,8 @@
               {
                 "title": "자유여유 vs 총여유",
                 "entries": [
-                  "자유여유(Free Float) = 후속 활동 ES - 현재 활동 EF (후속 지연 없는 여유).",
-                  "총여유(Total Float) = LS - ES (프로젝트 전체 지연 없는 여유).",
+                  "자유여유 (Free Float) = 후속 활동 ES - 현재 활동 EF (후속 지연 없는 여유).",
+                  "총여유 (Total Float) = LS - ES (프로젝트 전체 지연 없는 여유).",
                   "예: D(ES=2, EF=5), 후속 E(ES=5) → FF = 0일 (E가 D 직후 시작해야 하므로)."
                 ]
               }
@@ -1896,20 +1896,20 @@
               {
                 "title": "일정 활동 기간 추정 기법",
                 "entries": [
-                  "포함: 전문가 판단, 유사 산정(Analogous), 모수 산정(Parametric), 3점 산정(PERT), 상향식 산정(Bottom-up).",
-                  "제외: 비용편익 분석(Cost-Benefit Analysis)은 투자 타당성·대안 선택 기법으로 기간 추정 도구 아님."
+                  "포함: 전문가 판단, 유사 산정 (Analogous), 모수 산정 (Parametric), 3점 산정 (PERT), 상향식 산정 (Bottom-up).",
+                  "제외: 비용편익 분석 (Cost-Benefit Analysis)은 투자 타당성·대안 선택 기법으로 기간 추정 도구 아님."
                 ]
               },
               {
                 "title": "3점 산정법",
                 "entries": [
-                  "삼각분포(Triangular): (O + M + P) / 3 — 단순 평균.",
-                  "베타분포(Beta, PERT): (O + 4M + P) / 6 — 최빈치 가중 4.",
+                  "삼각분포 (Triangular): (O + M + P) / 3 — 단순 평균.",
+                  "베타분포 (Beta, PERT): (O + 4M + P) / 6 — 최빈치 가중 4.",
                   "예: O=4, M=6, P=14 → 삼각 = 8, 베타 = 7."
                 ]
               },
               {
-                "title": "연동기획(Rolling Wave Planning) 적용 상황: 단기 범위는 구체적으로 알지만 장기 세부사항이 불명확한 경우 근접 작업은 상세, 원거리 작업은 개략 계획.",
+                "title": "연동기획 (Rolling Wave Planning) 적용 상황: 단기 범위는 구체적으로 알지만 장기 세부사항이 불명확한 경우 근접 작업은 상세, 원거리 작업은 개략 계획.",
                 "entries": []
               }
             ]
@@ -1919,7 +1919,7 @@
             "sub_items": [],
             "sub_groups": [
               {
-                "title": "핵심 3요소: PV(Planned Value, 계획가치), EV(Earned Value, 획득가치), AC(Actual Cost, 실제원가).",
+                "title": "핵심 3요소: PV (Planned Value, 계획가치), EV (Earned Value, 획득가치), AC (Actual Cost, 실제원가).",
                 "entries": []
               },
               {
@@ -1942,10 +1942,10 @@
               {
                 "title": "EVM 진척률 측정 방법",
                 "entries": [
-                  "고정비율법(Fixed Formula): 시작 시 X%, 완료 시 나머지 인정(대표: 20/80, 25/75, 50/50).",
+                  "고정비율법 (Fixed Formula): 시작 시 X%, 완료 시 나머지 인정(대표: 20/80, 25/75, 50/50).",
                   "가중 마일스톤 기법: 마일스톤별 가중치에 따라 달성 시 가중치만큼 EV 인정.",
                   "0/100법(시작-종료 측정): 완료 시에만 100% 인정.",
-                  "달성률법(Percentage Completion): 담당자 주관 판단 — 신뢰성 낮음."
+                  "달성률법 (Percentage Completion): 담당자 주관 판단 — 신뢰성 낮음."
                 ]
               }
             ]
@@ -2010,7 +2010,7 @@
             "sub_items": [],
             "sub_groups": [
               {
-                "title": "적합(Conformance) 비용",
+                "title": "적합 (Conformance) 비용",
                 "entries": [
                   "예방 비용: 품질 교육·훈련, 생산공정 계획·개선.",
                   "평가 비용: 검사·테스트·감사.",
@@ -2018,7 +2018,7 @@
                 ]
               },
               {
-                "title": "부적합(Non-Conformance) 비용",
+                "title": "부적합 (Non-Conformance) 비용",
                 "entries": [
                   "내적 실패: 인도 전 내부 발견 결함 처리(재작업, 폐기).",
                   "외적 실패: 인도 후 고객 발견 결함 처리(보증, 반품, 손해배상).",
@@ -2030,11 +2030,11 @@
           {
             "cluster": "위험관리 — 리스크 대응 전략",
             "sub_items": [
-              "위협(Threat) 대응: 회피(Avoid), 전가(Transfer), 완화(Mitigate), 수용(Accept).",
-              "기회(Opportunity) 대응: 활용(Exploit), 공유(Share), 증대(Enhance), 수용(Accept).",
+              "위협 (Threat) 대응: 회피 (Avoid), 전가 (Transfer), 완화 (Mitigate), 수용 (Accept).",
+              "기회 (Opportunity) 대응: 활용 (Exploit), 공유 (Share), 증대 (Enhance), 수용 (Accept).",
               "전략 매핑: 회피↔활용, 전가↔공유, 완화↔증대, 수용↔수용.",
-              "수용(Accept)은 위협·기회 모두에 적용되는 유일한 공통 전략.",
-              "함정: 공유(Share)는 기회 전략이며 위협 전략이 아님."
+              "수용 (Accept)은 위협·기회 모두에 적용되는 유일한 공통 전략.",
+              "함정: 공유 (Share)는 기회 전략이며 위협 전략이 아님."
             ],
             "sub_groups": []
           },
@@ -2054,10 +2054,10 @@
                 "entries": []
               },
               {
-                "title": "리스크 통제(Risk Control) 방법",
+                "title": "리스크 통제 (Risk Control) 방법",
                 "entries": [
                   "포함: 기술적 성과측정, 차이 및 추세 분석(EVM 지표), 리스크 재평가, 리스크 감사.",
-                  "제외: 프로세스 분석은 품질관리(QM)의 지속적 개선 도구로 리스크 통제 방법 아님."
+                  "제외: 프로세스 분석은 품질관리 (QM)의 지속적 개선 도구로 리스크 통제 방법 아님."
                 ]
               }
             ]
@@ -2231,7 +2231,7 @@
           {
             "cluster": "팀 발달 — Tuckman 5단계 모형",
             "sub_items": [
-              "단계 순서: 형성기(Forming) → 격동기(Storming) → 규범기(Norming) → 성취기(Performing) → 해산기(Adjourning).",
+              "단계 순서: 형성기 (Forming) → 격동기 (Storming) → 규범기 (Norming) → 성취기 (Performing) → 해산기 (Adjourning).",
               "규범기 특성: 갈등 감소, 팀 일체감·신뢰 형성, 규범·절차 수립, 예산·일정 제약 현실 인식.",
               "형성기 PM 역할: 팀원 책임·역할을 분명히 제시(지시적).",
               "규범기에서는 업무효율성 개선이 아직 최고조가 아님(성취기 특성)."
@@ -2245,10 +2245,10 @@
               {
                 "title": "부서화 방법 (Departmental Grouping)",
                 "entries": [
-                  "기능별(Functional): 유사 기능·전문성 기준.",
-                  "사업부별(Divisional): 제품·지역·고객별 자기완결 단위.",
-                  "수평적(Horizontal): 핵심 작업 처리 과정·정보 흐름 기준 — 프로세스 기반 조직.",
-                  "다초점(Multifocused): 기능+제품 등 두 기준 동시 적용(매트릭스)."
+                  "기능별 (Functional): 유사 기능·전문성 기준.",
+                  "사업부별 (Divisional): 제품·지역·고객별 자기완결 단위.",
+                  "수평적 (Horizontal): 핵심 작업 처리 과정·정보 흐름 기준 — 프로세스 기반 조직.",
+                  "다초점 (Multifocused): 기능+제품 등 두 기준 동시 적용(매트릭스)."
                 ]
               },
               {
@@ -2286,15 +2286,15 @@
               {
                 "title": "Pink (Daniel Pink) 내재적 동기 3요소",
                 "entries": [
-                  "자율성(Autonomy), 숙련도(Mastery), 목적(Purpose).",
-                  "함정: 성취(Achievement)는 Herzberg 동기 요인 또는 McClelland 3욕구(성취·권력·소속) 소속이며 Pink 3요소 아님."
+                  "자율성 (Autonomy), 숙련도 (Mastery), 목적 (Purpose).",
+                  "함정: 성취 (Achievement)는 Herzberg 동기 요인 또는 McClelland 3욕구(성취·권력·소속) 소속이며 Pink 3요소 아님."
                 ]
               },
               {
                 "title": "인지적 평가 이론 (Cognitive Evaluation Theory, Deci & Ryan)",
                 "entries": [
                   "내재적 동기(성취감·책임감)로 수행하는 활동에 외적 보상(돈·승진) 도입 시 자율성 지각 감소 → 내재적 동기 저하.",
-                  "과다정당화 효과(Overjustification Effect)·구축효과(Crowding-out Effect)로도 불림."
+                  "과다정당화 효과 (Overjustification Effect)·구축효과 (Crowding-out Effect)로도 불림."
                 ]
               },
               {
@@ -2302,8 +2302,8 @@
                 "entries": [
                   "Maslow 욕구단계설: 생리·안전·사회·존경·자아실현 5단계 위계.",
                   "Herzberg 2요인 이론: 위생 요인(불만) + 동기 요인(만족, 성취감·인정 등).",
-                  "공정성 이론(Equity Theory): 투입 대비 산출을 타인과 비교해 불공정 지각 시 동기 변화.",
-                  "목표설정 이론(Goal-Setting, Locke & Latham): 구체적·도전적 목표가 동기·성과 향상."
+                  "공정성 이론 (Equity Theory): 투입 대비 산출을 타인과 비교해 불공정 지각 시 동기 변화.",
+                  "목표설정 이론 (Goal-Setting, Locke & Latham): 구체적·도전적 목표가 동기·성과 향상."
                 ]
               }
             ]
@@ -2315,7 +2315,7 @@
               {
                 "title": "상황적 리더십 (Hersey & Blanchard, Situational Leadership)",
                 "entries": [
-                  "구성원 성숙도(과업능력 + 의욕)에 따른 4단계: 지시형(S1) → 설득형/코칭형(S2) → 참여형(S3) → 위임형(S4).",
+                  "구성원 성숙도(과업능력 + 의욕)에 따른 4단계: 지시형 (S1) → 설득형/코칭형 (S2) → 참여형 (S3) → 위임형 (S4).",
                   "성숙도 낮음→높음 순으로 과업 행동은 감소, 관계 행동은 증가하다 위임형에서 관계 행동도 감소."
                 ]
               },
@@ -2335,19 +2335,19 @@
               {
                 "title": "EI (Emotional Intelligence, 감성지능, Goleman) 4대 영역",
                 "entries": [
-                  "자기 인식(Self-awareness).",
-                  "자기 관리(Self-management).",
-                  "사회적 인식(Social awareness).",
-                  "관계 관리/사회적 기술(Relationship management / Social skill).",
-                  "함정: '자기 판단(self-judgement)'은 4대 영역 아님."
+                  "자기 인식 (Self-awareness).",
+                  "자기 관리 (Self-management).",
+                  "사회적 인식 (Social awareness).",
+                  "관계 관리/사회적 기술 (Relationship management / Social skill).",
+                  "함정: '자기 판단 (self-judgement)'은 4대 영역 아님."
                 ]
               },
               {
                 "title": "대인 의사소통 경청 기술",
                 "entries": [
-                  "명료화(Clarification): 이야기를 명확하게 이해할 때까지 추가 질문.",
-                  "확인적 경청(Congruent Listening): 말의 내용과 목소리 톤·얼굴 표정 일치 여부 관찰.",
-                  "개방적 경청(Open Listening): 선입관·편견 없이 있는 그대로 수용.",
+                  "명료화 (Clarification): 이야기를 명확하게 이해할 때까지 추가 질문.",
+                  "확인적 경청 (Congruent Listening): 말의 내용과 목소리 톤·얼굴 표정 일치 여부 관찰.",
+                  "개방적 경청 (Open Listening): 선입관·편견 없이 있는 그대로 수용.",
                   "효과적 피드백 조건: 정직, 지지적, 구체적."
                 ]
               }
@@ -2356,11 +2356,11 @@
           {
             "cluster": "갈등 관리 — Thomas-Kilmann 모델",
             "sub_items": [
-              "강경(Forcing/Competing): 자기주장 高 + 협조 低.",
-              "타협(Compromising): 자기주장·협조 중간, 상호 양보.",
-              "회피(Withdrawing/Avoid): 자기주장·협조 모두 低.",
-              "유연(Smoothing/Accommodate): 자기주장 低 + 협조(동조) 高, 상대방 수용.",
-              "협력(Collaborating): 자기주장·협조 모두 高, 통합적 문제 해결."
+              "강경 (Forcing/Competing): 자기주장 高 + 협조 低.",
+              "타협 (Compromising): 자기주장·협조 중간, 상호 양보.",
+              "회피 (Withdrawing/Avoid): 자기주장·협조 모두 低.",
+              "유연 (Smoothing/Accommodate): 자기주장 低 + 협조(동조) 高, 상대방 수용.",
+              "협력 (Collaborating): 자기주장·협조 모두 高, 통합적 문제 해결."
             ],
             "sub_groups": []
           },
@@ -2372,7 +2372,7 @@
                 "title": "원칙 협상 (Principled Negotiation, Fisher & Ury, Getting to YES) 4원칙",
                 "entries": [
                   "사람과 문제를 분리.",
-                  "입장(position)이 아닌 이해관계(interest)에 집중.",
+                  "입장 (position)이 아닌 이해관계 (interest)에 집중.",
                   "상호 이익이 되는 옵션 개발.",
                   "객관적 기준(근거) 사용.",
                   "함정: '입장에 기반한다'는 설명은 전통적 협상 방식으로 원칙 협상과 반대."
@@ -2393,9 +2393,9 @@
               {
                 "title": "의사소통 방법 3유형",
                 "entries": [
-                  "Push(전달식): 일방향 발송 — 이메일, 팩스, 메모, 상태보고서.",
-                  "Pull(유인식): 수신자가 능동 조회 — 인트라넷, 지식저장소, 전자게시판, e-러닝.",
-                  "Interactive(대화식): 쌍방향 실시간 — 회의, 전화, 화상회의, 워크숍."
+                  "Push (전달식): 일방향 발송 — 이메일, 팩스, 메모, 상태보고서.",
+                  "Pull (유인식): 수신자가 능동 조회 — 인트라넷, 지식저장소, 전자게시판, e-러닝.",
+                  "Interactive (대화식): 쌍방향 실시간 — 회의, 전화, 화상회의, 워크숍."
                 ]
               }
             ]
@@ -2419,16 +2419,16 @@
           {
             "cluster": "이해관계자 관리 — 참여 수준",
             "sub_items": [
-              "PMBOK 참여 수준 5단계: 인식 없음(Unaware) → 저항(Resistant) → 중립(Neutral) → 지지(Supportive) → 선도(Leading).",
-              "함정: '인지(aware)'는 참여 수준 분류에 없는 명칭."
+              "PMBOK 참여 수준 5단계: 인식 없음 (Unaware) → 저항 (Resistant) → 중립 (Neutral) → 지지 (Supportive) → 선도 (Leading).",
+              "함정: '인지 (aware)'는 참여 수준 분류에 없는 명칭."
             ],
             "sub_groups": []
           },
           {
             "cluster": "조달관리 — 계약 유형·결정",
             "sub_items": [
-              "계약 유형: 고정가격(FFP, Firm Fixed Price), 성과급 고정가격(FPIF, Fixed Price Incentive Fee), 비용 상환(CPFF, Cost Plus Fixed Fee), 시간 및 자재(T&M, Time and Material).",
-              "Make-or-Buy 분석: 직접 생산(Make) vs 구매(Buy) 결정 기준 검토."
+              "계약 유형: 고정가격 (FFP, Firm Fixed Price), 성과급 고정가격 (FPIF, Fixed Price Incentive Fee), 비용 상환 (CPFF, Cost Plus Fixed Fee), 시간 및 자재 (T&M, Time and Material).",
+              "Make-or-Buy 분석: 직접 생산 (Make) vs 구매 (Buy) 결정 기준 검토."
             ],
             "sub_groups": []
           }
@@ -2548,7 +2548,7 @@
               {
                 "title": "XP (eXtreme Programming, 익스트림 프로그래밍) 핵심 실무",
                 "entries": [
-                  "Simple Design (단순 설계): 현재 필요한 기능만 구현하고 과도한 사전 설계를 지양한다. YAGNI(You Aren't Gonna Need It) 원칙을 따르며 \"미래 변경 대비 설계\"는 XP 철학에 반한다.",
+                  "Simple Design (단순 설계): 현재 필요한 기능만 구현하고 과도한 사전 설계를 지양한다. YAGNI (You Aren't Gonna Need It) 원칙을 따르며 \"미래 변경 대비 설계\"는 XP 철학에 반한다.",
                   "Collective Ownership (공동 소유권): 팀 전체가 코드에 공동 책임을 지며 누구든 어떤 코드라도 수정할 수 있다. 코드에서 문제를 발견하면 원저자가 아니어도 직접 수정 가능.",
                   "Continuous Integration (연속적 통합): 작업이 끝나는 즉시 전체 시스템에 통합하고 모든 테스트를 통과해야 한다.",
                   "Refactoring (리팩토링): 코드 개선 사항 발견 시 지속적으로 구조를 개선해 단순성과 유지보수성을 유지한다.",
@@ -2647,7 +2647,7 @@
               "Scale of Economy (규모의 경제): 지수가 1 미만이면 규모 증가 시 단위 노력이 감소(경제), 1 초과이면 불경제. COCOMO II는 규모 인자에 따라 지수가 달라진다.",
               "COCOMO II 재사용 모델 AAF (Adaptation Adjustment Factor, 적응 조정 인자): AAF = 0.4×DM + 0.3×CM + 0.3×IM. 설계 변경률(DM)의 가중치가 코드 변경률(CM)·통합 노력률(IM)보다 높다.",
               "DM (Design Modification), CM (Code Modification), IM (Integration Modification): 설계/코드/통합 각각의 변경률. DM·CM이 모두 0이면 이해도(SU)도 0이 된다.",
-              "IFPUG FPA (Function Point Analysis, 기능점수 분석): 기능 관점에서 소프트웨어 규모를 정량화하는 방법. IFPUG(International Function Point Users Group)가 표준화한다.",
+              "IFPUG FPA (Function Point Analysis, 기능점수 분석): 기능 관점에서 소프트웨어 규모를 정량화하는 방법. IFPUG (International Function Point Users Group)가 표준화한다.",
               "DFP (Development Function Point, 개발 기능점수): 신규 개발 프로젝트의 FP.",
               "EFP (Enhancement Function Point, 개선 기능점수): 개선 프로젝트의 FP. 공식은 EFP = [(ADD + CHGA + CFP) × VAFA] + (DEL × VAFB). 추가·수정·변환은 VAFA, 삭제는 VAFB로 각각 별도 조정.",
               "AFP (Application Function Point, 애플리케이션 기능점수): 운영 중인 애플리케이션 전체의 FP.",
@@ -4309,7 +4309,7 @@
           {
             "cluster": "SP 인증 제도",
             "sub_items": [
-              "SP (Software Process, 소프트웨어 프로세스) 인증: SW 개발 기업의 프로세스 품질 수준을 평가·인증하는 국내 제도. SPICE(ISO/IEC 15504) 기반.",
+              "SP (Software Process, 소프트웨어 프로세스) 인증: SW 개발 기업의 프로세스 품질 수준을 평가·인증하는 국내 제도. SPICE (ISO/IEC 15504) 기반.",
               "NIA (National Information Society Agency, 한국지능정보사회진흥원): SP 인증 주관 기관.",
               "평가 척도: 2차원(프로세스 차원 × 능력 차원). 능력 차원은 수준 0~5단계.",
               "인증 등급: 1등급(최고) ~ 3등급. 3등급 신청 시 미달하면 인증 미부여(하향 자동 부여 없음).",
@@ -5523,7 +5523,7 @@
               "RIGHT OUTER JOIN: 오른쪽 전체 행 유지.",
               "FULL OUTER JOIN: 양쪽 전체 행 유지. 매칭 없는 쪽 NULL.",
               "Self Join (자체 조인): 동일 테이블을 별칭으로 참조. 직원-상사 관계(E.MANAGER = M.ENO) 등. NULL FK 튜플은 조인 제외.",
-              "JOIN 문법 구분: JOIN...ON(명시적 조건), NATURAL JOIN(동일 컬럼 자동), JOIN...USING(지정 컬럼). NATURAL JOIN과 ON/USING 혼용은 문법 오류."
+              "JOIN 문법 구분: JOIN...ON (명시적 조건), NATURAL JOIN (동일 컬럼 자동), JOIN...USING (지정 컬럼). NATURAL JOIN과 ON/USING 혼용은 문법 오류."
             ],
             "sub_groups": []
           },
@@ -5995,7 +5995,7 @@
             "cluster": "DB 보안 (Access Control, 접근 제어)",
             "sub_items": [
               "MAC (Mandatory Access Control, 강제 접근 제어, 다단계 보안): 객체에 비밀 등급·사용자에 허가 등급 부여. Bell-LaPadula 모델 기반.",
-              "보안 등급 체계: TS(Top Secret) > S(Secret) > C(Confidential) > U(Unclassified).",
+              "보안 등급 체계: TS (Top Secret) > S (Secret) > C (Confidential) > U (Unclassified).",
               "Simple Security (읽기 규칙): 사용자 허가 등급 ≥ 객체 비밀 등급 (no read up).",
               "*-property (쓰기 규칙, 스타 속성): 사용자 허가 등급 ≤ 객체 비밀 등급 (no write down). 상위 등급의 하향 기록 금지로 정보 유출 방지.",
               "DAC (Discretionary Access Control, 임의 접근 제어): 데이터 소유자가 권한 부여. GRANT/REVOKE SQL 명령으로 제어."
@@ -6526,7 +6526,7 @@
             "sub_items": [
               "Inmon의 4대 특성: 주제 지향성(Subject-oriented)·통합성(Integrated)·시간 가변성(Time-variant)·비휘발성(Nonvolatile).",
               "Subject-oriented (주제 지향성): 업무 처리 중심의 운영 DB와 달리 의사결정 주제(고객·제품)별 구성.",
-              "Integrated (통합성): 이기종 소스에서 ETL(Extract·Transform·Load)로 통합.",
+              "Integrated (통합성): 이기종 소스에서 ETL (Extract·Transform·Load)로 통합.",
               "Time-variant (시간 가변성): 과거~현재 이력 데이터를 시계열로 보존. Time-invariant가 아님에 주의.",
               "Nonvolatile (비휘발성): 적재 후 삭제·갱신 없이 읽기 전용 유지.",
               "OLAP (Online Analytical Processing, 온라인 분석 처리): DW 기반 다차원 분석·의사결정 지원."
@@ -6772,7 +6772,7 @@
                 "title": "파이프라인 해저드 (Pipeline Hazard) — 명령어 파이프라인에서 다음 사이클 실행을 방해하는 3대 유형",
                 "entries": [
                   "Structural Hazard (구조적 해저드): 동일 클록에 두 명령어가 같은 하드웨어 자원(메모리·레지스터 파일 등)에 동시 접근 시 발생.",
-                  "Data Hazard (데이터 해저드): 이전 명령어의 결과를 후속 명령어가 필요로 하는 데이터 의존성. RAW(Read After Write) 등으로 세분화되며, Register Hazard는 독립 분류가 아님.",
+                  "Data Hazard (데이터 해저드): 이전 명령어의 결과를 후속 명령어가 필요로 하는 데이터 의존성. RAW (Read After Write) 등으로 세분화되며, Register Hazard는 독립 분류가 아님.",
                   "Control Hazard (제어 해저드): 분기(branch) 명령어로 잘못된 명령어를 미리 인출(fetch)했을 때 발생."
                 ]
               },
@@ -6891,7 +6891,7 @@
                 "entries": [
                   "RAID 0 (스트라이핑): 데이터를 블록 단위로 분산. n디스크 → nTB, 성능 극대화·결함 허용 없음. 최소 2개.",
                   "RAID 1 (미러링): 데이터를 두 곳에 복제. 용량 효율 50%, 최고 신뢰성, 최소 2개.",
-                  "RAID 2: 비트 단위 스트라이핑 + Hamming Code(해밍 코드) ECC. 사실상 사용 안 됨.",
+                  "RAID 2: 비트 단위 스트라이핑 + Hamming Code (해밍 코드) ECC. 사실상 사용 안 됨.",
                   "RAID 3: 비트/바이트 단위 스트라이핑 + 전용 패리티 디스크. XOR 기반 패리티.",
                   "RAID 4: 블록 단위 스트라이핑 + 전용 패리티 디스크. 패리티 디스크 병목 발생.",
                   "RAID 5: 블록 단위 스트라이핑 + 분산 패리티 (block-interleaved distributed parity). 최소 3개, 1개 디스크 장애 허용.",
@@ -7069,7 +7069,7 @@
               {
                 "title": "inode (Index Node, 인덱스 노드)",
                 "entries": [
-                  "저장 정보: 권한, UID(User ID), GID(Group ID), 크기, 타임스탬프, 데이터 블록 포인터. 소유자 이름은 /etc/passwd에서 UID로 조회 (inode에 저장되지 않음).",
+                  "저장 정보: 권한, UID (User ID), GID (Group ID), 크기, 타임스탬프, 데이터 블록 포인터. 소유자 이름은 /etc/passwd에서 UID로 조회 (inode에 저장되지 않음).",
                   "파일명은 디렉토리 엔트리에 저장되며 inode 번호로 연결."
                 ]
               }
@@ -7305,7 +7305,7 @@
                 "title": "단편화 (Fragmentation)",
                 "entries": [
                   "Identification (식별자): 같은 원본 패킷의 모든 단편이 공유하는 동일 값. 재조합 기준.",
-                  "변경 필드: Total Length(전체 길이), Checksum(체크섬), Fragment Offset(단편 오프셋), MF(More Fragments) 플래그.",
+                  "변경 필드: Total Length (전체 길이), Checksum (체크섬), Fragment Offset (단편 오프셋), MF (More Fragments) 플래그.",
                   "IPv4 헤더 크기: 기본 20바이트, 옵션 포함 시 최대 60바이트."
                 ]
               },
@@ -7329,7 +7329,7 @@
                   "포함 필드: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source/Destination Address.",
                   "IPv4 → IPv6 개명: TTL (Time to Live) → Hop Limit, TOS (Type of Service) → Traffic Class.",
                   "Flow Label (흐름 꼬리표): IPv6에서 신규 추가. QoS용 실시간 트래픽 식별.",
-                  "제거: Header Checksum(상위 계층이 처리), 단편화 필드(Fragment 확장 헤더로 분리, 라우터 단편화 불가)."
+                  "제거: Header Checksum (상위 계층이 처리), 단편화 필드(Fragment 확장 헤더로 분리, 라우터 단편화 불가)."
                 ]
               },
               {
@@ -7538,7 +7538,7 @@
                 "title": "분류 축",
                 "entries": [
                   "정적(Static) vs 동적(Dynamic): 관리자가 수동 설정 vs 프로토콜이 자동 갱신.",
-                  "IGP vs EGP: Interior Gateway Protocol(AS 내, RIP·OSPF) vs Exterior Gateway Protocol(AS 간, BGP).",
+                  "IGP vs EGP: Interior Gateway Protocol (AS 내, RIP·OSPF) vs Exterior Gateway Protocol (AS 간, BGP).",
                   "유니캐스트 vs 멀티캐스트 라우팅 프로토콜 존재."
                 ]
               },
@@ -7577,7 +7577,7 @@
                 "entries": [
                   "특성: AS 간 EGP, 경로 벡터(Path Vector) 알고리즘, TCP 포트 179 사용.",
                   "eBGP (external BGP): 서로 다른 AS 간. iBGP (internal BGP): 동일 AS 내.",
-                  "메시지 유형: OPEN(연결 수립), UPDATE(경로 광고/철회), KEEPALIVE(연결 유지), NOTIFICATION(오류 보고·연결 종료). 자신의 라우팅 정보 전달은 UPDATE로 수행."
+                  "메시지 유형: OPEN (연결 수립), UPDATE (경로 광고/철회), KEEPALIVE (연결 유지), NOTIFICATION (오류 보고·연결 종료). 자신의 라우팅 정보 전달은 UPDATE로 수행."
                 ]
               }
             ]
@@ -7597,15 +7597,15 @@
                 "title": "대표 프로토콜",
                 "entries": [
                   "CBT (Core-Based Tree, 코어 기반 트리): 코어 노드를 공유 루트로 그룹 공유 트리 구성. 코어가 단일 장애점.",
-                  "DVMRP (Distance Vector Multicast Routing Protocol): 거리 벡터 기반, RPF(Reverse Path Forwarding) + Pruning.",
+                  "DVMRP (Distance Vector Multicast Routing Protocol): 거리 벡터 기반, RPF (Reverse Path Forwarding) + Pruning.",
                   "PIM-DM / PIM-SM (Protocol Independent Multicast - Dense/Sparse Mode): 각각 소스 기반·공유 트리.",
-                  "IGMP (Internet Group Management Protocol, 인터넷 그룹 관리 프로토콜): 호스트 ↔ 라우터 간 멀티캐스트 그룹 멤버십 관리. IP 프로토콜 번호 2, IP 패킷으로 캡슐화. Query(라우터→호스트)·Report(호스트→라우터)."
+                  "IGMP (Internet Group Management Protocol, 인터넷 그룹 관리 프로토콜): 호스트 ↔ 라우터 간 멀티캐스트 그룹 멤버십 관리. IP 프로토콜 번호 2, IP 패킷으로 캡슐화. Query (라우터→호스트)·Report (호스트→라우터)."
                 ]
               }
             ]
           },
           {
-            "cluster": "소스 라우팅 (Source Routing): 송신 호스트가 목적지까지 전체 경로를 결정해 패킷 헤더에 기록. Strict/Loose 방식, IPv6 Routing Extension Header로 구현.",
+            "cluster": "소스 라우팅 (Source Routing) — 송신 호스트가 목적지까지 전체 경로를 결정해 패킷 헤더에 기록. Strict/Loose 방식, IPv6 Routing Extension Header로 구현.",
             "sub_items": [],
             "sub_groups": []
           },
@@ -8384,7 +8384,7 @@
             "cluster": "MSA (Microservices Architecture, 마이크로서비스 아키텍처)",
             "sub_items": [
               "장점: 작은 코드베이스, 비즈니스 기능 중심 분산 제어, 독립적 자동 배포, 서비스별 기술 스택 다양화, 장애 격리, 확장성.",
-              "단점: 분산 시스템 복잡성, 서비스 간 통신 오버헤드, **테스트 복잡성 증가(모놀리틱 대비 테스트가 더 어려움)**, 운영 부담."
+              "단점: 분산 시스템 복잡성, 서비스 간 통신 오버헤드, 테스트 복잡성 증가(모놀리틱 대비 테스트가 더 어려움), 운영 부담."
             ],
             "sub_groups": []
           },
@@ -8582,7 +8582,7 @@
         ],
         "study_contents": [
           {
-            "cluster": "성능 평가 지표 — 혼동 행렬(Confusion Matrix): TP(참양성)·TN(참음성)·FP(거짓양성)·FN(거짓음성)",
+            "cluster": "성능 평가 지표 — 혼동 행렬(Confusion Matrix): TP (참양성)·TN (참음성)·FP (거짓양성)·FN (거짓음성)",
             "sub_items": [
               "Accuracy (정확도) = (TP+TN) / (TP+TN+FP+FN). 전체 예측 중 올바른 비율.",
               "Precision (정밀도) = TP / (TP+FP). 양성 예측 중 실제 양성 비율.",
@@ -8609,7 +8609,7 @@
                 "entries": []
               },
               {
-                "title": "Ensemble Learning (앙상블 학습): 복수 분류기(weak learner)를 메타 분류기로 결합해 성능 향상.",
+                "title": "Ensemble Learning (앙상블 학습) — 복수 분류기(weak learner)를 메타 분류기로 결합해 성능 향상.",
                 "entries": [
                   "Bagging (배깅): Random Forest.",
                   "Boosting (부스팅): AdaBoost, XGBoost.",
@@ -8643,7 +8643,7 @@
                 "entries": [
                   "GAN (Generative Adversarial Network, 생성적 적대 신경망): 생성자(Generator)와 판별자(Discriminator) 두 신경망이 적대적 경쟁 학습. 이미지 합성·데이터 증강·딥페이크.",
                   "VAE (Variational Auto Encoder, 변분 오토인코더): 인코더-디코더 신경망, 잠재 공간에서 확률적 표현 학습.",
-                  "DBN (Deep Belief Network, 심층 신뢰망): RBM(Restricted Boltzmann Machine)을 여러 층 쌓은 생성 모델."
+                  "DBN (Deep Belief Network, 심층 신뢰망): RBM (Restricted Boltzmann Machine)을 여러 층 쌓은 생성 모델."
                 ]
               }
             ]
@@ -8653,7 +8653,7 @@
             "sub_items": [],
             "sub_groups": [
               {
-                "title": "Activation Function (활성함수): 뉴런 출력 결정, 비선형성 부여",
+                "title": "Activation Function (활성함수) — 뉴런 출력 결정, 비선형성 부여",
                 "entries": [
                   "Sigmoid (시그모이드): 출력 (0,1), 미분 최댓값 0.25 → 깊은 망에서 Vanishing Gradient (기울기 소실) 유발.",
                   "Tanh (하이퍼볼릭 탄젠트): 출력 (−1,1).",
@@ -8662,7 +8662,7 @@
                 ]
               },
               {
-                "title": "Optimizer (최적화 알고리즘): 가중치 업데이트 방법",
+                "title": "Optimizer (최적화 알고리즘) — 가중치 업데이트 방법",
                 "entries": [
                   "SGD (Stochastic Gradient Descent, 확률적 경사하강법).",
                   "Momentum (모멘텀).",
@@ -8692,7 +8692,7 @@
                 ]
               },
               {
-                "title": "Vanishing Gradient (기울기 소실·경사소실): 역전파 시 기울기가 0에 수렴해 하위 층 업데이트 소실. 은닉층 증가는 오히려 악화.",
+                "title": "Vanishing Gradient (기울기 소실·경사소실) — 역전파 시 기울기가 0에 수렴해 하위 층 업데이트 소실. 은닉층 증가는 오히려 악화.",
                 "entries": [
                   "해결책: ReLU 활성화, Batch Normalization (배치 정규화), Residual Connection (잔차 연결, ResNet), LSTM/GRU, 적절한 가중치 초기화."
                 ]
@@ -8964,10 +8964,10 @@
             "sub_groups": []
           },
           {
-            "cluster": "오픈소스 라이선스 — Copyleft 강도 순: GPL > LGPL(정적) > LGPL(동적) > Apache2.0",
+            "cluster": "오픈소스 라이선스 — Copyleft 강도 순: GPL > LGPL (정적) > LGPL (동적) > Apache2.0",
             "sub_items": [
               "GPL 3.0 (General Public License v3): 강한 Copyleft. 정적·동적 링크 모두 결합 저작물 전체에 GPL 적용 → 소스 공개 의무.",
-              "LGPL 3.0 (Lesser GPL v3): 동적 링크 시 소스 공개 면제, **정적 링크 시 GPL3.0과 동일하게 소스 공개 의무**.",
+              "LGPL 3.0 (Lesser GPL v3): 동적 링크 시 소스 공개 면제, 정적 링크 시 GPL3.0과 동일하게 소스 공개 의무.",
               "Apache 2.0: Permissive. 소스 공개 의무 없음, 저작권 고지·라이선스 파일 포함만 의무."
             ],
             "sub_groups": []
@@ -9270,7 +9270,7 @@
                   "ECB (Electronic Code Book, 전자부호책 모드): 블록을 독립 암호화. 동일 평문 → 동일 암호문 (패턴 노출).",
                   "CBC (Cipher Block Chaining, 암호 블록 연쇄 모드): 이전 암호문을 XOR 후 암호화. IV 사용, 암호화 순차(병렬 불가), 복호화는 병렬 가능, 오류 전파 2블록 한정.",
                   "CTR (Counter, 카운터 모드): 카운터 값을 암호화한 키스트림을 평문과 XOR. 병렬 처리 가능.",
-                  "GCM (Galois/Counter Mode, 갈루아/카운터 모드): CTR 암호화 + GHASH(갈루아 필드 해시) 기반 인증 태그. AEAD 모드로 기밀성·무결성 동시 제공, 병렬 처리 가능. TLS 1.2/1.3 권장."
+                  "GCM (Galois/Counter Mode, 갈루아/카운터 모드): CTR 암호화 + GHASH (갈루아 필드 해시) 기반 인증 태그. AEAD 모드로 기밀성·무결성 동시 제공, 병렬 처리 가능. TLS 1.2/1.3 권장."
                 ]
               }
             ]
@@ -9283,7 +9283,7 @@
                 "title": "수학적 난제 기반 알고리즘",
                 "entries": [
                   "RSA (Rivest-Shamir-Adleman, 리베스트·샤미르·애들먼 암호): 큰 수의 소인수분해 난이도 기반. 암호화 C = M^E mod N (공개키 E,N), 복호화 M = C^D mod N (개인키 D,N). 서명·키 교환에도 활용.",
-                  "ECC (Elliptic Curve Cryptography, 타원곡선 암호): 타원곡선 이산대수 문제(ECDLP) 기반. 짧은 키(256비트)로 RSA 3072비트와 동등 강도. 모바일·IoT에 적합. ECDH(키 교환)·ECDSA(서명) 응용.",
+                  "ECC (Elliptic Curve Cryptography, 타원곡선 암호): 타원곡선 이산대수 문제(ECDLP) 기반. 짧은 키(256비트)로 RSA 3072비트와 동등 강도. 모바일·IoT에 적합. ECDH (키 교환)·ECDSA (서명) 응용.",
                   "ElGamal (엘가말 암호): 이산대수 문제 기반 공개키 암호. 암호문이 (C1, C2) 쌍이므로 평문 대비 2배 크기(메시지 확장) 단점.",
                   "Diffie-Hellman Key Exchange (디피-헬만 키 교환): 이산대수 난이도 기반 공개키 교환 프로토콜. 인증 기능 없음(MITM 취약)."
                 ]
@@ -9336,7 +9336,7 @@
             "sub_items": [
               "Digital Signature (전자서명): 개인키로 메시지 해시를 서명 → 공개키로 검증. 제공 서비스는 인증(Authentication)·무결성(Integrity)·부인 방지(Non-repudiation). 기밀성은 제공하지 않음. 서명은 메시지 해시에 종속되어 다른 문서에 재사용 불가.",
               "Hybrid Cryptosystem (하이브리드 암호 시스템): 대칭 세션키로 메시지 암호화 + 수신자 공개키로 세션키 암호화 전달. 속도와 키 배포 장점 결합. PGP·TLS가 대표 적용 사례.",
-              "PBE (Password-Based Encryption, 패스워드 기반 암호화): 패스워드 + 솔트 → KDF → KEK(Key Encryption Key) 생성 → CEK(Contents Encryption Key) 암호화. 솔트는 레인보우 테이블·사전 공격 방어용 (MITM 방어 아님).",
+              "PBE (Password-Based Encryption, 패스워드 기반 암호화): 패스워드 + 솔트 → KDF → KEK (Key Encryption Key) 생성 → CEK (Contents Encryption Key) 암호화. 솔트는 레인보우 테이블·사전 공격 방어용 (MITM 방어 아님).",
               "KEK (Key Encryption Key, 키 암호화 키): 다른 키(CEK)를 암호화할 때 사용하는 상위 키.",
               "CEK (Contents Encryption Key, 콘텐츠 암호화 키): 실제 메시지·파일을 암호화하는 키.",
               "Salt (솔트): 동일 패스워드라도 다른 해시·KEK를 생성하도록 더하는 난수. 사전 공격·레인보우 테이블 방어."
@@ -9563,7 +9563,7 @@
               {
                 "title": "무선 LAN 보안",
                 "entries": [
-                  "WPA2 (Wi-Fi Protected Access 2): CCMP/AES 기반 무선 보안 표준. Personal(PSK)은 모든 단말이 사전 공유 키 사용.",
+                  "WPA2 (Wi-Fi Protected Access 2): CCMP/AES 기반 무선 보안 표준. Personal (PSK)은 모든 단말이 사전 공유 키 사용.",
                   "CCMP (Counter Mode with CBC-MAC Protocol): AES 기반 기밀성·무결성 제공 무선 보안 프로토콜.",
                   "WPA-EAP (WPA-Enterprise, 기업용 WPA): 802.1X + RADIUS 인증으로 사용자별 세션마다 고유 동적 키 생성.",
                   "802.1X: 포트 기반 네트워크 접근 제어 표준. EAP 프로토콜 전달.",
@@ -9598,12 +9598,12 @@
                 "title": "Layer 4+ VPN",
                 "entries": [
                   "SSL/TLS VPN: 애플리케이션 계층 보호. 웹 브라우저만으로 접속 가능, 방화벽 친화적.",
-                  "SSTP (Secure Socket Tunneling Protocol, 보안 소켓 터널링 프로토콜): Microsoft 개발. SSL/TLS(포트 443) 기반으로 방화벽·NAT 우회 용이.",
+                  "SSTP (Secure Socket Tunneling Protocol, 보안 소켓 터널링 프로토콜): Microsoft 개발. SSL/TLS (포트 443) 기반으로 방화벽·NAT 우회 용이.",
                   "OpenVPN: SSL/TLS 기반 오픈소스 VPN."
                 ]
               },
               {
-                "title": "활용 구도 — Site-to-Site VPN(본사·지사 연결, 주로 IPSec) / Remote Access VPN(재택·외부 근무자, 주로 SSL VPN).",
+                "title": "활용 구도 — Site-to-Site VPN (본사·지사 연결, 주로 IPSec) / Remote Access VPN (재택·외부 근무자, 주로 SSL VPN).",
                 "entries": []
               }
             ]
@@ -9661,7 +9661,7 @@
               "SSO (Single Sign On, 통합 인증): 한 번의 인증으로 다수 시스템에 접근. 중앙 SSO 서버가 토큰을 발급하여 연계 시스템이 검증.",
               "구현 표준 — Kerberos (MIT 개발 티켓 기반 네트워크 인증, Windows Active Directory 핵심) / SAML (Security Assertion Markup Language) / OAuth 2.0 / OpenID Connect.",
               "Step-up Authentication (스텝업 인증): 민감 자원 접근 시 추가 인증 요구하는 조건부 강화.",
-              "단점: SSO 서버가 Single Point of Failure(단일 장애점)로 작동, 침해 시 전체 시스템 노출."
+              "단점: SSO 서버가 Single Point of Failure (단일 장애점)로 작동, 침해 시 전체 시스템 노출."
             ],
             "sub_groups": []
           }
@@ -10026,7 +10026,7 @@
                   "Command Injection (명령어 삽입): 입력값에 OS 명령어를 삽입하여 서버에서 실행시키는 공격.",
                   "XPath Injection (XPath 삽입): XML 쿼리(XPath) 구문에 악성 코드 삽입하여 데이터 탈취.",
                   "Format String Injection (포맷 스트링 삽입): printf() 등에 사용자 입력이 포맷 문자열로 직접 전달될 때 %x·%s·%n으로 메모리 읽기·쓰기 가능. 수정: printf(name) → printf(\"%s\", name).",
-                  "SQL Injection 방어 우선순위 — Parameterized Query(Prepared Statement, 파라미터화 쿼리) > Stored Procedure(저장 프로시저) > 화이트리스트 입력 검증 > 최소 권한 DB 계정."
+                  "SQL Injection 방어 우선순위 — Parameterized Query (Prepared Statement, 파라미터화 쿼리) > Stored Procedure (저장 프로시저) > 화이트리스트 입력 검증 > 최소 권한 DB 계정."
                 ]
               },
               {
@@ -10053,7 +10053,7 @@
             "sub_items": [],
             "sub_groups": [
               {
-                "title": "Buffer Overflow (버퍼 오버플로우): 입력 데이터 크기 검증 없이 버퍼 경계를 초과하여 인접 메모리를 덮어쓰는 취약점.",
+                "title": "Buffer Overflow (버퍼 오버플로우) — 입력 데이터 크기 검증 없이 버퍼 경계를 초과하여 인접 메모리를 덮어쓰는 취약점.",
                 "entries": [
                   "Stack Overflow (스택 오버플로우): 스택 지역변수 영역 초과. RET 주소·EBP 덮어써 셸코드 실행.",
                   "Heap Overflow (힙 오버플로우): malloc 등으로 할당된 힙 영역 초과.",
@@ -10334,7 +10334,7 @@
               {
                 "title": "TCP 기반 공격",
                 "entries": [
-                  "SYN Flooding (SYN 플러딩): 위조 출발지 IP로 TCP SYN을 대량 전송하여 서버 TCB(Transmission Control Block) 큐를 포화시켜 정상 연결 차단. 3-way handshake의 미완료 상태 누적 악용. 대응: SYN Cookie, 백로그 큐 증가, 타임아웃 단축.",
+                  "SYN Flooding (SYN 플러딩): 위조 출발지 IP로 TCP SYN을 대량 전송하여 서버 TCB (Transmission Control Block) 큐를 포화시켜 정상 연결 차단. 3-way handshake의 미완료 상태 누적 악용. 대응: SYN Cookie, 백로그 큐 증가, 타임아웃 단축.",
                   "Land Attack (랜드 공격): 패킷의 출발지 IP와 목적지 IP를 동일하게 위조하여 시스템 무한 응답 루프 유발."
                 ]
               },
@@ -10384,7 +10384,7 @@
                 "title": "TCP Session Hijacking (TCP 세션 하이재킹): 이미 수립된 세션의 시퀀스 번호를 예측·조작하여 가로채는 공격.",
                 "entries": [
                   "탐지 방법: 시퀀스 번호 비동기화 감지, 패킷 유실·재전송 증가 탐지, 예상치 못한 RST 발견.",
-                  "비탐지 방법: SYN Storm(SYN Flooding 탐지용)은 세션 하이재킹 탐지 지표가 아님."
+                  "비탐지 방법: SYN Storm (SYN Flooding 탐지용)은 세션 하이재킹 탐지 지표가 아님."
                 ]
               }
             ]
@@ -10438,7 +10438,7 @@
               "Salami Attack (살라미 공격): 금융 프로그램에서 반올림 끝수 등 미세 금액을 지속적으로 탈취. 개별 피해는 미미하나 누적 피해 큼. 예: 이자 끝수 이체.",
               "Data Diddling (데이터 디들링): 입력 데이터를 처리 전·중에 변조.",
               "Exploit Attack (익스플로잇 공격): 소프트웨어 취약점을 이용한 일반적 공격 기법.",
-              "finger 명령어: 유닉스/리눅스 등록 사용자 정보(로그인명·실명·홈·최근 로그인) 외부 조회 도구. 권한 탈취 전 Reconnaissance(사전 정보 수집) 용도. 대응: fingerd 비활성, 포트 79 차단.",
+              "finger 명령어: 유닉스/리눅스 등록 사용자 정보(로그인명·실명·홈·최근 로그인) 외부 조회 도구. 권한 탈취 전 Reconnaissance (사전 정보 수집) 용도. 대응: fingerd 비활성, 포트 79 차단.",
               "Reconnaissance (정찰 단계): 공격 전 목표 시스템 정보 수집 (포트 스캔, 사용자 열람, 서비스 탐지)."
             ],
             "sub_groups": []
@@ -10521,7 +10521,7 @@
                 "entries": [
                   "Wireshark (와이어샤크): 네트워크 패킷 캡처·분석 도구(pcap). 실행파일 역공학 아님, 패킷 생성·재전송도 아님 (재전송은 hping3·Scapy·tcpreplay 담당).",
                   "OpenVAS (Open Vulnerability Assessment System): 오픈소스 네트워크 취약점 스캐너. 역공학 아님.",
-                  "Snort (스노트): NIDS(네트워크 침입 탐지 시스템). 역공학 아님."
+                  "Snort (스노트): NIDS (네트워크 침입 탐지 시스템). 역공학 아님."
                 ]
               }
             ]
@@ -10988,7 +10988,7 @@
                   "Reentrancy Attack (재진입 공격): 스마트 컨트랙트에서 함수 완료 전 재귀 호출로 잔액 반복 인출 (이더리움 DAO 해킹 사례).",
                   "Sybil Attack (시빌 공격): 다수의 가짜 신원(노드) 생성으로 네트워크·합의 교란.",
                   "51% Attack (51% 공격): 전체 해시 파워의 과반 장악 후 체인 재작성.",
-                  "블록체인 공격 아님 — Smurf Attack(스머프)은 ICMP 브로드캐스트 기반 DDoS로 블록체인 특화 공격 아님."
+                  "블록체인 공격 아님 — Smurf Attack (스머프)은 ICMP 브로드캐스트 기반 DDoS로 블록체인 특화 공격 아님."
                 ]
               }
             ]
@@ -11006,7 +11006,7 @@
                 "entries": [
                   "Poisoning Attack (데이터 오염 공격): 학습 단계에서 훈련 데이터에 악의적 데이터 주입하여 모델 예측 왜곡.",
                   "Evasion Attack (회피 공격): 추론 단계에서 적대적 예제(adversarial example)로 오분류 유도.",
-                  "Inversion Attack (모델 역전 공격): 반복적 쿼리·결과 분석으로 학습 데이터 재구성·추출. 대응: Differential Privacy(차분 프라이버시), 쿼리 횟수 제한, 출력 결과 제한.",
+                  "Inversion Attack (모델 역전 공격): 반복적 쿼리·결과 분석으로 학습 데이터 재구성·추출. 대응: Differential Privacy (차분 프라이버시), 쿼리 횟수 제한, 출력 결과 제한.",
                   "Model Extraction Attack (모델 추출 공격): 쿼리·응답으로 모델 구조·파라미터 복제."
                 ]
               }
@@ -11043,7 +11043,7 @@
             "cluster": "Zero Trust (제로 트러스트)",
             "sub_items": [
               "Zero Trust Principle (제로 트러스트 원칙): \"Never Trust, Always Verify\" — 절대 신뢰하지 말고 항상 검증. 네트워크가 이미 침해된 것으로 간주.",
-              "핵심 원칙: Least Privilege(최소 권한), Continuous Authentication(지속 인증), Micro-segmentation(마이크로 세그멘테이션), Data-centric Protection(데이터 중심 보호).",
+              "핵심 원칙: Least Privilege (최소 권한), Continuous Authentication (지속 인증), Micro-segmentation (마이크로 세그멘테이션), Data-centric Protection (데이터 중심 보호).",
               "대조 개념: 경계 기반 보안(Perimeter Security, 내부 신뢰·외부 불신)에서 Zero Trust로 전환. 경계 강화가 아닌 경계 탈피가 핵심.",
               "표준 문서: NIST SP 800-207 — Zero Trust Architecture."
             ],

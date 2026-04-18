@@ -110,10 +110,10 @@ class DetailedSubjectAggregator:
                 if not children:
                     return
                 max_indent = max(ind for ind, _ in children)
-                if max_indent >= 12:
+                if max_indent >= 8:
                     current_sg = None
                     for ind, text in children:
-                        if ind == 8:
+                        if ind == 4:
                             current_sg = {"title": text, "entries": []}
                             cluster["sub_groups"].append(current_sg)
                         else:
@@ -128,35 +128,34 @@ class DetailedSubjectAggregator:
                 original_line = line  # 원본 라인 유지 (들여쓰기 확인용)
                 line = line.strip()
 
-                # 세부 과목 헤더 찾기 (예: - **프로젝트 관리 일반**)
-                # 들여쓰기가 없거나 최소한인 경우만 세부 과목으로 간주
-                if original_line.startswith('- **') and original_line.rstrip().endswith('**'):
-                    # Full header match: - **Header**
-                    sub_subject_match = re.match(r'-\s*\*\*(.+)\*\*\s*$', line)
-                    if sub_subject_match:
-                        finalize_cluster(current_cluster)
-                        current_sub_subject = sub_subject_match.group(1).strip()
-                        detailed_info[filename][current_sub_subject] = []
-                        current_cluster = None
-                        continue
+                # H1 세분류 헤더: # N.M name 또는 # N.M.K name
+                h1_match = re.match(r'^#\s+\d+\.\d+(?:\.\d+)?\s+(.+)$', line)
+                if h1_match:
+                    finalize_cluster(current_cluster)
+                    current_sub_subject = h1_match.group(1).strip()
+                    detailed_info[filename][current_sub_subject] = []
+                    current_cluster = None
+                    continue
 
-                # 공부 내역 찾기
-                # 4칸: 클러스터 헤더 / 8칸: 하위 그룹 또는 item / 12칸+: 그룹 내 item
-                if current_sub_subject and len(original_line) - len(original_line.lstrip()) >= 4:
-                    if line.startswith('-') or line.startswith('*'):
-                        clean_line = re.sub(r'^[\-\*]\s*', '', line).strip()
-                        if clean_line:
-                            indent = len(original_line) - len(original_line.lstrip())
-                            if indent < 8:
-                                finalize_cluster(current_cluster)
+                # 그 외 마크다운 헤더는 스킵
+                if line.startswith('#'):
+                    continue
+
+                # 본문 bullet: 0칸 = 클러스터, 4칸 = 하위그룹 or item, 8칸+ = 그룹 내 item
+                if current_sub_subject and (line.startswith('-') or line.startswith('*')):
+                    clean_line = re.sub(r'^[\-\*]\s*', '', line).strip()
+                    if clean_line:
+                        indent = len(original_line) - len(original_line.lstrip())
+                        if indent < 4:
+                            finalize_cluster(current_cluster)
+                            current_cluster = {"cluster": clean_line, "raw_children": []}
+                            detailed_info[filename][current_sub_subject].append(current_cluster)
+                        else:
+                            if current_cluster is None:
                                 current_cluster = {"cluster": clean_line, "raw_children": []}
                                 detailed_info[filename][current_sub_subject].append(current_cluster)
                             else:
-                                if current_cluster is None:
-                                    current_cluster = {"cluster": clean_line, "raw_children": []}
-                                    detailed_info[filename][current_sub_subject].append(current_cluster)
-                                else:
-                                    current_cluster["raw_children"].append((indent, clean_line))
+                                current_cluster["raw_children"].append((indent, clean_line))
 
             finalize_cluster(current_cluster)
 
