@@ -98,32 +98,67 @@ class DetailedSubjectAggregator:
             
             lines = content.split('\n')
             current_sub_subject = None
-            
+            current_cluster = None  # {"cluster": ..., "raw_children": [(indent, text), ...]}
+
+            def finalize_cluster(cluster):
+                """raw_children 을 sub_items(flat) 또는 sub_groups(nested)로 정규화."""
+                if cluster is None:
+                    return
+                children = cluster.pop("raw_children", [])
+                cluster.setdefault("sub_items", [])
+                cluster.setdefault("sub_groups", [])
+                if not children:
+                    return
+                max_indent = max(ind for ind, _ in children)
+                if max_indent >= 12:
+                    current_sg = None
+                    for ind, text in children:
+                        if ind == 8:
+                            current_sg = {"title": text, "entries": []}
+                            cluster["sub_groups"].append(current_sg)
+                        else:
+                            if current_sg is None:
+                                current_sg = {"title": "기타", "entries": []}
+                                cluster["sub_groups"].append(current_sg)
+                            current_sg["entries"].append(text)
+                else:
+                    cluster["sub_items"] = [text for _, text in children]
+
             for line in lines:
                 original_line = line  # 원본 라인 유지 (들여쓰기 확인용)
                 line = line.strip()
-                
+
                 # 세부 과목 헤더 찾기 (예: - **프로젝트 관리 일반**)
                 # 들여쓰기가 없거나 최소한인 경우만 세부 과목으로 간주
                 if original_line.startswith('- **') and original_line.rstrip().endswith('**'):
                     # Full header match: - **Header**
                     sub_subject_match = re.match(r'-\s*\*\*(.+)\*\*\s*$', line)
                     if sub_subject_match:
+                        finalize_cluster(current_cluster)
                         current_sub_subject = sub_subject_match.group(1).strip()
                         detailed_info[filename][current_sub_subject] = []
-                        # print(f"  Found sub-subject: {current_sub_subject}")
+                        current_cluster = None
                         continue
-                
-                # 공부 내역 찾기 (들여쓰기가 있는 bullet point)
-                # 들여쓰기가 4칸 이상인 경우에만 content로 간주
+
+                # 공부 내역 찾기
+                # 4칸: 클러스터 헤더 / 8칸: 하위 그룹 또는 item / 12칸+: 그룹 내 item
                 if current_sub_subject and len(original_line) - len(original_line.lstrip()) >= 4:
                     if line.startswith('-') or line.startswith('*'):
-                        # 세부 topic이 아닌 실제 content인지 확인
-                        # "- **키워드**: 설명..." 형식인지 체크
                         clean_line = re.sub(r'^[\-\*]\s*', '', line).strip()
                         if clean_line:
-                            detailed_info[filename][current_sub_subject].append(clean_line)
-                            # print(f\"    Added content: {clean_line[:20]}...\")
+                            indent = len(original_line) - len(original_line.lstrip())
+                            if indent < 8:
+                                finalize_cluster(current_cluster)
+                                current_cluster = {"cluster": clean_line, "raw_children": []}
+                                detailed_info[filename][current_sub_subject].append(current_cluster)
+                            else:
+                                if current_cluster is None:
+                                    current_cluster = {"cluster": clean_line, "raw_children": []}
+                                    detailed_info[filename][current_sub_subject].append(current_cluster)
+                                else:
+                                    current_cluster["raw_children"].append((indent, clean_line))
+
+            finalize_cluster(current_cluster)
 
         return detailed_info
 
@@ -157,7 +192,7 @@ class DetailedSubjectAggregator:
                         # 따라서 포함 관계 확인
                         
                         # sub_subject에서 번호 제거 (예: "1.1 " 제거)
-                        sub_name_only = re.sub(r'^\d+\.\d+\s+', '', sub_subject).strip()
+                        sub_name_only = re.sub(r'^\d+\.\d+(?:\.\d+)?\s+', '', sub_subject).strip()
                         
                         # Debugging
                         print(f"[DEBUG] Major: {major_subject}, Sub: {sub_subject}")

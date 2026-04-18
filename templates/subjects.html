@@ -185,8 +185,26 @@
                                         <div class="alert alert-info mb-3">
                                             <h6 class="alert-heading mb-2"><strong>📚 핵심 공부 내역</strong></h6>
                                             <ul class="mb-0 small">
-                                                {% for content in sub_data.study_contents %}
-                                                <li>{{ content }}</li>
+                                                {% for group in sub_data.study_contents %}
+                                                <li class="mb-2">
+                                                    <strong>{{ group.cluster }}</strong>
+                                                    {% if group.sub_groups %}
+                                                        {% for sg in group.sub_groups %}
+                                                        <div class="mt-2"><em class="text-primary">{{ sg.title }}</em></div>
+                                                        <ul>
+                                                            {% for item in sg.entries %}
+                                                            <li>{{ item }}</li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                        {% endfor %}
+                                                    {% elif group.sub_items %}
+                                                    <ul class="mt-1">
+                                                        {% for item in group.sub_items %}
+                                                        <li>{{ item }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                    {% endif %}
+                                                </li>
                                                 {% endfor %}
                                             </ul>
                                         </div>
