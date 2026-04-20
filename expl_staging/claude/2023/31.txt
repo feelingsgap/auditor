@@ -1,0 +1,14 @@
+정답: ① (1번)
+
+해설:
+OMG(Object Management Group)는 하드웨어 등 복잡한 시스템을 모델링하기 위해 SysML(Systems Modeling Language)을 정의하였다. SysML은 UML의 일부 다이어그램을 차용하며, SysML과 UML에 공통으로 존재하는 다이어그램을 묻는 문항이다.
+
+각 보기 분석:
+① Use case diagram — UML의 핵심 다이어그램 중 하나이며 SysML에서도 그대로 채택한 공통 다이어그램이다. 정답.
+② Class diagram — UML에는 존재하지만 SysML에서는 Block Definition Diagram(BDD)으로 대체되어 Class diagram이라는 이름으로는 공통 존재하지 않는다.
+③ Component diagram — UML에 존재하지만 SysML에서는 직접적으로 채택되지 않은 다이어그램이다.
+④ Requirement diagram — SysML에만 존재하는 고유 다이어그램으로, UML에는 없다.
+
+핵심 정리:
+SysML은 UML 2.x를 기반으로 하며, Use case diagram, Sequence diagram, State Machine diagram, Activity diagram 등 일부를 공통으로 공유한다.
+Requirement diagram, Block Definition Diagram, Internal Block Diagram, Parametric diagram은 SysML 고유 다이어그램이다.

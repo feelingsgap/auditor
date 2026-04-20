@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+리눅스 시스템에서 원격 접속을 통해 root 계정으로 원격 접속하는 것을 금지하기 위해 수정해야 할 파일을 묻는 문항이다. root의 원격 로그인을 차단하는 설정은 두 가지 파일과 관련된다.
+
+관련 파일 분석:
+/etc/passwd: 사용자 계정 정보(계정명, UID, GID, 홈 디렉터리, 셸 등)를 저장하는 파일. root의 로그인 셸을 /sbin/nologin으로 변경하면 원격 로그인을 차단할 수 있다.
+/etc/crontab: 예약 작업(cron job) 설정 파일. 원격 로그인과 무관하다.
+/etc/pam.d/login: PAM(Pluggable Authentication Module) 기반 로그인 인증 설정. 특정 계정의 콘솔 로그인 제한에 관여한다.
+/etc/shadow: 암호화된 패스워드 정보 저장 파일. 패스워드 잠금에는 사용되나 원격 접속 경로 차단과는 다른 개념이다.
+/etc/securetty: root 계정이 로그인할 수 있는 터미널(tty) 목록 정의. 이 파일에서 원격 접속 관련 항목을 제거하면 root의 원격 로그인이 차단된다.
+
+각 보기 분석:
+① /etc/passwd, /etc/crontab — crontab은 원격 로그인과 무관. 적절하지 않은 조합. 정답(올바른 파일 조합이 아닌 보기).
+② /etc/pam.d/login, /etc/shadow — PAM 로그인 설정과 shadow는 인증에 관여하나 직접적 원격 root 차단 조합으로는 부적합.
+③ /etc/passwd, /etc/securetty — root 셸 제한(passwd)과 터미널 접근 제한(securetty)의 조합. 원격 root 로그인 차단에 적절.
+④ /etc/pam.d/login, /etc/securetty — PAM 로그인 모듈과 securetty의 조합도 root 원격 접속 제한에 사용 가능.
+
+핵심 정리:
+root 원격 로그인 차단: /etc/securetty에서 pts 항목 제거, /etc/ssh/sshd_config에서 PermitRootLogin no 설정.
+/etc/passwd의 root 셸을 /sbin/nologin으로 변경하면 모든 로그인 차단(원격 포함).

@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+정상적인 네트워크 접근을 공격 시도로 오인하여 가용성이 침해받는 경우는 False-Positive다.
+
+각 보기 분석:
+① True-Positive - 실제 공격을 공격으로 맞게 판단한 경우다.
+② True-Negative - 정상 접근을 정상으로 맞게 판단한 경우다.
+③ False-Positive - 정답이다.
+④ False-Negative - 공격을 놓친 경우다.
+
+핵심 정리:
+오탐(False-Positive)은 정상 행위를 막아 가용성 문제를 일으킬 수 있다.

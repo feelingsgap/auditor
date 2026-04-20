@@ -1,0 +1,22 @@
+정답: ② (2번)
+
+해설:
+시스템 확실성(dependability)의 속성 중 (가)와 (나)에 해당하는 개념을 찾는 문항이다.
+
+(가) 분석:
+"주어진 시점에 시스템이 작동 중이고 유용한 서비스를 제공할 확률" → 시스템이 특정 시점에 정상 운영 중일 확률 = 가용성(availability).
+
+(나) 분석:
+"장비 고장이나 사이버 공격 등 손상 사건이 일어났을 때 중요한 서비스를 잘 유지할 수 있는지에 대한 추정" → 손상 사건 후에도 핵심 서비스를 계속 유지하는 능력 = 복원성(resilience).
+
+각 보기 분석:
+① 가용성(availability), 보안성(security) — (나)는 보안성이 아니라 복원성이다. 보안성은 승인되지 않은 접근으로부터 시스템을 보호하는 능력이다.
+② 가용성(availability), 복원성(resilience) — (가)와 (나) 모두 정확히 일치. 정답.
+③ 신뢰성(reliability), 보안성(security) — (가)는 신뢰성이 아니라 가용성이다. 신뢰성은 기대한 서비스를 지속적으로 제공하는 능력으로, 특정 시점의 확률이 아니다.
+④ 신뢰성(reliability), 복원성(resilience) — (가)가 신뢰성으로 잘못 매핑되었다.
+
+핵심 정리:
+가용성(Availability): 특정 시점에 서비스를 제공할 확률. A = MTBF / (MTBF + MTTR).
+복원성(Resilience): 고장·공격 발생 후 핵심 서비스를 유지·복구하는 능력.
+신뢰성(Reliability): 정해진 조건에서 기대한 기능을 지속 수행하는 능력.
+dependability = availability + reliability + safety + security + resilience.

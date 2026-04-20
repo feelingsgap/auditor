@@ -1,0 +1,23 @@
+정답: ② (2번)
+
+해설:
+Martin Fowler의 리팩토링 목록(Catalog of Refactoring)에서 제시된 코드 변경을 설명하는 리팩토링 기법을 찾는 문항이다.
+
+코드 변경 분석:
+변경 전: let defaultOwner = {firstName: "Martin", lastName: "Fowler"};
+변경 후:
+  - let defaultOwnerData = {firstName: "Martin", lastName: "Fowler"};
+  - export function defaultOwner() {return defaultOwnerData;}
+  - export function setDefaultOwner(arg) {defaultOwnerData = arg;}
+
+변경의 핵심: 전역 변수(defaultOwner)를 직접 접근 대신 게터(getter)와 세터(setter) 함수를 통해 간접 접근하도록 캡슐화하였다. 데이터를 함수로 감싸서 외부에서 직접 변수를 수정하지 못하도록 보호하는 것이 목적이다.
+
+각 리팩토링 기법:
+① Inline Variable — 변수를 제거하고 표현식을 직접 사용. 이 변경과 반대 방향.
+② Encapsulate Variable — 전역 변수나 데이터를 함수(getter/setter)로 캡슐화하는 기법. 이 코드 변경의 정확한 설명. 정답.
+③ Split Variable — 하나의 변수를 여러 변수로 분리. 이 변경과 다름.
+④ Rename Variable — 변수 이름만 변경. 이 변경은 이름 변경 이상의 구조 변화가 있다.
+
+핵심 정리:
+Encapsulate Variable(변수 캡슐화): 전역 변수를 getter/setter 함수로 감싸 직접 접근을 차단.
+데이터 접근 경로를 함수로 통일하면 향후 데이터 변경 시 로직을 함수 내부에서만 수정할 수 있어 유지보수성이 향상된다.

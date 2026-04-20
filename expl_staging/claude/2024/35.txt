@@ -1,0 +1,20 @@
+정답: ① (1번)
+
+해설:
+Video 클래스에 두 개의 type code(kindCode: VHS/CD, priceCode: Normal/Discount)가 존재할 때, 리팩토링 후의 올바른 클래스 다이어그램을 찾는 문항이다.
+
+리팩토링 원칙:
+두 개의 독립적인 type code가 하나의 클래스에 존재하면 "Replace Type Code with Subclasses" 또는 "Replace Type Code with State/Strategy" 리팩토링을 적용한다. 각 type code는 독립적인 계층 구조로 분리되어야 한다.
+- kindCode → Kind 계층 (VHS, CD)
+- priceCode → Price 계층 (Normal, Discount)
+
+각 보기 분석:
+① Video를 루트로 Price 계층이 분리되고, 그 아래 VHS, CD, Normal, Discount가 배치된 구조 — 두 type code를 각각 별도 계층으로 분리하는 리팩토링 의도에 부합한다. 정답.
+② Video → Kind 계층에 Normal, Discount, VHS, CD가 혼재 — Kind와 Price 개념이 뒤섞여 분리 원칙에 위배.
+③ Video → Price 계층에 VHS, CD, Normal, Discount 혼재(③ 구조) — 두 독립 type code를 하나의 계층에 혼합하여 부적절.
+④ Video → Kind 계층에 Normal, Discount, VHS, CD를 모두 배치 — 두 서로 다른 type code를 하나의 Kind 계층 아래 뒤섞어 분리 목적에 반함.
+
+핵심 정리:
+Replace Type Code with Subclasses: 각 type code의 값마다 서브클래스를 생성해 다형성으로 처리.
+두 개의 독립적 type code → 두 개의 독립적 클래스 계층으로 분리.
+kindCode(VHS/CD)와 priceCode(Normal/Discount)는 서로 독립적이므로 각각 별도 계층 구성이 원칙.

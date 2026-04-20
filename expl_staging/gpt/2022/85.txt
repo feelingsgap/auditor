@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+Hadoop은 버전별로 주요 기능이 추가되었다. Hadoop 3.0(2017년 출시)에서 가장 주목할 만한 신규 기술은 Erasure Coding이다.
+
+각 보기 분석:
+① Erasure Coding — Hadoop 3.0에서 새로 추가된 핵심 기술이다. 기존 HDFS의 3중 복제(replication) 방식 대신 데이터를 인코딩하여 저장 공간을 약 50% 절약하면서도 내결함성을 유지한다. Reed-Solomon 알고리즘 기반으로 콜드 데이터(cold data) 저장에 적합하다. 정답.
+② Resource Manager — YARN(Yet Another Resource Negotiator)의 구성 요소로 Hadoop 2.0에서 도입되었다. Hadoop 3.0의 신기술이 아니다.
+③ Secondary Namenode — Hadoop 1.x 초기부터 존재하던 구성 요소로, NameNode의 FSImage와 편집 로그를 주기적으로 병합한다. Hadoop 3.0 신기술이 아니다.
+④ YARN(Yet Another Resource Negotiator) — Hadoop 2.0에서 추가된 클러스터 자원 관리 프레임워크이다. Hadoop 3.0의 신기술이 아니다.
+
+핵심 정리:
+Hadoop 1.x: HDFS + MapReduce 기본 구조.
+Hadoop 2.x: YARN 추가 (자원 관리와 데이터 처리 분리).
+Hadoop 3.x: Erasure Coding 추가 (저장 공간 효율 향상), Java 8 이상 요구.

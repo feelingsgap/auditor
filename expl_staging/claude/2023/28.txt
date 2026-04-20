@@ -1,0 +1,20 @@
+정답: ① (1번)
+
+해설:
+Robert C. Martin이 Clean Architecture에서 제시한 컴포넌트 결합도에 관한 3가지 원칙(Component Coupling Principles)을 묻는 문항이다. 재사용성이 아닌 안정성과 추상화를 기준으로 의존 방향이 결정된다.
+
+Clean Architecture 컴포넌트 결합 3원칙:
+1. ADP(Acyclic Dependencies Principle): 컴포넌트 간 의존성에 사이클이 존재해서는 안 된다.
+2. SDP(Stable Dependencies Principle): 자신보다 안정적(stable)인 컴포넌트에 의존해야 한다.
+3. SAP(Stable Abstractions Principle): 자신보다 추상화된 컴포넌트에 의존해야 한다.
+
+각 보기 분석:
+① 자신보다 재사용성이 높은 컴포넌트에 의존해야 한다 — Clean Architecture의 3가지 결합 원칙에 재사용성 기반 의존은 포함되지 않는다. 재사용성 기준의 의존은 Martin의 원칙이 아니다. 정답.
+② 컴포넌트간의 의존성에 사이클이 존재하지 않아야 한다 — ADP(비순환 의존성 원칙)에 해당하는 적절한 설명이다.
+③ 자신보다 안정적(stable)인 컴포넌트에 의존해야 한다 — SDP(안정된 의존성 원칙)에 해당하는 적절한 설명이다.
+④ 자신보다 추상화된 컴포넌트에 의존해야 한다 — SAP(안정된 추상화 원칙)에 해당하는 적절한 설명이다.
+
+핵심 정리:
+컴포넌트 결합 3원칙: ADP(비순환), SDP(안정 의존), SAP(추상 의존).
+의존 방향: 불안정→안정, 구체→추상.
+재사용성은 컴포넌트 응집도(REP, CCP, CRP) 원칙의 영역이며 결합도 원칙이 아니다.

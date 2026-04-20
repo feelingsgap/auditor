@@ -1,0 +1,14 @@
+정답: ④ (4번)
+
+해설:
+ITIL 4의 Service Value System(SVS)에서 Service Management Practices에 해당하지 않는 항목을 묻는 문제다.
+
+각 보기 분석:
+① Business Analysis — Service Management Practices에 해당한다.
+② Change Control — Service Management Practices에 해당한다.
+③ IT Asset Management — Service Management Practices에 해당한다.
+④ Software Deployment and Management — Technical Management Practices 쪽에 가까우므로 Service Management Practices로 보기 어렵다. 따라서 정답이다.
+
+핵심 정리:
+Business Analysis, Change Control, IT Asset Management는 서비스 관리 실천에 포함된다.
+Software Deployment and Management는 기술 관리 쪽으로 분류된다.

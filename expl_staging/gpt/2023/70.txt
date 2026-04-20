@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+다른 사용자에게 같은 권한을 다시 부여할 수 있게 하려면 WITH GRANT OPTION을 쓴다.
+
+각 보기 분석:
+① 문법이 틀리다.
+② REGRANT는 표준 SQL 문법이 아니다.
+③ WITH GRANT OPTION이 맞다. 정답이다.
+④ REGRANT는 표준 문법이 아니다.
+
+핵심 정리:
+WITH GRANT OPTION은 권한 재부여를 허용한다.

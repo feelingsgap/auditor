@@ -1,0 +1,32 @@
+정답: ② (2번)
+
+해설:
+릴레이션 R(A, B, C)과 S(C, D)에 대해 4가지 관계 연산(theta join, natural join, left outer join, right outer join)의 결과 카디널리티 합을 구하는 문항이다.
+R: 5개 튜플 (A=10,20,30,40,50 / C=1,2,3,2,5), S: 3개 튜플 (C=1,2,4)
+
+각 연산별 카디널리티:
+theta join (R⋈c<cS): R의 C값과 S의 C값에서 R.C < S.C인 조합
+- (R.C=1, S.C=2), (R.C=1, S.C=4), (R.C=2, S.C=4), (R.C=2, S.C=4) 등
+- R.C=1: S.C=2,4 → 2개 / R.C=2(2행): S.C=4 → 1개씩 2행 → 2개 / R.C=3: S.C=4 → 1개 / R.C=2(4행): S.C=4 → 1개
+- 합계: 1→(2,4)=2, 2→(4)=1, 3→(4)=1, 2→(4)=1, 5→없음=0 → 총 5개
+
+natural join (R⋈ₙS): R.C = S.C
+- R.C=1 매칭 S.C=1: 1개 / R.C=2 매칭 S.C=2: 2개 / R.C=3,5 매칭 없음
+- 총 3개
+
+left outer join (R⋈=cS): R의 모든 튜플 포함
+- 매칭: 3개, 비매칭(C=3,5): 2개 → 총 5개
+
+right outer join (R⋈=cS): S의 모든 튜플 포함
+- 매칭: 3개(S.C=1→1개, S.C=2→2개), 비매칭(S.C=4): 1개 → 총 4개
+
+각 보기 분석:
+① 15 — 5+3+5+4=17이므로 오답.
+② 17 — theta join(5) + natural join(3) + left outer join(5) + right outer join(4) = 17. 정답.
+③ 19 — 오답.
+④ 21 — 오답.
+
+핵심 정리:
+theta join: 조건 만족하는 R×S의 모든 조합.
+natural join: 공통 속성 값이 같은 튜플만, 중복 속성 제거.
+left/right outer join: 한쪽 릴레이션의 모든 튜플 포함, 비매칭은 NULL 채움.

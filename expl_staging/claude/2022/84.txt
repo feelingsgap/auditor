@@ -1,0 +1,20 @@
+정답: ② (2번)
+
+해설:
+파이프라인 해저드(pipeline hazard)는 명령어 파이프라인 실행 중 다음 명령어를 예정된 클록 사이클에 실행하지 못하게 하는 상황이다. 표준적으로 세 가지 유형으로 분류된다.
+
+파이프라인 해저드 3대 유형:
+Structural Hazard(구조적 해저드): 하드웨어 자원 충돌. 동일 클록 사이클에 두 명령어가 같은 자원(메모리, 레지스터 파일 등)에 동시 접근 시 발생.
+Data Hazard(데이터 해저드): 이전 명령어의 결과를 후속 명령어가 필요로 하는 데이터 의존성. RAW(Read After Write), WAR, WAW 등으로 세분화.
+Control Hazard(제어 해저드): 분기(branch) 명령어로 인해 파이프라인이 잘못된 명령어를 미리 인출(fetch)했을 때 발생.
+
+각 보기 분석:
+① Structural Hazard — 표준 해저드 유형이다.
+② Register Hazard — 표준 파이프라인 해저드 분류에 존재하지 않는다. 레지스터 관련 충돌은 Data Hazard(RAW 등)로 분류된다. 정답.
+③ Data Hazard — 표준 해저드 유형이다.
+④ Control Hazard — 표준 해저드 유형이다.
+
+핵심 정리:
+파이프라인 해저드 3종: Structural / Data / Control.
+Register Hazard는 독립적인 분류 유형이 아니라 Data Hazard의 한 형태이다.
+해저드 해결 기법: 파이프라인 스톨(stall), 포워딩(forwarding), 분기 예측(branch prediction).

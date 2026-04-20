@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+스프링 MVC 구조도에서 각 구성요소를 맞추는 문제다.
+
+클라이언트 요청을 처음 받는 `(가)`는 `DispatcherServlet`이고, 컨트롤러를 찾기 위해 참조하는 `(나)`는 `HandlerMapping`이다. 컨트롤러가 반환하는 `(다)`는 `ModelAndView`, 이를 실제 뷰로 연결하는 `(라)`는 `ViewResolver`다.
+
+각 보기 분석:
+① `(가) DispatcherServlet (나) HandlerMapping (다) ModelAndView (라) ViewResolver` — 구조와 일치하므로 정답이다.
+② `(나)`와 `(다)`가 바뀌어 있다.
+③ `(가)`가 ViewResolver일 수 없다.
+④ 전체 연결 순서가 맞지 않는다.
+
+핵심 정리:
+스프링 MVC의 기본 흐름은 `DispatcherServlet → HandlerMapping → Controller → ModelAndView → ViewResolver → View`다.

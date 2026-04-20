@@ -1,0 +1,17 @@
+정답: 2 (②)
+
+**해설:**
+PMI의 PMBOK 7판은 과거의 10대 '지식 영역(Knowledge Areas)'을 폐기하고, 아예 통째로 프로젝트 **12대 원칙(Principles)**과 **8대 성과영역(Performance Domains)** 체제로 판을 갈아엎었습니다. 그 8개에 안 끼는 놈을 골라야 합니다.
+
+**상세 분석:**
+* **PMBOK 7판의 8개 성과영역:**
+  1. 이해관계자 (Stakeholders)
+  2. **팀 (Team) - ①**
+  3. 개발접근법/생애주기 (Dev & Life Cycle)
+  4. 기획 (Planning)
+  5. 프로젝트 작업 (Project Work)
+  6. **인도물 (Delivery) - ④**
+  7. 측정 (Measurement)
+  8. **불확실성 (Uncertainty) - ③**
+* **[함정 카드] ② 가치 (Value):**
+  '가치'는 PMBOK 7판의 12대 프로젝트 관리 **'원칙(Principles)'** 에 속하는 녀석("가치에 집중하라")이지, 관리해야 할 8개 덩어리 **'성과영역'** 에는 해당하지 않습니다. 교묘한 구분 문제입니다.

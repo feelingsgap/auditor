@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+JUnit4에서는 BeforeClass -> Before -> Test -> After -> ... -> AfterClass 순으로 실행된다.
+
+각 보기 분석:
+① 순서가 틀리다.
+② After가 한 번만 실행되어 틀리다.
+③ a, c, t1, d, c, t2, d, b 순서가 맞다. 정답이다.
+④ BeforeClass와 AfterClass가 반복되어 틀리다.
+
+핵심 정리:
+@BeforeClass/@AfterClass는 클래스당 1회, @Before/@After는 각 테스트마다 실행된다.

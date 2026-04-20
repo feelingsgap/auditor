@@ -1,0 +1,13 @@
+정답: ② (2번)
+
+해설:
+CMMI-DEV의 지원(Support) 카테고리에 속하지 않는 Technical Solution이 다른 분류다.
+
+각 보기 분석:
+① Configuration Management(CM) - Support다.
+② Technical Solution(TS) - Engineering이다. 정답이다.
+③ Decision Analysis and Resolution(DAR) - Support다.
+④ Causal Analysis and Resolution(CAR) - Support다.
+
+핵심 정리:
+CM, DAR, CAR는 Support, TS는 Engineering 영역이다.

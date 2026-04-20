@@ -1,0 +1,24 @@
+정답: ① (1번)
+
+해설:
+TF-IDF = TF(term frequency) × IDF(inverse document frequency)로 계산한다. "this"는 문서집합 D={d1, d2}의 두 문서 모두에 등장하므로 IDF 값이 0이 되어 TF-IDF 전체가 0이 된다.
+
+계산 과정:
+문서집합 D의 크기: |D| = 2
+"this"가 등장하는 문서 수(df): d1, d2 모두 등장 → df("this") = 2
+
+IDF("this", D) = log(|D| / df) = log(2/2) = log(1) = 0
+
+TFIDF("this", d1, D) = TF("this", d1) × IDF("this", D) = (1/4) × 0 = 0
+TFIDF("this", d2, D) = TF("this", d2) × IDF("this", D) = (2/4) × 0 = 0
+
+각 보기 분석:
+① TFIDF("this", d1)=0, TFIDF("this", d2)=0 — IDF=0이므로 두 값 모두 0. 정답.
+② d1=0.1, d2=0.2 — IDF를 0이 아닌 값으로 잘못 계산한 경우이다.
+③ d1=0.3, d2=0.3 — IDF와 TF를 혼동한 오류값이다.
+④ d1=0.2, d2=0.4 — TF만 계산하거나 IDF를 1로 가정한 오류값이다.
+
+핵심 정리:
+IDF = log(전체 문서 수 / 해당 용어 포함 문서 수).
+모든 문서에 등장하는 용어(stop word 등)는 IDF = log(1) = 0 → TF-IDF = 0.
+TF-IDF는 특정 문서에만 자주 등장하는 용어에 높은 가중치를 부여한다.

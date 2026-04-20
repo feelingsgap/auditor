@@ -1,0 +1,17 @@
+정답: ④ (4번)
+
+해설:
+VPN(Virtual Private Network) 관련 프로토콜의 특성에 대한 설명 중 적절하지 않은 것을 찾는 문항이다.
+
+각 보기 분석:
+① L2F(Layer 2 Forwarding)는 CISCO사에서 개발한 터널링 프로토콜로 데이터 링크 계층에서 캡슐화를 지원한다 — 맞는 설명. L2F는 시스코가 개발한 계층 2 터널링 프로토콜로, PPTP보다 먼저 등장했다.
+② IPSec은 IP망에서 안전한 전송을 위해 표준화된 3계층 터널링 프로토콜이다 — 맞는 설명. IPSec은 네트워크 계층(Layer 3)에서 동작하며 AH, ESP 프로토콜로 인증과 암호화를 제공한다.
+③ L2TP는 L2F 기반으로 PPTP와의 호환성을 고려하여 만들어진 터널링 프로토콜이다 — 맞는 설명. L2TP(Layer 2 Tunneling Protocol)는 PPTP(마이크로소프트)와 L2F(시스코)의 장점을 결합하여 IETF에서 표준화한 프로토콜이다.
+④ PPTP는 링크 계층의 PPP 프로토콜에 보안기능을 추가하여 만든 것이고, 네트워크 계층에 적용되는 프로토콜이다 — 틀린 설명. PPTP(Point-to-Point Tunneling Protocol)는 PPP 프레임을 캡슐화하는 데이터 링크 계층(Layer 2) 터널링 프로토콜이다. 네트워크 계층(Layer 3)이 아닌 데이터 링크 계층에서 동작한다. 정답.
+
+핵심 정리:
+계층별 VPN 프로토콜:
+- Layer 2: PPTP, L2TP, L2F
+- Layer 3: IPSec
+- Layer 4: SSL/TLS VPN
+PPTP: PPP 프레임을 GRE로 캡슐화, 마이크로소프트 개발, Layer 2 동작.

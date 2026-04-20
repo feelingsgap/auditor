@@ -1,0 +1,13 @@
+정답: ② (2번)
+
+해설:
+수많은 쿼리 결과를 분석해 학습 데이터를 추출하는 공격은 Inversion Attack이다. 모델의 출력을 거꾸로 이용해 내부 정보를 복원한다.
+
+각 보기 분석:
+① Poisoning Attack은 학습 데이터 오염 공격이다.
+② Inversion Attack은 학습 데이터 추출 공격이다. 정답이다.
+③ Evasion Attack은 입력을 교란해 오분류를 유도한다.
+④ Replay Attack은 통신 재전송 공격이다.
+
+핵심 정리:
+Inversion Attack은 AI 모델의 출력으로 학습 데이터를 역추출한다.

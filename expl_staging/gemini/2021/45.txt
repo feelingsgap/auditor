@@ -1,0 +1,8 @@
+정답: ②
+
+**해설:**
+Java 소스코드를 보고 UML 클래스 다이어그램 기호 원칙으로 역변환 도해하는 문제입니다.
+*   **가시성(접근제어자):** `private`는 빼기(**-**), `public`은 더하기(**+**) 기호로 멤버변수/함수 앞에 표시합니다.
+*   `private int area` -> `- area: int` (3번 오답 탈락)
+*   `public void setWidth()` -> `+ setWidth(w:int): void` (타입 반환값 등의 순서가 맞아야 함)
+*   **핵심판별 Static:** 자바 코드의 `private static int count` 변수는 전역 정적(static) 변수입니다. UML에서 static 멤버 변수 속성은 글자 밑에 **아랫줄 언더라인(Underline)**을 그어서 표현해야 하는 룰이 있습니다. `count: int`에 언더라인 밑줄이 그어져 있고 문법이 정확한 다이어그램은 **②번**뿐입니다.

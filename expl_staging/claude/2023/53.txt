@@ -1,0 +1,19 @@
+정답: ① (1번)
+
+해설:
+ERD에서 CAR 엔티티의 수퍼키(superkey)에 해당하지 않는 것을 찾는 문항이다. Registration과 Vehicle_id는 각각 후보키(candidate key)이며, 수퍼키는 후보키를 포함하는 모든 속성 집합이다.
+
+수퍼키 개념:
+수퍼키는 릴레이션의 튜플을 유일하게 식별할 수 있는 속성 집합이다. 후보키(Registration, Vehicle_id)를 포함하는 모든 집합은 수퍼키가 된다.
+
+각 보기 분석:
+① (State, Year, Model) — Registration과 Vehicle_id 중 어느 것도 포함하지 않는 집합이다. 이 조합이 튜플을 유일하게 식별할 수 있다는 근거가 없으므로 수퍼키에 해당하지 않는다. 정답.
+② (Vehicle_id, Number) — Vehicle_id가 후보키이므로 이를 포함하는 집합은 수퍼키이다.
+③ (Registration, State) — Registration이 후보키이므로 이를 포함하는 집합은 수퍼키이다.
+④ (Registration, Vehicle_id, Year) — 두 후보키를 모두 포함하므로 수퍼키이다.
+
+핵심 정리:
+수퍼키: 튜플을 유일하게 식별할 수 있는 속성 집합 (후보키 포함 여부가 핵심).
+후보키: 최소 수퍼키 (불필요한 속성 없이 유일 식별).
+후보키를 하나 이상 포함한 집합 → 수퍼키.
+후보키를 하나도 포함하지 않는 집합 → 수퍼키 여부 불명확.

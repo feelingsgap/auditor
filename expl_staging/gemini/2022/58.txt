@@ -1,0 +1,15 @@
+정답: ③
+
+**해설:**
+관계 대수나 SQL 조인 쿼리의 결과 릴레이션의 형태론적 속성인 **차수(Degree)** 와 튜플의 개수인 **카디널리티(Cardinality)** 를 구하는 문제입니다.
+
+**1. 차수 (Degree) 도출:**
+*   차수는 출력되는 '컬럼(속성열)의 수'입니다. SELECT 절에서 `country_name`과 집계함수 `COUNT(city.lat)` 두 개를 명시했으므로 **차수는 2**입니다.
+
+**2. 카디널리티 (Cardinality) 도출:**
+*   먼저 INNER JOIN & GROUP BY 결과: 각 나라에 매핑되는 도시 숫자를 집계합니다.
+    *   Deutschland(1), Srbija(1), Hrvatska(1), Polska(1)
+    *   United States of America(2 - New York, Los Angles)
+*   여기에 `HAVING COUNT <= 1` 조건이 붙습니다.
+*   도시의 카운트가 2개인 USA는 필터링되어 탈락합니다. 남은 국가는 Deutschland, Srbija, Hrvatska, Polska로 총 **4개의 행(튜플)**이 남게 됩니다.
+*   따라서 최종 **카디널리티는 4**입니다. (차수 2, 카디널리티 4)

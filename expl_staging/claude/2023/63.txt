@@ -1,0 +1,18 @@
+정답: ④ (4번)
+
+해설:
+STUDENT(Sno, Sname, Year, Dept)와 ENROLL(Sno, Cno, Grade) 릴레이션에서 Cno='C413'인 과목을 수강한 학생의 Sname, Dept, Grade를 검색하는 올바른 SQL 문장을 고르는 문제이다.
+
+두 릴레이션의 조인 키는 Sno이며, 조인 방식에 따른 문법 차이를 구분해야 한다.
+
+각 보기 분석:
+① FROM STUDENT JOIN ENROLL WITH(Sno) — WITH는 SQL 표준 JOIN 문법이 아님. 힌트 절(WITH) 오용. 잘못된 문법.
+② FROM STUDENT NATURAL JOIN ENROLL USING(Sno) — NATURAL JOIN과 USING을 함께 사용하는 것은 문법 오류. NATURAL JOIN은 동일 컬럼명으로 자동 조인하므로 USING 절을 별도로 지정하지 않는다.
+③ FROM STUDENT NATURAL JOIN ENROLL ON (STUDENT.Sno = ENROLL.Sno) — NATURAL JOIN과 ON 절은 함께 사용할 수 없음. 문법 오류.
+④ FROM STUDENT JOIN ENROLL ON (STUDENT.Sno = ENROLL.Sno) WHERE ENROLL.Cno = 'C413' — 표준 INNER JOIN 문법으로 조인 조건과 검색 조건을 올바르게 분리. 정답.
+
+핵심 정리:
+JOIN ... ON: 명시적 조인 조건 지정, 가장 범용적.
+NATURAL JOIN: 동일 컬럼명으로 자동 조인, ON/USING 불가.
+JOIN ... USING(col): 지정 컬럼으로 조인, NATURAL JOIN과 ON은 함께 사용 불가.
+표준 SQL에서 NATURAL JOIN + ON 또는 NATURAL JOIN + USING 혼용은 문법 오류이다.

@@ -1,0 +1,22 @@
+정답: ③ (3번)
+
+해설:
+SSL/TLS 핸드셰이크(Handshake) 프로토콜 단계에 해당하지 않는 것을 찾는 문항이다.
+
+각 보기 분석:
+① 클라이언트가 지원하는 암호 스위트(Cipher Suite) 목록을 서버에 전송한다.
+   맞음. ClientHello 메시지에서 클라이언트가 지원하는 암호화 알고리즘, 해시 알고리즘 목록을 서버에 전달한다.
+
+② 서버가 자신의 인증서(Certificate)를 클라이언트에게 전송한다.
+   맞음. Server Certificate 메시지에서 서버의 공개키가 포함된 X.509 인증서를 클라이언트에 전달한다.
+
+③ 클라이언트가 HTTP 전송 데이터에 대한 MAC 값을 계산한다.
+   틀림. MAC 계산은 TLS Record 프로토콜 계층에서 실제 애플리케이션 데이터(HTTP 등)를 전송할 때 이루어지는 작업이다. 핸드셰이크 단계가 아니다. 핸드셰이크는 세션 키를 협상하는 단계이며, 그 이후에 Record 프로토콜이 데이터 암호화와 MAC 처리를 담당한다. 정답.
+
+④ 클라이언트와 서버가 세션 키(Session Key)를 생성하기 위해 난수를 교환한다.
+   맞음. ClientHello와 ServerHello에서 각각의 난수(Random)를 교환하고, 이를 기반으로 세션 키(Master Secret)를 도출한다.
+
+핵심 정리:
+TLS 핸드셰이크 주요 단계: ClientHello → ServerHello → Certificate → Key Exchange → ChangeCipherSpec → Finished.
+TLS Record 프로토콜: 핸드셰이크 완료 후 실제 데이터 전송 담당 (암호화 + MAC 계산 + 압축).
+핸드셰이크 목적: 암호 알고리즘 협상, 서버(상호) 인증, 세션 키 교환.

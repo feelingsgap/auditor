@@ -1,0 +1,18 @@
+정답: ④ (4번)
+
+해설:
+머신러닝 모델 성능 평가 지표에 대한 올바른 정의를 찾는 문항이다.
+(T=True, P=Positive, F=False, N=Negative)
+혼동 행렬(confusion matrix) 기준: TP(참 양성), TN(참 음성), FP(거짓 양성), FN(거짓 음성)
+
+각 보기 분석:
+① 정확도(Accuracy) = (TP+FP)/(TP+TN+FP+FN) — 정확도는 전체 예측 중 올바른 예측의 비율로, (TP+TN)/(TP+TN+FP+FN)이 올바른 공식이다. TP+FP는 분모로 잘못되었다. 옳지 않은 설명.
+② 정밀도(Precision) = TN/(TN+FN) — 정밀도는 양성으로 예측한 것 중 실제 양성의 비율로, TP/(TP+FP)가 올바른 공식이다. 옳지 않은 설명.
+③ F1-점수(F1-score) = 2FP/(2FP+FN+TP) — F1은 정밀도와 재현율의 조화 평균으로, 2×(Precision×Recall)/(Precision+Recall) = 2TP/(2TP+FP+FN)이 올바른 공식이다. FP가 아닌 TP가 들어가야 한다. 옳지 않은 설명.
+④ 재현율(Recall) = TP/(TP+FN) — 재현율은 실제 양성 중 양성으로 올바르게 예측한 비율로, TP/(TP+FN)이 올바른 공식이다. 정답.
+
+핵심 정리:
+정확도(Accuracy) = (TP+TN) / (TP+TN+FP+FN)
+정밀도(Precision) = TP / (TP+FP) — 양성 예측의 정확성
+재현율(Recall/Sensitivity) = TP / (TP+FN) — 실제 양성 탐지율
+F1-score = 2TP / (2TP+FP+FN) — 정밀도와 재현율의 조화 평균

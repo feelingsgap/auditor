@@ -1,0 +1,23 @@
+정답: ① (1번)
+
+해설:
+리눅스 방화벽인 iptables에서 특정 IP(192.168.20.22)로부터 들어오는 패킷을 차단하는 정책을 설정하는 명령어를 묻는 문항이다. "차단"은 DROP 또는 REJECT 액션으로 구현하며, 방향은 "들어오는(INPUT)" 패킷이다.
+
+iptables 명령 구조:
+iptables -[A|I] [체인] [조건] -j [액션]
+- -A: Append (규칙 추가, 끝에 삽입)
+- -I: Insert (규칙 삽입, 앞에 삽입)
+- INPUT: 외부에서 내부로 들어오는 패킷 체인
+- -s: 출발지(source) IP 지정
+- -j DROP: 패킷 차단(응답 없이 폐기)
+
+각 보기 분석:
+① iptables -A INPUT 192.168.20.22 -j DROP — INPUT 체인에 192.168.20.22 출발지 패킷을 DROP하는 규칙 추가. 차단 목적에 정확히 부합. 정답.
+② iptables -I INPUT 192.168.20.22 -j LOG — LOG는 차단이 아닌 로그 기록 액션이다. 차단 기능 없음.
+③ iptables -A INPUT 192.168.20.22 -j ACCEPT — ACCEPT는 허용 액션으로 차단이 아닌 반대 동작이다.
+④ iptables -A INPUT 192.168.20.22 -j RETURN — RETURN은 현재 체인 처리를 중단하고 호출 체인으로 돌아가는 액션으로, 차단 목적에 적합하지 않다.
+
+핵심 정리:
+iptables 3대 기본 체인: INPUT(유입), OUTPUT(유출), FORWARD(경유).
+차단 액션: DROP(응답 없이 폐기), REJECT(거절 응답 전송).
+-s 옵션: 출발지 IP 지정. -d 옵션: 목적지 IP 지정.

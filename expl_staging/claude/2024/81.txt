@@ -1,0 +1,18 @@
+정답: ① (1번)
+
+해설:
+SSD(Solid State Drive)에서 플래시 메모리의 블록 단위 삭제 특성으로 인해 쓰레기 수집(garbage collection)이 필요한 상황에서, 운영체제가 SSD 효율성을 높이기 위해 지원하는 기능을 묻는 문항이다.
+
+문제 배경:
+SSD는 쓰기 전 삭제(erase-before-write) 특성이 있어, 데이터를 덮어쓸 때 블록 전체를 먼저 삭제해야 한다. OS가 파일을 삭제하면 논리적으로만 삭제 표시가 되고, SSD는 해당 페이지가 실제로 삭제되었는지 알지 못한다. 이로 인해 garbage collection 시 쓸데없는 데이터 복사가 발생한다.
+
+각 보기 분석:
+① TRIM — OS가 SSD에 "이 논리 주소 범위는 더 이상 사용하지 않는다"는 정보를 전달하는 명령. SSD는 해당 페이지를 미리 무효화하여 garbage collection 효율을 높인다. 정답.
+② 미러링 — 데이터를 두 곳에 복제하는 RAID-1 방식. SSD garbage collection 효율과 무관하다. 틀렸다.
+③ 마모 평준화(Wear Leveling) — SSD 펌웨어에서 블록 수명을 균등하게 분산하는 기능. 운영체제 차원의 기능이 아니라 SSD 내부 컨트롤러 기능이다. 틀렸다.
+④ 캐시 교체 정책 — 메모리 캐시 관리 정책. SSD garbage collection과 직접적 관련 없다. 틀렸다.
+
+핵심 정리:
+TRIM 명령: OS(ATA TRIM 또는 NVMe Dataset Management 명령)가 SSD에 삭제된 블록 정보를 전달.
+TRIM 효과: SSD garbage collection 부하 감소, 쓰기 성능 유지, SSD 수명 연장.
+마모 평준화(Wear Leveling)는 SSD 내부 컨트롤러 기능이고, TRIM은 OS-SSD 인터페이스 기능이다.

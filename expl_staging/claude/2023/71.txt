@@ -1,0 +1,21 @@
+정답: ② (2번)
+
+해설:
+분산 데이터베이스 시스템의 분산 투명성(distribution transparency)에 대한 설명 중 적절하지 않은 것을 고르는 문제이다.
+
+분산 투명성 종류:
+- 위치 투명성(location transparency): 데이터의 물리적 위치를 모르고도 논리적 이름으로 접근 가능
+- 중복 투명성(replication transparency): 동일 데이터가 여러 곳에 복제되어 있어도 사용자가 이를 인식하지 못함
+- 단편화 투명성(fragmentation transparency): 릴레이션이 여러 단편으로 나뉘어 저장되어도 단일 릴레이션처럼 접근 가능
+- 장애 투명성(failure transparency): 일부 노드나 링크 장애가 있어도 시스템이 계속 정상 동작
+
+각 보기 분석:
+① 위치 투명성(location transparency) 설명 — 논리적 이름으로 데이터 접근, 물리 위치 불필요. 올바른 설명.
+② 분산 트랜잭션들이 동시 수행되어도 일관성을 유지하는 장애 투명성(failure transparency) — 동시 수행 중 일관성 유지는 동시성 투명성(concurrency transparency)의 설명이다. 장애 투명성은 노드 장애 시에도 시스템이 동작함을 의미하는 것으로, 이 보기의 설명은 부정확. 정답(적절하지 않은 것).
+③ 중복 투명성(replication transparency) 설명 — 중복 저장을 인식하지 못하게 함. 올바른 설명.
+④ 단편화 투명성(fragmentation transparency) 설명 — 단편을 하나의 릴레이션처럼 처리. 올바른 설명.
+
+핵심 정리:
+장애 투명성: 일부 노드 장애 시에도 서비스 지속 가능.
+동시성 투명성(concurrency transparency): 다중 트랜잭션 동시 수행 시 일관성 유지.
+두 개념을 혼동하지 않도록 주의한다.

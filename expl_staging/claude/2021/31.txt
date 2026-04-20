@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+주어진 클래스 다이어그램은 Comp(컴포넌트) 인터페이스를 ConcreteComp와 Quest가 구현하고, Quest가 내부에 Comp를 참조하여 기능을 확장하는 구조를 보여준다. Quest(Decorator)는 ConcreteQuestA·B로 구체화되며, ConcreteQuestB는 기본 Op() 외에 AddedBehavior()를 추가한다.
+
+각 보기 분석:
+① bridge 패턴 — 구현부와 추상부를 분리하는 패턴으로, 두 계층이 독립적으로 확장된다. 이 구조와 다르다.
+② decorator 패턴 — 컴포넌트 인터페이스를 구현하는 Decorator가 동일 인터페이스의 객체를 내부에 보유하고 기능을 동적으로 추가한다. Quest가 Comp를 참조하면서 Op()를 위임하고 AddedBehavior()를 덧붙이는 구조가 정확히 일치한다. 정답.
+③ flyweight 패턴 — 공유를 통해 대량 객체의 메모리를 절약하는 패턴이다. 이 구조와 관련 없다.
+④ proxy 패턴 — 실제 객체에 대한 대리 접근을 제공하나, 기능 추가가 목적이 아니라 접근 제어·지연 로딩 등이 목적이다.
+
+핵심 정리:
+Decorator 패턴: 동일 인터페이스를 구현한 Wrapper가 원본 객체를 포함하며 기능을 동적으로 추가.
+식별 단서: Component 인터페이스를 구현하는 클래스가 동일 인터페이스 타입 필드를 보유하는 구조.
+ConcreteQuestB의 AddedBehavior()가 동적 기능 추가의 증거다.

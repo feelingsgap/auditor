@@ -1,0 +1,32 @@
+정답: ④ (4번)
+
+해설:
+UML 클래스 다이어그램에서 Class2에 대한 올바른 Java 소스코드를 묻는 문항이다.
+
+클래스 다이어그램 분석:
+- Class1 ← Class2: Class2에서 Class1으로의 상속(generalization) 관계 (실선 + 속이 빈 삼각형 화살표)
+- Class2의 속성:
+  - attr1: int (readOnly) → Java에서 readOnly = final 키워드
+  - attr2: int (밑줄) → UML에서 밑줄 = 클래스 변수(class variable) = Java의 static
+
+Java 매핑 규칙:
+- generalization(상속) → extends
+- readOnly 속성 → final
+- 밑줄(underline) 속성 → static
+
+올바른 Class2 코드:
+class Class2 extends Class1 {
+    private final int attr1;    // readOnly → final
+    private static int attr2;   // 밑줄 → static
+}
+
+각 보기 분석:
+① class Class2 extends Class1, private int attr1, private int attr2 — final과 static이 모두 누락됨.
+② class Class2 implements Class1, private int attr1, private static int attr2 — 관계를 implements로 잘못 표현, final 누락.
+③ class Class2 implements Class1, private final int attr1, private int attr2 — 관계를 implements로 잘못 표현, static 누락.
+④ class Class2 extends Class1, private final int attr1, private static int attr2 — 상속(extends), readOnly(final), 밑줄(static) 모두 정확하게 표현. 정답.
+
+핵심 정리:
+UML → Java 매핑: generalization = extends, realization = implements.
+readOnly = final (값 변경 불가), 밑줄(underline) = static (클래스 변수).
+UML에서 점선 + 속이 빈 삼각형 = implements, 실선 + 속이 빈 삼각형 = extends.

@@ -1,0 +1,16 @@
+정답: ① (1번)
+
+해설:
+OSI 7계층별 대표 프로토콜 매핑을 묻는 문항이다. 각 계층에 해당하는 프로토콜을 정확히 구분하는 것이 핵심이다.
+
+각 보기 분석:
+① 2계층(데이터 링크): FDDI, PPP, SLIP, ATM — 모두 데이터 링크 계층(Layer 2) 프로토콜이다. 정답.
+② 3계층(네트워크): IP, ICMP, OSPF, DDP — IP와 ICMP, OSPF는 3계층 프로토콜이나 DDP(Datagram Delivery Protocol)는 AppleTalk의 3계층 프로토콜로 포함 자체는 맞다. 그러나 ①이 더 명확히 올바른 선택지다.
+③ 4계층(전송): TCP, UDP, ARP, MTP — ARP는 2계층과 3계층 경계의 프로토콜로 4계층에 해당하지 않는다. 잘못된 분류.
+④ 5계층(세션): Socket session, Named pipe, SPX, Net-Bios — SPX는 4계층(전송) 프로토콜이며, NetBIOS는 세션 계층에 가깝다. 완전히 올바른 분류가 아니다.
+
+핵심 정리:
+2계층(데이터 링크): Ethernet, FDDI, PPP, SLIP, ATM, HDLC.
+3계층(네트워크): IP, ICMP, OSPF, BGP, RIP, ARP(경계).
+4계층(전송): TCP, UDP, SCTP, SPX.
+ARP는 4계층이 아닌 2~3계층 경계에 해당함을 주의한다.

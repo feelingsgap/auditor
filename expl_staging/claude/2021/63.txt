@@ -1,0 +1,24 @@
+정답: ② (2번)
+
+해설:
+EMPLOYEE 테이블에 대해 자체 조인(self join)을 수행하는 SQL 질의의 실행 결과를 분석하는 문항이다.
+질의는 E.MANAGER = M.ENO 조건으로 직원과 그 상사를 매칭한다.
+
+자체 조인 결과 분석:
+- KIM(1001)의 MANAGER = 1003(LEE) → (KIM, LEE)
+- PARK(1002)의 MANAGER = 1006(YOO) → (PARK, YOO)
+- LEE(1003)의 MANAGER = 1006(YOO) → (LEE, YOO)
+- CHO(1004)의 MANAGER = 1002(PARK) → (CHO, PARK)
+- CHOI(1005)의 MANAGER = 1006(YOO) → (CHOI, YOO)
+- YOO(1006)의 MANAGER = NULL → 조인 불가, 결과 없음
+
+각 보기 분석:
+① (KIM, LEE) — KIM의 MANAGER = 1003(LEE)이므로 실행 결과에 포함된다.
+② (PARK, KIM) — PARK의 MANAGER = 1006(YOO)이다. KIM이 아니므로 결과에 나타나지 않는다. 정답.
+③ (CHO, PARK) — CHO의 MANAGER = 1002(PARK)이므로 실행 결과에 포함된다.
+④ (CHOI, YOO) — CHOI의 MANAGER = 1006(YOO)이므로 실행 결과에 포함된다.
+
+핵심 정리:
+자체 조인(self join): 동일 테이블을 서로 다른 별칭(E, M)으로 참조하여 조인.
+E.MANAGER = M.ENO 조건은 직원의 상사 번호와 상사의 사원 번호를 연결한다.
+NULL 값을 가진 YOO(최고 관리자)는 조인 조건을 만족하지 못해 결과에서 제외된다.

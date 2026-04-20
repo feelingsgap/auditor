@@ -1,0 +1,38 @@
+정답: ③ (3번)
+
+해설:
+customer와 orders 릴레이션에서 고객별 판매 합계를 구하는 쿼리 중 결과가 다른 하나를 찾는 문항이다.
+
+릴레이션 구조:
+customer(custid, name)
+orders(orderid, custid, bookid, saleprice)
+
+①, ②, ④ 쿼리의 공통 특성:
+① LEFT JOIN + GROUP BY: 주문 없는 고객도 포함 (NULL saleprice → SUM=NULL)
+② 상관 서브쿼리: 주문 없는 고객의 경우 SUM=NULL 반환 → 고객 포함
+④ 서브쿼리 LEFT JOIN: 주문 그룹별 합계를 LEFT JOIN → 주문 없는 고객은 s=NULL로 포함
+
+①, ②, ④ 모두 주문이 없는 고객도 결과에 포함시킨다.
+
+③ 쿼리 분석:
+SELECT cs.custid, cs.name, SUM(od.saleprice) total_sales
+FROM customer cs
+LEFT JOIN orders od ON cs.custid = od.custid
+GROUP BY cs.custid, cs.name
+HAVING total_sales >= 0;
+
+HAVING total_sales >= 0의 효과:
+- 주문 없는 고객: total_sales = NULL → NULL >= 0은 NULL(거짓으로 처리) → HAVING 조건 불충족 → 제외
+- 주문 있는 고객: total_sales ≥ 0 → 포함
+→ 주문 없는 고객이 결과에서 제외됨 → ①, ②, ④와 다른 결과
+
+각 보기 분석:
+① 주문 없는 고객 포함 (total_sales=NULL). ②, ④와 동일 결과.
+② 상관 서브쿼리로 주문 없는 고객 포함. ①, ④와 동일 결과.
+③ HAVING total_sales >= 0으로 NULL인 고객 제외 → 결과 다름. 정답.
+④ LEFT JOIN 서브쿼리로 주문 없는 고객 포함. ①, ②와 동일 결과.
+
+핵심 정리:
+HAVING 절: GROUP BY 후 집계 결과를 필터링. NULL 비교는 항상 UNKNOWN(거짓) → NULL인 그룹 제거.
+LEFT JOIN: 오른쪽 테이블 매칭 없을 때 NULL 포함.
+HAVING COUNT(*) >= 0은 항상 참이지만 HAVING SUM(...) >= 0은 NULL을 제거함에 주의.

@@ -1,0 +1,20 @@
+정답: ③ (3번)
+
+해설:
+strict 2단계 로킹 규약(strict 2PLP, Strict Two-Phase Locking Protocol)의 정의를 묻는 문제이다. 2PL의 변형 중 strict 2PL은 독점(exclusive) 잠금의 해제 시점을 더 엄격하게 제한한다.
+
+2PL 변형 종류:
+- 기본 2PL: 확장 단계(잠금 획득)와 축소 단계(잠금 해제)로 구분. 일부 잠금을 트랜잭션 완료 전에 해제 가능.
+- Strict 2PL: 독점 잠금(X-lock, write lock)을 트랜잭션이 완료(commit/rollback)될 때까지 해제하지 않음.
+- Rigorous 2PL: 공유(S-lock)와 독점(X-lock) 모두 트랜잭션 완료까지 해제하지 않음.
+
+각 보기 분석:
+① read나 write 연산 시 lock을 걸고 트랜잭션 종료 전 unlock — 이는 기본 2PL 또는 그보다 약한 규약 설명.
+② 잠금만 하는 확장 단계와 해제만 하는 축소 단계 — 기본 2PL(Basic 2PL)의 설명.
+③ 2단계일 뿐 아니라 모든 독점 로크는 트랜잭션이 완료될 때까지 unlock하지 않고 유지 — Strict 2PL의 정확한 정의. 정답.
+④ 모든 로크(공유+독점)를 트랜잭션 완료까지 unlock하지 않음 — Rigorous 2PL의 설명.
+
+핵심 정리:
+Strict 2PL: X-lock(독점 잠금)만 트랜잭션 완료 시까지 유지.
+Rigorous 2PL: S-lock과 X-lock 모두 트랜잭션 완료 시까지 유지.
+Strict 2PL은 Cascading Rollback 방지 효과가 있으며 실무에서 널리 사용된다.

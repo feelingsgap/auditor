@@ -1,0 +1,49 @@
+정답: ③ (3번)
+
+해설:
+country 테이블과 city 테이블을 조인하여 GROUP BY와 HAVING 절로 필터링한 결과의 차수(degree)와 카디널리티(cardinality)를 구하는 문항이다.
+
+SQL 분석:
+SELECT country.country_name, COUNT(city.lat)
+FROM city INNER JOIN country ON city.country_id = country.id
+GROUP BY country.country_name
+HAVING COUNT(city.lat) <= 1;
+
+차수(degree) 계산:
+SELECT 절에 country.country_name과 COUNT(city.lat) 두 열이 있으므로 차수 = 2.
+
+카디널리티(cardinality) 계산:
+1. INNER JOIN 결과: city의 country_id로 country와 조인
+   - Berlin(country_id=1): Deutschland
+   - Belgrade(country_id=2): Srbija
+   - Zagreb(country_id=3): Hrvatska
+   - New York(country_id=4): United States of America
+   - Los Angeles(country_id=4): United States of America
+   - Warsaw(country_id=5): Polska
+   (country_id 6,7은 city에 없으므로 INNER JOIN에서 제외)
+
+2. GROUP BY country.country_name 후 COUNT(city.lat):
+   - Deutschland: 1 (Berlin)
+   - Srbija: 1 (Belgrade)
+   - Hrvatska: 1 (Zagreb)
+   - United States of America: 2 (New York, Los Angeles)
+   - Polska: 1 (Warsaw)
+
+3. HAVING COUNT(city.lat) <= 1: count가 1 이하인 그룹만 선택
+   - Deutschland: 1 ✓
+   - Srbija: 1 ✓
+   - Hrvatska: 1 ✓
+   - United States of America: 2 ✗ (제외)
+   - Polska: 1 ✓
+   → 4개 행 선택
+
+각 보기 분석:
+① 차수: 1, 카디널리티: 4 — 차수가 잘못되었다.
+② 차수: 1, 카디널리티: 5 — 차수가 잘못되었다.
+③ 차수: 2, 카디널리티: 4 — SELECT 절 2열, HAVING 조건으로 4개 그룹 선택. 정답.
+④ 차수: 2, 카디널리티: 5 — 카디널리티가 잘못되었다. United States of America(count=2)는 HAVING에서 제외된다.
+
+핵심 정리:
+차수(degree): SELECT 절의 열(column) 수.
+카디널리티(cardinality): 결과 테이블의 행(row) 수.
+HAVING: GROUP BY 후 집계 결과에 대한 필터링 조건.

@@ -1,0 +1,16 @@
+정답: ③ (3번)
+
+해설:
+IPv6 헤더에 포함되지 않는 필드를 찾는 문제다.
+
+IPv6 기본 헤더에는:
+- Hop Limit
+- Flow Label
+- Traffic Class
+가 포함된다.
+
+`Time to Live`는 IPv4의 필드 이름이고, IPv6에서는 이에 대응하는 필드가 `Hop Limit`으로 바뀌었다.
+따라서 정답은 ③이다.
+
+핵심 정리:
+IPv6에서는 TTL 대신 Hop Limit을 사용한다.

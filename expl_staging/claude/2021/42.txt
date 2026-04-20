@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+UML 클래스 다이어그램과 이에 해당하는 Java 코드를 매칭하는 문항으로, 가장 적절하지 않은 것을 찾는다.
+
+각 항목 분석:
+① Car --myTires--> Tire (집합 연관, 배열) / private Tire myTires[4] — Car가 Tire 4개를 보유하는 집합 관계. UML과 코드가 일치한다.
+② NextGenDrive --<<interface>>--> Drive / NextGenDrive extends Drive — UML에서 인터페이스 구현 관계는 implements로 표현되어야 한다. Java에서 인터페이스 구현은 extends가 아니라 implements를 사용한다. 따라서 UML의 인터페이스 실체화(realization) 관계에 대응하는 코드는 implements Drive여야 한다. extends는 클래스 상속 관계에 해당한다. 가장 적절하지 않은 것. 정답.
+③ Door 클래스 (status, lock(), unlock() 추상) / public abstract class Door { ... abstract void lock(); abstract void unlock(); } — 추상 클래스 표현이 일치한다.
+④ Car --합성--> Engine / Car 내부에 Engine 내부 클래스 — 합성(composition) 관계를 내부 클래스로 표현한 것으로 적절하다.
+
+핵심 정리:
+UML 인터페이스 실체화(realization): 점선 + 빈 삼각형 화살표.
+Java 구현: implements 키워드 사용 (extends는 클래스 상속에만 사용).
+클래스 다이어그램에서 <<interface>> 스테레오타입이 표시된 요소를 구현할 때는 반드시 implements를 사용해야 한다.

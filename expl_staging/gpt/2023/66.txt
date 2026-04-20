@@ -1,0 +1,13 @@
+정답: ② (2번)
+
+해설:
+T2가 INSERT 후 COMMIT한 새 행이 T1의 뒤쪽 SELECT에 나타나는 현상은 유령 데이터 읽기다.
+
+각 보기 분석:
+① dirty read는 커밋 전 데이터를 읽는 경우다.
+② phantom read는 반복 조회 시 새 행이 나타나는 경우다. 정답이다.
+③ cascading read는 표준 용어가 아니다.
+④ serializable read는 격리 수준이다.
+
+핵심 정리:
+Phantom read는 행 개수 자체가 바뀌는 반복 조회 이상 현상이다.

@@ -1,0 +1,15 @@
+정답: ③ (3번)
+
+해설:
+사용자 인터페이스를 시스템의 다른 부분과 분리하여 결합도를 낮추고, UI 계층의 응집력을 높이며 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있는 아키텍처 스타일을 묻는 문항이다.
+
+각 보기 분석:
+① Event-Driven style — 이벤트 발생과 처리를 중심으로 구성된 아키텍처 스타일이다. UI 분리와 직접 연관되지 않는다.
+② Client-Server style — 클라이언트와 서버의 역할 분리를 중심으로 하는 구조이다. UI 분리의 핵심 스타일이 아니다.
+③ Model-View-Controller style — Model(데이터/비즈니스 로직), View(사용자 인터페이스), Controller(입력 처리)를 분리하는 아키텍처 스타일이다. UI(View)를 나머지 로직(Model)과 분리하고, 여러 View를 동일한 Model에 연결할 수 있어 설명과 정확히 일치한다. 정답.
+④ Layered style — 계층적으로 기능을 분리하는 구조이지만 UI 분리와 여러 UI 지원이 MVC만큼 명시적이지 않다.
+
+핵심 정리:
+MVC(Model-View-Controller)는 UI 분리의 대표 아키텍처 스타일이다.
+하나의 Model에 다수의 View 연결 가능 → View 간 결합도 최소화.
+파생 패턴: MVP(Model-View-Presenter), MVVM(Model-View-ViewModel).

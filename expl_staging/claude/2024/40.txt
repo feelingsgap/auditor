@@ -1,0 +1,23 @@
+정답: ② (2번)
+
+해설:
+코드 스멜(Code Smell) 유형과 이를 해결하는 리팩토링 기법을 올바르게 연결하는 문항이다.
+
+코드 스멜별 리팩토링 분석:
+(가) Feature Envy (기능 욕심): 어떤 메서드가 자신이 속한 클래스보다 다른 클래스의 데이터나 기능을 더 많이 사용하는 상태. 해결책 → 그 메서드를 실제로 애용하는 데이터가 있는 클래스로 이동(Move Method). = (b) 메소드를 그들이 애용하는 데이터가 있는 클래스로 옮긴다.
+
+(다) Data Clumps (데이터 뭉치): 항상 함께 나타나는 데이터 항목들이 별도 클래스로 캡슐화되지 않은 상태. 해결책 → 해당 데이터 묶음을 독립된 클래스로 정의(Extract Class). = (d) 해당 데이터들을 독립된 클래스로 정의한다.
+
+따라서 (가)-(b), (다)-(d) → 보기 ②
+
+각 보기 분석:
+① (가)-(a), (다)-(c) — (a)는 Shotgun Surgery나 Duplicate Code에 해당. (c)는 Switch 문장의 리팩토링. 오답.
+② (가)-(b), (다)-(d) — Feature Envy → Move Method, Data Clumps → Extract Class. 정답.
+③ (나)-(a), (라)-(d) — (나) Shotgun Surgery의 해결은 (a) 흩어진 기능을 한 곳으로 모으기. (라) Switch/if 문장 → (d) 독립 클래스가 아닌 (c) 다형성 대체. 일부 불일치.
+④ (나)-(b), (라)-(c) — (나) Shotgun Surgery는 (b)가 아닌 (a)가 적합. 오답.
+
+핵심 정리:
+Feature Envy → Move Method: 메서드를 데이터와 가까운 클래스로 이동.
+Data Clumps → Extract Class: 함께 다니는 데이터 그룹을 별도 클래스로 추출.
+Shotgun Surgery → Move Method/Field: 흩어진 변경 지점을 한 곳으로 응집.
+Switch/if 문장 → Replace Conditional with Polymorphism: 조건 분기를 다형성으로 대체.

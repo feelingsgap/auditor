@@ -1,0 +1,23 @@
+정답: ① (1번)
+
+해설:
+VPN 터널링 프로토콜 L2TP와 SSTP에서 보안 서비스를 제공하기 위해 각각 사용하는 프로토콜을 묻는 문항이다.
+
+각 보기 분석:
+① L2TP - IPSec, SSTP - TLS
+   맞음. L2TP(Layer 2 Tunneling Protocol)는 자체 암호화 및 인증 기능이 없으므로 반드시 IPSec과 결합하여 사용한다(L2TP/IPSec). SSTP(Secure Socket Tunneling Protocol)는 SSL/TLS를 활용하여 443번 포트로 동작하므로 방화벽 우회가 용이하다. 정답.
+
+② L2TP - PAP, SSTP - SSH
+   틀림. PAP(Password Authentication Protocol)는 암호화 없이 패스워드를 평문으로 전송하는 인증 프로토콜로, L2TP 보안을 위한 프로토콜이 아니다.
+
+③ L2TP - TLS, SSTP - PAP
+   틀림. L2TP는 TLS가 아닌 IPSec과 결합하여 보안을 제공한다.
+
+④ L2TP - SSH, SSTP - IPSec
+   틀림. SSH는 주로 원격 접속에 사용되며, L2TP 보안 프로토콜로 사용되지 않는다.
+
+핵심 정리:
+L2TP/IPSec: L2TP(터널링) + IPSec(ESP 모드로 암호화·인증). UDP 1701번 포트.
+SSTP: Microsoft 개발. SSL/TLS(포트 443) 기반 → 방화벽·NAT 환경에서 우회 용이.
+PPTP: MS-CHAPv2 인증, RC4 암호화 → 보안 취약, 구형 표준.
+OpenVPN: SSL/TLS 기반 오픈소스 VPN, 높은 호환성.

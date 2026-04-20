@@ -1,0 +1,20 @@
+정답: ① (1번)
+
+해설:
+네트워크 계층(Layer 3)의 주소(IP 주소)를 링크 계층(Layer 2)의 주소(MAC 주소)로 변환하는 기능을 제공하는 프로토콜을 묻는 문제이다.
+
+주소 변환 프로토콜 개요:
+- 네트워크 계층 주소: IP 주소(논리적 주소)
+- 링크 계층 주소: MAC 주소(물리적 주소)
+- IP 주소를 알고 있을 때 MAC 주소를 알아내야 실제 데이터 전송 가능
+
+각 보기 분석:
+① ARP(Address Resolution Protocol) — IP 주소(네트워크 계층)를 MAC 주소(링크 계층)로 변환. 네트워크에 브로드캐스트로 질의하여 해당 IP의 MAC 주소를 응답받는다. 정답.
+② RARP(Reverse ARP) — MAC 주소를 IP 주소로 변환(ARP의 역방향). 디스크 없는 워크스테이션이 자신의 IP를 알아내기 위해 사용. 현재는 DHCP로 대체.
+③ ICMP(Internet Control Message Protocol) — 네트워크 오류 보고 및 진단 프로토콜(ping, traceroute 등). 주소 변환 기능 없음.
+④ IGMP(Internet Group Management Protocol) — IP 멀티캐스트 그룹 멤버십 관리 프로토콜. 주소 변환 기능 없음.
+
+핵심 정리:
+ARP: IP → MAC (브로드캐스트 질의, 유니캐스트 응답)
+RARP: MAC → IP (ARP 역방향, 현재 DHCP로 대체)
+ARP 캐시: 자주 통신하는 IP-MAC 매핑 정보를 임시 저장하여 브로드캐스트 감소.

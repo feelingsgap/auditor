@@ -1,0 +1,33 @@
+정답: ③ (3번)
+
+해설:
+NULL 값이 포함된 릴레이션에서 NOT IN 서브쿼리를 사용할 때의 결과를 정확히 파악하는 문항이다.
+
+릴레이션 데이터:
+R1: (1,10), (2,20), (3,30), (4,NULL)
+R2: (3,30), (4,40), (5,NULL)
+
+SQL 실행:
+SELECT * FROM R1
+WHERE R1.age NOT IN (SELECT age FROM R2);
+
+서브쿼리 결과: {30, 40, NULL}
+
+NOT IN과 NULL의 상호작용:
+- R1의 age = 10: 10 NOT IN {30, 40, NULL} → 10 ≠ 30 AND 10 ≠ 40 AND 10 ≠ NULL → NULL 비교가 UNKNOWN → 전체 조건 UNKNOWN → 포함 안 됨.
+- R1의 age = 20: 동일하게 NULL 비교로 UNKNOWN → 포함 안 됨.
+- R1의 age = 30: 30 IN {30,...} → NOT IN은 FALSE → 포함 안 됨.
+- R1의 age = NULL: NULL NOT IN {...} → NULL 비교는 UNKNOWN → 포함 안 됨.
+
+R2 서브쿼리에 NULL이 포함되면 NOT IN 조건은 모든 행에 대해 UNKNOWN을 반환하여 결과 집합이 공집합이 된다.
+
+각 보기 분석:
+① id=1,10과 id=2,20 두 행 반환 — NULL 문제를 고려하지 않은 결과다. 틀렸다.
+② id=1,10과 id=2,20 두 행 반환 — ①과 동일. 틀렸다.
+③ 빈 결과(0건) — R2에 NULL이 있으므로 모든 NOT IN 비교가 UNKNOWN이 되어 빈 결과가 반환된다. 정답.
+④ R1 전체 4행 반환 — NOT IN이 아니라 전체 반환은 논리적으로 맞지 않는다. 틀렸다.
+
+핵심 정리:
+서브쿼리 결과에 NULL이 포함된 경우 NOT IN 조건은 항상 UNKNOWN이 되어 어떤 행도 반환하지 않는다.
+NULL 안전 비교가 필요하면 NOT EXISTS를 사용해야 한다.
+NOT EXISTS는 NULL에 영향받지 않으므로 NOT IN 대신 권장된다.

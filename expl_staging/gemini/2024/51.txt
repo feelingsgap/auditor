@@ -1,0 +1,16 @@
+정답: 1 (①)
+
+**해설:**
+빅데이터 NoSQL 4대 천왕 중, 텍스트가 줄줄이 달린 JSON이나 XML 같은 두툼한 서류철 구조 객체를 통째로 DB 방에 때려 박아 넣는 모델 명칭을 맞춥니다.
+
+**상세 분석:**
+* NoSQL은 데이터 보관 형태에 따라 4대 조직으로 나뉩니다:
+  1) `Key-Value` (사물함 키와 알맹이 방식: Redis)
+  2) `Column-family` (긴 열 단위로 묶는 방식: HBase, Cassandra)
+  3) `Graph` (페이스북 친구관계 같은 족보 그물 방식: Neo4j)
+  4) **`Document` (JSON이나 BSON 형태로 유연한 속성 문서 덩어리를 우겨넣는 방식: MongoDB, CouchDB 등)**
+* 문제 지문에서 MongoDB 모델과 JSON이라는 힌트가 너무나 강하게 명시되었습니다. 테이블 뼈대(구조)를 억지로 잡을 필요 없는 "문서 기반 데이터 모델 (Document-based Data Model)" 이 정확한 명칭입니다.
+
+**📌 NoSQL 대장주 매핑 필기:**
+* JSON 트리 구조, 몽고DB ➔ Document 기반.
+* 캐싱 초스피드, Redis ➔ Key-Value 기반.

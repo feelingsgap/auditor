@@ -1,0 +1,13 @@
+정답: ② (2번)
+
+해설:
+State Machine에서 하위 상태 Y에서 외부 상태 Z로 전이할 때는 내부 상태 exit, 전이 동작, 외부 상태 exit 및 entry 순서를 따른다.
+
+각 보기 분석:
+① A, B, C, E, D - 순서가 맞지 않다.
+② B, C, A, D, E - 주어진 전이 순서에 맞다. 정답이다.
+③ C, B, A, E, D - 순서가 맞지 않다.
+④ D, C, A, B, E - 순서가 맞지 않다.
+
+핵심 정리:
+UML 상태 전이는 보통 exit부터 시작해 transition action을 거쳐 entry로 들어간다.

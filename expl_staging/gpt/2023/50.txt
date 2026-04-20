@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+SPICE의 성숙도는 L1 Performed, L2 Managed, L3 Established 순서다.
+
+각 보기 분석:
+① Managed, Established, Performed - 순서가 틀리다.
+② Managed, Performed, Established - 순서가 틀리다.
+③ Established, Performed, Managed - 순서가 틀리다.
+④ Performed, Managed, Established - 맞다. 정답이다.
+
+핵심 정리:
+SPICE L0 Incomplete, L1 Performed, L2 Managed, L3 Established, L4 Predictable, L5 Optimizing이다.

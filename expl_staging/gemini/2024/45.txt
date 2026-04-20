@@ -1,0 +1,14 @@
+정답: 1 (①)
+
+**해설:**
+대한민국 전자정부 표준프레임워크의 코어 엔진인 **Spring(스프링) MVC (Model-View-Controller)** 의 HTTP 리퀘스트 처리 흐름도 포지션 맵핑입니다.
+
+**상세 분석:**
+* **(가) 진입점 (대장):** 웹 브라우저가 던진 모든 짱돌(요청)을 맨 앞 문지기로서 독재 수신하는 메인 사령관 ➔ **DispatcherServlet**
+* **(나) 길안내 (지도자):** "이 URL은 저기 3번 컨트롤러가 담당입니다~" 라고 Dispatcher 형님한테 매핑해주는 내비게이션 ➔ **HandlerMapping**
+* **(다) 보따리 (택배 상자):** 컨트롤러가 막노동 계산을 다 마친 뒤, 결과물(Model Data)과 "이 화면으로 가자"는 주소(View Name)를 동시에 묶어 포장한 리턴 상자 ➔ **ModelAndView**
+* **(라) 이름 찾기 (작명소):** 컨트롤러가 던진 뷰 이름(예: 'index' 등) 앞뒤에 `.jsp` 경로 같은 걸 붙여서 물리적인 진짜 View 파일을 연결해 주는 가이드 ➔ **ViewResolver**
+* 올바른 조합은 ①번 세트입니다.
+
+**📌 스프링 MVC 흐름 순서 요약:**
+* `Request` ➔ `(가)DispatcherServlet` ➔ `(나)HandlerMapping` ➔ `Controller(작업)` ➔ `(다)ModelAndView 반환` ➔ `(라)ViewResolver` ➔ `View(화면 렌더링)`

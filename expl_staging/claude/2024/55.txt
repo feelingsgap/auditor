@@ -1,0 +1,26 @@
+정답: ① (1번)
+
+해설:
+참조 무결성 제약과 연쇄 삭제(CASCADE) 설정을 통해 계좌 릴레이션의 투플 삭제 시 예금자 릴레이션의 해당 투플도 함께 삭제되도록 하는 SQL 명령어를 찾는 문항이다.
+
+릴레이션 구조:
+- 고객(고객번호[PK], 이름, 주소)
+- 계좌(계좌번호[PK], 지점명, 잔고)
+- 예금자(고객번호[FK→고객], 계좌번호[FK→계좌], 계좌생성날짜)
+
+요구사항 분석:
+계좌 릴레이션의 투플이 삭제될 때 해당 예금자 릴레이션의 투플도 함께 삭제. 이는 예금자 테이블에서 계좌번호를 외래 키로 참조할 때 ON DELETE CASCADE 옵션을 설정해야 한다.
+
+따라서 예금자 릴레이션을 생성할 때:
+FOREIGN KEY(계좌번호) REFERENCES 계좌(계좌번호) ON DELETE CASCADE
+
+각 보기 분석:
+① 예금자 릴레이션을 생성할 때 FOREIGN KEY(계좌번호) REFERENCES 계좌(계좌번호) ON DELETE CASCADE 명령어를 추가 — 예금자가 계좌를 참조하는 외래 키에 ON DELETE CASCADE를 설정. 계좌 투플 삭제 시 예금자 투플도 연쇄 삭제됨. 정답.
+② 예금자 릴레이션을 생성할 때 FOREIGN KEY(계좌번호) REFERENCES 계좌(계좌번호) IN DELETE CASCADE — 'IN DELETE'는 올바른 SQL 문법이 아님. 오답.
+③ 계좌 릴레이션을 생성할 때 FOREIGN KEY(계좌번호) REFERENCES 예금자(계좌번호) ON DELETE CASCADE — 참조 방향이 역전됨. 계좌가 예금자를 참조하는 것은 관계 의미상 부적절. 오답.
+④ 계좌 릴레이션을 생성할 때 FOREIGN KEY(계좌번호) REFERENCES 예금자(계좌번호) IN DELETE CASCADE — 참조 방향 역전 + 잘못된 SQL 문법. 오답.
+
+핵심 정리:
+ON DELETE CASCADE: 참조되는 부모 테이블의 행 삭제 시 자식 테이블의 해당 행도 자동 삭제.
+외래 키 방향: 자식(참조하는 쪽)에 FOREIGN KEY 설정. 예금자.계좌번호 → 계좌.계좌번호.
+ON DELETE 옵션: CASCADE(연쇄 삭제), SET NULL(NULL로 설정), RESTRICT/NO ACTION(삭제 거부).

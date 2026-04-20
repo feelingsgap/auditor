@@ -1,0 +1,18 @@
+정답: ① (1번)
+
+해설:
+감성지능(emotional intelligence)의 4가지 주요 영역을 묻는 문항이다. 감성지능은 자신과 타인의 감정을 인식하고 관리하는 능력으로, Goleman이 정의한 4가지 영역이 표준적으로 인용된다.
+
+각 보기 분석:
+① 자기 판단(self-judgement) — 감성지능의 4대 영역에 해당하지 않는다. 감성지능의 자아 관련 영역은 자기 인식(self-awareness)이며, 자기 판단은 이와 다른 개념이다. 정답.
+② 자기 관리(self-management) — 감성지능 4대 영역 중 하나. 자신의 감정을 효과적으로 통제하고 조절하는 능력이다.
+③ 사회적 기술(social skill) — 감성지능 4대 영역 중 하나. 관계 관리, 영향력 행사, 소통 능력 등을 포함한다.
+④ 사회적 인식(social awareness) — 감성지능 4대 영역 중 하나. 타인의 감정 인식과 공감 능력을 포함한다.
+
+핵심 정리:
+감성지능(Emotional Intelligence) 4대 영역:
+1. 자기 인식(Self-awareness): 자신의 감정 인식
+2. 자기 관리(Self-management): 감정 조절 및 통제
+3. 사회적 인식(Social awareness): 타인 감정 공감
+4. 관계 관리(Relationship management / Social skill): 대인관계 역량
+자기 판단(self-judgement)은 공식 영역이 아니다.

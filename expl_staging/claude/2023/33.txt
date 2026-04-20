@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+SEI(Software Engineering Institute)의 아키텍처 뷰 모델에서 제시된 설명은 이벤트 기반 컴포넌트 간 통신, 데이터 생성자와 소비자 구분, 이벤트 분배자(Distributor)를 통한 연결이라는 특성을 나타낸다. 이는 Publish-Subscribe 아키텍처 스타일의 핵심 특징이다.
+
+각 보기 분석:
+① Peer to Peer View — 각 컴포넌트가 동등하게 서로 직접 통신하는 구조이다. 이벤트 분배자 개념이 없다.
+② Client-Server View — 클라이언트가 서버에 요청하고 서버가 응답하는 요청-응답 구조이다. 생성자/소비자 구분과 다르다.
+③ Pipe and Filter View — 데이터가 필터를 거쳐 파이프를 통해 순차적으로 처리되는 구조이다. 이벤트 분배자 개념이 없다.
+④ Publish-Subscribe View — 이벤트 생성자(Publisher)가 이벤트를 발행하면 구독자(Subscriber)가 수신하며, 이벤트 분배자(Distributor/Event Bus)가 중간에서 연결한다. 설명과 정확히 일치. 정답.
+
+핵심 정리:
+Publish-Subscribe 핵심 요소: Publisher(생성자), Subscriber(소비자), Event Distributor(분배자).
+컴포넌트들이 직접 통신하지 않고 이벤트 채널을 통해 느슨하게 결합된다.
+SEI 4+1 뷰 모델과는 별개로, 아키텍처 스타일(Style) 분류에서 다룬다.

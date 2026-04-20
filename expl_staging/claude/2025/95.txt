@@ -1,0 +1,28 @@
+정답: ③ (3번)
+
+해설:
+SDN(Software Defined Networking) 아키텍처에 대한 올바른 설명을 찾는 문항이다.
+
+SDN 구조:
+응용 평면(Application Plane) ↕ Northbound Interface
+제어 평면(Control Plane, SDN Controller) ↕ Southbound Interface (CDPI)
+데이터 평면(Data Plane, Forwarding Devices)
+
+각 보기 분석:
+① "SDN의 제어 평면과 응용 평면은 Southbound Interface를 통해 연결된다."
+   틀림. 제어 평면-응용 평면은 Northbound Interface로 연결됨.
+   Southbound Interface는 제어 평면-데이터 평면 사이.
+
+② "SDN은 OpenFlow와 같은 소프트웨어 기반 컨트롤러를 네트워크 장비에 내장하여, 트래픽 전달 동작을 하드웨어에서 직접 제어하는 방식이다."
+   틀림. SDN의 핵심은 컨트롤러를 네트워크 장비와 분리(중앙 집중화)하는 것. 장비에 내장하는 것이 아님.
+
+③ "Control Data Plane Interface는 데이터 평면의 포워딩 제어 및 정보 수집을 위한 인터페이스로 OpenFlow가 대표적인 프로토콜이다."
+   맞음. CDPI = Southbound Interface. 제어 평면이 데이터 평면의 포워딩 테이블을 설정하고 통계를 수집. OpenFlow가 가장 많이 사용되는 CDPI 프로토콜. 정답.
+
+④ "데이터 평면은 SDN 컨트롤러가 직접 구성한 고정 라우팅 테이블을 사용해 자율적으로 트래픽을 제어하며, 제어 평면과는 별도의 연결 없이 독립적으로 동작한다."
+   틀림. 데이터 평면은 컨트롤러의 지시를 받아 동작하며, 자율성이 없는 것이 SDN의 특징.
+
+핵심 정리:
+SDN Northbound: 제어 평면 ↔ 응용 평면 (REST API, OpenStack 등)
+SDN Southbound (CDPI): 제어 평면 ↔ 데이터 평면 (OpenFlow, NETCONF, OVSDB 등)
+SDN 핵심: 제어와 전달의 분리(Separation of Control and Data Plane).

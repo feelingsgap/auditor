@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+UDP 기반의 응용계층 프로토콜을 찾는 문항이다. UDP는 비연결형 프로토콜로 속도가 빠르지만 신뢰성 보장이 없으며, TCP는 연결 지향적으로 신뢰성 있는 데이터 전송을 제공한다.
+
+각 보기 분석:
+① telnet — 원격 터미널 접속 프로토콜로, TCP 포트 23번을 사용한다. TCP 기반이다.
+② IMAP(Internet Message Access Protocol) — 이메일 수신 프로토콜로, TCP 포트 143번(IMAP4) 또는 993번(IMAPS)을 사용한다. TCP 기반이다.
+③ SMTP(Simple Mail Transfer Protocol) — 이메일 송신 프로토콜로, TCP 포트 25번을 사용한다. TCP 기반이다.
+④ SNMP(Simple Network Management Protocol) — 네트워크 장비 모니터링 및 관리를 위한 프로토콜로, UDP 포트 161번(에이전트), 162번(트랩)을 사용한다. 실시간 네트워크 상태 수집이 목적이므로 연결 오버헤드가 적은 UDP를 사용한다. 정답.
+
+핵심 정리:
+UDP 기반 대표 프로토콜: DNS(53), DHCP(67/68), SNMP(161/162), TFTP(69), NTP(123).
+TCP 기반 대표 프로토콜: HTTP(80), HTTPS(443), FTP(21), SMTP(25), POP3(110), IMAP(143), Telnet(23), SSH(22).
+SNMP는 네트워크 관리 목적으로 빠른 응답이 필요해 UDP를 채택했다.

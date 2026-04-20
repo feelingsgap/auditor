@@ -1,0 +1,29 @@
+정답: ④ (4번)
+
+해설:
+JDBC를 이용한 데이터베이스 프로그램의 올바른 작성 순서를 묻는 문항이다.
+
+각 단계:
+가. SQLExecute: SQL 문장 실행
+나. SQLBindParameter: 질의 스트링의 매개변수를 프로그램 변수에 연결
+다. 환경변수 설정: 드라이버 로드, 연결 초기화 등
+라. SQLBindCol: 질의 결과 열을 C 프로그램 변수에 연결
+마. SQLPrepare: SQL 문장을 준비(컴파일)
+
+논리적 순서:
+1. 다(환경변수 설정): 가장 먼저 드라이버 및 연결 환경을 초기화해야 함.
+2. 마(SQLPrepare): SQL 문장을 서버에 전송하여 파싱·최적화 준비.
+3. 나(SQLBindParameter): 준비된 SQL의 ? 매개변수를 변수에 바인딩.
+4. 가(SQLExecute): 바인딩된 값으로 SQL을 실행.
+5. 라(SQLBindCol): 실행 후 결과 집합의 각 열을 변수에 연결하여 데이터 읽기.
+
+각 보기 분석:
+① 마 - 가 - 다 - 나 - 라 — 환경변수 설정(다)이 가장 먼저이어야 하므로 오답.
+② 마 - 라 - 가 - 다 - 나 — 다(환경변수)가 처음이 아닌 오답.
+③ 다 - 마 - 라 - 가 - 나 — SQLBindCol(라)이 Execute(가) 전에 오면 결과 없는 상태에서 열 연결을 시도. 오답.
+④ 다 - 마 - 나 - 가 - 라 — 환경 초기화 → SQL 준비 → 매개변수 바인딩 → 실행 → 결과 연결. 정답.
+
+핵심 정리:
+SQL/CLI(ODBC/JDBC 계층): 환경 핸들 → 연결 핸들 → 문장 핸들 순으로 설정.
+Prepare-Execute 모델: Prepare(파싱+최적화) → BindParameter → Execute → BindCol → Fetch.
+Prepared Statement 장점: 동일 SQL을 반복 실행 시 파싱 비용 절감, SQL Injection 방지.

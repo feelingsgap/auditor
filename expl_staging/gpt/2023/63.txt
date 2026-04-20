@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+STUDENT와 ENROLL을 Sno로 INNER JOIN하고 Cno='C413'을 조건으로 거는 표준 SQL이 맞다.
+
+각 보기 분석:
+① WITH는 JOIN 조건 문법이 아니다.
+② NATURAL JOIN과 USING을 함께 쓰는 것은 틀리다.
+③ NATURAL JOIN과 ON을 함께 쓰는 것도 틀리다.
+④ JOIN ... ON과 WHERE 조건을 분리한 문장이 맞다. 정답이다.
+
+핵심 정리:
+조인 조건은 ON에, 검색 조건은 WHERE에 두는 것이 표준 SQL이다.

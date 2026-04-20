@@ -1,0 +1,29 @@
+정답: ③ (3번)
+
+해설:
+Clean Architecture의 Instability(불안정성) 메트릭을 계산하는 문항이다.
+
+Instability 공식:
+Instability(I) = Fan-out / (Fan-in + Fan-out)
+- Fan-out(출력 결합도): 해당 패키지가 의존하는 외부 패키지 수 (나가는 의존성)
+- Fan-in(입력 결합도): 해당 패키지에 의존하는 외부 패키지 수 (들어오는 의존성)
+- I = 0이면 완전 안정(stable), I = 1이면 완전 불안정(unstable)
+
+다이어그램에서 P3 분석:
+- P1, P2 → P3: P1과 P2가 P3에 의존 → Fan-in = 2
+- P3 → P4 (C31→C4T, C32→C42): P3가 P4에 의존 → Fan-out = 2
+
+계산:
+Instability(P3) = Fan-out / (Fan-in + Fan-out) = 2 / (2 + 2) = 2/4 = 0.5
+
+각 보기 분석:
+① 0.3 — Fan-out 3/(Fan-in+Fan-out=10) 형태로, 이 다이어그램에 맞지 않음.
+② 0.4 — 계산 결과와 다름.
+③ 0.5 — Fan-in = Fan-out = 2이므로 0.5. 정답.
+④ 0.6 — 계산 결과와 다름.
+
+핵심 정리:
+Instability = Fan-out / (Fan-in + Fan-out).
+I=0: 완전 안정 (들어오는 의존성만 있음, 외부를 의존하지 않음).
+I=1: 완전 불안정 (나가는 의존성만 있음, 외부에서 의존하지 않음).
+안정적인 패키지는 다른 패키지가 많이 의존하고 자신은 적게 의존한다.

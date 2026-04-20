@@ -1,0 +1,27 @@
+정답: ③ (3번)
+
+해설:
+소프트웨어 요구사항 패턴(Requirements Pattern)에서 제시된 요구사항에 가장 적합한 패턴 유형을 찾는 문항이다.
+
+제시된 요구사항 분석:
+- 선택한 고객에 대해 금액 조정(인출 또는 대출)을 할 수 있다.
+- 금액 조정 정보: 고객 ID, 조정 금액, 조정 이유.
+- 각 계좌 금액 조정에 유일한 ID가 자동으로 부여된다.
+- 극소수의 직원만이 계좌 금액 조정을 할 수 있다 (접근 제어 내포).
+
+이 요구사항의 특성: 특정 트리거(조정 요청)에 의해 수행되는 처리(금액 조정)로, 입력 데이터와 출력 결과를 가지며 각 트랜잭션에 유일한 ID가 부여된다. 이는 Transaction Requirement Pattern의 전형적인 사례이다.
+
+소프트웨어 요구사항 패턴 유형:
+- Chronicle Requirement Pattern: 시간 순서에 따른 이력 기록 요구사항.
+- Living Entity Requirement Pattern: 엔티티의 전체 생명주기(생성·조회·수정·삭제)를 다루는 요구사항.
+- Transaction Requirement Pattern: 특정 처리 행위(트랜잭션)를 수행하는 요구사항. 유일 ID 부여, 제한된 접근이 특징.
+- Configuration Requirement Pattern: 시스템 설정·구성 관련 요구사항.
+
+각 보기 분석:
+① Chronicle Requirement Pattern — 이력 기록 패턴으로, 이 요구사항과 맞지 않는다.
+② Living Entity Requirement Pattern — 엔티티 생명주기 패턴이나, 단일 트랜잭션 처리에 더 적합한 패턴이 있다.
+③ Transaction Requirement Pattern — 금액 조정이라는 트랜잭션, 유일 ID 자동 부여, 접근 제어가 포함된 전형적인 트랜잭션 패턴. 정답.
+④ Configuration Requirement Pattern — 시스템 설정 관련 패턴으로 적합하지 않다.
+
+핵심 정리:
+Transaction Requirement Pattern: 특정 비즈니스 트랜잭션 수행, 고유 식별자 부여, 제한된 접근 제어가 특징.

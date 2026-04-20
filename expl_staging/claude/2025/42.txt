@@ -1,0 +1,37 @@
+정답: ③ (3번)
+
+해설:
+예제 코드와 세 개의 테스트 케이스에 대해 문장 커버리지(Statement Coverage)와 분기 커버리지(Branch Coverage) 충족 여부를 묻는 문항이다.
+
+예제 코드 구조:
+def check_number(num):
+  if num > 0:          ← 분기 A
+    if num % 2 == 0:   ← 분기 B
+      return "양수 짝수"
+    else:
+      return "양수 홀수"
+  else:
+    return "음수 또는 0"
+
+테스트 케이스 실행 분석:
+- test_case_1 = check_number(4): num=4 > 0(T), 4%2==0(T) → "양수 짝수" 경로
+- test_case_2 = check_number(7): num=7 > 0(T), 7%2≠0(F) → "양수 홀수" 경로
+- test_case_3 = check_number(-1): num=-1 ≤ 0(F) → "음수 또는 0" 경로
+
+분기 커버리지(Branch Coverage) 충족 여부:
+- 분기 A(num > 0): True(test 1,2) + False(test 3) → 모두 커버
+- 분기 B(num % 2 == 0): True(test 1) + False(test 2) → 모두 커버
+→ Every Branch Coverage 충족
+
+문장 커버리지(Statement Coverage) 충족 여부:
+세 개의 return 문 모두 각각 한 번 이상 실행됨 → Every Statement Coverage 충족
+
+각 보기 분석:
+① Every Branch Coverage만 만족 — 위 분석에서 Statement Coverage도 만족하므로 오답.
+② Every Statement Coverage만 만족 — Branch Coverage도 만족하므로 오답.
+③ 두 커버리지 모두 만족 — 분석과 일치. 정답.
+④ 두 커버리지 모두 불만족 — 둘 다 만족하므로 오답.
+
+핵심 정리:
+Branch Coverage는 Statement Coverage를 포함(Branch ⊇ Statement). Branch가 만족되면 Statement도 반드시 만족.
+조건식이 T/F 양쪽 모두 실행되면 Branch Coverage 충족; 모든 실행 가능 라인이 한 번 이상 실행되면 Statement Coverage 충족.

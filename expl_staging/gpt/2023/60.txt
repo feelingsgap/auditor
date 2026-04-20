@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+DEPARTMENT의 Dnumber가 갱신되면 EMPLOYEE의 Dno도 같은 값으로 갱신되는 것이 ON UPDATE CASCADE다.
+
+각 보기 분석:
+① 삭제 시 부모 값이 디폴트로 바뀌는 설명은 방향이 반대다.
+② 자식 값이 갱신되면 부모가 바뀐다는 설명은 틀리다.
+③ 삭제 시 NULL로 바뀐다는 설명은 SET NULL과 혼동한 것이다.
+④ 부모 DEPARTMENT의 Dnumber가 갱신되면 자식 EMPLOYEE의 Dno도 갱신된다. 정답이다.
+
+핵심 정리:
+ON DELETE SET DEFAULT는 부모 삭제 시 자식 FK를 디폴트로, ON UPDATE CASCADE는 부모 갱신 시 자식 FK를 동기화한다.

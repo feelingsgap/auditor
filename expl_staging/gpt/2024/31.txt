@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+시스템 변수 값과 제약 조건, 값 속성 간의 관계를 표현하는 SysML 다이어그램은 Parametric diagram이다.
+
+각 보기 분석:
+① Parametric diagram - 정답이다.
+② Package diagram - 패키지 구조를 본다.
+③ State machine diagram - 상태 변화를 본다.
+④ Block definition diagram - 블록 구조를 본다.
+
+핵심 정리:
+제약식과 파라미터 관계는 SysML의 Parametric diagram으로 표현한다.

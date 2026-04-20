@@ -1,0 +1,15 @@
+정답: ③ (3번)
+
+해설:
+OpenFlow는 SDN에서 컨트롤러와 네트워크 장비 간 인터페이스를 정의하는 프로토콜로, 플로우 테이블·그룹 테이블·파이프라인 처리 등을 핵심 구성요소로 포함한다. NFV(Network Function Virtualization)는 별개의 독립적 개념이다.
+
+각 보기 분석:
+① 플로우 테이블(flow table) — OpenFlow 스위치가 패킷 처리 규칙을 저장하는 핵심 구성요소. OpenFlow 기술에 해당한다.
+② 그룹 테이블(group table) — 복수의 플로우 엔트리가 공통으로 참조하는 액션 집합을 정의. OpenFlow 1.1 이후 포함된 구성요소다.
+③ 네트워크 기능 가상화(network function virtualization) — NFV는 방화벽·로드밸런서 등 네트워크 기능을 소프트웨어로 구현하는 별도 개념으로, SDN/OpenFlow의 구성요소가 아니다. 정답.
+④ 파이프라인 처리(pipelining) — OpenFlow에서 패킷이 복수의 플로우 테이블을 순서대로 통과하는 처리 방식. OpenFlow 기술에 해당한다.
+
+핵심 정리:
+OpenFlow 구성요소: 플로우 테이블, 그룹 테이블, 미터 테이블, 파이프라인 처리.
+NFV(Network Function Virtualization)는 SDN과 상호 보완적이나 OpenFlow 자체의 기술·구성요소는 아니다.
+SDN = 제어 평면과 데이터 평면의 분리, OpenFlow = 그 인터페이스 규격.

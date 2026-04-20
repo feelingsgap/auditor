@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+설명에 해당하는 용어는 Common Weakness Enumeration이다.
+
+각 보기 분석:
+① Common Weakness Enumeration - 소프트웨어 약점 분류 체계로 설명과 일치한다. 정답이다.
+② Technical Debt - 기술 부채를 뜻한다.
+③ Bad Smells - 코드 냄새를 뜻한다.
+④ Anti-patterns - 나쁜 설계 패턴을 뜻한다.
+
+핵심 정리:
+CWE는 소프트웨어/하드웨어의 공통 약점을 분류하는 표준 체계다.

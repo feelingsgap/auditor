@@ -1,0 +1,14 @@
+정답: ① (1번)
+
+해설:
+별도 메서드로 분리된 단순 로직을 호출부에 직접 넣는 리팩토링은 inline method다.
+변경 후 코드가 moreThanFiveLateDeliveries()의 내용을 getRating() 안에 직접 넣고 있다.
+
+각 보기 분석:
+① inline method - 맞다. 정답이다.
+② extract method - 반대 방향의 리팩토링이다.
+③ move method - 메서드를 다른 클래스로 옮기는 것이다.
+④ substitute algorithm - 알고리즘 전체 교체에 가깝다.
+
+핵심 정리:
+inline method는 메서드 본문을 호출부로 옮기는 리팩토링이다.

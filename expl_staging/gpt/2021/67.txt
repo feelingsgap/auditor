@@ -1,0 +1,14 @@
+정답: ① (1번)
+
+해설:
+부양가족이 없는 사원을 찾으려면 상관 서브쿼리와 `NOT EXISTS`를 쓰는 것이 안전하다.
+서브쿼리는 `DEPENDENT`에서 `ESSN = SSN`인 행이 존재하는지 확인하면 된다.
+
+각 보기 분석:
+① NOT EXISTS / * / SSN=ESSN - 맞다. 정답이다.
+② NOT IN / * / NAME=DEPNAME - 비교 대상이 잘못되었다.
+③ NOT IN / ESSN / SSN=ESSN - 논리 구조가 맞지 않는다.
+④ NOT EXISTS / ESSN / NAME=DEPNAME - 조건이 잘못되었다.
+
+핵심 정리:
+부양가족이 없는 사원 검색은 `NOT EXISTS`가 대표적이다.

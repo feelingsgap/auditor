@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+신경망 기반의 기계학습 알고리즘 중 SVM(Support Vector Machine)이 신경망 기반이 아닌 알고리즘을 찾는 문항이다.
+
+각 보기 분석:
+① DBN(Deep Belief Network) — 여러 층의 RBM(Restricted Boltzmann Machine)을 쌓아 구성한 심층 신경망 기반 생성 모델이다. 신경망 기반 알고리즘이 맞다.
+② SVM(Support Vector Machine) — SVM은 신경망이 아닌 커널 기반의 분류/회귀 알고리즘이다. 마진(Margin)을 최대화하는 초평면(Hyperplane)을 찾는 방식으로 동작하며, 신경망 구조를 사용하지 않는다. 신경망 기반 알고리즘이 아니므로 정답.
+③ VAE(Variational Auto Encoder) — 인코더-디코더 구조의 신경망을 사용하는 생성 모델로, 잠재 공간(Latent Space)에서 확률적 표현을 학습한다. 신경망 기반이 맞다.
+④ GAN(Generative Adversarial Network) — 생성자(Generator)와 판별자(Discriminator) 두 신경망이 적대적으로 학습하는 생성 모델이다. 신경망 기반이 맞다.
+
+핵심 정리:
+신경망 기반 생성/학습 모델: DBN, VAE, GAN, CNN, RNN, Transformer 등.
+SVM은 신경망이 아닌 통계적 학습 이론에 기반한 커널 기법 알고리즘이다.
+딥러닝 붐 이전에 높은 성능을 보였으며, 소규모 데이터에서 여전히 강점을 가진다.

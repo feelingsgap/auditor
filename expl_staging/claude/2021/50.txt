@@ -1,0 +1,19 @@
+정답: ① (1번)
+
+해설:
+클래스 다이어그램 (가)에서 UI가 Car를 통해 Car.getOwner().getName()으로 Person의 이름을 얻던 구조가 (나)에서 Car.getOwnerName()으로 직접 String을 반환하도록 개선된 리팩토링 기법을 묻는 문항이다.
+
+변경 분석:
+(가): UI → Car.getOwner():Person → Person.getName():String — UI가 Car를 통해 Person에 접근(위임 체인).
+(나): UI → Car.getOwnerName():String — Car가 Person의 이름을 직접 반환. UI는 Person을 알 필요 없음.
+
+각 보기 분석:
+① hide delegate — 클라이언트(UI)가 위임 체인을 통해 다른 객체(Person)에 직접 접근하는 대신, 중간 객체(Car)가 위임을 감추고 필요한 결과를 직접 제공하는 리팩토링이다. (가)→(나) 변화와 정확히 일치한다. 정답.
+② remove middle man — hide delegate의 반대 방향 리팩토링이다. 중간 객체의 위임 메서드를 제거하고 클라이언트가 직접 대상 객체에 접근하도록 한다. (나)→(가) 방향이다.
+③ rename method — 메서드 이름을 더 명확하게 변경하는 리팩토링이다. 구조적 변경이 없다.
+④ encapsulate downcast — 다운캐스팅 코드를 메서드 내부로 숨기는 리팩토링이다. 이 변경과 관련 없다.
+
+핵심 정리:
+Hide Delegate: 위임 체인(A→B→C)을 감추어 클라이언트(A)가 중간 객체(B)에만 접근하도록 개선.
+Remove Middle Man: 반대로 불필요한 위임 메서드를 제거하고 직접 접근으로 변경.
+두 리팩토링은 상반된 방향이므로 다이어그램의 화살표 방향을 정확히 파악해야 한다.

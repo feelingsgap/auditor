@@ -1,0 +1,42 @@
+정답: ③ (3번)
+
+해설:
+Java 익명 클래스(Anonymous Class) 내에서의 변수 스코프와 this 참조를 추적하는 문항이다.
+
+코드 분석:
+public class Test {
+    public final int a = 10;          // Test 클래스의 인스턴스 필드 a = 10
+
+    public void runIt() {
+        int a = 20;                    // runIt() 지역 변수 a = 20
+
+        Runnable b = new Runnable() {
+            public final int a = 30;  // 익명 클래스의 인스턴스 필드 a = 30
+            public void run() {
+                int a = 40;           // run() 지역 변수 a = 40
+                System.out.println(this.a);  // this는 익명 Runnable 인스턴스
+            }
+        };
+        b.run();
+    }
+    ...
+}
+
+this.a 분석:
+- run() 메서드 내에서 `this`는 현재 익명 Runnable 인스턴스를 가리킨다.
+- 익명 클래스 내에 `public final int a = 30`이 인스턴스 필드로 선언되어 있다.
+- `this.a`는 익명 클래스의 인스턴스 필드 a = 30을 참조한다.
+- `int a = 40`은 run() 메서드의 지역 변수이므로 `this.a`와는 별개.
+
+출력: 30
+
+각 보기 분석:
+① 10 — Test 클래스의 인스턴스 필드 a 값. this가 Test 인스턴스를 가리킬 때의 값. 익명 클래스 내 this는 익명 클래스 인스턴스를 가리키므로 오답.
+② 20 — runIt()의 지역 변수 a 값. this.a가 아닌 단순 a 참조 시 스코프 규칙 혼동. 오답.
+③ 30 — 익명 Runnable 클래스의 인스턴스 필드 a 값. this.a의 올바른 결과. 정답.
+④ 40 — run()의 지역 변수 a 값. this 없이 a를 참조했을 때의 값. 오답.
+
+핵심 정리:
+Java 익명 클래스 내 this: 익명 클래스 자신의 인스턴스를 가리킴 (외부 클래스 인스턴스 아님).
+외부 클래스 인스턴스 참조: OuterClass.this.field 형태로 접근.
+변수 섀도잉(shadowing): 내부 스코프의 동명 변수가 외부 변수를 가림.

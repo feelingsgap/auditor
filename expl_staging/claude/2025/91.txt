@@ -1,0 +1,25 @@
+정답: ② (2번)
+
+해설:
+POP3(Post Office Protocol version 3) 프로토콜의 서비스 명령을 구분하는 문항이다.
+
+POP3 주요 명령:
+USER <사용자 이름>, PASS <비밀번호>, STAT (메일 통계), LIST [<번호>] (메일 목록/크기), RETR <번호> (메일 다운로드), DELE <번호> (메일 삭제), QUIT, NOOP 등.
+
+각 보기 분석:
+① HELO + <송신자의 호스트 이름>
+   SMTP(Simple Mail Transfer Protocol) 명령. 발신 서버가 수신 서버에 연결 시 자신을 소개. POP3 명령 아님.
+
+② LIST + <일련번호>
+   POP3 명령. LIST만 입력 시 전체 메일 목록(번호 + 크기) 반환, LIST <n>으로 특정 메일 크기 조회. 정답.
+
+③ MAIL + <송신자 메일주소>
+   SMTP 명령(MAIL FROM:<주소>). 메일 발송 시 발신자 주소 지정. POP3 명령 아님.
+
+④ RCPT + <수신자 메일 주소>
+   SMTP 명령(RCPT TO:<주소>). 메일 발송 시 수신자 주소 지정. POP3 명령 아님.
+
+핵심 정리:
+POP3: 메일 수신(다운로드) 프로토콜. 포트 110(일반), 995(SSL/TLS).
+SMTP: 메일 발송 프로토콜. HELO/EHLO, MAIL FROM, RCPT TO, DATA, QUIT 등 사용.
+IMAP: 서버에 메일 유지하며 관리하는 수신 프로토콜 (POP3의 대안).

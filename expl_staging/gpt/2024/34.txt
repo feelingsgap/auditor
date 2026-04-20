@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+Cause-effect graphing에서 여러 Cause 간 제약사항이 아닌 것을 찾는 문제다. Mask는 일반적인 Cause 간 제약사항으로 보기 어렵다.
+
+각 보기 분석:
+① Mask - 제약사항으로 보기 어렵다. 정답이다.
+② Requires - 제약사항이다.
+③ Exclusive - 제약사항이다.
+④ One and only one - 제약사항이다.
+
+핵심 정리:
+Cause-effect graphing의 제약은 requires, exclusive, one and only one 같은 논리 관계로 이해한다.

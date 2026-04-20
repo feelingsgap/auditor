@@ -1,0 +1,14 @@
+정답: ③ (3번)
+
+해설:
+온라인쇼핑시스템의 요구사항을 품질 속성에 매핑하는 문제다.
+동시 접속 수용은 capacity, 모든 기능 제공은 functional suitability, 다운타임 제한은 reliability/availability, 복구 후 기존 화면 제공은 reliability, 테스트 용이성은 testability로 본다.
+
+각 보기 분석:
+① capacity, functional suitability, availability, maintainability - 분류가 맞지 않는다.
+② performance efficiency, functional suitability, availability, testability - 가의 표현이 다르다.
+③ capacity, functional suitability, reliability, maintainability - 제시된 분류 중 가장 맞는 묶음이다. 정답이다.
+④ performance efficiency, functional suitability, availability, testability, adaptability - 항목이 과도하게 섞여 있다.
+
+핵심 정리:
+품질 속성 분류는 용량(capacity), 기능 적합성, 신뢰성, 시험성(testability) 중심으로 본다.

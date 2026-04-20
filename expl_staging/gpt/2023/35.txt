@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+사용자 인터페이스를 시스템의 나머지 부분과 분리해 결합도를 낮추는 아키텍처 스타일은 MVC다.
+
+각 보기 분석:
+① Event-Driven style - 이벤트 중심 구조다.
+② Client-Server style - 클라이언트와 서버 분리 구조다.
+③ Model-View-Controller style - UI를 분리하고 여러 View를 둘 수 있다. 정답이다.
+④ Layered style - 계층 구조이지만 문제 설명의 핵심은 MVC다.
+
+핵심 정리:
+MVC는 Model, View, Controller를 분리하는 대표적인 UI 분리 아키텍처다.

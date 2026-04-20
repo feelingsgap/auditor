@@ -1,0 +1,25 @@
+정답: ④ (4번)
+
+해설:
+switch 문에서 타입 코드에 따라 다른 동작을 하는 코드에 적용한 리팩토링 기법을 묻는 문항이다.
+
+코드 변환 분석:
+(Before): Shape 클래스 내부에서 switch(typecode)로 LINE, RECTANGLE, OVAL 각각의 draw() 동작을 분기 처리.
+(After): Shape 추상 클래스 아래 ShapeLine, ShapeRectangle, ShapeOval 서브클래스를 생성하고 각각 draw()를 Override.
+
+리팩토링 기법 식별:
+타입 코드(typecode 상수 필드)에 따른 switch 분기 → 각 타입별 서브클래스로 대체.
+
+각 보기 분석:
+① Pull Up Method — 여러 서브클래스에서 동일한 메서드를 상위 클래스로 올리는 기법. 방향이 반대(서브 → 슈퍼). 해당 없음.
+② Replace Type Code with Class — 타입 코드를 별도 클래스로 객체화하지만, switch 분기 구조는 그대로 유지. 서브클래스 분리와 다름.
+③ Replace Parameter with Method — 메서드 파라미터를 메서드 호출로 교체하는 기법. 해당 없음.
+④ Replace Type Code with Subclasses — 타입 코드(상수)를 서브클래스로 교체해 다형성을 활용하는 기법. Before → After 변환과 정확히 일치. 정답.
+
+핵심 정리:
+Replace Type Code with Subclasses: switch/if-else 타입 분기 → 다형성(Polymorphism) 활용 서브클래스 구조.
+효과: 새로운 타입 추가 시 기존 코드 수정 없이 서브클래스만 추가(Open-Closed Principle 충족).
+유사 기법 구분:
+- Replace Type Code with Class: 타입 코드를 클래스로 감쌈(열거형 대체 수준)
+- Replace Type Code with Subclasses: 상속 구조로 분리(다형성 도입)
+- Replace Type Code with State/Strategy: 상태/전략 패턴으로 분리(위임 활용)

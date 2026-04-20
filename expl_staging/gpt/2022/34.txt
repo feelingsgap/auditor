@@ -1,0 +1,20 @@
+정답: ① (1번)
+
+해설:
+리팩토링 전 코드에서 오류 발생 시 -1을 반환하던 방식을 리팩토링 후 예외(exception)를 던지는 방식으로 변경한 것이다. 이는 대표적인 리팩토링 기법 중 하나에 해당한다.
+
+코드 변화 분석:
+- 적용 전: `if (amount > _balance) return -1;` — 오류를 숫자 코드(-1)로 반환
+- 적용 후: `if (amount > _balance) throw new B_exception();` — 오류를 예외 객체로 던짐
+- 반환 타입도 `int`에서 `void`로 변경됨 (예외로 오류 신호를 대체)
+
+각 보기 분석:
+① replace error code with exception — 오류 코드(error code)를 예외(exception)로 교체. 변화와 정확히 일치하는 리팩토링 기법. 정답.
+② replace exception with test — 예외를 조건 검사로 대체하는 기법. 이 문항과 반대 방향이다.
+③ replace parameter with exception — 매개변수를 예외로 교체하는 기법. 이 문항과 맥락이 다르다.
+④ inline method — 메서드 호출을 본문 코드로 인라인 삽입하는 기법. 이 문항과 무관하다.
+
+핵심 정리:
+replace error code with exception: 오류 상태를 나타내는 특수 반환값(-1, null, 0 등)을 적절한 예외 클래스로 교체.
+장점: 호출자가 반환값 확인을 잊어도 예외가 전파되므로 오류 무시를 방지.
+리팩토링은 외부 동작을 바꾸지 않고 내부 구조를 개선하는 것이 원칙이다.

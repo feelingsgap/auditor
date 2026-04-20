@@ -1,0 +1,17 @@
+정답: ③ (3번)
+
+해설:
+각 서비스에 적합한 암호화 기술을 올바르게 짝지은 것을 고르는 문항이다. 전자우편 보안 프로토콜로는 PGP(Pretty Good Privacy)와 S/MIME이 대표적이다.
+
+각 보기 분석:
+① (가) WWW — (나) ssh — WWW의 보안은 HTTPS(SSL/TLS)가 담당하고, SSH는 원격 접속 보안 프로토콜이다. www와 ssh의 짝이 맞지 않는다.
+② (가) telnet — (나) https — Telnet의 보안 대체는 SSH이며, HTTPS는 웹 통신 보안이다. 짝이 맞지 않는다.
+③ (가) 전자우편 — (나) PGP — PGP는 전자우편 암호화·인증을 위한 대표적 보안 기술이다. 올바른 짝이다. 정답.
+④ (가) 전자결제 — (나) S/MIME — S/MIME(Secure/Multipurpose Internet Mail Extensions)는 전자우편 보안 표준이다. 전자결제 보안은 SET(Secure Electronic Transaction)이나 SSL/TLS 등이 담당한다. 짝이 맞지 않는다.
+
+핵심 정리:
+전자우편 보안: PGP, S/MIME.
+웹 통신 보안: HTTPS(SSL/TLS).
+원격 접속 보안: SSH(Telnet 대체).
+전자결제 보안: SET, SSL/TLS.
+PGP는 공개키 암호화와 대칭키 암호화를 결합하여 전자우편 기밀성·무결성·인증을 제공한다.

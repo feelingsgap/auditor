@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+안정성 지표 I는 Fan-out / (Fan-in + Fan-out)으로 계산한다. 그림에서 Fan-in 3, Fan-out 1이므로 1/4다.
+
+각 보기 분석:
+① Fan-in 3, Fan-out 1, I=1/4 - 맞다. 정답이다.
+② Fan-in 1, Fan-out 3, I=1/4 - 값과 방향이 틀리다.
+③ Fan-in 3, Fan-out 1, I=3/4 - 계산이 틀리다.
+④ Fan-in 1, Fan-out 3, I=3/4 - 둘 다 틀리다.
+
+핵심 정리:
+Fan-in이 많을수록 안정적이고, Fan-out이 많을수록 불안정하다.

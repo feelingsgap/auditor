@@ -1,0 +1,21 @@
+정답: ② (2번)
+
+해설:
+Robert Martin의 Clean Architecture는 소프트웨어를 동심원 계층으로 구분하며, 의존성 규칙(Dependency Rule)에 따라 외부 계층이 내부 계층에만 의존하고 내부 계층은 외부를 알지 못한다. 가장 내부(핵심)에서 가장 외부(세부 구현) 순서를 묻는다.
+
+Clean Architecture 계층 구조(내부 → 외부):
+1. Entities(엔터티): 핵심 비즈니스 규칙. 가장 안쪽.
+2. Use Cases(유스케이스): 애플리케이션 비즈니스 규칙.
+3. Interface Adapters(인터페이스 어댑터): 컨트롤러, 프레젠터, 게이트웨이.
+4. Frameworks and Drivers(프레임워크와 드라이버): 웹 프레임워크, DB 등 세부 구현. 가장 바깥쪽.
+
+각 보기 분석:
+① Entities - Interface Adapters - Use Cases - Frameworks and Drivers — Use Cases와 Interface Adapters 순서가 바뀌었다.
+② Entities - Use Cases - Interface Adapters - Frameworks and Drivers — 정확한 내부→외부 순서. 정답.
+③ Frameworks and Drivers - Use Cases - Interface Adapters - Entities — 외부→내부 역순으로 나열되었다.
+④ Frameworks and Drivers - Interface Adapters - Entities - Use Cases — 순서가 모두 잘못되었다.
+
+핵심 정리:
+Clean Architecture 의존성 규칙: 의존성은 항상 안쪽(Entities 방향)을 향해야 한다.
+핵심 목적: 비즈니스 로직(Entities, Use Cases)을 UI·DB·프레임워크 등 세부 구현으로부터 독립시키는 것.
+내부 계층은 외부 계층의 존재를 몰라도 된다.

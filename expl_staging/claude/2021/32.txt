@@ -1,0 +1,30 @@
+정답: ② (2번)
+
+해설:
+Java의 static 메서드 test() 내에서 각 라인의 컴파일 가능 여부를 분석한다. static 메서드는 인스턴스 없이 호출되므로, 인스턴스 변수와 인스턴스 메서드를 직접 참조할 수 없다.
+
+클래스 구조:
+- `private int a = 0;` — 인스턴스 변수
+- `private static count = 0;` — static 변수 (클래스 변수)
+- `public int getA()` — 인스턴스 메서드
+- `public static int getCount()` — static 메서드
+- `public static void test()` — static 메서드 (검토 대상)
+
+라인별 분석:
+(가) `sum = a;` — a는 인스턴스 변수. static 메서드에서 직접 참조 불가 → **컴파일 오류**
+(나) `sum += count;` — count는 static 변수. static 메서드에서 직접 참조 가능 → **오류 없음**
+(다) `System.out.println(getA());` — getA()는 인스턴스 메서드. static 메서드에서 직접 호출 불가 → **컴파일 오류**
+(라) `System.out.println(getCount());` — getCount()는 static 메서드. static 컨텍스트에서 호출 가능 → **오류 없음**
+
+각 보기 분석:
+① 가, 다 — 두 라인 모두 컴파일 오류 발생 라인이므로, "오류가 발생하지 않는 부분"이 아니다. 오답.
+② 나, 라 — 두 라인 모두 컴파일 오류 없음. 정답.
+③ 가, 나, 다 — 가·다는 오류 발생, 오답.
+④ 가, 나, 다, 라 — 가·다는 오류 발생, 오답.
+
+핵심 정리:
+static 메서드 내에서 직접 참조 가능한 멤버: static 변수, static 메서드.
+인스턴스 변수(a)와 인스턴스 메서드(getA())는 static 컨텍스트에서 인스턴스 참조 없이 직접 참조 불가.
+오류 없는 라인: (나) count 참조, (라) getCount() 호출.
+
+[이의제기 경위: 공식 정답이 ①(가, 다)로 발표되었으나, Java 언어 명세에 따른 올바른 분석 결과는 ②(나, 라)이다. static 메서드에서 인스턴스 멤버를 참조할 수 없다는 원칙은 확정적이므로 ②가 정답이다.]

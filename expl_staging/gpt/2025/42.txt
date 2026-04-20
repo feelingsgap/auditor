@@ -1,0 +1,25 @@
+정답: ③ (3번)
+
+해설:
+주어진 세 테스트 케이스가 Every Branch Coverage와 Every Statement Coverage를 만족하는지 묻는 문제다.
+
+실행 경로:
+- `check_number(4)`는 양수이면서 짝수 경로를 실행한다.
+- `check_number(7)`은 양수이면서 홀수 경로를 실행한다.
+- `check_number(-1)`은 음수 또는 0 경로를 실행한다.
+
+이로 인해:
+- 바깥 `if num > 0`의 참/거짓이 모두 실행된다.
+- 안쪽 `if num % 2 == 0`의 참/거짓도 모두 실행된다.
+- 모든 `return` 문이 최소 1회 이상 실행된다.
+
+따라서 Branch Coverage와 Statement Coverage를 모두 만족한다.
+
+각 보기 분석:
+① Branch만 만족 — 오답
+② Statement만 만족 — 오답
+③ 둘 다 만족 — 정답
+④ 둘 다 불만족 — 오답
+
+핵심 정리:
+양수짝수, 양수홀수, 음수또는0 세 경로가 모두 실행되므로 두 커버리지를 모두 만족한다.

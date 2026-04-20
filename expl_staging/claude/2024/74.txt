@@ -1,0 +1,24 @@
+정답: ③ (3번)
+
+해설:
+WAL(Write-Ahead Logging) 기법에서 로그 엔트리의 두 종류인 AFIM(After Image)과 BFIM(Before Image)이 각각 어떤 로그 유형에 기록되는지를 묻는 문항이다.
+
+WAL 기법의 핵심 원칙:
+1. 데이터베이스 변경 내용을 디스크에 쓰기 전에 반드시 로그를 먼저 디스크에 기록한다.
+2. REDO 로그: 변경 후의 값(AFIM, After Image)을 기록하여 커밋된 트랜잭션을 재수행(redo)할 때 사용한다.
+3. UNDO 로그: 변경 전의 값(BFIM, Before Image)을 기록하여 미완료 트랜잭션을 취소(undo)할 때 사용한다.
+
+각 로그 유형 매핑:
+- (가) AFIM(After Image)을 기록하는 로그 → REDO 로그 (장애 후 커밋된 변경 내용 재적용)
+- (나) BFIM(Before Image)을 기록하는 로그 → UNDO 로그 (장애 후 미완료 변경 내용 취소)
+
+각 보기 분석:
+① ㉮ VOLATILE, ㉯ PERSISTENT — VOLATILE/PERSISTENT는 저장 매체 특성이며 로그 유형명이 아니다. 틀렸다.
+② ㉮ PERSISTENT, ㉯ VOLATILE — 마찬가지로 로그 유형 분류와 무관하다. 틀렸다.
+③ ㉮ REDO, ㉯ UNDO — AFIM은 REDO 로그에, BFIM은 UNDO 로그에 기록한다. 정답.
+④ ㉮ UNDO, ㉯ REDO — AFIM과 BFIM의 역할이 뒤바뀐 설명이다. 틀렸다.
+
+핵심 정리:
+REDO 로그: After Image(변경 후 값) 기록 → 시스템 장애 후 커밋된 트랜잭션 재수행에 사용.
+UNDO 로그: Before Image(변경 전 값) 기록 → 트랜잭션 롤백 또는 미완료 트랜잭션 취소에 사용.
+WAL 원칙: 로그 먼저 기록(Log Ahead) → 데이터 페이지 기록 순서 보장.

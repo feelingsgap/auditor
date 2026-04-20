@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+정방향 그래프와 역방향 그래프에서 동일한 거리가 나와야 한다는 관계를 이용한 테스트는 Metamorphic testing이다.
+
+각 보기 분석:
+① Equivalence partitioning - 입력 영역 분할 기법이다.
+② Decision table testing - 조건 조합을 본다.
+③ Metamorphic testing - 정답이다.
+④ Requirement-based testing - 요구사항 기반 테스트다.
+
+핵심 정리:
+Metamorphic testing은 입력 변환 후 출력 관계의 일관성을 검증한다.

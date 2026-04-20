@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+iptables 규칙 `iptables -A INPUT -p icmp --icmp-type echo-request -j DROP`은 ICMP echo-request 패킷(ping 요청)을 차단하는 규칙이다. 이 규칙으로 방어 가능한 네트워크 공격을 묻는 문항이다.
+
+규칙 분석:
+- `-A INPUT`: 인바운드 체인에 규칙 추가
+- `-p icmp`: ICMP 프로토콜 대상
+- `--icmp-type echo-request`: ICMP 타입 8(echo-request, ping 요청)
+- `-j DROP`: 패킷 드롭
+
+각 보기 분석:
+① Ping of Death — 비정상적으로 큰 ICMP 패킷을 전송하여 시스템을 충돌시키는 공격. ICMP echo-request를 차단하면 Ping of Death 공격을 방어할 수 있다. 정답.
+② HTTP Get Flooding — HTTP GET 요청을 대량으로 보내는 DDoS 공격. HTTP 프로토콜(TCP 포트 80)을 사용하므로 ICMP 차단으로 방어할 수 없다.
+③ ARP Spoofing — ARP 프로토콜을 조작하여 MAC 주소를 위조하는 공격. ICMP 차단과 무관하다.
+④ DNS Amplification — DNS 요청을 이용한 반사/증폭 DDoS 공격. UDP 포트 53을 사용하므로 ICMP 차단과 무관하다.
+
+핵심 정리:
+Ping of Death: 비정상적 크기의 ICMP 패킷으로 시스템 오동작 유발.
+ICMP echo-request 차단 = Ping of Death, ICMP Flood 등 ICMP 기반 공격 방어.
+iptables에서 ICMP 타입: echo-request(8), echo-reply(0), unreachable(3) 등.

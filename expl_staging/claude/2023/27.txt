@@ -1,0 +1,33 @@
+정답: ③ (3번)
+
+해설:
+3개 Condition, 2개 Action으로 구성된 Decision Table에서 TC1~TC4 4개의 테스트케이스가 커버하는 Rule의 비율을 계산하는 문항이다.
+
+Decision Table Rule 매핑:
+- Rule1: C1=T, C2=T, C3=T
+- Rule2: C1=T, C2=T, C3=F
+- Rule3: C1=T, C2=F, C3=T
+- Rule4: C1=T, C2=F, C3=F
+- Rule5: C1=F, C2=T, C3=T
+- Rule6: C1=F, C2=T, C3=F
+- Rule7: C1=F, C2=F, C3=T
+- Rule8: C1=F, C2=F, C3=F
+
+각 TC 분석:
+- TC1 (X=-200, Y=0): C1(-100<=X? F), C2(150<Y? F), C3(X+Y>=150? F) → Rule8
+- TC2 (X=0, Y=200): C1(T), C2(T), C3(0+200=200>=150, T) → Rule1
+- TC3 (X=-100, Y=150): C1(-100>=-100, T), C2(150<150? F), C3(-100+150=50>=150? F) → Rule4
+- TC4 (X=-100, Y=250): C1(T), C2(250>150, T), C3(-100+250=150>=150, T) → Rule1
+
+커버된 Rule: Rule1(TC2,TC4), Rule4(TC3), Rule8(TC1) → 총 3개 고유 Rule.
+커버리지: 3/8.
+
+각 보기 분석:
+① 1/8 — TC가 1개 Rule만 커버한다는 의미로 계산과 다르다.
+② 2/8 — 2개 Rule 커버. 계산과 다르다.
+③ 3/8 — Rule1, Rule4, Rule8 총 3개 커버. 정답.
+④ 4/8 — 4개 Rule 커버. TC4는 TC2와 동일한 Rule1을 커버하므로 새로운 Rule을 추가하지 않는다.
+
+핵심 정리:
+Decision Table 커버리지: 실행된 테스트케이스가 커버하는 고유 Rule 수 / 전체 Rule 수.
+중복 Rule 커버는 커버리지 향상에 기여하지 않는다.

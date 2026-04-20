@@ -1,0 +1,23 @@
+정답: ① (1번)
+
+해설:
+"부양가족이 없는 사원의 이름을 검색"하는 SQL 질의의 ㈎(비교 연산자), ㈏(서브쿼리 SELECT 항목), ㈐(조인 조건)를 찾는 문항이다.
+EMPLOYEE.SSN과 DEPENDENT.ESSN이 외래키로 연결되어 있으므로, 부양가족이 없는 사원은 DEPENDENT에 대응 행이 없는 사원이다.
+
+질의 구조 분석:
+SELECT NAME FROM EMPLOYEE
+WHERE ㈎ (SELECT ㈏ FROM DEPENDENT WHERE ㈐)
+
+부양가족이 없는 사원 = DEPENDENT에 SSN이 존재하지 않는 사원
+→ NOT EXISTS (SELECT * FROM DEPENDENT WHERE SSN = ESSN)
+
+각 보기 분석:
+① ㈎=NOT EXISTS, ㈏=*, ㈐=SSN=ESSN — NOT EXISTS를 사용하면 서브쿼리 결과가 비어있을 때(부양가족 없음) 참이 된다. SELECT * 사용, 조인 조건은 E.SSN=ESSN. 정답.
+② ㈎=NOT IN, ㈏=*, ㈐=NAME=DEPNAME — NOT IN 사용 시 기준 컬럼이 NAME이어야 하는데 이름으로 비교하는 것은 논리적으로 부적절하다.
+③ ㈎=NOT IN, ㈏=ESSN, ㈐=SSN=ESSN — NOT IN (SELECT ESSN ...) 후 조인 조건에 SSN=ESSN이 있으면 서브쿼리가 항상 ESSN을 반환하여 논리 오류가 발생한다.
+④ ㈎=NOT EXISTS, ㈏=ESSN, ㈐=NAME=DEPNAME — NAME=DEPNAME은 사원 이름과 부양가족 이름을 비교하는 잘못된 조건이다.
+
+핵심 정리:
+부양가족 없는 사원 조회: NOT EXISTS(상관 서브쿼리)가 가장 표준적인 방법.
+상관 서브쿼리 조인 조건: 외부 쿼리의 기본키(SSN)와 서브쿼리의 외래키(ESSN)를 연결.
+NOT EXISTS는 NULL 처리에서 NOT IN보다 안전하다.

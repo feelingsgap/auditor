@@ -1,0 +1,23 @@
+정답: ② (2번)
+
+해설:
+Prepared Statement(선처리 구문)와 Stored Procedure(저장 프로시저)를 통해 방어할 수 있는 취약점 유형을 찾는 문항이다.
+
+각 보기 분석:
+① 로키 변조
+   틀림. 로키 변조는 Prepared Statement와 직접적인 관련이 없는 취약점 유형이다.
+
+② SQL 삽입(SQL Injection)
+   맞음. Prepared Statement와 Stored Procedure는 SQL Injection을 방어하는 핵심 기법이다. Prepared Statement는 쿼리 구조를 먼저 컴파일(파라미터화)하여 입력값을 데이터로만 처리하고, Stored Procedure는 DB 내부에 미리 정의된 쿼리를 실행하므로 외부 입력이 쿼리 구조를 변경하지 못한다. 정답.
+
+③ 파일 업로드
+   틀림. 파일 업로드 취약점은 확장자 검증, 파일 타입 검사, 저장 경로 분리 등으로 대응한다.
+
+④ 취약한 비밀번호
+   틀림. 취약한 비밀번호는 패스워드 정책 강화, 해시 알고리즘(bcrypt 등) 적용으로 대응한다.
+
+핵심 정리:
+Prepared Statement: 쿼리 파라미터화 → 입력값이 SQL 코드가 아닌 데이터로 처리.
+  예: SELECT * FROM users WHERE id = ? (파라미터 바인딩)
+Stored Procedure: DB 서버에 미리 저장된 쿼리 블록 → 외부 입력이 SQL 구조 변경 불가.
+SQL Injection 방어 우선순위: ① 파라미터화 쿼리(Parameterized Query) ② Stored Procedure ③ 화이트리스트 입력 검증 ④ 최소 권한 DB 계정.

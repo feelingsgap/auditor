@@ -1,0 +1,42 @@
+정답: ② (2번)
+
+해설:
+McCabe의 순환 복잡도(Cyclomatic Complexity Number, CCN)를 계산하는 문항이다.
+
+McCabe 복잡도 공식:
+V(G) = 결정 포인트(Decision Points)의 수 + 1
+
+코드 분석:
+```
+function exampleFunction(x, y):
+  if x > 0:          ← 결정 포인트 1 (if 조건문)
+    print("x is positive")
+  else:
+    print("x is non-positive")
+  if y > 0:          ← 결정 포인트 2 (if 조건문)
+    print("y is positive")
+  else:
+    print("y is non-positive")
+  for i from 1 to 5: ← 결정 포인트 3 (반복문)
+    print(i)
+  return x + y
+```
+
+결정 포인트 카운트:
+1. `if x > 0:` — 조건 분기 1개
+2. `if y > 0:` — 조건 분기 1개
+3. `for i from 1 to 5:` — 루프 분기 1개
+
+McCabe 복잡도 = 3(결정 포인트) + 1 = 4
+
+각 보기 분석:
+① 3 — 결정 포인트만 계산하고 +1을 누락한 오답.
+② 4 — V(G) = 3+1 = 4. 정답.
+③ 5 — 오산.
+④ 6 — else 절을 별도 카운트한 오산. else는 결정 포인트가 아님.
+
+핵심 정리:
+McCabe 복잡도 = 결정 포인트 수 + 1.
+결정 포인트: if, else if, for, while, do-while, case, ?, &&, || 등.
+else는 결정 포인트가 아님 (이미 if에서 카운트됨).
+복잡도 4 이하: 단순 / 5~10: 중간 / 11 이상: 복잡(테스트·리팩토링 필요).

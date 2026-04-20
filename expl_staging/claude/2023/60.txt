@@ -1,0 +1,20 @@
+정답: ④ (4번)
+
+해설:
+EMPLOYEE 테이블의 Dno 열에 대한 참조 무결성 제약 조건이 ON DELETE SET DEFAULT, ON UPDATE CASCADE로 선언되었을 때의 동작을 이해하는 문항이다.
+
+제약 조건 해석:
+- FOREIGN KEY(Dno) REFERENCES DEPARTMENT(Dnumber): EMPLOYEE.Dno는 DEPARTMENT.Dnumber를 참조하는 외래키.
+- ON DELETE SET DEFAULT: DEPARTMENT의 참조된 튜플(Dnumber)이 삭제되면 → EMPLOYEE의 Dno를 디폴트 값으로 설정.
+- ON UPDATE CASCADE: DEPARTMENT의 참조된 튜플(Dnumber)이 갱신되면 → EMPLOYEE의 Dno도 연쇄적으로 같은 값으로 갱신.
+
+각 보기 분석:
+① EMPLOYEE 테이블의 Dno 값이 삭제되면 DEPARTMENT의 Dnumber 값은 디폴트 값으로 설정된다 — 반대 방향이다. ON DELETE SET DEFAULT는 DEPARTMENT 삭제 시 EMPLOYEE의 Dno가 변경되는 것이다.
+② EMPLOYEE 테이블의 Dno 값이 갱신되면 DEPARTMENT의 Dnumber 값도 갱신된다 — 반대 방향이다. CASCADE는 부모 테이블 변경 시 자식 테이블이 연동된다.
+③ DEPARTMENT의 Dnumber 값이 삭제되면 EMPLOYEE 테이블의 Dno 값은 NULL 값으로 설정된다 — ON DELETE SET NULL이 아닌 SET DEFAULT이므로 NULL이 아닌 디폴트 값으로 설정된다.
+④ DEPARTMENT의 Dnumber 값이 갱신되면 EMPLOYEE 테이블의 Dno 값도 그 값으로 갱신된다 — ON UPDATE CASCADE의 정확한 설명이다. 정답.
+
+핵심 정리:
+ON DELETE SET DEFAULT: 부모 삭제 시 자식 FK를 디폴트 값으로.
+ON UPDATE CASCADE: 부모 PK 변경 시 자식 FK도 동일 값으로 연쇄 갱신.
+참조 무결성 규칙은 자식 테이블(EMPLOYEE) 기준이 아닌 부모 테이블(DEPARTMENT) 변경 시 동작한다.

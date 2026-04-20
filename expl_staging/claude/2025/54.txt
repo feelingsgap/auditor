@@ -1,0 +1,40 @@
+정답: ② (2번)
+
+해설:
+2NF(제2정규형) 만족을 위한 정규화 시 생성되는 릴레이션 수를 구하는 문항이다.
+
+주어진 릴레이션과 함수적 종속성:
+R(EmpID, DeptID, ProjID, EmpName, DeptName)
+- EmpID → EmpName
+- DeptID → DeptName
+- (EmpID, ProjID) → DeptID
+
+기본 키 파악:
+주어진 FD에서 (EmpID, ProjID) → DeptID이고, EmpID → EmpName, DeptID → DeptName이 존재한다.
+(EmpID, ProjID)가 모든 다른 속성을 (직접 또는 이행적으로) 결정하므로 기본 키는 (EmpID, ProjID).
+
+부분 함수적 종속성 파악:
+2NF 위반 조건: 기본 키(EmpID, ProjID)의 진부분집합에만 종속되는 비주요 속성.
+- EmpID → EmpName: EmpID(기본 키의 일부)에만 종속 → 부분 종속 (2NF 위반)
+- DeptID → DeptName: DeptID는 비주요 속성이며, (EmpID, ProjID) → DeptID → DeptName 이행 종속. EmpID 단독으로 DeptID를 결정하지 못하므로 EmpName처럼 단순 부분 종속이 아님.
+- (EmpID, ProjID) → DeptID: 전체 기본 키에 종속 → 완전 종속
+
+2NF 정규화 분해:
+부분 종속 속성(EmpName)을 결정자(EmpID)와 함께 별도 릴레이션으로 분리한다.
+- R1(EmpID, ProjID, DeptID, DeptName): 완전 함수 종속 그룹 (기본 키: EmpID, ProjID)
+  * 이 릴레이션에는 DeptID → DeptName 이행 종속이 남아 있으나, 2NF 조건 위반은 아님.
+- R2(EmpID, EmpName): EmpID에 부분 종속하는 속성 분리 (기본 키: EmpID)
+
+결과: 2개의 릴레이션 생성.
+
+각 보기 분석:
+① 1 — 정규화를 수행하지 않은 경우. 부분 종속이 존재하므로 반드시 분해 필요.
+② 2 — R1(EmpID, ProjID, DeptID, DeptName) + R2(EmpID, EmpName). 정답.
+③ 3 — EmpName, DeptName을 각각 별도로 분리했을 경우이나, DeptName은 부분 종속이 아니므로 이 시점에 분리 대상이 아님.
+④ 4 — 과분해. 2NF 정규화 범위를 초과한 과도한 분해.
+
+핵심 정리:
+* 2NF: 기본 키의 진부분집합에 종속되는 비주요 속성(부분 종속) 제거.
+* DeptName은 DeptID에 의해 결정되는 이행 종속 속성이며, EmpID 단독으로 DeptID를 결정할 수 없으므로 DeptName은 부분 종속 대상이 아님.
+* 부분 종속은 EmpID → EmpName 하나뿐이므로 2NF 분해 결과는 2개의 릴레이션.
+* DeptID → DeptName 이행 종속 제거는 3NF 정규화 단계에서 수행됨.

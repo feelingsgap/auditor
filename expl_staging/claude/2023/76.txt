@@ -1,0 +1,23 @@
+정답: ② (2번)
+
+해설:
+가상 메모리 관리를 위한 페이지 교체 알고리즘 중 "가장 오랫동안 사용하지 않은 페이지를 교체"하는 알고리즘을 묻는 문제이다.
+
+페이지 교체 알고리즘 종류:
+- FIFO(First In First Out): 가장 먼저 적재된 페이지를 교체. 오랜 사용 여부와 무관.
+- LRU(Least Recently Used): 가장 오랫동안 참조되지 않은 페이지를 교체. 최근 사용 이력 기반.
+- LFU(Least Frequently Used): 참조 횟수가 가장 적은 페이지를 교체.
+- OPT(Optimal): 앞으로 가장 오랫동안 사용되지 않을 페이지를 교체(이론적 최적).
+- Round-Robin: CPU 스케줄링 알고리즘으로 페이지 교체 알고리즘이 아님.
+- SPN(Shortest Process Next) / SJN: CPU 스케줄링 알고리즘.
+
+각 보기 분석:
+① FIFO — 적재된 순서 기준 교체, 사용 빈도/시점과 무관.
+② LRU — 가장 오랫동안 사용(참조)하지 않은 페이지 교체. 문제 설명과 정확히 일치. 정답.
+③ Round-Robin — 페이지 교체 알고리즘이 아닌 CPU 스케줄링 기법.
+④ SPN — Shortest Process Next, CPU 스케줄링 알고리즘.
+
+핵심 정리:
+LRU(Least Recently Used): 지역성(locality) 원리 기반, 과거 참조 이력을 미래 예측에 활용.
+FIFO는 Belady의 이상(Belady's anomaly) 현상이 발생할 수 있으나 LRU는 발생하지 않는다.
+LRU 구현: 참조 시각 기록(timestamp) 또는 스택 기반.

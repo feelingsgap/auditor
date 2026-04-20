@@ -1,0 +1,18 @@
+정답: ① (1번)
+
+해설:
+ISO/IEC/IEEE 29119 Part 4의 Cause-effect graphing에서 Cause 간의 제약 사항(constraint) 종류를 구별하는 문항이다.
+
+Cause-effect graphing의 제약 사항:
+Cause-effect graphing은 여러 Cause(원인)와 Effect(결과) 간의 논리적 관계를 그래프로 표현하고 테스트케이스를 도출하는 기법이다. Cause 간 제약 사항은 동시에 참(True)이 될 수 있는 Cause의 조합을 제한한다.
+
+각 보기 분석:
+① Mask — 'Mask'는 Cause-effect graphing의 표준 제약 사항이 아니다. 이 용어는 회로 설계나 비트마스크 연산에서 사용되는 개념으로, 29119 Part 4의 Cause-effect graphing 제약 사항 목록에 포함되지 않는다. 가장 적절하지 않은 것. 정답.
+② Requires — A가 참(1)이면 B도 반드시 참(1)이어야 하는 제약. 표준 Cause-effect graphing 제약 사항으로 적절.
+③ Exclusive — 두 Cause A, B 중 최대 하나만 참일 수 있는 제약(동시에 참이 될 수 없음). 표준 제약 사항으로 적절.
+④ One and only one — 여러 Cause 중 반드시 하나만 참이어야 하는 제약. 표준 제약 사항으로 적절.
+
+핵심 정리:
+Cause-effect graphing 표준 제약 사항: Exclusive, Inclusive, One and only one, Requires, Masks(일부 문헌).
+단, 29119 Part 4 기준으로 핵심 제약 4종은 Exclusive, Inclusive, One and only one, Requires이다.
+'Mask'는 Effect 쪽에서 일부 사용되나 Cause 간 제약 사항으로는 부적절.

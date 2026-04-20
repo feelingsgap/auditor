@@ -1,0 +1,22 @@
+정답: ④ (4번)
+
+해설:
+자바 바이트코드에 대한 정적 분석을 통해 XSS, HTTP 응답 분할, 경로 탐색, 코드 상의 보안 취약점, 널 포인터 참조 등을 검사하는 공개 SW 도구를 찾는 문항이다.
+
+각 보기 분석:
+① ModSecurity
+   틀림. ModSecurity는 Apache/Nginx/IIS 등에서 동작하는 오픈소스 WAF(Web Application Firewall)이다. 실행 중인 웹 트래픽을 동적으로 필터링하는 런타임 방어 도구로, 정적 코드 분석 도구가 아니다.
+
+② OpenVAS
+   틀림. OpenVAS(Open Vulnerability Assessment System)는 네트워크 취약점 스캐너로, 살아있는 시스템을 대상으로 취약점을 탐지한다. 소스코드 또는 바이트코드 정적 분석 도구가 아니다.
+
+③ OllyDbg
+   틀림. OllyDbg는 Windows 실행 파일 분석용 동적 디버거이다. 역공학(Reverse Engineering)에 사용되며, 자바 바이트코드 정적 분석 도구가 아니다.
+
+④ SpotBugs
+   맞음. SpotBugs(구 FindBugs)는 자바 바이트코드를 정적으로 분석하여 버그 패턴, 보안 취약점(XSS, SQL Injection, Path Traversal 등), 널 포인터 역참조, 성능 문제 등을 탐지하는 공개 정적 분석 도구이다. 정답.
+
+핵심 정리:
+정적 분석 도구(SAST): 소스코드/바이트코드를 실행 없이 분석 (SpotBugs, SonarQube, Checkmarx).
+동적 분석 도구(DAST): 실행 중인 애플리케이션을 테스트 (OWASP ZAP, Burp Suite).
+SpotBugs 플러그인: Find Security Bugs 플러그인으로 OWASP Top 10 관련 취약점까지 탐지 가능.

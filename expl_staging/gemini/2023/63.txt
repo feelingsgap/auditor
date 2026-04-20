@@ -1,0 +1,12 @@
+정답: 4 (④)
+
+**해설:**
+데이터베이스 SQL **Standard INNER JOIN(등가 조인)** 문법 작성을 어떻게 똥 피하고 예쁘게 규격에 맞게 썼는가 채점하는 문법 국어 시험입니다. 
+* 과목 번호(Cno)가 'C413'인 놈을 학생-수강 테이블 조인 때려서 뽑으려 합니다. 브릿지 조인 열쇠(PK-FK)는 바로 **(Sno 학번)** 입니다. 
+
+**오답 지뢰 제거:**
+* **① JOIN ENROLL WITH(Sno) ...** ➔ `WITH` 같은 건 오라클 CTE 테이블 가명 선언이나 MSSQL 힌트 문법이지, SQL JOIN 연결 고리(ON / USING)를 묶는 문법이 아닙니다. (듣보잡)
+* **② NATURAL JOIN ENROLL USING(Sno) ...** ➔ SQL 문법 파괴적 짬뽕. `NATURAL JOIN`은 "DB야 니가 알아서 똑같은 이름 학번(Sno) 찾아서 자동으로 겹쳐 붙여줘 찡긋" 하는 사기캐 자동화 문법이라, 그 뒤에다가 굳이 오지랖퍼처럼 "USING이나 ON으로 조건 또 붙이지 마!" 하는 배타적 룰이 있습니다. NATURAL 쓰면 USING 같이 쓰면 삑- 문법에러 터짐.
+* **③ NATURAL JOIN ENROLL ON (...) ...** ➔ ②번이랑 똑같은 지점의 병목 사망 에러. NATURAL 쓰면 ON 도 절대 병행 불가.
+* **[순결한 정답] ④ JOIN ENROLL ON (STUDENT.Sno = ENROLL.Sno) ...** 
+  ➔ ANSI SQL 표준의 꽃. 테이블 A와 B를 JOIN 쓰고, 명확하게 ON 절을 열어서 양쪽 멱살 잡이 매칭(Sno=Sno)을 손으로 하드코딩해 준 가장 교과서적이고 에러 0% 인 퍼펙트 문장입니다.

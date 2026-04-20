@@ -1,0 +1,24 @@
+정답: ① (1번)
+
+해설:
+빅데이터 시스템의 NoSQL 데이터 모델 중 JSON 기반의 복잡한 객체 구조로 데이터를 저장하며 MongoDB가 대표적인 제품인 모델의 명칭을 찾는 문항이다.
+
+설명 분석:
+- JSON(JavaScript Object Notation)을 기반으로 복잡한 구조의 객체를 데이터로 저장
+- 대표적인 제품: MongoDB
+
+이는 문서 기반 데이터 모델(Document-based Data Model)의 특징이다.
+
+각 보기 분석:
+① 문서 기반 데이터 모델(document based data model) — JSON, BSON, XML 등의 문서 형식으로 데이터를 저장. 계층적이고 중첩된 구조를 자유롭게 표현 가능. MongoDB, CouchDB가 대표적. 설명과 정확히 일치. 정답.
+② 객체 지향 데이터 모델(object-oriented data model) — 객체지향 프로그래밍의 개념(클래스, 상속, 메서드 등)을 데이터베이스에 적용. JSON 문서 저장 방식과는 다름.
+③ 구조 기반 데이터 모델(structure based data model) — 관계형 모델처럼 구조가 미리 정의된 스키마 기반 모델. NoSQL의 특성인 유연한 스키마와 상반됨.
+④ 자바 기반 데이터 모델(Java based data model) — 존재하지 않는 표준 NoSQL 분류 용어. 오답.
+
+핵심 정리:
+NoSQL 4대 데이터 모델:
+- 문서 기반(Document): MongoDB, CouchDB — JSON/BSON 형태
+- 키-값(Key-Value): Redis, DynamoDB — 단순 Key-Value 쌍
+- 컬럼 기반(Column-family): Cassandra, HBase — 열 단위 저장
+- 그래프(Graph): Neo4j — 노드와 엣지로 관계 표현
+문서 기반 모델의 장점: 스키마 유연성, 중첩 구조 지원, 수평 확장 용이.

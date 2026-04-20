@@ -1,0 +1,35 @@
+정답: ③ (3번)
+
+해설:
+SQL의 LEFT OUTER JOIN 결과 테이블의 카디널리티(행 수)를 구하는 문항이다.
+
+테이블 현황:
+STUDENT: S01(Kim,20), S02(Park,22), S03(Lee,21), S04(Hong,23), S05(Hwang,20) → 5개 행
+ENROLL: E01-S01-B, E03-S05-A, E04-S03-C, E05-S03-B, E06-S06-A → 5개 행
+
+SQL 분석:
+SELECT STUDENT.SNO, ENROLL.ENO, ENROLL.GRADE
+FROM STUDENT LEFT OUTER JOIN ENROLL ON STUDENT.SNO = ENROLL.SNO;
+
+LEFT OUTER JOIN: 왼쪽 테이블(STUDENT)의 모든 행을 포함. ENROLL에 매칭되는 행이 없으면 NULL로 채움.
+
+각 STUDENT 행별 매칭:
+- S01: ENROLL에서 SNO=S01인 것 → E01 → 1행 (S01, E01, B)
+- S02: ENROLL에 SNO=S02 없음 → 1행 (S02, NULL, NULL)
+- S03: ENROLL에서 SNO=S03인 것 → E04, E05 → 2행
+- S04: ENROLL에 SNO=S04 없음 → 1행 (S04, NULL, NULL)
+- S05: ENROLL에서 SNO=S05인 것 → E03 → 1행 (S05, E03, A)
+※ E06의 SNO=S06은 STUDENT에 존재하지 않으므로 LEFT JOIN에서 제외됨.
+
+총 카디널리티: 1 + 1 + 2 + 1 + 1 = 6
+
+각 보기 분석:
+① 4 — NULL 행(S02, S04)을 제외한 경우의 오산.
+② 5 — STUDENT의 행 수만 계산. S03의 다중 매칭을 놓친 경우.
+③ 6 — S01(1)+S02(1)+S03(2)+S04(1)+S05(1) = 6. 정답.
+④ 7 — ENROLL의 모든 행을 포함하거나 S06을 추가 계산한 오류.
+
+핵심 정리:
+LEFT OUTER JOIN: 왼쪽 테이블 모든 행 포함. 오른쪽에 매칭 없으면 NULL.
+카디널리티 계산: 왼쪽 각 행의 매칭 수를 합산. 1:N 관계에서 N쪽 매칭 수만큼 행 증가.
+INNER JOIN이었다면: S01, S03(2행), S05 = 4행으로 감소.

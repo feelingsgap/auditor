@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+결과 테이블에서 Hong의 COURSE 값이 NULL로 나타난다. 이는 STUDENT 테이블에는 존재하지만 ENROL 테이블에 수강 기록이 없는 학생(Hong, S004)이 결과에 포함되었음을 의미한다. 이를 위해서는 STUDENT를 기준으로 LEFT OUTER JOIN을 사용해야 한다.
+
+각 보기 분석:
+① INNER JOIN — 양쪽 테이블에 매칭되는 행만 반환. Hong(S004)처럼 ENROL에 기록 없는 학생은 결과에 포함되지 않는다.
+② LEFT OUTER JOIN (STUDENT 기준) — STUDENT의 모든 행을 포함하고, ENROL에 대응 행이 없으면 COURSE를 NULL로 채운다. Hong이 NULL로 나타나는 결과와 일치. 정답.
+③ RIGHT OUTER JOIN (ENROL 기준) — ENROL 테이블 기준으로 모든 행 포함. STUDENT에 없는 학번이 결과에 포함될 수 있으며, Hong이 NULL로 나타나지 않는다.
+④ RIGHT OUTER JOIN (STUDENT 기준) — STUDENT가 RIGHT 테이블이면 JOIN 방향이 반대가 되어 의도한 결과가 나오지 않는다.
+
+핵심 정리:
+LEFT OUTER JOIN: 왼쪽 테이블의 모든 행 보존, 오른쪽에 대응 없으면 NULL.
+STUDENT LEFT OUTER JOIN ENROL: 수강 기록이 없는 학생도 결과에 포함.
+결과에 NULL이 존재하면 OUTER JOIN 여부를 확인한다.

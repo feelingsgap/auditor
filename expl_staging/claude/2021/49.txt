@@ -1,0 +1,17 @@
+정답: ④ (4번)
+
+해설:
+주어진 시퀀스 다이어그램(A→B→C→D→E의 메시지 흐름: send_request → pack_data → forward_request → find_server → call_service / unpack_data → run_service)이 나타내는 아키텍처 패턴을 설명하는 문항이다. 이 패턴은 요청을 패키징·전달·서버 탐색·서비스 호출의 단계로 처리하는 Broker 패턴 구조를 보여준다.
+
+아키텍처 패턴 식별:
+B가 데이터를 패키징(pack_data)하고 요청을 전달(forward_request), C가 서버를 탐색(find_server)하여 D에게 서비스 호출(call_service), D가 E에서 데이터를 언팩(unpack_data)하고 서비스를 실행(run_service)하는 구조는 Broker 패턴의 전형적인 동작 방식이다.
+
+각 보기 분석:
+① 분산 애플리케이션을 개발할 때의 복잡도를 증가시킨다 — Broker 패턴은 분산 시스템의 복잡도를 감소시키고 투명성을 높인다. 틀린 설명이다.
+② 동일한 환경에서의 서비스 실행을 지원한다 — Broker 패턴은 이기종·분산 환경에서의 서비스 실행을 지원한다. 틀린 설명이다.
+③ 여러 서비스를 하나의 동일한 언어로 개발하는 것이 일반적이다 — Broker 패턴은 서로 다른 언어·플랫폼 간 상호운용성을 제공한다. 틀린 설명이다.
+④ modifiability, availability, performance 측면에서 바람직하다 — Broker 패턴은 컴포넌트 분리를 통해 수정 용이성(modifiability), 가용성(availability), 성능(performance) 향상에 기여한다. 올바른 설명이다. 정답.
+
+핵심 정리:
+Broker 패턴: 분산 시스템에서 클라이언트와 서버 사이의 중간자(Broker)가 서비스 탐색·요청 전달·결과 반환을 담당.
+장점: 위치 투명성, 컴포넌트 독립성, modifiability·availability·performance 향상.

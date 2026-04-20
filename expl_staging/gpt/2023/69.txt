@@ -1,0 +1,13 @@
+정답: ② (2번)
+
+해설:
+HDFS에서 메타정보를 관리하는 노드는 NameNode, 실제 블록을 저장하는 노드는 DataNode다.
+
+각 보기 분석:
+① master node는 공식 명칭이 아니다.
+② name node, data node가 맞다. 정답이다.
+③ slave node는 공식 명칭이 아니다.
+④ slave node는 부정확하다.
+
+핵심 정리:
+NameNode는 메타데이터, DataNode는 실제 데이터 블록을 담당한다.

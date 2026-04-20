@@ -1,0 +1,16 @@
+정답: ③ (3번)
+
+해설:
+DHCP(Dynamic Host Configuration Protocol) 프로토콜에서 사용하는 메시지 유형과 역할에 대한 설명 중 적절하지 않은 것을 찾는 문항이다.
+
+DHCP 동작 절차(DORA): Discover → Offer → Request → ACK
+
+각 보기 분석:
+① DHCP ACK는 DHCP Request에 대한 응답으로 보낸다 — 맞는 설명. 서버는 클라이언트의 Request를 받으면 IP 할당을 확정하는 ACK를 보낸다.
+② DHCP Request는 클라이언트가 DHCP 서버에게 IP 주소를 요청한다 — 맞는 설명. 클라이언트가 Offer를 받은 후 특정 서버의 IP 할당을 선택·요청하는 메시지이다.
+③ DHCP Discover는 DHCP 서버가 IP 주소 할당 서버임을 알린다 — 틀린 설명. DHCP Discover는 클라이언트가 네트워크상의 DHCP 서버를 찾기 위해 브로드캐스트로 전송하는 메시지이다. 서버가 자신을 알리는 것이 아니라 클라이언트가 서버를 탐색하는 메시지이다. 정답.
+④ DHCP Offer는 DHCP 서버가 요청 클라이언트에게 할당할 IP 주소를 제공한다 — 맞는 설명. 서버가 Discover에 응답하여 사용 가능한 IP 주소를 제안하는 메시지이다.
+
+핵심 정리:
+DHCP DORA 절차: Discover(클라이언트 브로드캐스트) → Offer(서버 응답) → Request(클라이언트 선택) → ACK(서버 확정).
+Discover: 클라이언트 → 서버 탐색. Offer: 서버 → IP 제안.

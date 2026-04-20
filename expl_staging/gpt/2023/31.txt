@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+SysML과 UML에 공통으로 존재하는 다이어그램은 Use case diagram이다.
+
+각 보기 분석:
+① Use case diagram - UML과 SysML 모두에 존재한다. 정답이다.
+② Class diagram - SysML에서는 동일 명칭으로 공통 사용하지 않는다.
+③ Component diagram - 공통 다이어그램이 아니다.
+④ Requirement diagram - SysML 고유 다이어그램이다.
+
+핵심 정리:
+SysML은 UML 일부를 차용했고, Use case diagram은 공통 다이어그램이다.

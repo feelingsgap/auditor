@@ -1,0 +1,22 @@
+정답: ② (2번)
+
+해설:
+UML 상태머신 다이어그램에서 전이(transition) 레이블의 표기 형식을 묻는 문항이다. 전이는 trigger 이벤트 발생 시 guard 조건을 만족하면 effect(동작)를 수행하며 다른 상태로 이동하는 것을 나타낸다.
+
+UML 전이 표기 형식:
+전이 레이블은 trigger [guard] / effect 형식으로 표기한다.
+- trigger: 전이를 유발하는 이벤트
+- [guard]: 대괄호로 감싼 조건식 (만족 시에만 전이 발생)
+- /: guard와 effect를 구분하는 구분자
+- effect: 전이 시 수행되는 동작
+
+각 보기 분석:
+① trigger [guard] effect — guard와 effect 사이의 / 구분자가 없다. 올바르지 않은 표기.
+② trigger [guard] / effect — UML 표준 표기법과 정확히 일치한다. 정답.
+③ trigger / [guard] effect — guard와 effect의 위치가 바뀌었고 / 위치도 잘못되었다.
+④ trigger / [guard] / effect — / 구분자가 두 번 사용되었다. 표준 표기가 아니다.
+
+핵심 정리:
+UML 상태머신 전이 표기: trigger [guard] / effect
+trigger: 이벤트명, [guard]: 조건 (생략 가능), /: 구분자, effect: 수행 동작 (생략 가능).
+guard가 없으면 trigger / effect, effect가 없으면 trigger [guard]로 표기 가능.

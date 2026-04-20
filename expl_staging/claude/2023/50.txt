@@ -1,0 +1,25 @@
+정답: ④ (4번)
+
+해설:
+SPICE(ISO 15504)는 소프트웨어 개발 프로세스 개선을 위한 국제 표준으로, 총 6개 레벨(L0~L5)로 프로세스 성숙도를 정의한다. 이 문항은 L1, L2, L3에 해당하는 용어를 순서대로 찾는 문항이다.
+
+SPICE(ISO 15504) 프로세스 성숙도 레벨:
+L0: Incomplete Process (불완전한 프로세스)
+L1: Performed Process (수행된 프로세스)
+L2: Managed Process (관리된 프로세스)
+L3: Established Process (확립된 프로세스)
+L4: Predictable Process (예측 가능한 프로세스)
+L5: Optimizing Process (최적화 프로세스)
+
+따라서 (가)=Performed, (나)=Managed, (다)=Established 순서이다.
+
+각 보기 분석:
+① Managed, Established, Performed — L1, L2, L3 순서와 불일치.
+② Managed, Performed, Established — L1, L2, L3 순서와 불일치.
+③ Established, Performed, Managed — L1, L2, L3 순서와 불일치.
+④ Performed, Managed, Established — L1: Performed, L2: Managed, L3: Established 순서와 정확히 일치. 정답.
+
+핵심 정리:
+SPICE/ISO 15504 레벨: L0 Incomplete → L1 Performed → L2 Managed → L3 Established → L4 Predictable → L5 Optimizing.
+CMMI와 유사하지만 레벨 명칭이 다르므로 혼동 주의.
+CMMI 수준 3은 Defined, SPICE L3는 Established.

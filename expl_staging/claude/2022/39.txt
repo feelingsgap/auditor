@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+스프링(Spring) 프레임워크 모듈 의존 관계 다이어그램에서 (가) 위치에 해당하는 모듈을 찾는 문항이다. 다이어그램에서 (가)는 AOP와 계측, 데이터 접근/통합, 웹, 테스트 모듈이 모두 의존하는 중심 모듈이다.
+
+(가) 위치 분석:
+- AOP와 계측(spring-aop, spring-instrument) 모듈이 (가)에 의존
+- 데이터 접근/통합, 웹, 테스트 모듈도 (가)에 의존
+- 메시징 모듈도 (가)에 의존
+- 이처럼 모든 모듈의 기반이 되는 핵심 모듈 = spring-core와 spring-beans
+
+각 보기 분석:
+① spring-core와 spring-beans는 IoC 컨테이너 구현을 제공하고, spring-expression(SpEL)은 스프링 애플리케이션에서 SpEL 지원을 제공한다 — 스프링의 핵심 모듈 설명으로 올바르며, (가)에 해당하는 Core Container 모듈이다. 정답.
+② spring-aop는 AOP 기능, spring-instrument는 클래스 계측 지원 — AOP 모듈 설명으로 올바르나 (가)가 아닌 AOP와 계측 영역이다.
+③ spring-orm은 하이버네이트, JPA 통합, spring-jms는 JMS 공급자 상호작용 — 데이터 접근/통합 모듈 설명이다.
+④ spring-webmvc와 spring-webflux 설명 — 웹 모듈 설명이다.
+
+핵심 정리:
+스프링 Core Container(핵심): spring-core, spring-beans, spring-context, spring-expression.
+모든 스프링 모듈은 Core Container에 의존하며, 이것이 IoC/DI의 기반이다.
+IoC(Inversion of Control): 객체 생성과 의존성 주입을 컨테이너가 담당.

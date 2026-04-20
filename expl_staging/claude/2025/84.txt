@@ -1,0 +1,28 @@
+정답: ④ (4번)
+
+해설:
+SIMD(Single Instruction Multiple Data) 아키텍처의 특성을 묻는 문항이다.
+
+SIMD 정의:
+하나의 명령어(Single Instruction)로 여러 개의 데이터(Multiple Data)에 동시에 동일한 연산을 수행하는 병렬 처리 방식.
+
+각 보기 분석:
+① "각 코어가 서로 다른 명령어를 동시에 실행하는 기술이다."
+   MIMD(Multiple Instruction Multiple Data)의 설명. 멀티코어 CPU의 일반적 동작 방식. SIMD 아님.
+
+② "하나의 CPU가 한 클록 사이클에 동안 여러 개의 명령어를 동시에 실행하는 기술이다."
+   슈퍼스칼라(Superscalar) 또는 VLIW의 설명에 가까움. SIMD는 명령어가 하나. 오답.
+
+③ "하나의 명령어가 여러 개의 독립적인 연산을 포함하는 기술이다."
+   VLIW(Very Long Instruction Word)에 가까운 설명. SIMD와 다름.
+
+④ "하나의 명령어를 동시에 여러 데이터에 적용하는 기술로 벡터 연산 등을 처리할 때 활용된다."
+   SIMD의 정확한 정의. 예: SSE, AVX(인텔), NEON(ARM) 명령어 세트. 벡터·행렬 연산, 멀티미디어 처리에 활용. 정답.
+
+핵심 정리:
+Flynn의 분류:
+SISD: 단일 명령어, 단일 데이터 (기본 폰 노이만 구조)
+SIMD: 단일 명령어, 다중 데이터 (벡터 처리, GPU)
+MISD: 다중 명령어, 단일 데이터 (파이프라인)
+MIMD: 다중 명령어, 다중 데이터 (멀티코어, 클러스터)
+SIMD 활용: GPU 병렬 처리, AI/ML 연산, 이미지/음성 처리.

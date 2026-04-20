@@ -1,0 +1,29 @@
+정답: ④ (4번)
+
+해설:
+TMMi(Test Maturity Model Integration) 레벨 2의 테스트 계획(Test Planning) 프로세스 영역에 포함되는 세부 목표(Specific Practice)를 구별하는 문항이다.
+
+TMMi 개요:
+TMMi는 소프트웨어 테스트 프로세스 성숙도를 5단계로 평가하는 모델이다.
+- Level 1 (Initial): 비정형적 테스트
+- Level 2 (Managed): 정책 및 계획 기반 테스트 관리
+- Level 3 (Defined): 표준화된 테스트 프로세스
+- Level 4 (Measured): 정량적 측정 기반 관리
+- Level 5 (Optimization): 지속적 최적화
+
+TMMi Level 2 - Test Planning 프로세스 영역의 세부 목표:
+- 테스트 접근 방식 설정(Establish a test approach)
+- 테스트 추정치 설정(Establish test estimates)
+- 테스트 계획서 수립(Establish the test plan)
+- 테스트 계획에 대한 합의 획득(Obtain commitment for the test plan)
+
+각 보기 분석:
+① 제품 위험 평가 수행(perform a product risk assessment) — Level 2 Test Planning의 세부 목표 중 하나로, 테스트 계획 수립 시 제품 위험을 평가하는 활동이 포함된다. 적절.
+② 테스트 접근 방식 설정(establish a test approach) — Level 2 Test Planning의 핵심 세부 목표. 적절.
+③ 테스트 추정치 설정(establish test estimates) — 테스트 작업 규모·노력·일정 추정은 Level 2 Test Planning의 세부 목표. 적절.
+④ 테스트 성능 지표 설정(establish test performance indicators) — 이는 Level 4(Measured)의 정량적 측정 관리 영역에 해당하는 활동으로, Level 2 Test Planning 프로세스 영역의 세부 목표가 아니다. 가장 적절하지 않음. 정답.
+
+핵심 정리:
+TMMi Level 2 Test Planning 세부 목표: 위험 평가, 접근 방식 설정, 추정치 설정, 계획 수립, 합의 획득.
+성능 지표(performance indicators) 설정은 Level 4의 정량적 측정 영역에 속한다.
+레벨별 핵심: L2=계획·관리, L3=표준화, L4=정량 측정, L5=최적화.

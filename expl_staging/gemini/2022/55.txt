@@ -1,0 +1,17 @@
+정답: ④
+
+**해설:**
+관계 데이터 모델의 정규화 이론을 묻는 문제입니다.
+
+**릴레이션 분석:**
+*   `address(street, city, state, zipcode)`
+*   `street → (city, state)`
+*   `(city, state) → zipcode`
+*   `zipcode → city`
+
+**보기 분석:**
+*   ① **street는 이 릴레이션의 (가장 적절한) 후보키입니다.** (`street → city, state` 이고, 이를 통해 `zipcode`도 유추 가능하므로 모든 속성을 결정함) (옳음)
+*   ② **제2 정규형(2NF) 만족:** 기본키가 단일 속성(`street`)이므로, 기본키의 진부분집합(Partial key)에 대한 부분 함수적 종속이 원천적으로 불가능하여 2NF 조건을 충족합니다. (옳음)
+*   ③ **제3 정규형(3NF) 릴레이션 분해:** `street → (city, state)` → `zipcode` 구조로 이행적 종속이 발생합니다. 분해하면 `R1(street, city, state)`와 `R2(city, state, zipcode)`가 됩니다. (옳음)
+*   ④ **BCNF 오류:** BCNF로 규정하기 위해선 분해된 관계 내의 **모든 결정자가 반드시 후보키**이어야 합니다. `R2(city, state, zipcode)`의 경우 내부에 `zipcode → city` 종속이 존재하지만, `zipcode`는 독립적인 후보키 역할을 할 수 없습니다(state를 결정하지 못함).
+    올바른 BCNF로 분해하기 위해서는 `(zipcode, city)`와 결합된 구조를 끊어내어 `R1(street, city, state)`, `R2(zipcode, city)`, `R3(zipcode, state)` 혹은 `(city, state, zipcode)`의 후보키 위반을 해소하는 다른 형태로 구성되어야 하지만 제시된 R1, R2, R3의 조합은 이 BCNF 조건을 온전히 만족시키는 표준 분해법이 아닙니다.

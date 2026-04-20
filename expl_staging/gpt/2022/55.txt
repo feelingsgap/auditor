@@ -1,0 +1,25 @@
+정답: ④ (4번)
+
+해설:
+릴레이션 address(street, city, state, zipcode)와 함수적 종속 관계가 주어졌을 때, 정규형과 관련된 설명 중 옳지 않은 것을 찾는 문항이다.
+
+주어진 함수적 종속:
+- street → (city, state)
+- zipcode → city
+- (city, state) → zipcode
+
+후보키 분석:
+- street → city, state 이고 (city, state) → zipcode이므로 street → zipcode (이행적 종속)
+- street → (city, state, zipcode) 전체 결정 → street가 후보키가 될 수 있다.
+- street는 후보키(또는 기본키)이다.
+
+각 보기 분석:
+① street는 후보키이다 — 위 분석과 같이 street로 나머지 속성 모두 결정 가능. 올바른 설명이다.
+② 릴레이션 address는 제2 정규형이다 — 기본키가 단일 속성(street)이면 부분 함수적 종속이 없으므로 제2 정규형 조건 만족. 올바른 설명이다.
+③ 제3 정규형은 R1=(street, city, state), R2=(city, state, zipcode)이다 — 이행적 종속(street → city,state → zipcode)을 제거하면 R1과 R2로 분해. 올바른 설명이다.
+④ BCNF 정규형은 R1=(street, city), R2=(city, state), R3=(city, state, zipcode)이다 — 올바르지 않은 설명이다. BCNF는 모든 결정자가 후보키여야 한다. zipcode → city에서 zipcode가 후보키가 아니므로 BCNF 위반이 발생한다. 올바른 BCNF 분해는 (city, state) ↔ zipcode 관계를 처리해야 하며, R1=(street, city, state), R2=(zipcode, city), R3=(city, state, zipcode) 등의 분해가 필요하다. 보기 ④의 분해는 잘못된 BCNF 결과이다. 정답.
+
+핵심 정리:
+BCNF: 모든 비자명 함수적 종속에서 결정자가 후보키여야 한다.
+이 릴레이션에서 zipcode → city는 zipcode가 후보키가 아니므로 BCNF 위반.
+3NF와 BCNF의 차이: 3NF는 비주요 속성이 후보키에 이행 종속되지 않아야 하며, BCNF는 더 엄격하게 모든 결정자가 후보키이어야 한다.

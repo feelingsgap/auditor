@@ -1,0 +1,31 @@
+정답: ② (2번)
+
+해설:
+SQL DDL의 참조 무결성 제약 조건(ON DELETE, ON UPDATE) 동작을 묻는 문항이다.
+
+EMPLOYEE 테이블 제약 조건:
+CONSTRAINT EMPSUPERFK FOREIGN KEY (Super_ENO)
+  REFERENCES EMPLOYEE(ENO)
+  ON DELETE SET NULL ON UPDATE CASCADE
+  → 상사 직원이 삭제되면 Super_ENO를 NULL로 설정, 갱신 시 연쇄 변경.
+
+CONSTRAINT EMPDEPTFK FOREIGN KEY (DNO)
+  REFERENCES DEPARTMENT(DNO)
+  ON DELETE SET DEFAULT ON UPDATE CASCADE
+  → 부서가 삭제되면 DNO를 DEFAULT 값(=1)으로 설정, 갱신 시 연쇄 변경.
+
+각 보기 분석:
+① "100번 직원의 상사인 200번 직원이 삭제되면 100번 직원의 상사 값은 NULL이 된다."
+   ON DELETE SET NULL 동작 → 맞는 설명.
+② "100번 직원이 속한 부서가 부서 릴레이션에서 삭제되면 100번 직원도 연쇄적으로 삭제된다."
+   ON DELETE SET DEFAULT 동작 → 삭제가 아닌 DNO가 DEFAULT 값(1)으로 변경됨. 틀린 설명. 정답.
+③ "100번 직원이 속한 부서번호가 5에서 6으로 변경되면 직원 릴레이션에서도 5에서 6으로 변경된다."
+   ON UPDATE CASCADE 동작 → 맞는 설명.
+④ "100번 직원의 상사 번호가 직원 릴레이션에서 200번에서 300번으로 변경되면 100번 직원 투플의 상사번호도 300번으로 변경된다."
+   Super_ENO의 ON UPDATE CASCADE 동작 → 맞는 설명.
+
+핵심 정리:
+ON DELETE CASCADE: 참조된 행 삭제 시 참조하는 행도 삭제.
+ON DELETE SET NULL: 참조된 행 삭제 시 외래 키를 NULL로 설정.
+ON DELETE SET DEFAULT: 참조된 행 삭제 시 외래 키를 DEFAULT 값으로 설정.
+ON UPDATE CASCADE: 참조된 기본 키 변경 시 외래 키도 연쇄 변경.

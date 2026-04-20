@@ -1,0 +1,14 @@
+정답: ② (2번)
+
+해설:
+RIP에서 장애 경로의 메트릭을 16으로 설정해 네트워크에 전파하는 방식은 poisoning(route poisoning)이다.
+도달 불가능함을 즉시 알리기 위한 방법이다.
+
+각 보기 분석:
+① Hold Down - 일정 시간 경로를 무시하는 방식이다.
+② Poisoning - 고장난 경로의 홉 수를 16으로 만들어 전파한다. 정답이다.
+③ Split Horizon - 받은 인터페이스로 다시 광고하지 않는 방식이다.
+④ Triggered Update - 변화가 생기면 즉시 업데이트한다.
+
+핵심 정리:
+RIP의 무한 카운트 문제 대응에는 route poisoning과 split horizon이 자주 나온다.

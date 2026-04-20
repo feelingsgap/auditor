@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+하드 드라이브, RAID, 비디오 캡처 박스, 네트워크 인터페이스 등 주변장치를 하나의 고속 연결선으로 통합 연결하는 최고속 주변 장치 접속 기술을 묻는 문항이다.
+
+각 보기 분석:
+① 아이비브리지(IvyBridge) — Intel의 CPU 마이크로아키텍처 코드명이다. 주변 장치 인터페이스 기술이 아니다.
+② QPI(Quick Path Interconnect) — Intel의 고속 CPU간 또는 CPU-칩셋 간 연결 인터페이스로, 주변 장치 접속 기술이 아니다.
+③ 샌디브리지(SandyBridge) — Intel의 CPU 마이크로아키텍처 코드명이다. 주변 장치 인터페이스 기술이 아니다.
+④ 선더볼트(Thunderbolt) — Intel과 Apple이 공동 개발한 고속 주변 장치 인터페이스로, 하드 드라이브, RAID, 비디오 캡처 장치, 네트워크 장치 등을 하나의 포트로 연결한다. PCIe와 DisplayPort 프로토콜을 통합하여 매우 높은 대역폭을 제공한다. 정답.
+
+핵심 정리:
+Thunderbolt: Intel + Apple 개발, PCIe + DisplayPort 통합 고속 I/O 인터페이스.
+Thunderbolt 3/4: 최대 40Gbps 대역폭, USB-C 커넥터 사용.
+다양한 주변 장치(스토리지, 디스플레이, 네트워크)를 단일 포트로 데이지체인 연결 가능.

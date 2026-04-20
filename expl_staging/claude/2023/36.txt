@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+웹 SOA(Service Oriented Architecture)의 주요 표준인 SOAP, WSDL, WS-BPEL 각각의 설명을 올바르게 연결하는 문항이다. 설명 A는 워크플로우 언어, B는 서비스 인터페이스 정의, C는 메시지 교환 표준이다.
+
+각 보기 분석:
+① 가-A, 나-B, 다-C — SOAP을 워크플로우 언어로 연결 — 오류.
+② 가-B, 나-C, 다-A — SOAP을 인터페이스 정의로, WSDL을 메시지 교환으로 연결 — 오류.
+③ 가-C, 나-A, 다-B — SOAP을 메시지 교환으로 연결하는 것은 맞으나, WSDL을 워크플로우로 연결 — 오류.
+④ 가-C, 나-B, 다-A — SOAP은 서비스 간 메시지 교환 표준(C), WSDL은 서비스 인터페이스 정의 표준(B), WS-BPEL은 여러 서비스를 포함하는 프로세스 프로그램 정의에 사용되는 워크플로우 언어(A). 정답.
+
+핵심 정리:
+SOAP(Simple Object Access Protocol): XML 기반 메시지 교환 프로토콜.
+WSDL(Web Services Description Language): 웹 서비스 인터페이스(오퍼레이션, 메시지 형식, 바인딩) 기술.
+WS-BPEL(Web Services Business Process Execution Language): 여러 웹 서비스를 조합한 비즈니스 프로세스(워크플로우) 정의 언어.

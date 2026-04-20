@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+ISO/IEC/IEEE 29119의 combinatorial test techniques 중 가장 많은 테스트케이스를 생성하는 기법과 가장 적은 테스트케이스를 생성하는 기법을 묻는 문항이다. 여행 목적지(3가지), 여행 방법(3가지), 숙박 유형(2가지)의 조건이 주어졌다.
+
+각 기법의 테스트케이스 수 계산:
+all combination testing: 모든 가능한 조합 = 3 × 3 × 2 = 18개. 가장 많음.
+pair-wise testing: 모든 파라미터 쌍의 조합을 적어도 한 번씩 포함. 최소 커버리지로 대략 9~12개 수준.
+each choice testing: 각 파라미터의 각 값을 적어도 한 번 포함. 최댓값의 파라미터 수 = max(3,3,2) = 3개. 가장 적음.
+base choice testing: 기본값(base choice) 한 세트를 정하고 각 파라미터를 순서대로 변경. 기본값 1개 + 나머지 변형 = 1 + (3-1) + (3-1) + (2-1) = 6개.
+
+각 보기 분석:
+① all combination testing(18개), each choice testing(3개) — 가장 많음: all combination, 가장 적음: each choice. 정답.
+② all combination testing, base choice testing — base choice는 6개로 each choice(3개)보다 많다.
+③ pair-wise testing, each choice testing — pair-wise가 가장 많지 않다.
+④ pair-wise testing, base choice testing — 둘 다 해당하지 않는다.
+
+핵심 정리:
+테스트케이스 수(많은 순): all combination > pair-wise > base choice > each choice.
+each choice: 각 값을 최소 1회 포함, max(파라미터별 값 수)개 생성.
+all combination: 모든 경우의 수 완전 열거.

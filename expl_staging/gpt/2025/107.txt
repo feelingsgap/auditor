@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+L2TP와 SSTP가 보안 서비스를 위해 함께 사용하는 프로토콜의 짝을 묻는 문제다.
+
+L2TP는 자체적으로 강한 암호화 기능이 없어 보통 `IPSec`과 함께 사용하고, SSTP는 HTTPS 기반으로 동작하므로 `TLS`를 사용한다.
+
+각 보기 분석:
+① L2TP - IPSec, SSTP - TLS — 올바른 짝이므로 정답이다.
+② L2TP - PAP, SSTP - SSH — 부적절하다.
+③ L2TP - TLS, SSTP - PAP — 부적절하다.
+④ L2TP - SSH, SSTP - IPSec — 부적절하다.
+
+핵심 정리:
+L2TP는 IPSec, SSTP는 TLS 기반 보안과 연결된다.

@@ -1,0 +1,22 @@
+정답: ③ (3번)
+
+해설:
+IPv6 기본 헤더에 포함되는 필드와 포함되지 않는 필드를 구분하는 문항이다.
+
+IPv6 기본 헤더 필드 (8개):
+Version(4bit), Traffic Class(8bit), Flow Label(20bit), Payload Length(16bit), Next Header(8bit), Hop Limit(8bit), Source Address(128bit), Destination Address(128bit)
+
+각 보기 분석:
+① Hop Limit — IPv6 헤더에 포함. IPv4의 TTL(Time to Live)에 해당하는 필드로, 이름만 변경됨. 라우터를 거칠 때마다 1씩 감소.
+② Flow Label — IPv6에서 새로 추가된 필드. QoS를 위해 동일한 플로우의 패킷 식별에 사용.
+③ Time to Live — IPv4 헤더의 필드. IPv6에서는 Hop Limit으로 이름이 변경되어 TTL 필드 자체는 IPv6 헤더에 없음. 정답.
+④ Traffic Class — IPv6 헤더에 포함. IPv4의 TOS(Type of Service)에 해당.
+
+핵심 정리:
+IPv6 주요 변경 사항:
+- TTL → Hop Limit (이름 변경)
+- TOS → Traffic Class (이름 변경)
+- Flow Label 신규 추가 (QoS, 실시간 트래픽 식별)
+- 체크섬(Header Checksum) 제거 (상위 계층에서 처리)
+- 단편화 헤더 → 확장 헤더로 분리
+IPv6 헤더는 고정 40바이트로 단순화됨.

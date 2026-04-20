@@ -1,0 +1,31 @@
+정답: ② (2번)
+
+해설:
+주어진 도메인 크기와 기본 키 조건으로 릴레이션의 최대 가능 투플 수를 구하는 문항이다.
+
+주어진 조건:
+릴레이션 R(StudentID, CourseID, Grade, Semester)
+기본 키: (StudentID, CourseID, Semester) — 세 속성의 복합 기본 키
+
+도메인 크기:
+- StudentID: 1,000 (1,000명 학생)
+- CourseID: 50 (50개 강좌)
+- Semester: 8 (8학기)
+- Grade: 5 (A, B, C, D, F)
+
+최대 투플 수 계산:
+기본 키 (StudentID, CourseID, Semester)의 서로 다른 조합이 최대 투플 수를 결정한다.
+Grade는 비주요 속성이므로 투플 수에 영향 없음 (기본 키당 Grade 값이 하나로 결정됨).
+
+최대 투플 수 = 1,000 × 50 × 8 = 400,000
+
+각 보기 분석:
+① 2,000,000 — Grade를 기본 키로 포함하여 계산한 오산 (1,000×50×8×5 = 2,000,000).
+② 400,000 — StudentID×CourseID×Semester = 1,000×50×8 = 400,000. 정답.
+③ 50,000 — 일부 속성만 곱한 오산.
+④ 8,000 — StudentID 없이 CourseID×Semester×Grade 등 잘못 계산.
+
+핵심 정리:
+릴레이션 최대 투플 수 = 기본 키 속성들의 도메인 크기 곱.
+비주요 속성(Grade)은 카디널리티 계산에 포함하지 않음 — 기본 키당 Grade 값은 하나.
+기본 키 설계: (StudentID, CourseID, Semester)이므로 한 학기에 같은 학생이 같은 강좌를 중복 수강할 수 없다는 제약이 반영됨.

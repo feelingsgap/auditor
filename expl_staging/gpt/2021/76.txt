@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+하드디스크, RAID, 비디오 캡처, 네트워크 장치를 하나의 고속 연결선으로 통합하는 기술은 Thunderbolt다.
+
+각 보기 분석:
+① IvyBridge - CPU 아키텍처다.
+② QPI - CPU 간 고속 인터커넥트다.
+③ SandyBridge - CPU 아키텍처다.
+④ Thunderbolt - 주변장치용 고속 접속 기술이다. 정답이다.
+
+핵심 정리:
+Thunderbolt는 다양한 주변장치를 단일 고속 포트로 연결한다.

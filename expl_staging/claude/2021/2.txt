@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+Tuckman의 팀 발전 5단계 모형(forming → storming → norming → performing → adjourning)에서 팀원들이 서로의 신뢰를 형성해 나가는 단계를 묻는 문항이다.
+
+Tuckman 모형 단계 개요:
+- 형성(forming): 팀이 구성되고 역할·목표가 불명확한 초기 단계.
+- 폭풍(storming): 의견 충돌과 갈등이 표출되는 단계.
+- 규범화(norming): 갈등이 해소되고 신뢰·협력 규범이 형성되는 단계.
+- 수행(performing): 팀이 효율적으로 성과를 창출하는 단계.
+
+각 보기 분석:
+① 규범화(norming) — 갈등을 극복하고 팀 내 신뢰와 협업 규범을 형성하는 단계. 정답.
+② 폭풍(storming) — 의견 충돌과 경쟁이 발생하는 갈등 단계. 신뢰 형성과 거리가 멀다.
+③ 수행(performing) — 이미 신뢰가 확립된 후 고성과를 내는 단계.
+④ 형성(forming) — 팀 구성 초기로 구성원이 서로를 탐색하는 단계.
+
+핵심 정리:
+Tuckman 5단계: forming → storming → norming → performing → adjourning.
+신뢰 형성 = norming(규범화) 단계.
+storming과 norming의 차이를 명확히 구분할 것.

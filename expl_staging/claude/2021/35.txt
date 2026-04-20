@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+리팩토링(refactoring)에서 별도 메서드로 분리된 함수를 호출부에 직접 인라인으로 삽입하는 기법을 묻는 문항이다. 변경 전에는 moreThanFiveLateDeliveries()라는 별도 메서드를 호출하던 코드가, 변경 후에는 그 메서드의 내용(_numberOfLateDeliveries > 5)이 직접 getRating() 내부에 삽입되었다.
+
+각 보기 분석:
+① inline method — 메서드 본문이 메서드 이름만큼이나 명확할 때, 호출부에 메서드 내용을 직접 삽입하고 메서드를 제거하는 기법이다. 변경 후 코드가 moreThanFiveLateDeliveries()의 내용을 getRating() 안에 직접 넣은 것과 정확히 일치한다. 정답.
+② extract method — 반대 방향의 리팩토링이다. 코드 일부를 별도 메서드로 추출한다. 변경 전→후가 아니라 후→전 방향이다.
+③ move method — 메서드를 다른 클래스로 이동하는 리팩토링이다. 이 코드와 관련 없다.
+④ substitute algorithm — 알고리즘 전체를 더 명확한 방식으로 대체하는 리팩토링이다. 단순 인라인 삽입과는 다르다.
+
+핵심 정리:
+Inline Method: 메서드를 호출부에 직접 삽입 후 원본 메서드 제거 (Extract Method의 역방향).
+적용 시기: 메서드가 단순하여 간접 호출이 오히려 코드 이해를 방해할 때.
+Extract Method와 Inline Method는 상반된 리팩토링 기법이다.

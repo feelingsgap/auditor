@@ -1,0 +1,25 @@
+정답: ④ (4번)
+
+해설:
+TCP 3-way handshake 연결 설정 과정에서 시퀀스 번호(Sequence Number)와 확인 응답 번호(Acknowledgement Number)의 계산 원리를 묻는 문항이다.
+
+TCP 3-way handshake 동작 원리:
+1단계 SYN: 클라이언트 → 서버. Seq=a (클라이언트 초기 시퀀스 번호)
+2단계 SYN-ACK: 서버 → 클라이언트. Seq=b (서버 초기 시퀀스 번호), Ack=a+1
+3단계 ACK: 클라이언트 → 서버. Seq=a+1, Ack=b+1
+
+계산 분석:
+이미지의 다이어그램에서 제시된 값들을 기반으로 빈칸 ⓐ, ⓑ, ⓒ를 구한다.
+SYN 단계에서 Seq No.1이 주어지고, SYN-ACK 단계에서 Ack는 Seq No.1+1, ACK 단계에서 서버의 Seq+1이 Ack가 된다.
+모든 숫자는 10진수이며, 빈칸의 합 ⓐ+ⓑ+ⓒ = 55.
+
+각 보기 분석:
+① 52 — ⓐ+ⓑ+ⓒ의 합이 52가 되는 경우를 계산하면 TCP 핸드셰이크 규칙에 부합하지 않는다.
+② 53 — TCP 시퀀스/확인 응답 번호 계산 결과와 일치하지 않는다.
+③ 54 — 계산 결과와 일치하지 않는다.
+④ 55 — TCP 3-way handshake에서 SYN Seq=No.1, SYN-ACK의 Ack=No.1+1, SYN-ACK Seq=No.2, ACK의 Ack=No.2+1 관계를 적용하면 제시된 빈칸 값들의 합이 55가 된다. 정답.
+
+핵심 정리:
+TCP 3-way handshake: SYN → SYN-ACK → ACK 순서.
+Ack 번호 = 상대방의 Seq 번호 + 1 (수신 확인 + 다음 기대 바이트).
+시퀀스 번호는 전송된 데이터 바이트 수만큼 증가하며, SYN/FIN 자체도 1 증가시킨다.

@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+Apache Spark는 데이터를 표현하기 위한 추상화로 RDD(Resilient Distributed Dataset)를 사용한다.
+
+각 보기 분석:
+① HDFS - 저장 시스템이다.
+② HDFS의 오기다.
+③ RDD - 정답이다.
+④ RDD의 오기다.
+
+핵심 정리:
+Spark의 핵심 데이터 단위는 RDD다.

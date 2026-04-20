@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+데이터 생성자와 소비자를 이벤트 분배자로 느슨하게 연결하는 뷰는 Publish-Subscribe View다.
+
+각 보기 분석:
+① Peer to Peer View - 직접 1:1 통신 구조다.
+② Client-Server View - 요청/응답 구조다.
+③ Pipe and Filter View - 순차 처리 구조다.
+④ Publish-Subscribe View - 이벤트 분배자를 통해 상호작용한다. 정답이다.
+
+핵심 정리:
+Publish-Subscribe는 발행자와 구독자를 이벤트 버스로 연결한다.

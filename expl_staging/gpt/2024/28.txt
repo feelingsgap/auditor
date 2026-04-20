@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+전체 시스템 수준에서 액터 관점의 상호작용을 모델링하고, 제어흐름과 알고리즘, 동기화, 병렬성을 파악하는 다이어그램은 Activity Diagram이다.
+
+각 보기 분석:
+① Activity Diagram - 정답이다.
+② State Diagram - 상태 변화를 본다.
+③ Class Diagram - 구조를 본다.
+④ Use Case Diagram - 액터와 기능 관계를 본다.
+
+핵심 정리:
+흐름과 제어, 병렬성은 Activity Diagram의 핵심이다.

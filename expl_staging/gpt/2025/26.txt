@@ -1,0 +1,24 @@
+정답: ③ (3번)
+
+해설:
+Clean Architecture의 Instability 메트릭을 계산하는 문제다.
+
+공식:
+Instability = Fan-out / (Fan-in + Fan-out)
+
+그림 해석:
+- P3로 들어오는 의존성(Fan-in): P1 → P3, P2 → P3로 2개
+- P3가 나가는 의존성(Fan-out): P3 → P4가 2개
+
+계산:
+Instability(P3) = 2 / (2 + 2) = 2 / 4 = 0.5
+
+각 보기 분석:
+① 0.3 — 오답
+② 0.4 — 오답
+③ 0.5 — 정답
+④ 0.6 — 오답
+
+핵심 정리:
+Instability는 외부에 의존하는 정도를 수치화한 값이다.
+P3는 들어오고 나가는 의존성이 각각 2개이므로 값은 0.5다.

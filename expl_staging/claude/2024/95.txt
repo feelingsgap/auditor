@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+BERT(Bidirectional Encoder Representations from Transformers)의 특성을 묻는 문항이다. BERT는 구글이 개발한 사전 학습 언어 모델로, 양방향 문맥 이해에 특화되어 있다.
+
+각 보기 분석:
+① 위치 임베딩을 사용한다 — BERT는 토큰 임베딩, 세그먼트 임베딩, 위치 임베딩(Positional Embedding)을 결합하여 사용한다. 트랜스포머 아키텍처의 특성상 순서 정보를 위치 임베딩으로 처리한다. 올바른 설명이다.
+② 인코더와 디코더를 갖는다 — BERT는 트랜스포머의 인코더 부분만 사용하는 모델이다. 디코더를 포함하지 않으며, 이것이 GPT(디코더만 사용)와 구별되는 핵심 특징이다. 틀린 설명이므로 정답.
+③ 트랜스포머 모델을 기반으로 한다 — BERT는 트랜스포머 아키텍처의 인코더 스택을 기반으로 구성된다. 올바른 설명이다.
+④ 자연어 처리를 위한 딥러닝 아키텍처 중 하나이다 — BERT는 NLP 태스크(질의응답, 텍스트 분류, NER 등)에 활용되는 대표적인 딥러닝 아키텍처다. 올바른 설명이다.
+
+핵심 정리:
+BERT = 트랜스포머의 인코더만 사용, 양방향(Bidirectional) 문맥 학습.
+GPT = 트랜스포머의 디코더만 사용, 단방향(Unidirectional) 생성 모델.
+BERT 사전 학습 방식: MLM(Masked Language Model) + NSP(Next Sentence Prediction).

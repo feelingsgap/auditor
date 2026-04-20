@@ -1,0 +1,24 @@
+정답: ③ (3번)
+
+해설:
+ER 다이어그램을 관계 모델로 변환할 때 생성되는 릴레이션의 개수를 구하는 문항이다. 이미지에서 EMPLOYEE(ENO, Name)와 PROJECT(PNO, Name, Location) 사이에 WORKS_ON(Hours) 관계(N:M)가 있으며, 이중선은 전체 참여를, 이중타원은 다치 속성을 의미한다.
+
+변환 규칙 적용:
+1. EMPLOYEE 엔티티 → EMPLOYEE(ENO, Name) 릴레이션
+2. PROJECT 엔티티 → PROJECT(PNO, Name) 릴레이션 (Location은 다치 속성이므로 별도 처리)
+3. Location(다치 속성) → PROJECT_LOCATION(PNO, Location) 릴레이션
+4. WORKS_ON 관계(N:M) → WORKS_ON(ENO, PNO, Hours) 릴레이션
+
+총 릴레이션 수 = 4개
+
+각 보기 분석:
+① 2 — 너무 적음.
+② 3 — Location 다치 속성 또는 WORKS_ON 중 하나를 누락한 경우.
+③ 4 — EMPLOYEE + PROJECT + PROJECT_LOCATION + WORKS_ON = 4개. 정답.
+④ 5 — 과다 계산.
+
+핵심 정리:
+ER → 관계 모델 변환 시 추가 릴레이션 생성:
+- N:M 관계 타입 → 별도 릴레이션 생성.
+- 다치 속성(이중 타원) → 별도 릴레이션 생성.
+- 1:N 관계는 외래키로 처리하여 별도 릴레이션 불필요.

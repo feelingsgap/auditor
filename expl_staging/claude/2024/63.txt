@@ -1,0 +1,30 @@
+정답: ③ (3번)
+
+해설:
+VIEW를 생성하는 (가) 쿼리와 그 VIEW에 대한 (나) SELECT 쿼리를 쿼리 수정(query modification)을 통해 단일 SQL로 변환하는 문항이다.
+
+(가) VIEW 정의:
+CREATE VIEW BStudents (name, sid, cid) AS
+  SELECT S.name, S.sid, E.cid
+  FROM Students S, Enrolled E
+  WHERE S.sid = E.sid AND E.grade = 'B';
+
+(나) VIEW에 대한 SELECT:
+SELECT name FROM BStudents WHERE cid = '101';
+
+쿼리 수정 후 결합:
+VIEW 정의를 (나)에 인라인 확장하면:
+SELECT S.name
+FROM Students S, Enrolled E
+WHERE S.sid = E.sid AND E.grade = 'B' AND E.cid = '101';
+
+각 보기 분석:
+① SELECT S.name FROM Students S, Enrolled E WHERE E.grade = 'B' AND E.cid = '101' — S.sid = E.sid 조인 조건이 빠졌다. 틀렸다.
+② SELECT E.name FROM Students S, Enrolled E WHERE S.sid = E.sid AND E.grade = 'B' AND E.cid = '101' — SELECT 대상이 E.name인데 Enrolled 테이블에는 name 속성이 없다(name은 Students 테이블 소속). 틀렸다.
+③ SELECT S.name FROM Students S, Enrolled E WHERE S.sid = E.sid AND E.grade = 'B' AND E.cid = '101' — 조인 조건, grade 조건, cid 조건 모두 올바르게 반영되었다. 정답.
+④ SELECT E.name FROM Students S, Enrolled E WHERE S.sid = E.sid AND E.grade = 'B' AND E.cid = '101' — ②와 동일하게 E.name이 잘못된 테이블 참조다. 틀렸다.
+
+핵심 정리:
+VIEW에 대한 쿼리 수정은 VIEW 정의를 원본 테이블 쿼리로 인라인 치환하는 과정이다.
+조인 조건(S.sid = E.sid), 필터 조건(grade, cid) 모두 빠짐없이 포함되어야 한다.
+SELECT 대상 열의 소속 테이블(alias)을 정확히 구분하는 것이 핵심이다.

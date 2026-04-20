@@ -1,0 +1,30 @@
+정답: ② (2번)
+
+해설:
+주어진 Java 소스 코드(Rectangle 클래스)에 대한 가장 적절한 UML 클래스 다이어그램을 찾는 문항이다. 클래스 멤버의 접근 제어자, static 여부, 반환 타입을 정확히 표현해야 한다.
+
+코드 분석:
+- private int width (인스턴스 변수)
+- private int height (인스턴스 변수)
+- private int area (인스턴스 변수)
+- private static int count (클래스 변수, static → 밑줄 표기)
+- Rectangle(int w, int h) — 생성자
+- setWidth(int w): void
+- setHeight(int h): void
+
+UML 표기 규칙:
+- private: - 기호
+- static 멤버: 밑줄(underline) 표기
+- 생성자: + Rectangle(int, int)
+- 인스턴스 변수: 밑줄 없음
+
+각 보기 분석:
+① count에 밑줄이 없고, 메서드 반환 타입 표기 방식이 다르다.
+② count에 밑줄이 있고(static 표기 정확), 접근 제어자(-), 생성자와 메서드 표기가 코드와 일치한다. 정답.
+③ area 없거나 count 표기가 잘못됨.
+④ 생성자 또는 메서드 시그니처 표기가 잘못됨.
+
+핵심 정리:
+UML에서 static 멤버는 밑줄로 표기한다.
+private: -, public: +, protected: #.
+Rectangle 클래스에서 count만 static이므로 count에만 밑줄이 있는 다이어그램이 정답이다.

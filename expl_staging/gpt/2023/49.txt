@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+형상 관리의 4대 활동은 식별, 통제, 상태보고, 감사다. 보기의 Configuration Verification은 표준 용어가 아니다.
+
+각 보기 분석:
+① Status Accounting - 형상 상태 보고에 해당한다.
+② Identification - 형상 식별에 해당한다.
+③ Verification - 형상 관리의 표준 활동 명칭으로는 부적절하다. 정답이다.
+④ Control - 형상 통제에 해당한다.
+
+핵심 정리:
+형상 관리의 대표 활동은 Identification, Control, Status Accounting, Audit이다.

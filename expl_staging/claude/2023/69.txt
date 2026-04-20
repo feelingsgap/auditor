@@ -1,0 +1,20 @@
+정답: ② (2번)
+
+해설:
+HDFS(Hadoop Distributed File System)의 노드 구조에서 (가)와 (나)에 해당하는 노드 이름을 묻는 문제이다.
+
+HDFS 구조 분석:
+- (가): 메타정보를 관리하며 데이터 블록들이 어느 (나)에 있는지 유지 → 파일 시스템 메타데이터(네임스페이스, 블록 위치 정보) 관리 = NameNode
+- (나): 실제 데이터 블록을 저장하고 클라이언트에 제공 → 실제 데이터 저장 = DataNode
+- Secondary (가): primary (가)가 고장(fail)일 때를 대비하는 백업 노드 → Secondary NameNode
+
+각 보기 분석:
+① (가) master node, (나) data node — master node는 일반적인 분산 시스템 용어이지만 HDFS의 공식 명칭이 아님.
+② (가) name node, (나) data node — HDFS 공식 용어와 정확히 일치. 정답.
+③ (가) master node, (나) slave node — slave node는 HDFS 공식 명칭 아님.
+④ (가) name node, (나) slave node — DataNode가 올바른 명칭이며 slave node는 부정확.
+
+핵심 정리:
+HDFS 구성 노드: NameNode(메타데이터 관리), DataNode(블록 저장), Secondary NameNode(NameNode 백업).
+NameNode는 파일-블록-DataNode 매핑 정보를 메모리에 유지한다.
+DataNode는 주기적으로 Heartbeat와 블록 리포트를 NameNode에 전송한다.

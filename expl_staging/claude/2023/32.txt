@@ -1,0 +1,14 @@
+정답: ② (2번)
+
+해설:
+CMMI-DEV(CMMI for Development)는 소프트웨어 개발 시 프로세스 품질을 향상시키기 위한 가이드라인으로, 22개 프로세스 영역을 포함한다. 각 프로세스 영역은 분류체계(카테고리)에 따라 구분되며, 이 문항은 분류체계 성격이 가장 다른 것을 찾는 문항이다.
+
+각 보기 분석:
+① Configuration Management(CM) — 지원(Support) 카테고리에 속한다.
+② Technical Solution(TS) — 엔지니어링(Engineering) 카테고리에 속한다. 나머지 세 보기와 카테고리가 다르다.
+③ Decision Analysis and Resolution(DAR) — 지원(Support) 카테고리에 속한다.
+④ Causal Analysis and Resolution(CAR) — 지원(Support) 카테고리에 속한다.
+
+핵심 정리:
+CMMI-DEV 프로세스 영역 4가지 카테고리: 프로세스 관리(Process Management), 프로젝트 관리(Project Management), 엔지니어링(Engineering), 지원(Support).
+CM, DAR, CAR은 모두 Support 카테고리이며, Technical Solution(TS)만 Engineering 카테고리로 분류 체계 성격이 다르다.

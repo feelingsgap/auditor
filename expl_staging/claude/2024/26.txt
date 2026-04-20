@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+애자일 소프트웨어 개발 방법론에 대한 설명 중 가장 적절하지 않은 것을 찾는 문항이다.
+
+각 보기 분석:
+① Extreme Programming(XP)에서 시스템 고객은 개발팀의 일부이고 다른 팀원들과 시나리오에 대해 토론한다 — XP의 온사이트 고객(On-site Customer) 개념으로, 고객이 개발팀에 상주하며 직접 참여하는 XP의 핵심 실천법이다. 적절한 설명이다.
+② 사용사례 또는 사용자 스토리 단위로 조금씩 반복적으로 release를 한다 — 애자일의 반복적·점진적 릴리즈 원칙과 일치한다. 적절한 설명이다.
+③ Scrum approach에서는 제품 백로그 작성, 스프린트 계획 회의, 스프린트 수행, 스프린트 검토 및 회고 등의 프로세스를 가진다 — Scrum의 주요 이벤트 순서와 일치한다. 적절한 설명이다.
+④ Sprint cycle은 inception, elaboration, construction, transition이 반복적으로 수행되어 진다 — inception, elaboration, construction, transition은 RUP(Rational Unified Process)의 4단계 생명주기이다. Scrum의 Sprint cycle과는 무관하다. 정답.
+
+핵심 정리:
+RUP 4단계: Inception(도입) → Elaboration(정교화) → Construction(구축) → Transition(전이).
+Scrum Sprint 구성: 스프린트 계획 → 데일리 스크럼 → 스프린트 리뷰 → 스프린트 회고.
+RUP와 Scrum을 혼동하는 오답 유형이 자주 출제된다.

@@ -1,0 +1,29 @@
+정답: ② (2번)
+
+해설:
+UML Sequence Diagram이 표현하는 시스템 동작에서 적용된 아키텍처 패턴을 묻는 문항이다.
+
+시퀀스 다이어그램 분석:
+1. :UI가 :Main에 service(data: largeData[]) 호출
+2. :Main이 data를 split(data)하여 data1, data2로 분할
+3. par 블록(병렬 실행):
+   - :Main이 첫 번째 :Controller에 do(data1) 호출 → subResult1 반환
+   - :Main이 두 번째 :Controller에 do(data2) 호출 → subResult2 반환
+4. :Main이 merge(subResult1, subResult2)로 결과 합산
+5. :Main이 :UI에 result 반환
+
+Master-Slave 패턴 특징:
+- Master(:Main)가 작업을 분할(split)하고 여러 Slave(:Controller)에 위임
+- Slave들이 병렬(par)로 동일한 작업(do)을 처리
+- Master가 결과를 수집하여 합산(merge)
+
+각 보기 분석:
+① Pipe and Filter — 데이터가 파이프를 통해 순차적으로 여러 필터를 거치는 패턴. 병렬 분할·병합 구조가 아님.
+② Master-Slave — 마스터가 작업을 병렬 실행할 슬레이브에 분배하고 결과를 합산. 이 다이어그램의 구조와 정확히 일치한다. 정답.
+③ Front Controller — 모든 요청을 하나의 컨트롤러가 받아 처리하는 패턴. 분할·병렬 처리 구조가 없음.
+④ MVC — Model-View-Controller. 사용자 인터페이스와 비즈니스 로직을 분리하는 패턴. 이 다이어그램의 병렬 분산 처리 구조와 다름.
+
+핵심 정리:
+Master-Slave = 작업 분할(split) + 병렬 실행(par) + 결과 합산(merge).
+정확도 향상, 성능 개선, 결함 허용을 위해 복수의 슬레이브를 활용.
+병렬 처리(par 블록)와 데이터 분할·합산이 Master-Slave의 핵심 식별자.

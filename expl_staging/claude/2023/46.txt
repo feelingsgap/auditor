@@ -1,0 +1,33 @@
+정답: ③ (3번)
+
+해설:
+JUnit4의 어노테이션 기반 테스트 클래스에서 메소드 실행 순서를 묻는 문항이다. @BeforeClass, @AfterClass, @Before, @After, @Test 어노테이션 각각의 실행 시점을 이해해야 한다.
+
+JUnit4 어노테이션 실행 시점:
+- @BeforeClass: 클래스 로딩 후 단 1회 실행 (static 메소드)
+- @Before: 각 @Test 메소드 실행 전마다 실행
+- @Test: 테스트 메소드 실행
+- @After: 각 @Test 메소드 실행 후마다 실행
+- @AfterClass: 모든 테스트 완료 후 단 1회 실행 (static 메소드)
+
+실행 순서 분석 (@Test가 t1(), t2() 두 개):
+1. a() - @BeforeClass (1회)
+2. c() - @Before (t1 전)
+3. t1() - @Test
+4. d() - @After (t1 후)
+5. c() - @Before (t2 전)
+6. t2() - @Test
+7. d() - @After (t2 후)
+8. b() - @AfterClass (1회)
+→ a, c, t1, d, c, t2, d, b
+
+각 보기 분석:
+① a(), b(), c(), d(), t1(), t2() — @AfterClass가 @Before보다 먼저 실행되어 오류.
+② a(), c(), t1(), t2(), d(), b() — @After가 t2 후에만 1회 실행되는 오류.
+③ a(), c(), t1(), d(), c(), t2(), d(), b() — 위 분석과 정확히 일치. 정답.
+④ a(), c(), t1(), d(), b(), a(), c(), t2(), d(), b() — @BeforeClass, @AfterClass가 각 테스트마다 반복되는 오류.
+
+핵심 정리:
+@BeforeClass/@AfterClass: 클래스당 1회.
+@Before/@After: 각 @Test 메소드마다 실행.
+실행 순서: BeforeClass → (Before → Test → After) × 테스트 수 → AfterClass.

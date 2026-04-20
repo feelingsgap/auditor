@@ -1,0 +1,17 @@
+정답: ② (2번)
+
+해설:
+Bell-LaPadula 모델의 규칙을 묻는 문항이다. 최고등급(Top Secret) 취급 가능 주체가 낮은 등급(Secret) 파일에 쓰기를 금지하는 규칙을 찾아야 한다.
+
+각 보기 분석:
+① 단순보안규칙(Simple Security Rule, No Read Up) — 주체는 자신의 보안 등급보다 높은 등급의 객체를 읽을 수 없다. (기밀성 보호 목적의 읽기 제한 규칙)
+② 스타보안규칙(★-Security Rule, No Write Down) — 주체는 자신의 보안 등급보다 낮은 등급의 객체에 쓸 수 없다. Top Secret 등급의 주체가 Secret 파일에 쓰기 금지 = 기밀 정보가 낮은 등급으로 유출되는 것을 방지. 지문 설명과 정확히 일치. 정답.
+③ 강한 스타보안규칙(Strong ★-Security Rule) — 주체는 자신의 보안 등급과 정확히 동일한 등급의 객체에만 읽고 쓸 수 있다. 쓰기뿐 아니라 읽기도 동일 등급으로 제한한다.
+④ 단순 무결성규칙(Simple Integrity Rule) — Biba 모델의 규칙으로, 주체는 자신의 무결성 등급보다 낮은 객체를 읽을 수 없다(No Read Down). Bell-LaPadula 모델의 규칙이 아니다.
+
+핵심 정리:
+Bell-LaPadula 모델 (기밀성 중심):
+- 단순보안규칙: No Read Up (상위 등급 읽기 금지).
+- 스타보안규칙(★): No Write Down (하위 등급 쓰기 금지).
+- 강한 스타: 동일 등급에서만 읽기·쓰기 허용.
+Biba 모델 (무결성 중심): No Read Down + No Write Up.

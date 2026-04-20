@@ -1,0 +1,22 @@
+정답: ④ (4번)
+
+해설:
+TCP의 체크섬(checksum) 계산은 TCP 헤더와 데이터 외에 IP 헤더로부터 일부 필드를 가져와 구성한 가상 헤더(Pseudoheader)를 포함하여 계산한다. Pseudoheader는 IP 헤더의 특정 필드만 포함한다.
+
+TCP Pseudoheader 구성 요소:
+- 송신자 IP 주소 (Source IP Address)
+- 수신자 IP 주소 (Destination IP Address)
+- 예약 필드(0으로 채움)
+- 프로토콜 번호 (Protocol: TCP = 6)
+- TCP 세그먼트 길이 (TCP Segment Length)
+
+각 보기 분석:
+① 프로토콜 — Pseudoheader에 포함된다. TCP 프로토콜 번호(6)가 사용된다.
+② 수신자 IP 주소 — Pseudoheader에 포함된다. 목적지 IP 주소가 사용된다.
+③ 송신자 IP 주소 — Pseudoheader에 포함된다. 출발지 IP 주소가 사용된다.
+④ 생존시간(TTL, Time To Live) — Pseudoheader에 포함되지 않는다. TTL은 IP 헤더 필드이지만 TCP Pseudoheader 구성에는 사용되지 않는다. 정답.
+
+핵심 정리:
+TCP Pseudoheader: 송신자 IP + 수신자 IP + 예약(0) + 프로토콜 + TCP 길이.
+Pseudoheader는 실제 전송되지 않으며 체크섬 계산 목적으로만 사용된다.
+TTL은 IP 계층에서 패킷 수명을 제한하는 필드로 TCP 체크섬과 무관하다.

@@ -1,0 +1,27 @@
+정답: ① (1번)
+
+해설:
+TCP와 UDP 프로토콜의 헤더 필드 중 공통으로 존재하는 필드를 묻는 문제이다.
+
+TCP 헤더 주요 필드:
+Source Port, Destination Port, Sequence Number, Acknowledgment Number, Data Offset, Flags, Window Size, Checksum, Urgent Pointer, Options
+
+UDP 헤더 주요 필드:
+Source Port, Destination Port, Length, Checksum
+
+공통 필드 분석:
+- 체크섬(Checksum): TCP와 UDP 모두 헤더에 포함. 데이터 무결성 검증에 사용. 공통 필드.
+- 순서 번호(Sequence Number): TCP 전용 필드. 신뢰성 있는 전송을 위한 순서 관리. UDP에는 없음.
+- 긴급 포인터(Urgent Pointer): TCP 전용 필드. 긴급 데이터 위치 지시. UDP에는 없음.
+- ACK 번호(Acknowledgment Number): TCP 전용 필드. 확인 응답에 사용. UDP에는 없음.
+
+각 보기 분석:
+① 체크섬(Checksum) — TCP, UDP 모두 헤더에 포함된 공통 필드. 정답.
+② 순서 번호(Sequence number) — TCP 전용.
+③ 긴급 포인터(Urgent pointer) — TCP 전용.
+④ ACK 번호(Acknowledgment number) — TCP 전용.
+
+핵심 정리:
+TCP와 UDP 공통 헤더 필드: Source Port, Destination Port, Checksum.
+TCP는 신뢰성 전송을 위한 추가 필드(Sequence, ACK, Window, Urgent Pointer 등)를 포함.
+UDP는 4개 필드(Source Port, Dest Port, Length, Checksum)로 구성된 단순한 헤더.

@@ -1,0 +1,32 @@
+정답: ④ (4번)
+
+해설:
+IFPUG(International Function Point Users Group) 기능점수 방법론에서 개선 기능점수(EFP: Enhancement Function Point)를 구하는 공식을 찾는 문항이다.
+
+IFPUG 기능점수 구분:
+- DFP(Development Function Point): 신규 개발 기능점수
+- EFP(Enhancement Function Point): 개선 프로젝트 기능점수
+- AFP(Application Function Point): 어플리케이션 기능점수
+
+EFP 공식 (IFPUG CPM 기준):
+EFP = [(ADD + CHGA + CFP) × VAFA] + (DEL × VAFB)
+
+- ADD: 개선 프로젝트에 의해 추가된 기능의 미조정 기능점수
+- CHGA: 개선 프로젝트에 의해 수정된 기능의 미조정 기능점수 (수정 후 상태)
+- CFP: 데이터 변환에 의해 포함된 기능점수
+- DEL: 개선 프로젝트에 의해 삭제된 기능의 미조정 기능점수
+- VAFA: 개선 프로젝트 종료 후의 어플리케이션 값 조정인자
+- VAFB: 개선 프로젝트 이전의 어플리케이션 값 조정인자
+
+핵심: 추가/수정/변환된 기능은 VAFA로, 삭제된 기능은 VAFB(이전 상태)로 각각 별도 조정한다.
+
+각 보기 분석:
+① EFP = [(ADD+CHGA+CFP+DEL)×VAFA] — DEL을 더하는 것은 오류. DEL은 삭제이므로 뺀 후 조정해야 함.
+② EFP = [(ADD+CHGA+CFP-DEL)×VAFA] — 단일 조정인자 VAFA를 전체에 적용. VAFB를 삭제 기능에 별도 적용하지 않아 부정확.
+③ EFP = [(ADD+CHGA+CFP)×VAFA]-(DEL×VAFB) — DEL에 마이너스 부호를 사용. 올바른 공식은 더하기.
+④ EFP = [(ADD+CHGA+CFP)×VAFA]+(DEL×VAFB) — IFPUG CPM 표준 EFP 공식. 정답.
+
+핵심 정리:
+EFP = [(ADD+CHGA+CFP)×VAFA] + [DEL×VAFB].
+추가·수정·변환 기능 → VAFA(개선 후 조정인자), 삭제 기능 → VAFB(개선 전 조정인자).
+개선 프로젝트는 추가, 수정, 삭제, 변환 4가지 유형의 기능을 포함한다.

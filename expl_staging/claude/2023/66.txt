@@ -1,0 +1,20 @@
+정답: ② (2번)
+
+해설:
+트랜잭션 T1이 ①번 SELECT(도시별 COUNT)를 수행한 후, T2가 ②INSERT(새 행 추가)와 ③COMMIT을 수행하고, T1이 ④번 SELECT(나이별 COUNT)를 수행하는 시나리오이다. T1의 두 번째 SELECT에서 T2가 삽입한 새 행이 보이는 현상을 식별해야 한다.
+
+격리성(Isolation) 이상 현상:
+- T1의 첫 번째 SELECT 시점에는 없던 행이 T2의 INSERT/COMMIT 이후 T1의 두 번째 SELECT에서 새로 나타나는 현상
+- 이는 동일 트랜잭션 내에서 같은 조건의 쿼리를 두 번 실행했을 때 결과 집합이 달라지는 것
+
+각 보기 분석:
+① 오손 데이터 읽기(dirty read) — 커밋되지 않은 데이터를 읽는 현상. T2는 COMMIT을 완료했으므로 해당 없음.
+② 유령 데이터 읽기(phantom read) — 트랜잭션 내에서 동일 쿼리를 반복할 때 이전에 없던 행이 새로 나타나거나 사라지는 현상. INSERT에 의한 새 행이 두 번째 쿼리에 나타남. 정답.
+③ 연쇄 데이터 읽기(cascading read) — 표준 격리성 이상 현상 용어가 아님.
+④ 직렬 데이터 읽기(serializable read) — 가장 높은 격리 수준으로 이상 현상을 방지하는 기법.
+
+핵심 정리:
+Phantom Read: 동일 트랜잭션에서 반복 쿼리 시 새 행(INSERT/DELETE)이 나타나거나 사라지는 현상.
+Dirty Read: 미커밋 데이터 읽기.
+Non-repeatable Read: 동일 행의 값이 변경되어 다른 결과 반환.
+Phantom Read 방지: SERIALIZABLE 격리 수준 또는 범위 잠금(range lock) 필요.

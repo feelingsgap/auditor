@@ -1,0 +1,22 @@
+정답: ① (1번)
+
+해설:
+SCTP(Stream Control Transmission Protocol)의 4-way 핸드셰이크 연결 설정 과정을 묻는 문항이다. SCTP는 SYN Flooding 공격을 방어하기 위해 TCP의 3-way 핸드셰이크와 달리 쿠키(cookie) 기반 4단계 절차를 사용한다.
+
+SCTP 연결 설정 순서:
+1. 클라이언트 → 서버: INIT
+2. 서버 → 클라이언트: INIT ACK (쿠키 포함)
+3. 클라이언트 → 서버: (괄호) — 쿠키를 서버에 되돌려 보내는 메시지
+4. 서버 → 클라이언트: COOKIE ACK
+
+괄호에 해당하는 3단계 메시지는 클라이언트가 서버로부터 받은 쿠키를 그대로 에코(echo)하여 서버의 상태를 검증하는 COOKIE ECHO이다.
+
+각 보기 분석:
+① COOKIE ECHO — 클라이언트가 INIT ACK에 포함된 쿠키를 서버에 되돌려 보내는 메시지. 정답.
+② COOKIE INIT — 존재하지 않는 메시지 유형이다.
+③ COOKIE REQ — SCTP 표준에 없는 메시지 유형이다.
+④ COOKIE SYN — SCTP 표준에 없는 메시지 유형이다.
+
+핵심 정리:
+SCTP 4-way 핸드셰이크: INIT → INIT ACK → COOKIE ECHO → COOKIE ACK.
+COOKIE ECHO/ACK 메커니즘은 서버가 SYN 상태를 저장하지 않아 SYN Flooding에 강하다.

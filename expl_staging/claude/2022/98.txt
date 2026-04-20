@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+인-메모리(In-Memory) 방식으로 연산을 수행하는 Apache Spark에 대한 설명 중 적절하지 않은 것을 찾는 문항이다.
+
+각 보기 분석:
+① 하둡2.0(YARN 환경)에서는 Spark를 지원하지 않는다 — 틀린 설명. Spark는 YARN(Yet Another Resource Negotiator) 환경에서 완벽히 지원되며, 하둡2.0의 YARN 위에서 실행하는 것이 일반적인 배포 방식이다. 정답(적절하지 않은 보기).
+② 맵리듀스 연산에 비해 그 계산 속도가 매우 빠르다 — 맞는 설명. Spark는 인-메모리 처리로 MapReduce 대비 최대 100배 빠른 성능을 제공한다.
+③ 파이썬, 스칼라, 자바 언어를 사용하여 개발할 수 있다 — 맞는 설명. Spark는 Scala, Java, Python, R을 지원한다.
+④ 기계학습, 그래프 연산 등 반복적인 계산 문제를 해결하는 데 적합하다 — 맞는 설명. Spark의 인-메모리 반복 연산은 ML, 그래프 처리에 적합하다.
+
+핵심 정리:
+Spark는 Standalone, YARN, Mesos, Kubernetes 등 다양한 클러스터 관리자 위에서 실행 가능.
+하둡 YARN과의 통합은 Spark의 주요 배포 방식 중 하나이다.
+인-메모리 처리: RDD(Resilient Distributed Dataset) 기반으로 중간 결과를 메모리에 유지.

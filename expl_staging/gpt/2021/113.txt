@@ -1,0 +1,13 @@
+정답: 2 (2번)
+
+해설:
+악성 스크립트가 포함된 URL을 노출해 클릭을 유도하고 쿠키를 탈취하는 공격은 Reflected XSS다.
+
+각 보기 분석:
+① Stored XSS - 서버에 저장되는 방식이다.
+② Reflected XSS - 정답이다.
+③ SQL Injection - DB 질의 삽입 공격이다.
+④ Command Injection - 시스템 명령 삽입 공격이다.
+
+핵심 정리:
+Reflected XSS는 악성 URL을 통해 즉시 반사되어 실행되는 방식이다.

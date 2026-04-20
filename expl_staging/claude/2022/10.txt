@@ -1,0 +1,21 @@
+정답: ④ (4번)
+
+해설:
+갈등관리 기법에서 자기주장(assertiveness)이 낮고 상대방의 동조(cooperativeness)가 높은 상황에서 사용하는 기법을 묻는 문항이다. Thomas-Kilmann 갈등 모델에서 두 축(자기주장↔협조)의 조합으로 5가지 갈등 해결 방식을 분류한다.
+
+Thomas-Kilmann 갈등 관리 기법:
+- 강경(Forcing/Competing): 자기주장 높음 + 협조 낮음. 자신의 입장 관철.
+- 타협(Compromising/Reconcile): 자기주장 중간 + 협조 중간. 상호 양보.
+- 회피(Withdrawing/Avoid): 자기주장 낮음 + 협조 낮음. 갈등 상황 회피.
+- 유연(Smoothing/Accommodate): 자기주장 낮음 + 협조 높음. 상대방 입장 수용.
+- 협력(Collaborating): 자기주장 높음 + 협조 높음. 문제 해결을 위한 통합적 접근.
+
+각 보기 분석:
+① 강경(forcing) — 자기주장 높음 + 협조 낮음. 문제 조건과 반대.
+② 타협(compromising/reconcile) — 자기주장·협조 모두 중간. 문제 조건과 다름.
+③ 회피(withdrawing/avoid) — 자기주장 낮음 + 협조 낮음. 협조성이 높지 않으므로 오답.
+④ 유연(smoothing/accommodate) — 자기주장 낮음 + 상대방 협조(동조) 높음. 문제 조건과 일치. 정답.
+
+핵심 정리:
+유연(Smoothing/Accommodate): 자신의 주장을 낮추고 상대방 입장을 수용하여 관계를 유지.
+단기적 갈등 해소에는 효과적이나 근본 문제는 해결되지 않을 수 있다.

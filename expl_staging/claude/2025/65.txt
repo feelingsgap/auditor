@@ -1,0 +1,28 @@
+정답: ④ (4번)
+
+해설:
+학과별 인원을 계산하는 뷰(VIEW)를 올바르게 정의하는 SQL을 선택하는 문항이다.
+
+student 릴레이션 데이터:
+- 전기공학과: 1001, 1003, 1005 → 3명
+- 전자공학과: 1002, 1006 → 2명
+- 컴퓨터공학과: 1004, 1007 → 2명
+총 7명
+
+목표: 전기공학과 3명, 전자공학과 2명, 컴퓨터공학과 2명을 산출하는 뷰.
+→ 학과별로 GROUP BY 후 COUNT(*) 집계가 필요.
+
+각 보기 분석:
+① CREATE VIEW size(year, t_size) AS SELECT year, count(*) FROM student;
+   GROUP BY 없음 → count(*)는 전체 7이 되어 단일 행 반환. 컬럼도 year 기준으로 잘못됨. 부적절.
+② CREATE VIEW size(year, t_size) AS SELECT year, count(*) FROM student GROUP BY year;
+   학년(year)별 그룹. 학과별 인원이 아닌 학년별 인원 산출. 부적절.
+③ CREATE VIEW size(dept, t_size) AS SELECT dept, count(*) FROM student;
+   GROUP BY 없음 → 전체를 하나의 그룹으로 처리, count(*)=7. 단일 행. 부적절.
+④ CREATE VIEW size(dept, t_size) AS SELECT dept, count(*) FROM student GROUP BY dept;
+   학과(dept)별 GROUP BY + count(*) → (전기공학과,3), (전자공학과,2), (컴퓨터공학과,2) 반환. 정답.
+
+핵심 정리:
+GROUP BY 없는 집계 함수: 전체 테이블을 하나의 그룹으로 처리 → 단일 행 반환.
+학과별 인원 = GROUP BY dept + COUNT(*).
+뷰 컬럼 이름(size(dept, t_size))은 SELECT 절의 컬럼 순서와 대응.

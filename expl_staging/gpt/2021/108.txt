@@ -1,0 +1,13 @@
+정답: 1 (1번)
+
+해설:
+icmp echo-request를 차단하는 규칙은 ping 계열 공격을 막는 데 유효하다.
+
+각 보기 분석:
+① Ping of Death - ICMP 기반 공격이므로 차단 대상이다. 정답이다.
+② HTTP Get Flooding - HTTP 기반 공격이다.
+③ ARP Spoofing - ARP 공격이다.
+④ DNS Amplification - DNS 기반 증폭 공격이다.
+
+핵심 정리:
+ICMP echo-request 차단은 ping 기반 공격 방어에 쓰인다.

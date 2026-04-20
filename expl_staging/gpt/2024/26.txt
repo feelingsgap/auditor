@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+애자일 개발 방법론 설명 중 적절하지 않은 것을 고르는 문제다. inception, elaboration, construction, transition은 RUP의 반복 단계이지 스크럼이나 일반 애자일의 고정 반복 순서가 아니다.
+
+각 보기 분석:
+① XP에서 시스템 고객이 개발팀과 함께 시나리오를 논의한다 - 맞다.
+② 사용자 스토리 단위로 점진적 릴리스를 한다 - 맞다.
+③ Scrum은 제품 백로그, 스프린트 계획, 수행, 검토, 회고를 가진다 - 맞다.
+④ Sprint cycle은 inception, elaboration, construction, transition으로 반복된다 - 애자일 일반 설명으로 부적절하다. 정답이다.
+
+핵심 정리:
+inception-elaboration-construction-transition은 RUP의 반복 단계다.

@@ -1,0 +1,20 @@
+정답: ① (1번)
+
+해설:
+CMMI 수준 3은 정의(Defined) 단계로, 조직 전체에 표준화된 프로세스가 정의되고 프로젝트에 맞춰 조정(tailoring)하여 적용하는 단계이다. 주어진 프로세스 영역 목록에서 수준 3에 해당하는 것들을 선별하는 문항이다.
+
+각 보기 분석:
+가. 위험 관리(Risk Management) — CMMI 수준 3(Defined) 프로세스 영역에 해당한다.
+나. 통합 프로젝트 관리(Integrated Project Management) — CMMI 수준 3(Defined) 프로세스 영역에 해당한다.
+다. 정량적 프로젝트 관리(Quantitative Project Management) — CMMI 수준 4(Quantitatively Managed) 프로세스 영역이다.
+라. 조직 프로세스 정의(Organizational Process Definition) — CMMI 수준 3(Defined) 프로세스 영역에 해당한다.
+마. 조직 프로세스 성과 관리(Organizational Process Performance) — CMMI 수준 4(Quantitatively Managed) 프로세스 영역이다.
+
+① 가, 나, 라 — 수준 3 프로세스 영역만 포함. 정답.
+② 가, 나, 마 — 마(수준 4)가 포함되어 오류.
+③ 나, 다, 라 — 다(수준 4)가 포함되어 오류.
+④ 다, 라, 마 — 다, 마(수준 4)가 포함되어 오류.
+
+핵심 정리:
+CMMI 수준 3(Defined): Risk Management, Integrated Project Management, Organizational Process Definition, Organizational Process Focus, Decision Analysis and Resolution 등.
+수준 4(Quantitatively Managed): Quantitative Project Management, Organizational Process Performance.

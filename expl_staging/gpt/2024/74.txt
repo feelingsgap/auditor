@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+WAL에서 AFIM은 redo에, BFIM은 undo에 대비하기 위한 로그다.
+
+각 보기 분석:
+① VOLATILE - 로그 대비 용어가 아니다.
+② PERSISTENT - 로그 대비 용어가 아니다.
+③ REDO, UNDO - 정답이다.
+④ UNDO, REDO - 순서가 반대다.
+
+핵심 정리:
+AFIM은 재실행(redo), BFIM은 취소(undo)에 대응한다.

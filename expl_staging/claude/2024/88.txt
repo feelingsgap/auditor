@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+IP(Internet Protocol)에 대한 설명 중 가장 적절한 것을 찾는 문항이다.
+
+각 보기 분석:
+① IPv4 헤더는 옵션이 없을 경우 20바이트이다 — IPv4 기본 헤더(Options 필드 없음)는 정확히 20바이트다. 옳은 설명이다. 정답.
+② IPv6 헤더의 크기는 40바이트이며 IPv4와 마찬가지로 옵션을 가진다 — IPv6 기본 헤더는 40바이트로 맞으나, IPv6는 기본 헤더에 옵션 필드가 없고 대신 확장 헤더(Extension Header)를 사용한다. "IPv4와 마찬가지로 옵션을 가진다"는 표현이 부정확하다. 틀렸다.
+③ IPv6 헤더에도 IPv4에서 패킷 단편화에 필요했던 ID Number, Don't Fragment, More Fragment 필드가 존재한다 — IPv6 기본 헤더에는 단편화 관련 필드가 없다. 단편화가 필요한 경우 Fragment 확장 헤더를 사용한다. 틀렸다.
+④ IPv4 패킷 단편화와 관련된 3가지 필드 중 분할된 패킷이 여러 개인 경우, 같은 원본 패킷을 확인할 수 있는 것은 More Fragment이다 — 같은 원본 패킷임을 확인하는 필드는 Identification(식별자) 필드이며, More Fragment는 후속 단편이 더 있는지를 나타내는 플래그다. 틀렸다.
+
+핵심 정리:
+IPv4 헤더: 기본 20바이트, 옵션 포함 최대 60바이트.
+IPv4 단편화 필드: Identification(동일 원본 식별), Flags(DF, MF), Fragment Offset(위치).
+IPv6: 기본 헤더 40바이트, 단편화는 Fragment 확장 헤더로 처리 (라우터 단편화 불가).

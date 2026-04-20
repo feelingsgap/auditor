@@ -1,0 +1,36 @@
+정답: ② (2번)
+
+해설:
+릴레이션을 2NF가 되도록 정규화할 때 생성되는 릴레이션 수를 묻는 문제다.
+
+주어진 릴레이션:
+`R(EmpID, DeptID, ProjID, EmpName, DeptName)`
+
+함수적 종속성:
+- `EmpID → EmpName`
+- `DeptID → DeptName`
+- `(EmpID, ProjID) → DeptID`
+
+후보키는 `(EmpID, ProjID)`다.
+2NF에서는 기본키의 일부에만 종속되는 부분 함수 종속을 제거해야 한다.
+
+여기서:
+- `EmpID → EmpName`은 부분 종속이다.
+- `(EmpID, ProjID) → DeptID`는 완전 종속이다.
+- `DeptID → DeptName`은 이행 종속으로 3NF 문제이지 2NF 분해의 직접 대상은 아니다.
+
+따라서 2NF로 분해하면 보통:
+- `R1(EmpID, EmpName)`
+- `R2(EmpID, DeptID, ProjID, DeptName)`
+
+총 2개의 릴레이션이 생성된다.
+
+각 보기 분석:
+① 1 — 부분 종속 제거가 되지 않음
+② 2 — 정답
+③ 3 — 과도한 분해
+④ 4 — 과도한 분해
+
+핵심 정리:
+2NF는 부분 함수 종속 제거가 핵심이다.
+이행 종속까지 제거하는 것은 3NF 단계다.

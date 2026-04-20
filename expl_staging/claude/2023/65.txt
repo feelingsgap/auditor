@@ -1,0 +1,24 @@
+정답: ④ (4번)
+
+해설:
+EMPLOYEE와 DEPENDENT 릴레이션에서 "자신의 부양가족과 이름이 같은 직원의 이름(Name)"을 출력하는 SQL 질의를 모두 고르는 문제이다. 조인 조건은 E.Ssn = D.Essn이고 이름 조건은 E.Name = D.Name이다.
+
+각 질의 분석:
+가. SELECT E.Name FROM EMPLOYEE AS E WHERE E.Ssn IN (SELECT Essn FROM DEPENDENT AS D WHERE E.Name=D.Name)
+   — 서브쿼리에서 E.Ssn과 D.Essn을 직접 비교하지 않고 E.Ssn IN (Essn 집합)으로 처리하면서 E.Name=D.Name 조건을 상관 서브쿼리로 적용. 올바른 결과 도출 가능.
+
+나. SELECT E.Name FROM EMPLOYEE AS E WHERE EXISTS (SELECT * FROM DEPENDENT AS D WHERE E.Ssn=D.Essn AND E.Name=D.Name)
+   — EXISTS 상관 서브쿼리로 E.Ssn=D.Essn AND E.Name=D.Name 두 조건 모두 적용. 올바른 질의.
+
+다. SELECT E.Name FROM EMPLOYEE AS E, DEPENDENT AS D WHERE E.Ssn=D.Essn AND E.Name=D.Name
+   — 명시적 카르테시안 조인 후 WHERE 절로 조인 조건과 이름 조건 적용. 올바른 질의.
+
+각 보기 분석:
+① 가, 나 — 다도 올바르므로 불완전.
+② 가, 다 — 나도 올바르므로 불완전.
+③ 가, 다 — 나도 올바르므로 불완전.
+④ 가, 나, 다 — 세 질의 모두 올바른 결과를 도출. 정답.
+
+핵심 정리:
+동일 조건을 표현하는 SQL 방식: IN 서브쿼리, EXISTS 상관 서브쿼리, 명시적 조인 모두 동등한 결과.
+상관 서브쿼리(EXISTS)는 외부 쿼리의 행마다 내부 쿼리를 실행하여 조건 충족 여부를 확인한다.

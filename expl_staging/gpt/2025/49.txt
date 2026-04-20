@@ -1,0 +1,21 @@
+정답: ④ (4번)
+
+해설:
+타입 코드에 따라 `switch` 문으로 다른 동작을 하던 코드를, 각 타입별 서브클래스로 나누어 `draw()`를 오버라이드하는 형태로 바꾼 리팩토링 기법을 묻는 문제다.
+
+변경 전:
+- 하나의 클래스에서 `_typecode`를 보고 `switch`로 분기
+
+변경 후:
+- `ShapeLine`, `ShapeRectangle`, `ShapeOval` 같은 서브클래스가 각각 자기 동작을 구현
+
+이는 타입 코드를 서브클래스로 대체하는 리팩토링이다.
+
+각 보기 분석:
+① Pull Up Method — 상위 클래스로 메서드를 올리는 기법이라 다르다.
+② Replace Type Code with Class — 타입코드를 별도 클래스로 바꾸는 방식이다.
+③ Replace Parameter with Method — 관련 없는 기법이다.
+④ Replace Type Code with Subclasses — 정답이다.
+
+핵심 정리:
+`switch(typecode)`를 다형성으로 치환하는 전형적인 리팩토링은 `Replace Type Code with Subclasses`다.

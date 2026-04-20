@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+SDN의 대표 프로토콜은 OpenFlow이며, CDPI의 대표 예다.
+
+각 보기 분석:
+① Southbound와 Northbound를 혼동한 설명이다.
+② OpenFlow를 컨트롤러 내장으로 설명한 것은 틀리다.
+③ Control Data Plane Interface의 대표 예로 OpenFlow가 맞다. 정답이다.
+④ 데이터 평면이 독립 동작한다는 설명은 SDN과 맞지 않다.
+
+핵심 정리:
+OpenFlow는 SDN의 southbound 프로토콜이다.

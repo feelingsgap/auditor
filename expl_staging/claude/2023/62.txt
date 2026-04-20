@@ -1,0 +1,20 @@
+정답: ③ (3번)
+
+해설:
+Sailors, Boats, Reserves 세 릴레이션에서 'color가 red인 Boat와 green인 Boat를 모두 reserve한 Sailor의 sname'을 검색하는 SQL 문제이다. 핵심은 두 조건을 동시에 만족하는 교집합(INTERSECT 또는 자기 조인) 처리이다.
+
+조건 분석:
+- red Boat도 reserve하고, green Boat도 reserve한 Sailor를 구해야 함
+- OR 조건은 둘 중 하나만 만족해도 되므로 부정확
+- 두 조건을 동시에 만족하려면 자기 조인(self-join) 또는 교집합이 필요
+
+각 보기 분석:
+① WHERE ... (B.color='red' OR B.color='green') — OR 조건이므로 둘 중 하나만 만족하는 Sailor도 포함. 요건 불충족.
+② WHERE ... (B.color='red' AND B.color='green') — 한 행의 color가 동시에 red이면서 green일 수 없으므로 결과 없음.
+③ Reserves R1, Boats B1, Reserves R2, Boats B2를 자기 조인하여 동일 Sailor가 red Boat와 green Boat를 각각 reserve한 경우만 검색 — 올바른 교집합 의미론. 정답.
+④ UNION 사용 — UNION은 합집합이므로 둘 중 하나만 만족해도 포함됨. 요건 불충족.
+
+핵심 정리:
+'모두 reserve' 조건 = 교집합(INTERSECT) 또는 자기 조인으로 표현.
+OR은 합집합, AND는 단일 행 내 동시 조건 — 다중 행에 걸친 AND 조건은 자기 조인으로 처리해야 한다.
+UNION은 합집합이므로 '모두'가 아닌 '하나라도' 조건에 해당한다.

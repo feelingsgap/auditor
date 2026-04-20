@@ -1,0 +1,14 @@
+정답: ① (1번)
+
+해설:
+가장 많은 테스트케이스를 만드는 것은 all combination testing, 가장 적은 것은 each choice testing이다.
+조건 수가 3개인 경우 all combination은 모든 조합을 열거하고, each choice는 각 값이 최소 한 번씩만 나오게 구성한다.
+
+각 보기 분석:
+① all combination testing / each choice testing - 가장 많음과 가장 적음을 정확히 묶었다. 정답이다.
+② all combination testing / base choice testing - base choice는 each choice보다 많다.
+③ pair-wise testing / each choice testing - pair-wise는 all combination보다 적다.
+④ pair-wise testing / base choice testing - 둘 다 극값 조합이 아니다.
+
+핵심 정리:
+생성 개수는 `all combination > pair-wise > base choice > each choice`로 이해하면 된다.

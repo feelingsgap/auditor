@@ -1,0 +1,28 @@
+정답: ④ (4번)
+
+해설:
+제시된 C 코드 `CheckLogin()` 함수를 분석하여 존재하는 취약점을 묻는 문항이다.
+
+코드 분석:
+```
+char* _username = (char*) malloc(32);  // 힙 메모리 32바이트 할당
+char username[32];                      // 스택 배열 32바이트 선언
+scanf("%s", _username);                // 입력값 크기 제한 없이 읽음
+strcpy(username, _username);           // 힙 → 스택 복사
+```
+
+취약점 분석:
+- `scanf("%s", _username)`: 입력 크기 제한이 없어 32바이트를 초과하는 입력이 가능하다. 이는 힙(heap) 영역에 할당된 `_username`에 대한 힙 오버플로우(heap overflow)를 유발한다.
+- `strcpy(username, _username)`: `_username`이 이미 32바이트를 초과했다면 스택 배열 `username`에도 오버플로우가 발생한다(스택 오버플로우).
+- 정수 오버플로우(integer overflow)와는 관련이 없다.
+
+각 보기 분석:
+① 스택 오버플로우(stack overflow) — strcpy 단계에서도 발생 가능하지만, 근본 원인은 힙 할당 영역에서 먼저 발생한다.
+② 힙 오버플로우(heap overflow) — malloc으로 할당된 힙 영역에 scanf로 제한 없이 쓰는 것이 1차 취약점이다.
+③ 메모리 접근 위반(memory access violation) — 오버플로우 결과로 발생할 수 있으나 직접적인 취약점 유형이 아니다.
+④ 정수 오버플로우(integer overflow) — 정수형 변수가 표현 범위를 초과하는 취약점으로, 해당 코드와 무관하다. 가장 적절하지 않은 답. 정답.
+
+핵심 정리:
+해당 코드의 핵심 취약점: 힙 오버플로우 및 스택 오버플로우(scanf 입력 크기 미제한).
+정수 오버플로우는 산술 연산에서 정수 범위 초과 시 발생하며 이 코드와 무관하다.
+안전한 코드: `scanf("%31s", _username)` 또는 `fgets()` 사용.

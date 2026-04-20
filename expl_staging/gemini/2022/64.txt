@@ -1,0 +1,15 @@
+정답: ②
+
+**해설:**
+실행된 결과 테이블의 특징을 바탕으로, 동등조인과 외부조인(Outer Join) 중 어떤 SQL 문법이 사용되었는지를 추론하는 문제입니다.
+
+**결과 테이블 특징 분석:**
+*   `STUDENT` 릴레이션에는 존재하지만 `ENROL` 수강 기록이 없는 **학생 Hong(S004)**이 조회 결과에 등록(`NULL`)되어 출력되었습니다.
+*   이는 조회 기준이 되는 메인 릴레이션(`STUDENT`)의 모든 행이 무조건 포함되는 **LEFT OUTER JOIN** (또는 STUDENT를 우측에 둔 RIGHT OUTER JOIN)을 사용했다는 강력한 증거입니다.
+*   단순 `INNER JOIN`을 사용했다면 매칭되지 않는 Hong은 아예 누락되었을 것입니다.
+
+**보기 분석:**
+*   ① `INNER JOIN`: 수강기록이 없는 학생 Hong 누락.
+*   ② `STUDENT LEFT OUTER JOIN ENROL`: STUDENT 테이블의 학생 정보를 기준축 삼아 모두 보존하고 대응이 없는 ENROL 쪽 속성을 NULL 처리. (의도된 정답)
+*   ③ `ENROL LEFT OUTER JOIN STUDENT`: 메인이 수강 정보이므로 누락된 학생은 잡히지 않음.
+*   ④ `STUDENT RIGHT OUTER JOIN ENROL`: ③과 동일한 결과가 반환됨.

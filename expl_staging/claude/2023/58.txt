@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+함수 종속(Functional Dependency)의 Armstrong 추론 규칙에서 항상 성립하지 않는 추론 규칙을 찾는 문항이다. Armstrong의 추론 규칙은 건전성(sound)과 완전성(complete)을 가지며, 이를 벗어난 규칙은 성립하지 않는다.
+
+각 보기 분석:
+① X ⊇ Y 이면 X → Y — 반사율(Reflexivity) 규칙이다. Y가 X의 부분집합이면 X → Y가 성립한다. 올바른 규칙이다.
+② X → YZ 이면 X → Y 이고 X → Z — 분해율(Decomposition) 규칙이다. X → YZ에서 개별 속성으로 분해할 수 있다. 올바른 규칙이다.
+③ X → Y 이면 임의의 Z에 대해 XZ → YZ — 확장율(Augmentation) 규칙이다. 양쪽에 Z를 추가해도 성립한다. 올바른 규칙이다.
+④ XZ → YZ 이면 임의의 Z에 대해 X → Y — 이는 약화 규칙처럼 보이지만 일반적으로 성립하지 않는다. XZ → YZ에서 Z를 제거한다고 해서 X → Y가 항상 성립하지는 않는다. Armstrong의 추론 규칙에 포함되지 않는 잘못된 규칙이다. 정답.
+
+핵심 정리:
+Armstrong의 추론 규칙: 반사율(Reflexivity), 확장율(Augmentation), 이행율(Transitivity).
+이로부터 유도: 합집합(Union), 분해율(Decomposition), 의사이행율(Pseudo-transitivity).
+④의 역방향(XZ→YZ에서 X→Y 추론)은 성립하지 않는 규칙이다.

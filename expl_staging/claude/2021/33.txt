@@ -1,0 +1,14 @@
+정답: ② (2번)
+
+해설:
+SOAP 기반 웹 서비스와 RESTful 웹 서비스의 특성 차이를 묻는 문항이다. SOAP은 XML 기반의 엄격한 프로토콜을 따르고, REST는 HTTP를 활용한 경량 아키텍처 스타일이다.
+
+각 보기 분석:
+① SOAP 기반 웹 서비스는 RESTful에 비해 구현하기 쉽고 확장성이 우수하다 — 반대다. REST가 구현이 단순하고 확장성이 높으며, SOAP은 엄격한 표준과 복잡한 구조로 구현 부담이 크다. 틀린 설명이다.
+② SOAP 기반 웹 서비스에서 요청 및 응답은 모두 XML 형식으로 수행하는 반면, RESTful 웹 서비스에서는 JSON, XML, 일반 텍스트 등을 사용한다 — 정확한 설명이다. SOAP은 반드시 XML 봉투(envelope)를 사용하며, REST는 JSON·XML·텍스트 등 다양한 포맷을 지원한다. 정답.
+③ SOAP 기반 웹 서비스는 자신의 기반구조를 구현해야 하지만, RESTful은 WS-Reliability, WS-Transaction 지원 표준이 있다 — 역방향 설명이다. WS-Reliability, WS-Transaction은 SOAP/WS-* 표준이고, REST가 이를 직접 지원하지는 않는다.
+④ SOAP 기반 웹 서비스는 리소스 지향적인데 반해, RESTful은 RPC 메커니즘의 서비스 지향적이다 — 완전히 반대다. REST가 리소스 지향(Resource-Oriented), SOAP이 RPC 스타일의 서비스 지향적이다.
+
+핵심 정리:
+SOAP: XML만 사용, WS-* 표준(보안·트랜잭션·신뢰성) 지원, 복잡하지만 엔터프라이즈 환경에 적합.
+REST: JSON/XML/텍스트 등 다양한 포맷, HTTP 메서드(GET/POST/PUT/DELETE) 활용, 경량·확장성 우수.

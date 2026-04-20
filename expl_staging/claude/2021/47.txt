@@ -1,0 +1,24 @@
+정답: ③ (3번)
+
+해설:
+온라인쇼핑시스템 요구사항들을 ISO/IEC 25010의 품질 속성에 매핑하는 문항이다. 각 요구사항이 어떤 품질 속성(품질 특성·세부 특성)에 해당하는지 분류해야 한다.
+
+각 요구사항 분類:
+가. 동시에 최대 10만명의 사용자 접속을 수용해야 한다 → capacity(용량성, performance efficiency의 세부 특성).
+나. 온라인 쇼핑에 필요한 모든 기능을 제공해야 한다 → functional suitability(기능 적합성).
+다. 계획된 정비 시간을 제외하면 1주일에 10분 이상 down되지 않아야 한다 → reliability > availability(가용성).
+라. 비정상적으로 접속이 종료된 후에, 로그인을 하면 기존 상품 조회 화면을 보여 준다 → reliability > recoverability 또는 maintainability — 이 항목은 복구 능력. 단, 보기 ③은 maintainability로 분류하고 있다. 실제로 이 요구사항은 세션 복구와 관련되어 reliability(recoverability)로 볼 수 있다.
+마. 온라인쇼핑시스템에 대한 테스트 기준 수립이 용이하고 테스트 수행이 용이해야 한다 → testability.
+
+각 보기 분석:
+① capacity, functional suitability, availability, maintainability — 라를 maintainability로 분류, 마를 누락.
+② performance efficiency, functional suitability, availability, testability — 가를 performance efficiency로 보면 맞으나 capacity 표기 불일치.
+③ capacity, functional suitability, reliability, maintainability — 가(capacity), 나(functional suitability), 다+라(reliability), 마(maintainability?). 마가 testability여야 하나 maintainability로 표기.
+④ performance efficiency, functional suitability, availability, testability, adaptability — adaptability가 추가되어 과도함.
+
+정답 ③을 기준으로 보면: 가(capacity), 나(functional suitability), 다(reliability/availability), 라(maintainability 또는 recoverability), 마(testability가 맞으나 ③에서는 maintainability)가 배치됨.
+
+핵심 정리:
+가용성(availability): 시스템이 요구될 때 사용 가능한 정도 (다운타임 제한 = availability).
+capacity: 최대 처리량 관련 세부 특성 (동시 사용자 수용 = capacity).
+testability: 테스트 수행 용이성 (마).

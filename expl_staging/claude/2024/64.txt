@@ -1,0 +1,18 @@
+정답: ③ (3번)
+
+해설:
+EER(Enhanced Entity-Relationship) 모델에서 OWNER 개체가 PERSON, BANK, COMPANY 중 하나일 수 있는 상황을 모델링하는 데 사용된 개념을 식별하는 문항이다.
+
+다이어그램 분석:
+OWNER 개체가 상위 개체이고 PERSON, BANK, COMPANY가 하위 개체들로 연결되어 있다. 여러 하위 개체 유형들이 하나의 상위 개체 유형의 멤버로 포함되는 구조다. 이는 상위 개체 집합에서 공통 속성을 추출하고 하위 유형들로 분류하는 방식이다.
+
+각 보기 분석:
+① 세분화(specialization) — 상위 개체를 더 세부적인 하위 개체들로 나누는 과정. 하향식 접근이다. 이 다이어그램은 상위 개체(OWNER)에서 하위(PERSON, BANK, COMPANY)로 내려가는 구조이므로 세분화로도 볼 수 있으나, 문제의 핵심은 여러 유형을 묶어서 OWNER가 되는 구조다.
+② 일반화(generalization) — 여러 하위 개체들의 공통 특성을 추출하여 상위 개체를 정의하는 상향식 과정. PERSON, BANK, COMPANY의 공통 역할(소유자)을 OWNER로 일반화.
+③ 범주(category) — EER에서 서로 다른 유형의 개체들(PERSON, BANK, COMPANY)이 하나의 상위 집합(OWNER)에 속할 수 있도록 하는 유니온 타입 개념. 자동차 소유자가 PERSON, BANK, COMPANY 중 어느 하나일 수 있는 것처럼 이종(heterogeneous) 슈퍼타입을 표현한다. 정답.
+④ 집단화(aggregation) — 관계 집합을 상위 개체로 추상화하는 개념. 이 다이어그램과 무관하다. 틀렸다.
+
+핵심 정리:
+EER의 범주(category, 유니온 타입): 서로 다른 엔티티 타입들의 합집합(union)으로 슈퍼타입을 구성.
+일반화와 범주의 차이: 일반화는 동종 하위 타입의 공통 특성 추출, 범주는 이종 타입들의 유니온.
+자동차 소유자 예시(PERSON OR BANK OR COMPANY)는 범주의 대표적 사례다.

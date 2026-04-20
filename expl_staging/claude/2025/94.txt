@@ -1,0 +1,24 @@
+정답: ② (2번)
+
+해설:
+설명에 해당하는 VLAN 프로토콜을 찾는 문항이다.
+
+설명 분석:
+"여러 VLAN 스위치를 사용하는 경우, 어떤 VLAN 그룹에 속하는지 뿐만 아니라 여러 연결된 시스템 중에서 같은 VLAN 그룹에 속하는지를 알아야 한다. 프레임 태깅을 정의한 이 프로토콜은 MAC 프레임에 추가적인 헤더를 사용하여 목적지 VLAN을 정의할 수 있다."
+→ VLAN 프레임 태깅(trunking) 표준: IEEE 802.1Q
+
+각 보기 분석:
+① IEEE 802.1D — Spanning Tree Protocol(STP). 네트워크 루프 방지 프로토콜. VLAN 태깅과 무관.
+② IEEE 802.1Q — VLAN 태깅(트렁킹) 표준. 이더넷 프레임에 4바이트(32비트) VLAN 태그 삽입:
+   - TPID(Tag Protocol Identifier): 0x8100
+   - PCP(Priority Code Point): QoS 우선순위
+   - DEI(Drop Eligible Indicator)
+   - VID(VLAN Identifier): VLAN ID(0~4095)
+   정답.
+③ IEEE 802.3af — Power over Ethernet(PoE). 이더넷 케이블로 전원 공급. VLAN과 무관.
+④ IEEE 802.15.1 — Bluetooth 무선 통신 표준. VLAN과 무관.
+
+핵심 정리:
+IEEE 802.1Q: VLAN 태깅으로 단일 물리적 링크에서 여러 VLAN 트래픽 전달(트렁크 포트).
+트렁크 포트: 여러 VLAN의 프레임을 802.1Q 태그와 함께 전달하는 스위치 포트.
+Access 포트: 단일 VLAN만 처리하며 태그 없이 전달.

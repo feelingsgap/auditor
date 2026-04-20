@@ -1,0 +1,26 @@
+정답: ③ (3번)
+
+해설:
+Apriori 알고리즘에서 BCD→A가 최소신뢰도 조건을 만족하지 않을 때 고려할 필요가 없는 규칙을 찾는 문항이다.
+{A,B,C,D}가 빈발 항목집합이며, BCD→A가 최소신뢰도 미충족이다.
+
+Apriori 신뢰도 단조성(anti-monotone) 원리:
+신뢰도 conf(X→Y) = support(X∪Y) / support(X)
+BCD→A의 신뢰도 = support(ABCD) / support(BCD)
+이보다 좌변이 작은(부분집합인) 규칙은 신뢰도가 더 낮아질 수 없지만,
+우변이 BCD→A의 우변 A를 포함하고 좌변이 BCD의 부분집합인 규칙은 신뢰도가 더 낮거나 같을 수 있다.
+
+핵심 원리:
+BCD→A가 최소신뢰도 미충족이면, 좌변이 BCD의 부분집합이고 우변이 A를 포함하는 모든 규칙도 최소신뢰도를 충족하지 못한다.
+즉, D→ABC, BD→AC, CD→AB 등은 BCD→A보다 신뢰도가 낮거나 같다.
+
+각 보기 분석:
+① BD→AC, AB→CD — BD는 BCD의 부분집합이지만 우변 AC는 A 포함이므로 BD→AC는 해당될 수 있다. AB→CD는 관련성이 다르다.
+② AB→CD, A→BCD — A→BCD는 좌변이 더 작지만 우변에 A가 없다. 다른 계산이 필요하다.
+③ BD→AC, D→ABC — BD→AC는 BCD 부분집합 좌변에 우변 A 포함. D→ABC는 D가 BCD 부분집합, 우변 ABC에 A 포함. 두 규칙 모두 BCD→A에서 파생되어 고려 불필요. 정답.
+④ A→BCD, D→ABC — A→BCD는 다른 방향의 규칙.
+
+핵심 정리:
+Apriori 신뢰도 원리: LHS를 줄이면 신뢰도가 낮아지거나 같아진다.
+BCD→A 신뢰도 미충족 → BD→AC, D→ABC 등 LHS 부분집합 + A 포함 우변 규칙도 미충족.
+이를 통해 불필요한 규칙 후보를 사전에 가지치기(pruning)한다.

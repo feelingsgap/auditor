@@ -1,0 +1,14 @@
+정답: ④ (4번)
+
+해설:
+PMO(Project Management Office)에 대한 설명 중 적절하지 않은 것을 묻는 문항이다. PMO는 조직 내 프로젝트 관리 표준화, 지원, 감독 기능을 수행하는 조직 단위로, 통제 수준에 따라 지원형(supportive), 통제형(controlling), 지시형(directive) PMO로 구분된다.
+
+각 보기 분석:
+① 주요 프로그램의 범위 변화를 관리한다 — PMO의 주요 기능 중 하나. 적절한 설명.
+② 프로젝트 간의 의사소통을 조정한다 — PMO는 프로젝트 간 조정 및 커뮤니케이션 허브 역할을 한다. 적절한 설명.
+③ 전반적 리스크를 기업 수준에서 관리한다 — PMO는 포트폴리오 수준의 리스크 통합 관리를 지원한다. 적절한 설명.
+④ 통제수준이 가장 높은 PMO유형은 제어(controlling) PMO이다 — PMO 유형 중 통제 수준이 가장 높은 것은 지시형(directive) PMO이다. 제어(controlling) PMO는 중간 수준의 통제를 제공한다. 따라서 이 설명은 적절하지 않다. 정답.
+
+핵심 정리:
+PMO 통제 수준 순서: 지원형(supportive) < 통제형(controlling) < 지시형(directive).
+가장 높은 통제 = 지시형(directive) PMO. 통제형(controlling)이 최고가 아님.

@@ -1,0 +1,30 @@
+정답: ① (1번)
+
+해설:
+NOT EXISTS와 EXCEPT를 결합한 SQL 질의의 의미를 올바르게 해석하는 문항이다.
+
+SQL 분석:
+SELECT ENO FROM E
+WHERE NOT EXISTS (
+  (SELECT PNO FROM P WHERE DNO=1)
+  EXCEPT
+  (SELECT PNO FROM W WHERE E.ENO=ENO)
+);
+
+단계별 해석:
+1. (SELECT PNO FROM P WHERE DNO=1): 1번 부서가 수행하는 모든 프로젝트 번호 집합 A
+2. (SELECT PNO FROM W WHERE E.ENO=ENO): 현재 직원(E)이 참가한 모든 프로젝트 번호 집합 B (상관 서브쿼리)
+3. A EXCEPT B: 1번 부서 프로젝트 중 이 직원이 참가하지 않은 프로젝트
+4. NOT EXISTS(A EXCEPT B): 직원이 참가하지 않은 1번 부서 프로젝트가 존재하지 않음
+   = 이 직원은 1번 부서의 모든 프로젝트에 참가했음
+
+각 보기 분석:
+① "1번 부서가 수행하는 프로젝트에 참가하지 않은 직원의 번호를 검색" — 반대 해석. 실제로는 모든 1번 부서 프로젝트에 참가한 직원을 검색. 틀린 설명. 정답(옳지 않은 것).
+② "1번 부서가 수행하는 모든 프로젝트에 참가한 직원의 번호를 검색" — 올바른 해석.
+③ "두 번째 부속질의는 상관 질의로 현재 특정 직원(E)이 참가한 모든 프로젝트를 선택한다." — E.ENO가 외부 질의의 E를 참조하므로 상관 서브쿼리가 맞음. 올바른 설명.
+④ "관계 대수 (∏ENO,PNO(W)) ÷ (∏PNO(σDNO=1(P)))를 이용하면 동일한 결과" — 나누기(÷) 연산은 "모든 ~를 한" 의미로, 위 SQL과 동일한 결과를 도출. 올바른 설명.
+
+핵심 정리:
+NOT EXISTS(A EXCEPT B) = "A의 모든 원소가 B에 포함됨" = A ⊆ B.
+이 패턴은 "전칭 한정(universal quantification)"을 SQL로 표현하는 관용적 방법.
+관계 대수 나누기(÷)와 동치 → 특정 집합을 모두 포함하는 투플 검색에 사용.

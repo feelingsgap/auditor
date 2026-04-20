@@ -1,0 +1,21 @@
+정답: ② (2번)
+
+해설:
+프로젝트 계획 방법론 중 계층적 접근(hierarchical approach) 방식은 전체를 점점 세분화하는 하향식(top-down) 분해 구조를 취하는 방법이다. WBS(Work Breakdown Structure)가 대표적인 계층적 접근 방식이다.
+
+각 계획 방법론의 특성:
+- CPM(Critical Path Method): 네트워크 다이어그램 기반으로 임계경로를 계산하는 일정관리 기법. 계층적 구조가 아님.
+- WBS(Work Breakdown Structure): 프로젝트 전체 범위를 관리 가능한 작업 패키지로 계층적으로 분해하는 구조. 계층적 접근의 전형.
+- 선형임무차트(Linear Responsibility Chart): 역할과 책임을 행렬 형태로 나타내는 RAM(Responsibility Assignment Matrix). 계층 구조 아님.
+- 마스터 프로젝트 일정(Master Project Schedule): 프로젝트 전체 일정을 요약한 고수준 일정표.
+
+각 보기 분석:
+① CPM(critical path method) — 네트워크 기반 일정 계산 기법으로 계층적 구조가 아니다.
+② 작업분류체계(work breakdown structure) — 전체를 단계적으로 세분화하는 계층적 분해 구조의 대표 기법. 정답.
+③ 선형임무차트(linear responsibility chart) — 역할·책임 할당 행렬로, 계층적 접근 방식이 아니다.
+④ 마스터 프로젝트 일정(master project schedule) — 요약 일정표로 계층적 분해 기법이 아니다.
+
+핵심 정리:
+계층적 접근(Hierarchical Approach): 전체 → 하위 단계로 반복 분해하는 구조.
+WBS는 프로젝트 범위를 레벨별로 분해하여 작업 패키지 수준까지 세분화한다.
+WBS의 최하위 단위: 작업 패키지(Work Package).

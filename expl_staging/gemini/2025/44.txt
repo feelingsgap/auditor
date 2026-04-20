@@ -1,0 +1,19 @@
+정답: 4 (④)
+
+**해설:**
+Java 소스 코드에 명시된 클래스 간의 관계(상속, 구현, 의존)를 UML 클래스 다이어그램의 화살표 규칙에 맞게 정확히 번역한 표기를 찾는 문제입니다.
+
+**상세 분석:**
+1. **`class Staff extends Person`:** 'Staff'가 조상 'Person'을 일반화(**상속**)합니다.
+   * UML 표기: 자식(Staff) 쪽에서 부모(Person) 쪽을 향하는 **실선 + 비어있는 삼각형 화살표** (Person ◁—— Staff)
+2. **`Staff ... implements Service`:** 'Staff'가 'Service'를 인터페이스 **구현(실현)**합니다.
+   * UML 표기: 구현체(Staff) 쪽에서 인터페이스(Service) 쪽을 향하는 **점선 + 비어있는 삼각형 화살표** (Service ◁- - - Staff)
+3. **`public void doWork() { Task t = new Task(); }`:** 'Staff'의 메서드 내부에서 'Task' 임시 객체를 생성해 사용하는 **의존(Dependency)** 관계입니다. 멤버 변수 결합이 아닌 일시적인 사용입니다.
+   * UML 표기: 사용자(Staff) 쪽에서 사용대상(Task) 방향으로 향하는 **점선 + 꺾인/열린 화살표** (Task < - - - Staff)
+
+이 세 가지 화살표의 형태와 뾰족한 방향성(자식➔부모, 구현➔인터페이스, 주체➔객체)을 모두 지키고 있는 그림은 4번입니다.
+
+**📌 핵심 요약:**
+* 상속(Extends) = 실선 삼각형 (A ◁—— B)
+* 구현(Implements) = 점선 삼각형 (A ◁- - - B)
+* 의존(Uses) = 점선 열린 화살촉 (A < - - B)

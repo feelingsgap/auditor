@@ -1,0 +1,41 @@
+정답: ③ (3번)
+
+해설:
+즉시 변경(immediate update) 방법을 사용하는 로그를 분석하여 시스템 장애 후 올바른 복구 값을 묻는 문항이다.
+
+로그 분석:
+<start, T1> ... <T1, A, 10, 15> ... <commit, T1>: T1 완료, A를 10→15로 변경
+<start, T2> ... <T2, B, 5, 7>: T2 미완료 (commit 없음)
+<checkpoint>: 체크포인트 시점에 T1의 변경(A=15, B=7)은 디스크에 반영됨
+<start, T3> ... <T3, C, 8, 9> ... <T2, A, 15, 20> ... <T3, D, 12, 14> ... <commit, T3>: T3 완료
+*system crash*
+
+복구 처리 결정:
+- T1: commit됨, checkpoint 이전 → 이미 반영됨, 추가 처리 불필요
+- T2: commit 없음 → UNDO 필요
+- T3: commit됨, checkpoint 이후 → REDO 필요
+
+UNDO T2 (역순):
+- <T2, A, 15, 20>: A를 20→15로 복원
+- <T2, B, 5, 7>: B를 7→5로 복원
+
+REDO T3 (정순):
+- <T3, C, 8, 9>: C를 8→9로 적용
+- <T3, D, 12, 14>: D를 12→14로 적용
+
+복구 후 최종 값:
+A: T1에 의해 15, T2 UNDO로 20→15 = 15
+B: T2 UNDO로 7→5 = 5
+C: T3 REDO로 8→9 = 9
+D: T3 REDO로 12→14 = 14
+
+각 보기 분석:
+① A: 15 — T1 committed + T2 UNDO(A=20→15). 맞는 값.
+② B: 5 — T2 UNDO(B=7→5). 맞는 값.
+③ C: 8 — T3가 committed이므로 REDO 후 C=9여야 함. 8은 REDO 미적용 상태. 틀린 값. 정답.
+④ D: 14 — T3 REDO(D=12→14). 맞는 값.
+
+핵심 정리:
+즉시 변경 복구 규칙: UNDO(미완료) + REDO(완료, checkpoint 이후).
+Checkpoint 이전 commit된 T1은 이미 반영됨 → REDO 불필요.
+C는 T3 committed이므로 반드시 REDO → C=9. C=8은 crash 이전 상태이므로 복구 후 값이 아님.

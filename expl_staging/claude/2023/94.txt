@@ -1,0 +1,15 @@
+정답: ① (1번)
+
+해설:
+신경망 기반의 기계학습 알고리즘은 인공신경망(ANN) 구조를 핵심으로 사용하는 모델을 의미한다. 선택지 중 신경망 기반이 아닌 것을 찾아야 한다.
+
+각 보기 분석:
+① SVM(Support Vector Machine) — 신경망 기반이 아닌 알고리즘이다. SVM은 마진(margin) 최대화를 통해 결정 경계(hyperplane)를 찾는 커널 기반 방법론으로, 인공신경망과 구조적으로 다르다. 정답.
+② GAN(Generative Adversarial Network) — 생성자(Generator)와 판별자(Discriminator) 두 신경망이 적대적으로 학습하는 딥러닝 모델이다. 신경망 기반이다.
+③ DBN(Deep Belief Network) — 제한 볼츠만 머신(RBM)을 여러 층으로 쌓은 심층 신경망 구조이다. 신경망 기반이다.
+④ VAE(Variational Auto Encoder) — 인코더·디코더 신경망으로 구성된 생성 모델이다. 신경망 기반이다.
+
+핵심 정리:
+GAN, DBN, VAE는 모두 인공신경망 아키텍처를 기반으로 한다.
+SVM은 통계적 학습이론(Statistical Learning Theory)에 기반하며 신경망과 독립적인 알고리즘이다.
+SVM은 커널 트릭(kernel trick)을 사용하여 비선형 분류 문제도 처리할 수 있다.

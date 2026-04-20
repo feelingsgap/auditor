@@ -1,0 +1,14 @@
+정답: ① (1번)
+
+해설:
+UI가 Car를 거쳐 Person의 이름을 얻던 위임 체인을 Car가 직접 감추도록 바꾸었다.
+이는 hide delegate 리팩토링이다.
+
+각 보기 분석:
+① hide delegate - 중간 객체가 위임을 숨기고 필요한 값을 직접 제공한다. 정답이다.
+② remove middle man - 반대로 중간 위임을 제거하고 직접 접근하게 만드는 경우다.
+③ rename method - 이름만 바꾸는 리팩토링이다.
+④ encapsulate downcast - 다운캐스팅을 감싸는 기법이다.
+
+핵심 정리:
+위임 체인을 숨겨 클라이언트가 단순해지면 hide delegate다.

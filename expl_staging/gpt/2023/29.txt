@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+인공신경망 테스팅에서 Component coverage는 일반 소프트웨어 테스팅 용어라 적절하지 않다.
+
+각 보기 분석:
+① Neuron coverage는 신경망 커버리지다.
+② Layer coverage도 신경망 커버리지다.
+③ Component coverage는 신경망 전용 커버리지가 아니다. 정답이다.
+④ Sign-sign coverage는 신경망 커버리지다.
+
+핵심 정리:
+신경망 테스팅은 뉴런과 레이어의 활성화 패턴을 기준으로 커버리지를 측정한다.

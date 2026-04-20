@@ -1,0 +1,36 @@
+정답: ② (2번)
+
+해설:
+Employee(empno, ename, job, mgr, deptno)와 Department(deptno, dname) 릴레이션에 대해 SQL 실행 결과 레코드 수를 계산하는 문항이다.
+
+데이터 현황:
+- Employee: 4개 투플 (KING/NULL dept, BLAKE/30, CLARK/10, JONES/20)
+- Department: 4개 투플 (10, 20, 30, 40)
+- KING의 deptno는 NULL
+
+주요 SQL 패턴별 결과 분석:
+
+INNER JOIN (Employee.deptno = Department.deptno):
+- KING(deptno=NULL)은 조인 불가. BLAKE(30), CLARK(10), JONES(20)만 매칭.
+- 결과: 3개 레코드
+
+LEFT OUTER JOIN:
+- Employee 기준 모든 행 포함. KING은 Department 컬럼이 NULL로 포함.
+- 결과: 4개 레코드
+
+CROSS JOIN (또는 카티전 곱):
+- 4 × 4 = 16개 레코드
+
+SELECT COUNT(*) FROM Employee WHERE mgr IS NOT NULL:
+- mgr이 NULL인 KING 제외 → 3개
+
+정답 ②에 해당하는 SQL의 결과가 옳지 않다:
+이미지에서 선택지 전체를 확인할 수 없으나, 정답이 ②이므로 두 번째 SQL 구문의 레코드 수 계산이 틀린 것이다.
+대표적 오류 유형: LEFT JOIN을 INNER JOIN으로 계산, NULL 처리 오류, HAVING 조건 오산 등.
+
+핵심 정리:
+INNER JOIN: NULL 값은 조인 키로 사용 시 매칭되지 않아 해당 행이 결과에서 제외된다.
+LEFT OUTER JOIN: 왼쪽 릴레이션의 모든 행 포함, 오른쪽 매칭 없으면 NULL 채움.
+NULL 처리: NULL = NULL은 FALSE이므로 동등 조인에서 NULL 행은 항상 제외된다.
+
+[플래그: Q57 선택지 이미지가 잘려 SQL 구문 전체 확인 불가. 정답 ②를 기준으로 핵심 개념 중심으로 작성함.]

@@ -1,0 +1,21 @@
+정답: ③ (3번)
+
+해설:
+마스터 브랜치에서 bugFix01의 새로운 브랜치를 생성한 다음, HEAD 포인터가 이 새로운 브랜치를 가리키게 하기 위한 Git 명령어를 찾는 문항이다.
+
+이미지 상황 분석:
+master 브랜치의 C3 커밋에서 bugFix01 브랜치가 생성된 상태가 그림으로 표시됨. HEAD를 bugFix01로 이동시켜야 한다.
+
+Git 명령어 분석:
+① git add bugFix01 — 파일을 스테이징 영역에 추가하는 명령어. 브랜치와 무관. 오답.
+② git branch bugFix01 — 새 브랜치를 생성하지만 HEAD는 현재 브랜치(master)에 그대로 있다. HEAD를 이동시키지 않음. 오답.
+③ git checkout bugFix01 — 지정한 브랜치로 전환하여 HEAD가 해당 브랜치를 가리키도록 한다. 브랜치가 이미 생성된 상태에서 HEAD를 bugFix01로 이동. 정답.
+④ git merge bugFix01 — 현재 브랜치에 bugFix01을 병합하는 명령. HEAD 이동이 아님. 오답.
+
+참고: git checkout -b bugFix01 이면 생성과 전환을 동시에 수행하지만, 문제의 상황은 이미 브랜치가 생성된 후 HEAD를 이동하는 것이므로 checkout만 사용.
+
+핵심 정리:
+브랜치 생성: git branch <name>.
+브랜치 전환(HEAD 이동): git checkout <name> 또는 git switch <name>.
+생성 + 전환 동시: git checkout -b <name> 또는 git switch -c <name>.
+HEAD는 현재 작업 중인 브랜치를 가리키는 포인터이다.

@@ -1,0 +1,13 @@
+정답: ③ (3번)
+
+해설:
+마스터 브랜치에서 새 브랜치로 HEAD를 이동하는 Git 명령어를 묻는 문제다. 브랜치 생성 후 해당 브랜치로 이동하는 명령이 필요하다.
+
+각 보기 분석:
+① git add bugFix01 - 스테이징 명령이다.
+② git branch bugFix01 - 브랜치를 만들지만 HEAD는 이동하지 않는다.
+③ git checkout bugFix01 - HEAD를 새 브랜치로 이동한다. 정답이다.
+④ git merge bugFix01 - 브랜치 병합 명령이다.
+
+핵심 정리:
+브랜치 생성 후 이동은 `git checkout`이 기본이다.

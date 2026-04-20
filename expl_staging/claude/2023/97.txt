@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+딥러닝에서 활성함수(activation function)는 뉴런의 출력을 결정하는 함수로, 비선형성을 부여하여 복잡한 패턴 학습을 가능하게 한다. 이 중 신경망 학습에 가장 널리 사용되는 활성함수를 묻는 문항이다.
+
+각 보기 분석:
+① RMSProp — 활성함수가 아니라 경사하강법의 학습률을 조정하는 최적화 알고리즘(optimizer)이다.
+② ReLU(Rectified Linear Unit) — f(x) = max(0, x)로 정의되는 활성함수이다. 기울기 소실(vanishing gradient) 문제를 완화하고 계산 효율이 높아 딥러닝에서 가장 널리 사용되는 활성함수이다. 정답.
+③ SGD(Stochastic Gradient Descent) — 확률적 경사하강법으로, 활성함수가 아닌 가중치 업데이트 최적화 알고리즘이다.
+④ Adam(Adaptive Moment Estimation) — 모멘텀과 RMSProp을 결합한 최적화 알고리즘이다. 활성함수가 아니다.
+
+핵심 정리:
+활성함수: Sigmoid, Tanh, ReLU, Leaky ReLU, Softmax 등.
+최적화 알고리즘(optimizer): SGD, Momentum, RMSProp, Adam 등.
+ReLU는 기울기 소실 문제를 줄이고 희소 활성화(sparse activation)를 통해 딥러닝 성능을 크게 향상시켰다.

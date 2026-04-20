@@ -1,0 +1,25 @@
+정답: ③ (3번)
+
+해설:
+RESTful 서비스에서 HTTP 메서드의 올바른 사용 여부를 판단하는 문항이다.
+
+각 항목 분석:
+가. 회원 정보를 알고 싶은 경우: READ http://localhost:8080/rest/api/v1/user/1
+   → "READ"는 HTTP 표준 메서드가 아님. 조회는 GET을 사용해야 함. 부적절.
+나. 회원 가입을 하는 경우: POST http://localhost:8080/rest/api/v1/user {...}
+   → 리소스 신규 생성에 POST 사용. 적절.
+다. 회원 정보를 수정하고 싶은 경우: UPDATE http://localhost:8080/rest/api/v1/user/1 {...}
+   → "UPDATE"는 HTTP 표준 메서드가 아님. 수정에는 PUT(전체 대체) 또는 PATCH(부분 수정)를 사용해야 함. 부적절.
+라. 회원을 탈퇴 처리하고 싶은 경우: DELETE http://localhost:8080/rest/api/v1/user/1
+   → 리소스 삭제에 DELETE 사용. 적절.
+
+각 보기 분석:
+① 가, 라 — 가는 READ(비표준)로 부적절. 오답.
+② 가, 다 — 둘 다 비표준 메서드 사용. 오답.
+③ 나, 라 — 나(POST)와 라(DELETE) 모두 올바른 HTTP 메서드. 정답.
+④ 나, 다, 라 — 다(UPDATE)가 비표준이므로 오답.
+
+핵심 정리:
+HTTP 표준 메서드: GET(조회), POST(생성), PUT(전체 수정/대체), PATCH(부분 수정), DELETE(삭제).
+"READ", "UPDATE", "CREATE"는 CRUD 개념이지 HTTP 메서드가 아님.
+RESTful: URI는 자원을 표현하고, HTTP 메서드로 행위를 표현하는 설계 원칙.

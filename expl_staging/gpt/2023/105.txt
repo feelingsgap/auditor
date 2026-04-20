@@ -1,0 +1,13 @@
+정답: ④ (4번)
+
+해설:
+소스 IP와 목적지 IP를 동일하게 적는 것은 Bonk가 아니라 Land 공격이다. Bonk는 패킷 조작으로 재조합 오류를 유발하는 DoS 공격이다.
+
+각 보기 분석:
+① TearDrop은 단편화 조각의 오프셋을 겹치게 만들어 재조합 오류를 일으킨다.
+② TCP SYN 플러딩은 3-Way Handshaking을 악용한 공격이다.
+③ Smurf는 ICMP 브로드캐스트 특성을 악용한 공격이다.
+④ 소스 IP와 목적지 IP를 같게 쓰는 공격은 Land 공격이므로 틀렸다. 정답이다.
+
+핵심 정리:
+DoS 공격은 Land, TearDrop, SYN Flood, Smurf 등을 구분해야 한다.

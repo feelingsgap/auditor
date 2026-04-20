@@ -1,0 +1,30 @@
+정답: ① (1번)
+
+해설:
+스프링(Spring) MVC 아키텍처의 요청 처리 흐름에서 각 구성 요소의 역할과 위치를 파악하는 문항이다.
+
+스프링 MVC 요청 처리 흐름:
+① Client가 Request를 (가)로 전송
+② (가)가 (나)에게 어떤 Controller를 사용할지 질의(②)
+③ (나)가 Controller 정보를 (가)에게 반환(③)
+④ (가)가 Controller를 호출(④)
+⑤ Controller가 처리 후 (다)를 (가)에 반환(⑤)
+⑥ (가)가 (라)에게 View 이름을 전달하여 실제 View 경로 결정(⑥)
+⑦ View 렌더링 후 Client에게 응답
+
+각 컴포넌트 역할:
+(가) DispatcherServlet: 모든 요청의 진입점(Front Controller 패턴). 요청 수신 및 전체 흐름 조정.
+(나) HandlerMapping: URL과 Controller 간의 매핑 정보 관리. 요청 URL에 해당하는 Controller를 찾아줌.
+(다) ModelAndView: Controller가 처리 결과(Model 데이터 + View 이름)를 담아 반환하는 객체.
+(라) ViewResolver: View 이름을 실제 View 파일 경로로 변환.
+
+각 보기 분석:
+① (가) DispatcherServlet, (나) HandlerMapping, (다) ModelAndView, (라) ViewResolver — 스프링 MVC 표준 흐름과 정확히 일치. 정답.
+② (가) DispatcherServlet, (나) ModelAndView, (다) HandlerMapping, (라) ViewResolver — HandlerMapping과 ModelAndView의 위치가 뒤바뀜. 오답.
+③ (가) ViewResolver, (나) HandlerMapping, (다) ModelAndView, (라) DispatcherServlet — 진입점이 ViewResolver가 될 수 없음. 오답.
+④ (가) ViewResolver, (나) ModelAndView, (다) HandlerMapping, (라) DispatcherServlet — 오답.
+
+핵심 정리:
+스프링 MVC 처리 순서: DispatcherServlet → HandlerMapping → Controller → ModelAndView → ViewResolver → View.
+DispatcherServlet: Front Controller 패턴 구현체로 모든 요청의 중앙 집중 처리.
+ViewResolver: JSP, Thymeleaf 등 View 기술과 DispatcherServlet을 분리하는 역할.

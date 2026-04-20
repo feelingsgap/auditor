@@ -1,0 +1,16 @@
+정답: ④ (4번)
+
+해설:
+SDN(Software Defined Networking) 오버레이(overlay)의 수행 방법 또는 기술로 가장 적절하지 않은 것을 찾는 문항이다.
+SDN 오버레이는 기존 물리 네트워크 위에 가상 네트워크를 구성하는 기술이다.
+
+각 보기 분석:
+① VXLAN(Virtual eXtensible LAN) — MAC-in-UDP 터널링 방식으로 오버레이 네트워크를 구성하는 대표적인 SDN 오버레이 기술이다. 24비트 VNI로 약 1600만 개 네트워크 분리 가능. 옳은 설명.
+② NVGRE(Network Virtualization with GRE) — Microsoft가 개발한 GRE(Generic Routing Encapsulation) 기반 오버레이 기술. 24비트 TNI로 가상 네트워크 분리. 옳은 설명.
+③ NVO3(Network Virtualization Overlays) — IETF에서 정의한 데이터센터 네트워크 가상화 오버레이 프레임워크. VXLAN, NVGRE 등을 포괄하는 개념. 옳은 설명.
+④ CDPI(Control to Data-Plane Interface) — SDN 컨트롤러와 데이터 플레인(스위치) 간의 표준 인터페이스(OpenFlow가 대표적). 오버레이 기술이 아니라 SDN 아키텍처의 제어 인터페이스이다. 옳지 않은 설명. 정답.
+
+핵심 정리:
+SDN 오버레이 기술: VXLAN, NVGRE, STT, GENEVE, NVO3 등.
+CDPI(Control to Data-Plane Interface): SDN 컨트롤러 ↔ 포워딩 장치 간 인터페이스 (OpenFlow 등).
+SDN의 핵심 인터페이스: Northbound API(앱↔컨트롤러), Southbound API=CDPI(컨트롤러↔데이터플레인).

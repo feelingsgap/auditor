@@ -1,0 +1,7 @@
+**정답: ② Encapsulate Variable (변수 캡슐화)**
+
+**해설:**
+Martin Fowler의 리팩토링 카탈로그에서 코드의 구조 변화를 식별하는 문제입니다.
+* **변경 전:** `let defaultOwner = { ... }` 라는 변수가 전역에 오픈되어 있어 누구든 이 변수 객체 속성에 접근하여 무단으로 변경이 가능했습니다 (안정성 취약).
+* **변경 후:** 전역 변수명을 `defaultOwnerData` 등 내부 상태 명칭으로 감추고 외부에는 이를 세팅하거나 확인하는 **Getter 함수(defaultOwner)와 Setter 함수(setDefaultOwner)**를 생성해 주어 변수 접근 인터페이스를 생성했습니다.
+이러한 리팩토링 처리를 변수를 함수 내부 또는 제어 레이어 안으로 감쌌다고 하여 **Encapsulate Variable (변수 캡슐화)** 기법이라 부릅니다.

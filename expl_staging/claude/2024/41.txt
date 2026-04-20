@@ -1,0 +1,41 @@
+정답: ① (1번)
+
+해설:
+Python 리스트 메서드(pop, insert, index)를 추적하여 출력 결과를 구하는 문항이다.
+
+코드 단계별 추적:
+초기 상태: language = ['python', 'java', 'go', 'ruby', 'c']
+
+1) pop = language.pop()
+   → 인자 없는 pop()은 마지막 요소 제거 및 반환
+   → pop = 'c'
+   → language = ['python', 'java', 'go', 'ruby']
+
+2) pop2 = language.pop(1)
+   → 인덱스 1('java')을 제거 및 반환
+   → pop2 = 'java'
+   → language = ['python', 'go', 'ruby']
+
+3) language.insert(1, pop)
+   → 인덱스 1 위치에 'c' 삽입
+   → language = ['python', 'c', 'go', 'ruby']
+
+4) language.insert(2, pop2)
+   → 인덱스 2 위치에 'java' 삽입
+   → language = ['python', 'c', 'java', 'go', 'ruby']
+
+5) print(language.index('go'))
+   → 'go'의 인덱스 탐색
+   → language[0]='python', [1]='c', [2]='java', [3]='go'
+   → index('go') = 3
+
+각 보기 분석:
+① 3 — 최종 리스트에서 'go'의 인덱스. 정답.
+② 2 — insert 순서나 인덱스 계산을 잘못한 경우.
+③ 1 — pop2 삽입 전 상태의 인덱스로 오판한 경우.
+④ 0 — 초기 상태의 'go' 인덱스(2)와도 다른 오답.
+
+핵심 정리:
+list.pop(): 마지막 요소 제거/반환. list.pop(i): 인덱스 i 요소 제거/반환.
+list.insert(i, val): 인덱스 i 위치에 val 삽입 (기존 요소 뒤로 밀림).
+list.index(val): val의 첫 번째 인덱스 반환.

@@ -1,0 +1,15 @@
+정답: ② (2번)
+
+해설:
+네트워크 계층과 링크 계층 주소 간의 변환 방향에 따라 ARP와 RARP가 구분된다. 문제는 링크 계층 주소(MAC 주소)를 네트워크 계층 주소(IP 주소)로 변환하는 프로토콜을 묻고 있다.
+
+각 보기 분석:
+① ARP(Address Resolution Protocol) — 네트워크 계층 주소(IP)를 링크 계층 주소(MAC)로 변환한다. 방향이 반대이다.
+② RARP(Reverse Address Resolution Protocol) — 링크 계층 주소(MAC)를 네트워크 계층 주소(IP)로 변환한다. 디스크 없는 워크스테이션이 부팅 시 자신의 MAC 주소로 IP 주소를 획득하는 데 사용된다. 정답.
+③ ICMP(Internet Control Message Protocol) — 네트워크 오류 보고 및 진단(ping, traceroute 등)을 위한 프로토콜이다. 주소 변환 기능이 없다.
+④ NAT(Network Address Translation) — 사설 IP 주소와 공인 IP 주소 간의 변환을 담당한다. 링크 계층 주소와는 무관하다.
+
+핵심 정리:
+ARP: IP 주소 → MAC 주소 (논리 주소 → 물리 주소).
+RARP: MAC 주소 → IP 주소 (물리 주소 → 논리 주소).
+현재 RARP는 BOOTP와 DHCP로 대체되었으나 개념 시험에서는 여전히 출제된다.

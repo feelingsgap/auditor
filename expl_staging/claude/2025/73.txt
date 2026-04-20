@@ -1,0 +1,32 @@
+정답: ③ (3번)
+
+해설:
+데이터베이스가 유지해야 할 중요한 성질들 중 NoSQL과 관련이 있는 성질을 구분하는 문항이다.
+
+주어진 성질:
+가. 원자성(atomicity)
+나. 일관성(consistency)
+다. 분할 허용성(partition tolerance)
+라. 격리성(isolation)
+마. 가용성(availability)
+
+ACID (관계형 데이터베이스):
+원자성(Atomicity), 일관성(Consistency), 격리성(Isolation), 지속성(Durability)
+→ 가(원자성), 라(격리성)는 ACID 속성.
+
+CAP 정리 (분산 시스템, NoSQL 기반):
+Consistency(일관성), Availability(가용성), Partition tolerance(분할 허용성)
+→ 나(일관성), 다(분할 허용성), 마(가용성)는 CAP 속성.
+
+NoSQL 데이터베이스는 CAP 정리에서 일반적으로 C(일관성)를 약화시키고 A(가용성) + P(분할 허용성)를 선택(AP 시스템) 하거나 C + P를 선택(CP 시스템)한다.
+
+각 보기 분석:
+① 가, 나, 라 — 가(원자성), 라(격리성)은 ACID 속성이므로 NoSQL과 직접 관련 없음. 오답.
+② 가, 나, 다, 라 — 가, 라는 ACID. 오답.
+③ 나, 다, 마 — 일관성(C), 분할 허용성(P), 가용성(A) = CAP 정리 세 속성. 정답.
+④ 나, 다, 라, 마 — 라(격리성)는 ACID 속성. 오답.
+
+핵심 정리:
+CAP 정리: 분산 시스템에서 C, A, P 세 가지를 동시에 완전히 만족하는 것은 불가능.
+NoSQL(BASE): Basically Available, Soft state, Eventually consistent.
+ACID vs BASE: 관계형 DB는 ACID 강조, NoSQL은 BASE(CAP의 A+P 또는 C+P) 중심.

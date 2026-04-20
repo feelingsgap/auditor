@@ -1,0 +1,19 @@
+정답: ③ (3번)
+
+해설:
+NAT(Network Address Translation)의 세 가지 방식(DNAT, SNAT, PAT)에 대한 올바른 설명을 선택하는 문항이다.
+
+각 보기 분석:
+가. DNAT(Dynamic NAT) 방식에서는 내부 사설 IP가 외부에 공개되므로 외부 컴퓨터는 사설 IP로 내부에 접속한다 — 틀림. DNAT는 사설 IP를 공인 IP 풀에서 동적으로 매핑하는 방식이며, 외부에서 사설 IP로 직접 접속하는 것은 불가능하다. 외부에는 공인 IP만 노출된다.
+나. SNAT(Static NAT) 방식에서는 사설 IP와 공인 IP가 일대일로 매핑된다 — 맞음. Static NAT는 특정 사설 IP를 고정된 공인 IP 하나에 영구 매핑한다.
+다. PAT(Port Address Translation) 방식에서는 소수의 공인 IP를 내부 네트워크의 다수의 컴퓨터가 공유해서 사용할 수 있다 — 맞음. PAT(또는 NAT Overload)는 포트 번호로 연결을 구분하여 하나의 공인 IP를 여러 내부 호스트가 공유한다.
+
+① 가, 나 — 가가 틀리므로 오답.
+② 가, 다 — 가가 틀리므로 오답.
+③ 나, 다 — 나와 다 모두 올바른 설명. 정답.
+④ 다 — 나도 맞으므로 불완전.
+
+핵심 정리:
+Static NAT(SNAT): 사설 IP ↔ 공인 IP 1:1 고정 매핑.
+Dynamic NAT(DNAT): 사설 IP → 공인 IP 풀에서 동적 할당.
+PAT(NAT Overload): 포트 번호 활용, 다수 내부 호스트가 소수 공인 IP 공유.

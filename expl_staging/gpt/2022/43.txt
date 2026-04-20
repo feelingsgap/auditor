@@ -1,0 +1,26 @@
+정답: ④ (4번)
+
+해설:
+UML 클래스 다이어그램을 분석하여 적용된 디자인 패턴 2개를 식별하는 문항이다. Button이 Command 인터페이스를 통해 명령을 실행하고, LightOnCommand가 ILamp 인터페이스를 통해 LEDLight를 제어하는 구조이다.
+
+구조 분석:
+1. Button - Command(interface) - LightOnCommand - ILamp(interface) - Lamp/LEDLight
+   - Button은 setCommand(Command)와 pressed()를 가짐
+   - Command 인터페이스는 execute() 메서드 정의
+   - LightOnCommand가 Command를 구현하고 ILamp를 참조
+   → Button이 Command 인터페이스를 통해 동작을 캡슐화: Command 패턴
+
+2. LightOnCommand는 ILamp 인터페이스를 통해 Lamp를 호출하며, LEDLight는 ILamp 인터페이스를 구현하여 기존 Lamp 인터페이스(ILamp)에 맞게 작동
+   - LEDLight는 switchOn/switchOff를 가지나 ILamp의 turnOn/turnOff와 시그니처가 다름
+   - Lamp가 ILamp를 구현하고 LEDLight를 IEDLight로 감싸는 구조
+   → 기존 인터페이스(ILamp)에 맞지 않는 LEDLight를 사용 가능하게 변환: Adapter 패턴
+
+각 보기 분석:
+① Strategy와 Proxy — Strategy는 알고리즘 교체, Proxy는 대리 객체. 이 구조에 해당 없음.
+② State와 Adapter — State는 상태 전환 패턴. Command 패턴을 State로 오인한 경우.
+③ Command와 Proxy — Proxy 패턴 요소가 보이지 않음.
+④ Command와 Adapter — Command 패턴(Button→Command→LightOnCommand)과 Adapter 패턴(LEDLight를 ILamp에 적응). 정답.
+
+핵심 정리:
+Command 패턴: 요청을 객체로 캡슐화하여 요청자와 수행자를 분리.
+Adapter 패턴: 호환되지 않는 인터페이스를 클라이언트가 기대하는 인터페이스로 변환.

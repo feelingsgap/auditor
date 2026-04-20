@@ -1,0 +1,17 @@
+정답: ② (2번)
+
+해설:
+외래키 제약조건의 `ON DELETE`, `ON UPDATE` 옵션 동작을 해석하는 문제다.
+
+DDL의 핵심:
+- `Super_ENO`는 `ON DELETE SET NULL`, `ON UPDATE CASCADE`
+- `DNO`는 `ON DELETE SET DEFAULT`, `ON UPDATE CASCADE`
+
+각 보기 분석:
+① 상사 200번이 삭제되면 100번 직원의 `Super_ENO`는 NULL이 된다 — 맞다.
+② 부서가 삭제되면 100번 직원도 연쇄 삭제된다 — `ON DELETE CASCADE`가 아니라 `SET DEFAULT`이므로 틀리다. 정답이다.
+③ 부서번호 5가 6으로 바뀌면 직원의 부서번호도 6으로 바뀐다 — `ON UPDATE CASCADE`이므로 맞다.
+④ 상사 직원번호가 200에서 300으로 바뀌면 참조값도 300으로 바뀐다 — 맞다.
+
+핵심 정리:
+`SET DEFAULT`는 삭제 시 참조 튜플을 지우는 것이 아니라 기본값으로 바꾼다.

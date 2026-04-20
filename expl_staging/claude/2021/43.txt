@@ -1,0 +1,26 @@
+정답: ④ (4번)
+
+해설:
+C 언어의 조건부 컴파일 지시어(#if defined)로 구성된 feature diagram 소스 코드를 분석하여 올바른 피처 다이어그램을 찾는 문항이다.
+
+코드 구조 분석:
+f(int x)는 항상 실행된다.
+#if defined(Feature1) → g1(x) 실행: Feature1이 정의된 경우에만.
+  #if defined(Feature2) → g2(x) 실행: Feature1이 정의되고 Feature2도 정의된 경우.
+  #else → g3(x) 실행: Feature1이 정의되고 Feature2는 미정의인 경우.
+
+피처 관계 해석:
+f는 필수(mandatory) 피처.
+g1은 f의 선택적(optional) 자식 피처: Feature1 정의 여부에 따라 포함/미포함.
+g2와 g3는 g1의 대안(alternative/XOR) 관계: Feature2 정의 시 g2, 미정의 시 g3 실행. 단, g3는 Feature2가 없을 때 실행되므로 g2/g3가 배타적 관계.
+
+각 보기 분석:
+① f → g1(필수), g1 → g2, g3(둘 다 필수) — g2·g3가 모두 필수로 표시되어 잘못된 구조.
+② f → g1(필수), g1 → g2, g3(선택) — g1이 필수 피처로 표시된 점이 문제.
+③ f → g1(선택), g1 → g2, g3(선택) — g2·g3 관계가 OR(선택) 구조로 잘못 표현됨.
+④ f → g1(선택, 흰 원), g1 → g2, g3(XOR/대안) — f의 자식으로 g1이 선택적, g1의 자식으로 g2·g3가 대안 관계. 코드 구조와 일치한다. 정답.
+
+핵심 정리:
+Feature1 존재 여부: g1 선택적 포함/미포함.
+Feature2 존재 여부(Feature1 전제): g2 또는 g3 중 하나만 선택(XOR 관계).
+피처 다이어그램의 필수(채운 원)·선택(빈 원)·XOR(채운 삼각형) 표기 구분이 핵심.

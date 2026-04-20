@@ -1,0 +1,22 @@
+정답: ③ (3번)
+
+해설:
+소프트웨어 형상 관리(Software Configuration Management)의 4가지 주요 활동은 Configuration Identification, Configuration Control, Configuration Status Accounting, Configuration Verification/Audit이다. 이 문항은 제시된 A~D 활동들이 어느 형상 관리 활동에 해당하는지를 묻는 문항으로, 해당하지 않는 것을 찾는다.
+
+활동 분석:
+A. 베이스라인 설정 및 모든 형상 항목에 식별자 부여 → Configuration Identification(형상 식별)
+B. 변경 요청 평가, 조정, 변경 승인 활동 → Configuration Control(형상 통제)
+C. 형상 항목의 변경 히스토리 기록 및 보고 → Configuration Status Accounting(형상 상태 보고)
+D. 개발된 제품이 승인된 명세와 정확히 일치하는지 평가 → Configuration Audit(형상 감사) = Configuration Verification
+
+보기와 매핑:
+① Configuration Status Accounting — C에 해당
+② Configuration Identification — A에 해당
+③ Configuration Verification — D에 해당하지만, 위 A~D 설명들이 오히려 모두 해당하는 활동들이다. 다시 문항을 보면 "해당하지 않는 4가지 유형"을 고르라는 것이 아니라 A~D 전체가 어느 활동에 해당하는지 문는 구조다.
+④ Configuration Control — B에 해당
+
+이미지를 재분석하면: A~D가 모두 형상 관리 활동의 세부 내용인데, 보기 ③ Configuration Verification이 A~D 중 어느 것과도 매핑되지 않는다. A는 CI, B는 CC, C는 CSA, D는 Configuration Audit이므로, "해당하지 않는 것"은 별도 범주인 ③이 맞다.
+
+핵심 정리:
+형상 관리 4대 활동: 식별(Identification), 통제(Control), 상태 보고(Status Accounting), 감사(Audit/Verification).
+Configuration Verification은 Configuration Audit과 통합되는 개념으로 별도 독립 활동으로 구분되지 않는다.

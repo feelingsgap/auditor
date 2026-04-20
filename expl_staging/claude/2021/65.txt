@@ -1,0 +1,18 @@
+정답: ② (2번)
+
+해설:
+EMP와 DEPT 테이블의 참조무결성 제약 조건을 분석하여 잘못된 설명을 찾는 문항이다.
+EMP.Super_ENO → EMP(ENO): ON DELETE SET NULL, ON UPDATE CASCADE
+EMP.E_DNO → DEPT(DNO): ON DELETE SET DEFAULT, ON UPDATE CASCADE
+DEPT.Mgr_ENO → EMP(ENO): ON DELETE SET DEFAULT, ON UPDATE CASCADE
+
+각 보기 분석:
+① 직원의 소속 부서가 삭제되면 해당 직원은 디폴트 부서로 배치된다. — EMP.E_DNO의 ON DELETE SET DEFAULT 조치와 일치한다. 옳은 설명이다.
+② 상사 직원이 삭제되면 해당 직원은 디폴트 상사에게 배치된다. — EMP.Super_ENO의 ON DELETE 조치는 SET NULL이다. 따라서 상사가 삭제되면 해당 직원의 Super_ENO는 NULL로 설정된다. 디폴트 상사로 배치되는 것이 아니므로 옳지 않다. 정답.
+③ 부서번호(DNO)가 변경되면 해당 부서 소속 직원의 소속 부서번호도 동일하게 갱신된다. — EMP.E_DNO의 ON UPDATE CASCADE 조치와 일치한다. 옳은 설명이다.
+④ 관리자 직원이 삭제되면 삭제된 직원이 관리했던 부서의 관리자는 디폴트 관리자로 배치된다. — DEPT.Mgr_ENO의 ON DELETE SET DEFAULT 조치와 일치한다. 옳은 설명이다.
+
+핵심 정리:
+ON DELETE SET NULL: 참조된 행 삭제 시 외래키 값을 NULL로 변경.
+ON DELETE SET DEFAULT: 참조된 행 삭제 시 외래키 값을 기본값(DEFAULT)으로 변경.
+ON UPDATE CASCADE: 참조된 행의 기본키 변경 시 외래키도 동일하게 변경.

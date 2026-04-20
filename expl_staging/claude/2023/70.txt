@@ -1,0 +1,21 @@
+정답: ③ (3번)
+
+해설:
+SQL GRANT 문에서 권한을 부여받은 사용자가 다른 사용자에게도 동일 권한을 재부여(grant)할 수 있도록 허용하는 옵션을 묻는 문제이다.
+
+GRANT 구문:
+GRANT SELECT, UPDATE ON STUDENT TO admuser (가);
+
+재부여 권한 옵션:
+SQL 표준에서 권한 재부여를 허용하는 옵션은 WITH GRANT OPTION이다. 이를 명시하면 admuser가 다른 사용자에게 SELECT, UPDATE 권한을 재부여할 수 있다.
+
+각 보기 분석:
+① WITH OPTION GRANT — 옵션 순서가 틀림. 올바른 문법이 아님.
+② WITH OPTION REGRANT — REGRANT는 SQL 표준 문법이 아님.
+③ WITH GRANT OPTION — SQL 표준 문법으로 권한 재부여를 허용하는 올바른 옵션. 정답.
+④ WITH REGRANT OPTION — REGRANT는 SQL 표준에 존재하지 않는 키워드.
+
+핵심 정리:
+WITH GRANT OPTION: 권한을 부여받은 사용자가 동일 권한을 제3자에게 재부여할 수 있음.
+REVOKE ... CASCADE: WITH GRANT OPTION으로 연쇄 부여된 권한을 모두 회수할 때 사용.
+권한 재부여 체인이 생성되므로 보안 관점에서 신중하게 사용해야 한다.

@@ -1,0 +1,21 @@
+**정답: ② 2**
+
+**해설:**
+이진 탐색(Binary Search) 알고리즘 로직의 추적(Trace) 문제입니다.
+목표값(k) = 3
+배열 list = {1, 2, 3, 4} (인덱스는 각각 0, 1, 2, 3)
+변수 초기화: left = 0, right = 3
+
+1차 While 루프 탐색:
+* mid = 0 + (3 - 0) / 2 = 1 (정수 몫 연산)
+* list.get(mid) = list.get(1) = 2
+* 타깃 3은 값 2보다 크므로, 분기문(`else`)에서 `left = mid + 1 = 2`가 됩니다.
+
+2차 While 루프 탐색:
+* left = 2, right = 3
+* mid = 2 + (3 - 2) / 2 = 2
+* list.get(mid) = list.get(2) = 3
+* 타깃 3과 list.get(2) 값이 같으므로 (`else if` 분기), `result = mid(2)`가 기록되고 `right = mid - 1 = 1`이 됩니다.
+
+3차 검사: `left(2) <= right(1)` 조건이 False가 되어 While 문이 종료됩니다.
+결과적으로 보관된 `result` 값인 **인덱스 위치 표기 '2'**를 반환하여 출력합니다.

@@ -1,0 +1,21 @@
+정답: ② (2번)
+
+해설:
+SQL 뷰(view)에 대한 옳은 설명들을 묶은 것을 찾는 문항이다. 뷰의 갱신 가능성, GROUP BY 사용, materialized view 등의 특성을 정확히 알아야 한다.
+
+각 설명 분석:
+가. 뷰에 대한 투플의 삽입은 시스템에 의해 거부될 수 있다 — 올바른 설명. 집계 함수, GROUP BY, DISTINCT, 조인 등을 포함한 뷰는 삽입이 거부된다.
+나. 원본과의 불일치 문제로 인해 뷰 생성 시 GROUP BY절을 사용할 수 없다 — 틀린 설명. GROUP BY절을 포함한 뷰를 생성하는 것은 가능하다. 다만 그 뷰는 갱신(INSERT/UPDATE/DELETE)이 불가능하다. GROUP BY가 뷰 생성 자체를 막지는 않는다.
+다. 집계(aggregation)함수에 의해 생성된 뷰의 경우 일반적으로 갱신을 허용하지 않는다 — 올바른 설명. 집계 함수가 포함된 뷰는 기본 테이블로의 역매핑이 불가능하여 갱신이 허용되지 않는다.
+라. 실체화된 뷰(materialized view)를 생성할 경우에는 CREATE VIEW 구문을 사용하고, 그렇지 않은 뷰를 생성할 경우에는 CREATE TABLE 구문을 사용한다 — 틀린 설명. 완전히 반대다. 일반 뷰는 CREATE VIEW, materialized view는 CREATE MATERIALIZED VIEW (또는 DBMS별 별도 구문)을 사용하며, CREATE TABLE은 실제 테이블 생성 구문이다.
+
+각 보기 분석:
+① 가, 나 — 나가 틀린 설명이다.
+② 가, 다 — 두 설명 모두 올바르다. 정답.
+③ 나, 라 — 둘 다 틀린 설명이다.
+④ 다, 라 — 라가 틀린 설명이다.
+
+핵심 정리:
+갱신 불가 뷰: 집계 함수·GROUP BY·DISTINCT·조인 등을 포함한 뷰.
+GROUP BY는 뷰 생성 자체는 허용하나 갱신을 제한한다.
+CREATE VIEW(일반 뷰) vs CREATE MATERIALIZED VIEW(실체화 뷰) 구문 구분.
