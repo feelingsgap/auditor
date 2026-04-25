@@ -31,6 +31,7 @@ COLUMN_SPLITS = {
     2023: [(0, 310), (310, 9999)],
     2024: None,  # 테이블 형식 — 별도 처리
     2025: [(0, 190), (190, 430), (430, 615), (615, 841)],
+    2026: [(0, 310), (310, 9999)],
 }
 
 # 문항번호 패턴: "N." 뒤에 공백·한국어 따옴표·문자 또는 줄끝
@@ -211,9 +212,12 @@ def _load_page_question_map(year: int, base_dir: str) -> dict:
     return page_map
 
 
-def extract_2021_2023(year: int, base_dir: str = '.') -> dict:
-    """2021, 2022, 2023년: content stream 볼드 감지."""
-    pdf_path = os.path.join(base_dir, str(year), f'{year}_answer.pdf')
+def extract_2021_2023(year: int, base_dir: str = '.', pdf_filename: str = None) -> dict:
+    """2021, 2022, 2023년: content stream 볼드 감지.
+    pdf_filename: 기본값은 '{year}_answer.pdf'. 2026처럼 별도 정답 PDF가 없을 때 사용."""
+    if pdf_filename is None:
+        pdf_filename = f'{year}_answer.pdf'
+    pdf_path = os.path.join(base_dir, str(year), pdf_filename)
     doc = fitz.open(pdf_path)
     col_splits = COLUMN_SPLITS[year]
     answers = {}
@@ -314,6 +318,7 @@ EXTRACTORS = {
     2023: lambda base: extract_2021_2023(2023, base),
     2024: lambda base: extract_2024(base),
     2025: lambda base: extract_2025(base),
+    2026: lambda base: extract_2021_2023(2026, base, '2026_auditor.pdf'),
 }
 
 
@@ -363,7 +368,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(description='감리사 답안지 PDF 정답 추출')
-    parser.add_argument('--years', nargs='+', type=int, default=[2021, 2022, 2023, 2024, 2025],
+    parser.add_argument('--years', nargs='+', type=int, default=[2021, 2022, 2023, 2024, 2025, 2026],
                         help='처리할 연도 목록 (기본: 2021~2025)')
     parser.add_argument('--base-dir', default='.', help='프로젝트 루트 디렉토리')
     parser.add_argument('--verbose', action='store_true', help='문항별 정답 출력')
