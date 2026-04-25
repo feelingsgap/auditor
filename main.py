@@ -25,7 +25,7 @@ class AuditorPDFProcessor:
         self.cropper = QuestionCropper()
         self.generator = HTMLGenerator()
         self.source_dir = "source"
-        self.available_years = [2021, 2022, 2023, 2024, 2025]
+        self.available_years = [2021, 2022, 2023, 2024, 2025, 2026]
         self.processing_log = []  # 처리 로그
     
     def log_processing_step(self, year: int, step: str, status: str, details: str = ""):
@@ -250,7 +250,7 @@ def main():
     
     parser.add_argument('--all', action='store_true', 
                        help='모든 연도의 모든 단계 처리')
-    parser.add_argument('--year', type=int, choices=[2021, 2022, 2023, 2024, 2025],
+    parser.add_argument('--year', type=int, choices=[2021, 2022, 2023, 2024, 2025, 2026],
                        help='처리할 연도 지정')
     parser.add_argument('--step', type=int, choices=[1, 2, 3],
                        help='처리할 단계 (1: 분석, 2: 크롭, 3: HTML생성)')

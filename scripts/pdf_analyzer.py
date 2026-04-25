@@ -23,6 +23,7 @@ class PDFAnalyzer:
             2022: {"left": 290, "right": 290},   # 우측 폭 대폭 증가: 310pt로 완전 잘림 방지
             2023: {"left": 290, "right": 290},   # 우측 폭 대폭 증가: 310pt로 완전 잘림 방지
             2024: {"left": 235, "right": 235},   # 기존 유지 (문제 없음)
+            2026: {"left": 235, "right": 250},   # 우측 텍스트가 553pt까지 존재
         }
         
         # 연도별 표준 컬럼 시작점 정의 (포인트 단위) - 실제 감지된 위치 기반
@@ -31,6 +32,7 @@ class PDFAnalyzer:
             2022: {"left": 57, "right": 376, "gap": 25},    # 실제 감지: 좌측 56-57pt, 우측 376pt
             2023: {"left": 56, "right": 375, "gap": 25},    # 실제 감지: 좌측 56pt, 우측 375pt
             2024: {"left": 50, "right": 309, "gap": 20},    # 중앙 정렬 조정: 좌측 +3pt, 우측 +3pt
+            2026: {"left": 50, "right": 309, "gap": 20},    # 2024와 동일
         }
     
     def get_subject_by_number(self, question_num: int) -> str:
@@ -134,10 +136,19 @@ class PDFAnalyzer:
         
         return left_column, right_column
     
-    def find_question_positions(self, page, question_nums: List[int]):
+    def find_question_positions(self, page, question_nums: List[int], year: int = None):
         """강화된 문항 번호 위치 찾기 - 모든 문항을 확실히 찾도록 개선"""
         positions = {}
-        
+
+        # 컬럼 시작 x좌표 필터 (들여쓰기 선택지 오인 방지)
+        col_x_filter = None
+        if year and year in self.standard_column_positions:
+            pos = self.standard_column_positions[year]
+            col_x_filter = {
+                "left_max": pos["left"] + 2,
+                "right_max": pos["right"] + 2,
+            }
+
         # PDF 텍스트를 구조화된 형태로 분석
         text_dict = page.get_text("dict")
         
@@ -169,7 +180,15 @@ class PDFAnalyzer:
                         
                     for span in line["spans"]:
                         text = span["text"]
-                        
+
+                        # 컬럼 x좌표 필터: 들여쓰기 선택지 오인 방지
+                        if col_x_filter:
+                            sx0 = span["bbox"][0]
+                            if sx0 < 200 and sx0 > col_x_filter["left_max"]:
+                                continue
+                            if sx0 >= 200 and sx0 > col_x_filter["right_max"]:
+                                continue
+
                         # 정확한 패턴 매칭
                         for pattern in precise_patterns:
                             if re.search(pattern, text):
@@ -1200,7 +1219,8 @@ class PDFAnalyzer:
             2021: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 500},
             2022: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 500}, 
             2023: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 500},
-            2024: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 400}
+            2024: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 400},
+            2026: {"min_y": 50, "max_y": 800, "min_height": 100, "max_height": 400},
         }
         
         bounds = page_bounds.get(year, page_bounds[2024])
@@ -1512,7 +1532,7 @@ class PDFAnalyzer:
         doc = fitz.open(pdf_path)
         
         # 1단계: 실제 문항 위치 정확 매핑
-        actual_questions = self._find_actual_questions(doc)
+        actual_questions = self._find_actual_questions(doc, year)
         
         # 2단계: 연도별 적응형 레이아웃 감지
         adaptive_layout = self.detect_adaptive_layout(doc, year)
@@ -1544,7 +1564,7 @@ class PDFAnalyzer:
             left_col, right_col = self.calculate_column_layout(page.rect, adaptive_layout)
             
             # 각 문항의 정확한 위치 찾기
-            positions = self.find_question_positions(page, questions_on_page)
+            positions = self.find_question_positions(page, questions_on_page, year)
             
             if not positions:
                 print(f"  페이지 {page_num}: 문항 위치 찾기 실패")
@@ -1912,42 +1932,81 @@ class PDFAnalyzer:
         """연도별 표준 컬럼 시작점 반환"""
         return self.standard_column_positions.get(year, {"left": 40, "right": 300, "gap": 20}).get(column, 40 if column == "left" else 300)
     
-    def _find_actual_questions(self, doc: fitz.Document) -> Dict[int, Dict]:
+    def _find_actual_questions(self, doc: fitz.Document, year: int = None) -> Dict[int, Dict]:
         """PDF 전체에서 실제 문항 위치 정확 매핑"""
         print("실제 문항 위치 정확 매핑 중...")
         actual_questions = {}
-        
+
+        # 연도별 컬럼 시작 x좌표가 등록된 경우 들여쓰기 선택지를 필터한다.
+        # 실제 문항 번호는 컬럼 시작점과 거의 일치하고, 선택지는 그보다 오른쪽에 있다.
+        col_x_filter = None
+        if year and year in self.standard_column_positions:
+            pos = self.standard_column_positions[year]
+            col_x_filter = {
+                "left_max": pos["left"] + 2,   # 좌측 컬럼 허용 최대 x (2pt 여유)
+                "right_max": pos["right"] + 2,  # 우측 컬럼 허용 최대 x
+            }
+
         # 페이지 2부터 분석 (1페이지는 유의사항)
         for page_num in range(1, doc.page_count):
             page = doc[page_num]
             actual_page_num = page_num + 1
-            
-            # 전체 페이지 텍스트 추출
-            full_text = page.get_text('text')
-            lines = full_text.split('\n')
-            
-            # 문항 번호 패턴으로 실제 위치 찾기
-            for i, line in enumerate(lines):
-                line = line.strip()
-                if not line:
-                    continue
-                    
-                # 문항 번호 패턴 (숫자 + 점)
-                match = re.match(r'^(\d+)\.', line)
-                if match:
-                    q_num = int(match.group(1))
-                    if 1 <= q_num <= 120:
-                        # 중복 문항 처리: 첫 번째 발견만 저장 (올바른 위치 보장)
-                        if q_num not in actual_questions:
-                            actual_questions[q_num] = {
-                                'page': actual_page_num,
-                                'line_start': i,
-                                'title': line,
-                                'verified': True
-                            }
-                        else:
-                            print(f"중복 문항 {q_num} 발견 (페이지 {actual_page_num}) - 첫 번째 발견 유지 (페이지 {actual_questions[q_num]['page']})")
-        
+
+            if col_x_filter:
+                # dict 방식: x좌표 포함 분석으로 들여쓰기 선택지 제외
+                text_dict = page.get_text("dict")
+                for blk in text_dict.get("blocks", []):
+                    if "lines" not in blk:
+                        continue
+                    for ln in blk["lines"]:
+                        for sp in ln["spans"]:
+                            txt = sp["text"].strip()
+                            match = re.match(r'^(\d+)\.', txt)
+                            if not match:
+                                continue
+                            q_num = int(match.group(1))
+                            if not (1 <= q_num <= 120):
+                                continue
+                            x0 = sp["bbox"][0]
+                            # 좌측/우측 컬럼 구분 후 x좌표 허용 범위 체크
+                            if x0 < 200:
+                                if x0 > col_x_filter["left_max"]:
+                                    continue  # 들여쓰기 선택지로 간주
+                            else:
+                                if x0 > col_x_filter["right_max"]:
+                                    continue
+                            line_text = "".join(s["text"] for s in ln["spans"]).strip()
+                            if q_num not in actual_questions:
+                                actual_questions[q_num] = {
+                                    'page': actual_page_num,
+                                    'line_start': 0,
+                                    'title': line_text,
+                                    'verified': True
+                                }
+                            else:
+                                print(f"중복 문항 {q_num} 발견 (페이지 {actual_page_num}) - 첫 번째 발견 유지 (페이지 {actual_questions[q_num]['page']})")
+            else:
+                # 기존 방식: 전체 텍스트에서 패턴 매칭
+                full_text = page.get_text('text')
+                lines = full_text.split('\n')
+                for i, line in enumerate(lines):
+                    line = line.strip()
+                    if not line:
+                        continue
+                    match = re.match(r'^(\d+)\.', line)
+                    if match:
+                        q_num = int(match.group(1))
+                        if 1 <= q_num <= 120:
+                            if q_num not in actual_questions:
+                                actual_questions[q_num] = {
+                                    'page': actual_page_num,
+                                    'line_start': i,
+                                    'title': line,
+                                    'verified': True
+                                }
+                            else:
+                                print(f"중복 문항 {q_num} 발견 (페이지 {actual_page_num}) - 첫 번째 발견 유지 (페이지 {actual_questions[q_num]['page']})")
+
         print(f"실제 문항 매핑 완료: {len(actual_questions)}개 문항 발견")
         return actual_questions
     
