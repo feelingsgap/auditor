@@ -1,0 +1,17 @@
+정답: ③ (3번)
+
+해설:
+TCP 혼잡 제어(Congestion Control)의 네 단계 중 어느 단계를 설명하는지 묻는 문항이다. 보기의 "혼잡 윈도우를 1로 초기화", "ACK마다 1씩 증가(결과적으로 RTT마다 2배씩 지수적 증가)", "임계값(ssthresh)까지 유지"는 모두 Slow Start의 정의 그대로다.
+
+각 보기 분석:
+① Fast Retransmission(빠른 재전송) — 동일한 ACK가 3번 연속(중복 ACK 3개) 도착하면 재전송 타이머 만료를 기다리지 않고 해당 세그먼트를 즉시 재전송하는 기법이다. 혼잡 윈도우를 1로 초기화하는 단계가 아니므로 오답.
+② Congestion Avoidance(혼잡 회피) — 혼잡 윈도우가 임계값(ssthresh)을 넘어선 이후의 단계로, RTT마다 1씩만 증가시키는 선형(가산적) 증가 구간이다. 보기는 임계값에 도달할 때까지의 동작을 설명하므로 오답이다. Slow Start와 가장 헷갈리는 함정 보기다.
+③ Slow Start(슬로 스타트) — 연결 설정 직후 또는 타임아웃 발생 후 혼잡 윈도우(cwnd)를 1 MSS로 설정하고 시작한다. ACK를 하나 받을 때마다 cwnd를 1씩 늘리므로 RTT 단위로 보면 1 → 2 → 4 → 8처럼 지수적으로 증가하며, cwnd가 ssthresh에 도달하면 혼잡 회피 단계로 전환한다. 보기 세 항목과 완전히 일치한다. 정답.
+④ Fast Recovery(빠른 회복) — 중복 ACK 3개로 손실을 감지한 경우 네트워크가 완전히 막힌 것은 아니라고 보고, cwnd를 1로 떨어뜨리는 대신 ssthresh를 현재 cwnd의 절반으로 낮춘 뒤 그 값에서 혼잡 회피 단계로 복귀하는 기법이다(TCP Reno). 오답.
+
+핵심 정리:
+Slow Start: cwnd = 1에서 시작, ACK마다 +1 → RTT마다 2배(지수적 증가). ssthresh 도달 시 종료. 이름은 "느린 시작"이지만 증가 속도 자체는 지수적으로 가장 빠르다는 점이 대표적 함정이다.
+Congestion Avoidance: ssthresh 이후 RTT마다 +1(선형 증가). AIMD(Additive Increase Multiplicative Decrease)의 가산 증가 구간이다.
+타임아웃 발생 시(심각한 혼잡): ssthresh = cwnd / 2로 낮추고 cwnd = 1로 되돌려 Slow Start부터 다시 시작한다.
+중복 ACK 3개 발생 시(경미한 손실): TCP Tahoe는 Slow Start로 복귀하지만, TCP Reno는 Fast Retransmit + Fast Recovery로 혼잡 회피를 이어간다.
+혼잡 제어(cwnd, 네트워크 상태 기반)와 흐름 제어(rwnd, 수신 버퍼 기반)는 별개이며, 실제 송신 윈도우는 min(cwnd, rwnd)이다.

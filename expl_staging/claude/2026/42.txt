@@ -1,0 +1,26 @@
+정답: ③ (3번)
+
+해설:
+else-if 연쇄와 switch-case가 논리적으로 동일하지 않은 경우를 찾는 코드 추적 문항이다. 두 함수 모두 등급 판정에 논리적 오류(순서 오류)를 담고 있어서 특정 입력에서만 결과가 갈린다. 이미지에서 확인한 두 코드는 다음과 같다.
+
+printGrade1: score >= 90 이면 A, else if score >= 80 이면 B, else if score >= 60 이면 D, else if score >= 70 이면 C, else F.
+여기서 60 이상 조건이 70 이상 조건보다 앞에 있으므로 70~79점은 세 번째 조건에서 걸려 D가 되고, 네 번째 조건 score >= 70은 절대 도달할 수 없는 죽은 코드(dead code)가 된다.
+
+printGrade2: switch(score/10)에서 case 10과 case 9는 A, case 8은 B, case 6은 D, case 7은 C, default는 F이며 각 case에 break가 있다. case의 나열 순서는 실행 결과에 영향을 주지 않으므로 70~79점은 몫이 7이 되어 정확히 C가 된다.
+
+입력값별 추적:
+95 → printGrade1: 95 >= 90 이므로 A. printGrade2: 95/10 = 9 이므로 A. 같음.
+84 → printGrade1: 84 >= 80 이므로 B. printGrade2: 84/10 = 8 이므로 B. 같음.
+79 → printGrade1: 90 미만, 80 미만, 60 이상이므로 D. printGrade2: 79/10 = 7 이므로 C. 다름.
+60 → printGrade1: 60 이상이므로 D. printGrade2: 60/10 = 6 이므로 D. 같음.
+
+각 보기 분석:
+① 95 — 두 함수 모두 A를 출력하므로 결과가 같다.
+② 84 — 두 함수 모두 B를 출력하므로 결과가 같다.
+③ 79 — else-if 버전은 조건 순서 오류로 D, switch 버전은 C를 출력하여 결과가 달라진다. 정답.
+④ 60 — 두 함수 모두 D를 출력하므로 결과가 같다.
+
+핵심 정리:
+else-if 연쇄는 위에서부터 순차 평가하므로 조건의 순서가 결과를 좌우한다. 범위 조건은 반드시 좁은(높은) 값부터 배열해야 한다.
+switch-case는 값 매칭이므로 case의 나열 순서와 무관하지만, break가 없으면 fall-through가 발생한다는 점을 별도로 확인해야 한다.
+score >= 60 뒤에 오는 score >= 70은 도달 불가능한 조건이며, 정적 분석에서 unreachable/dead code로 지적되는 대표적 결함 유형이다.

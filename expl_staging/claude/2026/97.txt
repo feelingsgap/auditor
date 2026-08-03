@@ -1,0 +1,16 @@
+정답: ④ (4번)
+
+해설:
+IPv6의 헤더 구조를 이해하는지 묻는 문항이다. IPv6는 기본 헤더를 40바이트 고정 길이로 단순화하고, 부가 기능은 기본 헤더 뒤에 필요한 것만 체인 형태로 붙이는 확장 헤더(Extension Header)로 분리했다. 따라서 기본 헤더의 "필드"와 뒤에 붙는 "확장 헤더"를 구분해야 한다.
+
+각 보기 분석:
+① Fragmentation(단편화 확장 헤더) — IPv6에서는 중간 라우터가 단편화를 수행하지 않고 송신 호스트만 단편화할 수 있으며, 이때 사용하는 확장 헤더다. Next Header 값 44번으로 정식 확장 헤더에 해당하므로 적절하다.
+② Destination(목적지 옵션 확장 헤더) — 최종 목적지(또는 라우팅 헤더에 명시된 중간 노드)만 처리하는 옵션 정보를 담는 확장 헤더로, Next Header 값 60번이다. 정식 확장 헤더이므로 적절하다.
+③ ESP(Encapsulating Security Payload) — IPsec의 핵심 구성요소로 페이로드 암호화와 무결성 보호를 제공하는 확장 헤더이며, Next Header 값 50번이다. IPv6는 IPsec을 헤더 체인 안에 통합했으므로 적절하다.
+④ Hop Limit — 확장 헤더가 아니라 IPv6 기본 헤더 안에 존재하는 8비트 필드다. 패킷이 라우터를 통과할 때마다 1씩 감소하며 0이 되면 폐기되는, IPv4의 TTL(Time To Live)에 대응하는 필드다. 별도의 확장 헤더로 존재하지 않으므로 "확장 헤더로 가장 적절하지 않은 것"에 해당한다. 정답.
+
+핵심 정리:
+IPv6 기본 헤더(40바이트 고정) 8개 필드: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, 송신지 주소(128비트), 목적지 주소(128비트). IPv4에 있던 체크섬, 헤더 길이(IHL), 단편화 관련 필드는 제거되었다.
+IPv6 확장 헤더 종류와 권장 순서: Hop-by-Hop Options(0) → Destination Options(60) → Routing(43) → Fragment(44) → AH(51) → ESP(50) → Destination Options → 상위 계층 헤더(TCP 6, UDP 17).
+Hop-by-Hop Options만 경로상의 모든 라우터가 검사하고, 나머지는 원칙적으로 최종 목적지에서만 처리되어 라우터 부하가 줄어든다. 체인은 Next Header가 다음 헤더 타입을 가리키는 연결 리스트 구조다.
+함정 포인트는 기본 헤더 필드(Hop Limit, Flow Label, Traffic Class)를 확장 헤더로 착각하는 것이다. IPv4의 TTL에 대응하는 개념이 나오면 기본 헤더 필드로 판단한다.

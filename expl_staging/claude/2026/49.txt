@@ -1,0 +1,19 @@
+정답: ② (2번)
+
+해설:
+그림은 Client/UI/API 아래 Load Balancer, NewsOrchestrator, Message Broker가 있고, 그 밑에 famousNewsService, sportsNewsService, politicsNewsService 세 개의 마이크로서비스가 각각 자신만의 Database를 하나씩 소유한 구조이다. 여기서 강조되는 특정 패턴은 서비스마다 전용 데이터베이스를 갖는 Database per Service(서비스별 데이터베이스) 패턴이다.
+
+이 패턴의 장점과 대가:
+장점은 서비스 간 데이터 결합을 끊어 각 서비스가 독립적으로 스키마를 바꾸고 배포·확장할 수 있다는 점이다.
+대가는 데이터가 여러 DB에 흩어지므로 서비스 경계를 넘는 조인 질의와 트랜잭션이 불가능해진다는 점이다. 이를 해결하는 대표적 Best Practice가 조회 전용 모델을 별도로 구성하는 CQRS이며, 쓰기 일관성은 Saga로 보완한다.
+
+각 보기 분석:
+① 데이터베이스는 비즈니스 규칙이 아닌 데이터 저장 용도로만 사용되어야 한다 — 일반적으로 바람직한 설계 지침이지만, 서비스별 DB 분리라는 그림의 패턴을 적용하기 위한 고유한 Best Practice로 보기는 어렵다.
+② 데이터를 읽고 쓰는 책임을 분리하는 CQRS 패턴을 적용해야 한다 — DB가 서비스별로 쪼개져 여러 서비스의 데이터를 함께 조회해야 할 때, 쓰기 모델과 별도로 이벤트로 갱신되는 조회 전용 뷰를 두는 CQRS가 표준 해법이다. Database per Service의 대표적 Best Practice이다. 정답.
+③ 서비스 간 통신오류 방지를 위해 연관 ID를 정의하여 사용해야 한다 — 상관관계 ID(Correlation ID)는 분산 추적과 로그 취합(Distributed Tracing, Log Aggregation) 패턴의 실천 사항으로, 데이터 분리 패턴의 해법은 아니다.
+④ 비동기 메시지의 구조를 잘 이해하고 정의해야 한다 — Messaging 패턴 자체에 대한 일반론이며, 서비스별 DB 분리가 만드는 조회 문제를 해결하지 못한다.
+
+핵심 정리:
+Database per Service는 서비스 자율성을 얻는 대신 분산 질의와 분산 트랜잭션 문제를 낳는다.
+해법 조합은 조회는 CQRS 또는 API Composition, 갱신 일관성은 Saga(코레오그래피 또는 오케스트레이션)이다.
+Correlation ID는 관측성(Observability) 계열, Circuit Breaker는 장애 격리 계열, API Gateway는 진입점 통합 계열로 분류해 구분한다.

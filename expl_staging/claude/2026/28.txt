@@ -1,0 +1,20 @@
+정답: ③ (3번)
+
+해설:
+Java 코드의 관계를 UML 클래스 다이어그램 표기법으로 정확히 옮긴 그림을 고르는 문항이다. 핵심은 implements와 필드 보유를 각각 어떤 선으로 그리는가이다.
+
+코드에서 읽어야 할 관계:
+RealSubject implements Subject, Proxy implements Subject → 인터페이스 실체화(Realization)이므로 점선 + 속이 빈 삼각형 화살표로 그린다.
+Proxy가 private RealSubject realSubject 필드를 가진다 → 객체를 멤버로 보유하므로 연관(Association)이며 실선 + 열린 화살표에 역할명 -realSubject를 붙인다.
+Client는 Subject를 사용하므로 실선 화살표로 연결된다.
+
+각 보기 분석:
+① Proxy와 RealSubject가 Subject에 실선 + 빈 삼각형(일반화/상속)으로 연결되고, Proxy에서 RealSubject로 실선 화살표(연관)가 있다. 연관 표기는 맞지만 인터페이스 구현을 상속으로 잘못 그렸다.
+② Proxy와 RealSubject가 Subject에 실선 + 빈 삼각형(일반화)으로 연결되고, Proxy에서 RealSubject로 점선 화살표(의존)가 있다. 두 관계 모두 틀렸다.
+③ Proxy와 RealSubject가 Subject에 점선 + 빈 삼각형(실체화)으로 연결되고, Proxy에서 RealSubject로 실선 화살표(연관, -realSubject)가 있다. implements와 필드 보유를 모두 정확히 표현했다. 정답.
+④ 실체화 표기는 맞지만 Proxy에서 RealSubject로 점선 화살표(의존)를 그렸다. 필드로 참조를 계속 보유하므로 일시적 의존이 아니라 연관으로 그려야 한다.
+
+핵심 정리:
+extends(클래스 상속) = 실선 + 빈 삼각형, implements(인터페이스 구현) = 점선 + 빈 삼각형.
+멤버 변수로 상대 객체를 보유 = 연관(실선 화살표), 파라미터·지역변수로 잠깐 사용 = 의존(점선 화살표).
+Proxy 패턴은 Proxy와 RealSubject가 같은 인터페이스를 구현하고 Proxy가 RealSubject를 참조로 감싸는 구조이며, 이 때문에 클라이언트는 둘을 구분하지 않고 쓸 수 있다.

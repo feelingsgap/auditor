@@ -1,0 +1,15 @@
+정답: ③ (3번)
+
+해설:
+그림은 리팩토링 전후를 비교하고 있다. 리팩토링 전에는 추상 클래스 Player의 stop() 메서드 안에 if (_type == VIDEO) { 비디오 정지 } else if (_type == MUSIC) { 음악 정지 } else { error() } 형태의 타입 판별 조건문이 들어 있고, 하위 클래스 Videoplayer와 Musicplayer는 play()만 재정의하고 있다. 리팩토링 후에는 Player의 stop()에서 조건문이 사라지고, Videoplayer와 Musicplayer가 각각 자신의 stop()에 비디오 정지, 음악 정지 코드를 나누어 재정의한 구조로 바뀌었다. 이는 마틴 파울러의 리팩토링 카탈로그에서 Replace Conditional with Polymorphism에 해당한다.
+
+각 보기 분석:
+① Inline Method — 메서드 본문이 이름만큼이나 명확할 때 호출부에 본문을 직접 삽입하고 메서드를 제거하는 기법으로, 조건문 제거나 상속 구조 재배치와 무관하다.
+② Encapsulate Downcast — 컬렉션이나 반환값에 대한 다운캐스팅을 메서드 내부로 감춰 호출자가 캐스팅하지 않게 하는 기법으로, 여기서는 캐스팅 코드가 등장하지 않는다.
+③ Replace Conditional with Polymorphism — 객체 타입에 따라 분기하는 조건문을 각 서브클래스의 재정의 메서드로 옮겨 다형성으로 대체하는 기법이다. 그림의 변화와 정확히 일치한다. 정답.
+④ Replace Constructor with Factory Method — 생성자 호출을 팩토리 메서드로 바꿔 생성 로직을 감추는 기법으로, 객체 생성 부분이 아니라 동작 분기를 다룬 이 그림과 맞지 않다.
+
+핵심 정리:
+타입 코드(_type, kind 등)에 따른 switch/else-if 분기는 대표적인 코드 스멜(Switch Statements)이며, 해법은 Replace Conditional with Polymorphism이다.
+이 리팩토링은 새 타입을 추가할 때 기존 조건문을 고치지 않고 서브클래스만 추가하면 되므로 OCP(개방-폐쇄 원칙)를 만족시키는 효과가 있다.
+비슷한 계열 기법으로 Replace Type Code with Subclasses, Replace Type Code with State/Strategy가 있으니 함께 묶어 기억한다.

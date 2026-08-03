@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+클래스 다이어그램에 표현된 객체지향 개념을 판별하는 문항이다. 그림에는 ClassA가 상위에 있고 ClassB와 ClassC가 속이 빈 삼각형(일반화)으로 ClassA에 연결되어 있다. ClassA는 +ClassA()와 +ClassA(int) 두 개의 생성자와 +draw()를 가지며, ClassB와 ClassC는 각각 자신의 생성자와 +draw()를 가진다.
+
+다이어그램에서 읽어내는 개념:
+ClassA()와 ClassA(int)는 이름이 같고 매개변수 시그니처가 다른 두 생성자이므로 Overloading(오버로딩)이다.
+ClassB, ClassC가 속이 빈 삼각형으로 ClassA를 가리키므로 Inheritance(상속, 일반화)이다.
+상위 클래스 ClassA의 draw()를 하위 클래스 ClassB와 ClassC가 동일한 시그니처로 다시 정의하므로 Overriding(오버라이딩)이다.
+반면 마름모(◇, ◆) 기호가 전혀 없으므로 Aggregation(집약)이나 Composition(합성)은 존재하지 않는다.
+
+각 보기 분석:
+① Overloading, Overriding, Inheritance — 생성자 오버로딩, draw() 오버라이딩, 일반화 상속 세 가지가 모두 그림에 나타난다. 정답.
+② Overriding, Inheritance, Aggregation — 오버라이딩과 상속은 맞지만 집약 관계를 나타내는 마름모가 없다.
+③ Overloading, Inheritance, Aggregation — 오버로딩과 상속은 맞지만 집약 관계가 없고, 명확히 드러난 오버라이딩이 빠졌다.
+④ Overriding, Aggregation, Polymorphism — 집약 관계가 없으므로 오답이다. 다형성은 오버라이딩의 결과로 성립하지만 집약이 포함된 이상 묶음이 성립하지 않는다.
+
+핵심 정리:
+Overloading은 같은 클래스 안에서 이름은 같고 매개변수가 다른 메서드·생성자, Overriding은 상속 관계에서 같은 시그니처로 재정의하는 것이다.
+UML에서 속이 빈 삼각형 실선 = 일반화(상속), 점선 = 실체화(인터페이스 구현), 빈 마름모 = 집약, 채운 마름모 = 합성이다.
+다이어그램에 마름모가 없으면 Aggregation·Composition은 무조건 배제하는 것이 빠른 소거 전략이다.

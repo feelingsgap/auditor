@@ -1,0 +1,16 @@
+정답: ③ (3번)
+
+해설:
+보기의 세 설명(IP 주소 수동 할당의 번거로움 해소, IP·서브넷 마스크·기본 게이트웨이의 동적 임대, Discover-Offer-Request-Ack 메시지 교환)은 모두 DHCP(Dynamic Host Configuration Protocol)의 특징이다. 특히 DORA 4단계 메시지 교환은 DHCP만의 고유한 절차이므로 결정적 단서가 된다.
+
+각 보기 분석:
+① FTP(File Transfer Protocol) — TCP 20번(데이터)과 21번(제어) 포트를 사용하는 파일 전송 프로토콜이다. IP 주소 할당과 무관하므로 오답.
+② SNMP(Simple Network Management Protocol) — UDP 161번(에이전트)과 162번(트랩) 포트를 사용해 네트워크 장비의 상태를 관리·감시하는 프로토콜이다. Get, GetNext, Set, Trap 등의 메시지를 쓰며 주소 할당 기능은 없다. "네트워크 관리자"라는 단어 때문에 헷갈릴 수 있는 함정 보기다. 오답.
+③ DHCP(Dynamic Host Configuration Protocol) — 클라이언트가 네트워크에 접속하면 IP 주소, 서브넷 마스크, 기본 게이트웨이, DNS 서버 주소 등을 자동으로 임대(lease)해 준다. UDP를 사용하며 서버는 67번, 클라이언트는 68번 포트를 쓴다. 보기 세 항목과 모두 일치한다. 정답.
+④ NAT(Network Address Translation) — 사설 IP를 공인 IP로 변환해 주소 부족 문제를 완화하는 기술이다. 주소를 "변환"할 뿐 클라이언트에게 "할당"하지 않으며, 응용 계층 프로토콜도 아니다. 오답.
+
+핵심 정리:
+DHCP DORA 4단계 — Discover(클라이언트가 브로드캐스트로 서버 탐색) → Offer(서버가 사용 가능한 IP 제안) → Request(클라이언트가 특정 제안을 선택해 요청) → Ack(서버가 임대 확정). 순서와 주체를 함께 외운다.
+DHCP는 UDP 67(서버)/68(클라이언트) 포트를 사용하며, 초기에는 IP가 없으므로 브로드캐스트(255.255.255.255)로 통신한다. 서버가 다른 서브넷에 있으면 라우터의 DHCP Relay Agent가 유니캐스트로 중계한다.
+임대 기간(lease time)이 있어 50% 경과 시 갱신(Renewal)을 시도하고, 87.5% 시점에는 임의의 서버에 재바인딩(Rebinding)을 시도한다. 임대 반납은 Release, 거부는 Nak 메시지를 쓴다.
+DHCP는 BOOTP를 확장한 프로토콜이며, 특정 장비에 고정 IP를 주려면 MAC 주소 기반 예약(reservation)을 설정한다. 비인가 DHCP 서버(Rogue DHCP) 공격은 스위치의 DHCP Snooping으로 방어한다.

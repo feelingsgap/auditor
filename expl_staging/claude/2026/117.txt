@@ -1,0 +1,16 @@
+정답: ① (1번)
+
+해설:
+웹 응용 프로그램을 대상으로 하는 DoS 공격 유형에 대한 설명 중 옳지 않은 것을 찾는 문항이다. KISA의 분류상 응용계층 DoS는 대량 요청형(HTTP GET Flooding, HTTP CC Attack, 동적 HTTP Request Flooding)과 연결 지연형(Slow HTTP Header/POST/Read)으로 나뉜다.
+
+각 보기 분석:
+① 동적 HTTP Reply 공격은 웹 페이지 응답 메시지를 지속적으로 요구하는 공격이다 — 틀림. 실제 공격 유형은 "동적 HTTP Request Flooding"으로, 공격자가 요청 URL이나 파라미터를 계속 변경하며 대량 요청을 보내 캐시·차단 정책을 우회하고 서버 자원을 소모시키는 공격이다. "Reply(응답) 공격"이라는 명칭과 응답 메시지를 요구한다는 설명 모두 잘못된 서술이다. 정답.
+② Slow HTTP Header DoS — 맞음. HTTP 헤더를 완결하지 않고(마지막 개행을 보내지 않고) 조금씩 나눠 전송해 서버가 헤더 수신 완료를 기다리며 연결을 유지하게 만드는 공격으로 Slowloris로도 불린다. 소량 트래픽으로 연결 자원을 고갈시킨다.
+③ Slow HTTP POST — 맞음. Content-Length를 크게 선언한 뒤 본문 데이터를 극히 느리게 전송하여 커넥션을 장시간 점유하는 공격으로 RUDY(R-U-Dead-Yet)로 불린다.
+④ HTTP GET Flooding — 맞음. GET 메서드로 특정 페이지를 대량·반복 요청하여 웹 서버와 DB의 처리 자원을 소진시키는 전형적 응용계층 DoS다.
+
+핵심 정리:
+연결 지연형 Slow 계열 3종: Slow HTTP Header(Slowloris, 헤더 미완성), Slow HTTP POST(RUDY, 본문 지연 전송), Slow HTTP Read(수신 윈도 크기를 작게 유지해 응답을 천천히 읽음).
+대량 요청형: HTTP GET Flooding, HTTP CC Attack(Cache-Control: no-cache로 캐시 무력화), 동적 HTTP Request Flooding(URL 계속 변경), Hulk DoS.
+대응: 연결 타임아웃과 최소 전송률 제한, 동시 연결 수 제한, 임계치 기반 차단, 웹 방화벽과 CDN 캐싱, 요청 속도 제한.
+문항에서 공격 명칭 자체가 변형된 선택지(Request가 Reply로 바뀐 경우 등)를 주의해야 한다.

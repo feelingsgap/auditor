@@ -1,0 +1,22 @@
+정답: ② (2번)
+
+해설:
+SQL 표준 행 수준 트리거(row-level trigger)의 실행 횟수를 계산하는 문항이다. FOR EACH ROW는 갱신되는 행마다 트리거를 평가하고, WHEN 절은 그중 조건을 만족하는 행에 대해서만 트리거 액션(INSERT INTO sal_audit)을 실행하게 하는 필터다.
+
+실행 과정 도출:
+UPDATE Emp SET sal = sal * 1.1 WHERE deptno IN (10, 20)은 deptno=10인 5명과 deptno=20인 3명, 총 8개 행을 갱신한다. 즉 트리거가 평가되는 횟수는 8회다.
+WHEN 조건은 N.sal > O.sal AND N.deptno = 10이다.
+N.sal > O.sal: sal에 1.1을 곱했으므로 급여가 양수인 한 모든 갱신 행에서 참이다.
+N.deptno = 10: 갱신문이 deptno 컬럼을 바꾸지 않으므로 새 값도 원래 부서 번호이며, deptno=10인 5개 행만 참이다.
+두 조건의 교집합은 deptno=10인 5개 행이므로 실제 트리거 액션이 실행되는 행은 5건이다.
+
+각 보기 분석:
+① 8건 — UPDATE의 영향 행 수, 즉 트리거가 평가된 횟수일 뿐이다. WHEN 절 필터를 거치지 않은 값이다.
+② 5건 — 급여가 인상되고(N.sal > O.sal) 동시에 deptno=10인 행의 수로, WHEN 조건을 통과한 정확한 건수다. 정답.
+③ 3건 — deptno=20인 행의 수로, WHEN 절의 부서 조건을 반대로 읽은 값이다.
+④ 0건 — AFTER UPDATE OF sal이 정상 발화하고 WHEN 조건도 만족되므로 액션이 전혀 실행되지 않을 이유가 없다.
+
+핵심 정리:
+FOR EACH ROW(행 트리거)는 영향 받은 행마다, FOR EACH STATEMENT(문장 트리거)는 문장당 한 번 실행된다. 이 문제에서 문장 트리거였다면 답은 1건이 된다.
+WHEN 절은 트리거 발화 자체가 아니라 액션 실행 여부를 결정하는 조건이며, REFERENCING OLD/NEW ROW로 갱신 전후 값을 각각 참조한다.
+AFTER UPDATE OF sal처럼 컬럼을 명시하면 해당 컬럼이 SET 대상에 포함된 UPDATE에서만 발화한다. BEFORE 트리거는 NEW 값을 수정할 수 있지만 AFTER 트리거는 감사 로그 기록 등에 주로 쓰인다.

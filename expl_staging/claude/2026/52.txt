@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+참조 무결성(referential integrity) 제약조건 위반 시 DBMS가 취하는 대응 방식(referential action) 중 ON DELETE RESTRICT의 의미를 묻는 문항이다. 여기서 EMP는 외래키를 가진 참조하는(자식) 테이블, DEPT는 기본키를 가진 참조되는(부모) 테이블이다. SQL 표준의 대응 방식은 NO ACTION/RESTRICT, CASCADE, SET NULL, SET DEFAULT 네 가지다.
+
+각 보기 분석:
+① 삭제된 기본키 값을 참조하는 EMP의 외래키에 널 값을 채운다 — ON DELETE SET NULL의 동작이다. RESTRICT가 아니다.
+② EMP에서 이 값을 참조하는 모든 투플도 연쇄적으로 삭제된다 — ON DELETE CASCADE의 동작이다. 부모 삭제가 자식 삭제로 전파된다.
+③ 참조하는 투플의 애트리뷰트가 디폴트 값을 갖는다 — ON DELETE SET DEFAULT의 동작이다. 단, 지정한 디폴트 값이 부모 테이블에 실제 존재해야 무결성이 유지된다.
+④ 참조하고 있는 투플이 EMP에 존재하면 DEPT의 삭제 연산 자체를 거절한다 — 위반을 유발하는 연산을 아예 수행하지 못하게 막는 것이 RESTRICT의 정의다. 정답.
+
+핵심 정리:
+ON DELETE 대응 방식 4종: RESTRICT/NO ACTION(연산 거부), CASCADE(연쇄 삭제), SET NULL(외래키를 NULL로), SET DEFAULT(외래키를 디폴트 값으로).
+RESTRICT와 NO ACTION은 결과가 같아 보이지만 검사 시점이 다르다. RESTRICT는 연산 직후 즉시 검사하고, NO ACTION은 문장(또는 트랜잭션) 종료 시점에 검사하므로 문장 내에서 일시적 위반이 허용될 수 있다.
+SET NULL은 외래키 컬럼에 NOT NULL 제약이 걸려 있으면 사용할 수 없고, SET DEFAULT는 디폴트 값이 부모 테이블에 없으면 다시 위반이 되므로 주의한다.

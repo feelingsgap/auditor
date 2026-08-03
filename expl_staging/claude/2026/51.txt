@@ -1,0 +1,22 @@
+정답: ③ (3번)
+
+해설:
+JDBC(Java Database Connectivity) 환경에서 자바 응용 프로그램이 데이터베이스에 접속해 SQL을 실행하기까지의 표준 절차를 묻는 문항이다. JDBC는 응용 프로그램 → DriverManager → JDBC Driver → DBMS의 계층 구조로 동작하며, 연결(Connection)이 확보된 뒤에야 Statement 객체를 만들어 SQL을 실행할 수 있다.
+
+처리 순서 도출:
+다. 응용 프로그램이 DriverManager.getConnection(url, user, pw)을 호출한다.
+나. DriverManager가 등록(register)된 드라이버 목록에서 URL에 맞는 드라이버를 선택해 연결 생성을 위임한다.
+라. 선택된 드라이버가 DBMS와 실제 네트워크 소켓 연결을 설정하고 Connection 객체를 반환한다.
+마. 확보한 Connection으로부터 Statement 또는 PreparedStatement 객체를 생성한다.
+가. 전달된 SQL 문을 DBMS가 실행하고 결과를 ResultSet으로 돌려준다.
+
+각 보기 분석:
+① 나 → 다 → 라 → 마 → 가 — 드라이버 선택(나)이 getConnection() 호출(다)보다 앞설 수 없다. 드라이버 선택은 getConnection 요청에 대한 DriverManager의 내부 처리 단계다.
+② 다 → 라 → 가 → 나 → 마 — 소켓 연결 직후 SQL 실행(가)이 오는데, Statement 생성(마)과 드라이버 선택(나)이 뒤에 배치되어 종속 관계가 완전히 어긋난다.
+③ 다 → 나 → 라 → 마 → 가 — getConnection 호출, 드라이버 선택·위임, 소켓 연결 수립, Statement 생성, SQL 실행 순으로 JDBC 실제 동작과 정확히 일치한다. 정답.
+④ 다 → 라 → 마 → 나 → 가 — 드라이버가 아직 선택되지 않았는데(나가 뒤에 있음) 소켓 연결(라)이 먼저 일어날 수 없다.
+
+핵심 정리:
+JDBC 전체 흐름: 드라이버 로딩·등록 → DriverManager.getConnection() → 적합 드라이버 선택 → 물리적 연결(소켓) 수립 → Connection 획득 → Statement/PreparedStatement 생성 → executeQuery/executeUpdate → ResultSet 처리 → close(역순 반납).
+DriverManager는 중개자 역할이므로 응용 프로그램이 직접 드라이버를 고르지 않는다는 점이 순서 판단의 결정적 단서다.
+Connection 없이 Statement를 만들 수 없고, Statement 없이 SQL을 실행할 수 없다는 종속 관계로 순서를 검증하면 실수하지 않는다.

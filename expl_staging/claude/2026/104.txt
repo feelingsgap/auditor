@@ -1,0 +1,21 @@
+정답: ① (1번)
+
+해설:
+OWASP API Security Top 10의 대표 취약점 두 가지를 설명과 짝짓는 문항이다. 접근 권한 검증 실패(인가, Authorization)와 인증 정보 검증 실패(인증, Authentication)를 구분할 수 있는지가 핵심이다.
+
+각 항목 판정:
+ㄱ. Broken Object Level Authorization(BOLA, API1) — 요청에 포함된 객체 식별자(예: /api/orders/1234의 1234)를 변조하여 타인의 리소스에 접근하는 취약점. 서버가 요청된 객체에 대한 소유권·권한 검증을 하지 않을 때 발생한다. 설명 A와 일치한다.
+ㄴ. Broken Authentication(API2) — 토큰·세션·API Key의 발급, 검증, 만료, 폐기 관리가 부실하여 공격자가 인증 상태를 위조하거나 우회해 관리자 기능 등 민감한 API를 실행하는 취약점. 설명 B와 일치한다.
+ㄷ. Unrestricted Resource Consumption(API4) — 요청 속도, 페이로드 크기, 페이지 크기 등에 제한이 없어 자원 고갈이나 과금 폭증을 유발하는 취약점. 두 설명 어디에도 해당하지 않는다.
+ㄹ. Security Misconfiguration(API8) — 불필요한 HTTP 메서드 허용, 디버그 모드 노출, 기본 설정 방치 등 설정 미비로 인한 취약점. 두 설명 어디에도 해당하지 않는다.
+
+각 보기 분석:
+① A-ㄱ, B-ㄴ — A는 리소스 식별자 조작에 의한 인가 실패이므로 BOLA, B는 인증 정보 검증·관리 부적절이므로 Broken Authentication이다. 정답.
+② A-ㄴ, B-ㄱ — 인증과 인가를 서로 반대로 짝지었다.
+③ A-ㄱ, B-ㄷ — B는 자원 소비 제한 문제가 아니라 인증 우회 문제이므로 틀리다.
+④ A-ㄹ, B-ㄴ — A는 설정 오류가 아니라 객체 단위 권한 검증 누락이므로 틀리다.
+
+핵심 정리:
+BOLA는 "누구인지는 확인했으나 그 객체에 대한 권한을 확인하지 않은" 인가(Authorization) 실패, Broken Authentication은 "누구인지 자체를 잘못 확인한" 인증(Authentication) 실패다.
+식별자 값 변조(ID, UUID, 파일번호) 문구가 나오면 BOLA, 토큰·세션·API Key 검증 부실 문구가 나오면 Broken Authentication으로 판단한다.
+기능 단위 권한 문제는 별도로 BFLA(Broken Function Level Authorization, API5)로 분류한다.

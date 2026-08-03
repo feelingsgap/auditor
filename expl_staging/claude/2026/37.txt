@@ -1,0 +1,22 @@
+정답: ① (1번)
+
+해설:
+분산 버전관리 시스템 Git의 원격 저장소 연동 명령어의 역할을 구분하는 문항이다. 로컬 저장소와 원격 저장소 사이의 데이터 이동 방향과 merge 수행 여부가 판별 기준이다.
+
+각 설명에 대응하는 명령:
+가. 원격 저장소를 로컬 저장소로 복제 → git clone
+나. 로컬 저장소의 변경을 원격 저장소에 반영 → git push
+다. 원격 브랜치의 변경을 로컬로 가져오되 merge는 하지 않음 → git fetch (원격 추적 브랜치만 갱신)
+라. 원격 브랜치의 변경을 로컬로 가져와 merge까지 수행 → git pull (fetch + merge)
+
+각 보기 분석:
+① clone, push, fetch, pull — 복제·업로드·가져오기만·가져와서 병합의 대응이 모두 정확하다. 정답.
+② clone, commit, fetch, pull — commit은 로컬 저장소에 변경 이력을 확정하는 명령일 뿐 원격 반영과 무관하므로 (나)에 맞지 않는다.
+③ fetch, push, pull, commit — (가) 최초 복제는 fetch가 아니라 clone이며, (라)의 commit도 틀렸다.
+④ fetch, commit, pull, push — 네 항목 중 (다) pull이 merge를 수행한다는 점에서 이미 어긋나며 나머지도 대응이 맞지 않는다.
+
+핵심 정리:
+pull = fetch + merge 이므로 merge 여부가 fetch와 pull을 가르는 핵심 구분점이다.
+로컬 작업 흐름은 add(스테이징) → commit(로컬 이력 확정) → push(원격 반영)이며, commit은 원격과 무관한 로컬 명령이다.
+clone은 최초 1회 전체 복제, fetch/pull은 이후의 증분 동기화에 사용한다.
+충돌을 피하려면 fetch로 먼저 원격 상태를 확인한 뒤 merge 또는 rebase를 선택하는 방식이 안전하다.

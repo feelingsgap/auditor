@@ -1,0 +1,16 @@
+정답: ② (2번)
+
+해설:
+하둡(Hadoop) 에코시스템 구성요소의 역할을 구분하는 문항이다. 하둡은 크게 분산 저장(HDFS), 자원 관리 및 스케줄링(YARN), 분산 처리(MapReduce, Spark 등)의 세 축으로 구성되며, 그 위에 Hive, HBase, Zookeeper 등의 도구가 얹힌다. 문제는 "클러스터 자원 관리 + 작업 스케줄링" 담당 계층을 묻고 있다.
+
+각 보기 분석:
+① Hive — HDFS에 저장된 대용량 데이터를 SQL과 유사한 HiveQL로 질의할 수 있게 해주는 데이터 웨어하우스 도구다. 질의를 MapReduce나 Tez 잡으로 변환할 뿐 자원 관리는 하지 않으므로 오답.
+② YARN(Yet Another Resource Negotiator) — 하둡 2.0에서 도입된 클러스터 자원 관리 계층이다. ResourceManager가 클러스터 전체 자원을 관리하고, NodeManager가 노드별 컨테이너를 관리하며, ApplicationMaster가 개별 애플리케이션의 작업 스케줄링을 담당한다. 정답.
+③ HBase — HDFS 위에서 동작하는 컬럼 지향 NoSQL 데이터베이스로, 대용량 데이터에 대한 실시간 랜덤 읽기·쓰기를 제공한다. 저장 계층이므로 오답.
+④ Zookeeper — 분산 환경에서 설정 정보 공유, 네이밍, 분산 락, 리더 선출 등 코디네이션 서비스를 제공한다. 클러스터 자원 할당이나 잡 스케줄링과는 역할이 다르므로 오답.
+
+핵심 정리:
+하둡 1.0은 JobTracker/TaskTracker가 자원 관리와 잡 스케줄링을 모두 담당해 확장성 병목이 있었고, 하둡 2.0에서 이를 YARN으로 분리했다.
+YARN 구성요소: ResourceManager(전역 자원 배분), NodeManager(노드별 컨테이너 실행·모니터링), ApplicationMaster(애플리케이션 단위 협상·스케줄링), Container(실제 자원 할당 단위).
+계층별 정리 — 저장: HDFS, HBase / 자원관리: YARN / 처리: MapReduce, Spark, Tez / 질의: Hive, Pig / 코디네이션: Zookeeper / 수집: Flume, Sqoop, Kafka.
+함정 포인트는 "스케줄링"이라는 단어만 보고 워크플로 스케줄러인 Oozie를 떠올리는 것이다. 클러스터 자원과 묶여 나오면 YARN이다.

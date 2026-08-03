@@ -1,0 +1,17 @@
+정답: ④ (4번)
+
+해설:
+동시성 제어를 하지 않을 때 발생하는 이상 현상 중 오손 데이터 읽기(dirty read)가 어떤 충돌 연산 조합에서 생기는지 묻는 문항이다. 두 연산이 같은 데이터 항목에 접근하면서 적어도 하나가 write일 때 충돌(conflict)이라 하며, 충돌 유형은 read-write, write-read, write-write 세 가지다.
+
+오손 읽기의 시나리오: 트랜잭션 T1이 데이터 X를 갱신(write)한 뒤 아직 커밋하지 않은 상태에서 T2가 그 값을 읽는다(read). 이후 T1이 롤백하면 T2는 실제로는 존재한 적 없는 값을 읽은 것이 되어 연쇄 복귀(cascading rollback)나 잘못된 결과가 발생한다. 즉 선행 연산이 write, 후행 연산이 read인 write-read 충돌이다.
+
+각 보기 분석:
+① read-read 충돌 — 두 연산이 모두 읽기이면 데이터를 변경하지 않으므로 애초에 충돌로 분류되지 않으며 어떤 이상 현상도 발생하지 않는다.
+② read-write 충돌 — T1이 읽은 뒤 T2가 그 값을 갱신하는 경우로, T1이 같은 값을 다시 읽으면 값이 달라지는 반복 불가능 읽기(non-repeatable read)에 해당한다. 오손 읽기와는 다르다.
+③ write-write 충돌 — 두 트랜잭션이 같은 항목을 연달아 기록해 먼저 쓴 값이 사라지는 갱신 손실(lost update)에 해당한다.
+④ write-read 충돌 — 커밋되지 않은 갱신 값을 다른 트랜잭션이 읽는 상황으로, 오손 읽기의 정의와 정확히 일치한다. 정답.
+
+핵심 정리:
+충돌 유형과 이상 현상의 대응: write-read → 오손 읽기(dirty read), read-write → 반복 불가능 읽기(non-repeatable read), write-write → 갱신 손실(lost update). read-read는 충돌이 아니다.
+격리 수준과의 연결: READ UNCOMMITTED는 오손 읽기를 허용하고, READ COMMITTED는 오손 읽기를 막지만 반복 불가능 읽기를 허용하며, REPEATABLE READ는 그것까지 막지만 팬텀(phantom)을 허용하고, SERIALIZABLE은 모두 막는다.
+2단계 로킹(2PL)에 커밋 시점까지 배타 로크를 유지하는 엄격 2PL(strict 2PL)을 적용하면 오손 읽기와 연쇄 복귀를 원천적으로 방지할 수 있다.
