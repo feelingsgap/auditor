@@ -10,13 +10,67 @@ class TextExtractor:
         self.pdf_path = pdf_path
         self.doc = fitz.open(pdf_path)
 
-    def extract_text_from_bbox(self, page_num: int, bbox: List[float]) -> str:
-        """bbox 영역에서 텍스트 추출"""
+    # 컬럼 경계 판정 여유(pt). 문항 bbox 의 x1 은 본문 정렬 기준이라 줄 끝 글자가
+    # 그 바깥까지 뻗는다(2026 기준 최대 307.5). 그래서 우측 한계는 bbox.x1 이 아니라
+    # '다음 컬럼 시작 x0 - COLUMN_MARGIN' 으로 잡는다.
+    COLUMN_MARGIN = 2.0
+
+    def extract_text_from_bbox(
+        self,
+        page_num: int,
+        bbox: List[float],
+        next_column_x0: float = None,
+        is_first_column: bool = True,
+    ) -> str:
+        """bbox 영역에서 텍스트 추출.
+
+        get_text(clip=...) 는 글자가 사각형에 '완전히' 포함될 때만 잡아내므로
+        경계에 걸친 줄 끝/줄 앞 한 글자(닫는 괄호·마침표·여는 괄호)가 사라진다.
+        따라서 clip 대신 글자 중심점이 영역 안에 있는지로 직접 판정한다.
+
+        next_column_x0: 같은 페이지에서 오른쪽에 인접한 컬럼의 시작 x 좌표.
+                        None 이면 페이지 우측 끝까지를 이 문항의 영역으로 본다.
+        is_first_column: 가장 왼쪽 컬럼이면 좌측도 페이지 끝까지 열어둔다.
+                        (본문보다 왼쪽에서 시작하는 줄이 잘리는 것을 막는다)
+        """
         try:
             page = self.doc[page_num - 1]  # 0-based index
-            rect = fitz.Rect(bbox)
-            text = page.get_text('text', clip=rect)
-            return text
+            x0, y0, x1, y1 = bbox
+            x_lo = page.rect.x0 if is_first_column else x0 - self.COLUMN_MARGIN
+            x_hi = (
+                next_column_x0 - self.COLUMN_MARGIN
+                if next_column_x0 is not None
+                else page.rect.x1
+            )
+
+            blocks = []  # (top_y, left_x, [line_text, ...])
+            for block in page.get_text('rawdict')['blocks']:
+                if block.get('type') != 0:  # 이미지 블록 제외
+                    continue
+                block_lines, top_y, left_x = [], None, None
+                for line in block.get('lines', []):
+                    chars, first_x, line_y = [], None, None
+                    for span in line['spans']:
+                        for ch in span['chars']:
+                            cx0, cy0, cx1, cy1 = ch['bbox']
+                            cx, cy = (cx0 + cx1) / 2, (cy0 + cy1) / 2
+                            if x_lo <= cx <= x_hi and y0 <= cy <= y1:
+                                chars.append(ch['c'])
+                                if first_x is None:
+                                    first_x, line_y = cx0, cy
+                    if chars:
+                        block_lines.append(''.join(chars).rstrip())
+                        if top_y is None:
+                            top_y, left_x = line_y, first_x
+                if block_lines:
+                    blocks.append((top_y, left_x, block_lines))
+
+            # 블록 순회 순서는 시각적 순서와 다를 수 있다(표·보기 박스가 선택지
+            # 뒤로 밀려 ④ 에 흡수되는 원인). 블록 단위로만 (y, x) 정렬해 읽기
+            # 순서를 복원하고, 블록 내부 줄 순서는 그대로 둔다. 줄 단위로 정렬하면
+            # 나란히 놓인 코드 블록의 행이 서로 뒤섞인다.
+            blocks.sort(key=lambda b: (round(b[0]), b[1]))
+            return '\n'.join(line for _, _, lines in blocks for line in lines)
         except Exception as e:
             print(f"Error extracting text from page {page_num}: {e}")
             return ""
@@ -76,12 +130,23 @@ class TextExtractor:
         for page in data['pages']:
             page_num = page['page_num']
 
+            # 이 페이지에 존재하는 컬럼들의 시작 x 좌표 (2컬럼/4컬럼 레이아웃 공통)
+            column_x0s = sorted({q['bbox'][0] for q in page['questions']})
+
             for question in page['questions']:
                 q_num = question['question_num']
                 bbox = question['bbox']
 
+                # 오른쪽에 인접한 컬럼의 시작 좌표 = 이 문항 영역의 우측 한계
+                next_column_x0 = next(
+                    (x for x in column_x0s if x > bbox[0] + 1), None
+                )
+
                 # bbox 영역에서 텍스트 추출
-                raw_text = self.extract_text_from_bbox(page_num, bbox)
+                raw_text = self.extract_text_from_bbox(
+                    page_num, bbox, next_column_x0,
+                    is_first_column=(bbox[0] == column_x0s[0]),
+                )
 
                 if not raw_text.strip():
                     print(f"⚠️  문제 {q_num}: 텍스트 추출 실패 (페이지 {page_num})")
