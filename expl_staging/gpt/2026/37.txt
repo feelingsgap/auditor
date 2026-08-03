@@ -1,0 +1,18 @@
+정답: ① (1번)
+
+해설:
+원격 저장소 복제는 clone, 로컬 변경의 원격 반영은 push다. 원격 변경을 가져오기만 하고 병합하지 않는 것은 fetch, 가져오면서 현재 브랜치에 병합하는 것은 pull이다.
+
+따라서 clone → push → fetch → pull이 맞다.
+
+각 보기 분석:
+① 네 설명을 clone, push, fetch, pull에 정확히 대응한다.
+② commit은 로컬 이력 기록이지 원격 저장소 반영이 아니다.
+③ fetch는 신규 로컬 저장소를 만드는 복제 명령이 아니고 pull도 merge 없는 가져오기가 아니다.
+④ 역시 최초 복제와 원격 반영의 명령 대응이 모두 어긋난다.
+
+시험 포인트:
+commit과 push를 구분한다. commit은 로컬 저장소, push는 로컬 커밋을 원격에 전송한다. fetch는 병합하지 않지만 pull은 보통 fetch 후 merge한다.
+
+핵심 정리:
+pull은 일반적으로 fetch와 merge를 연속 수행하는 명령이다.

@@ -1,0 +1,18 @@
+정답: ③ (3번)
+
+해설:
+printGrade1은 score≥60 조건을 score≥70보다 먼저 검사한다. 따라서 70점대도 score≥60에서 걸려 D가 된다. 반면 printGrade2의 switch에서 70점대는 case 7에 따라 C가 된다.
+
+79를 입력하면 printGrade1은 D, printGrade2는 C를 출력하므로 결과가 다르다. 95는 모두 A, 84는 모두 B, 60은 모두 D다.
+
+각 보기 분석:
+① 95는 if의 ≥90과 switch의 case 9에서 모두 A다.
+② 84는 ≥80과 case 8에서 모두 B다.
+③ 79는 if에서 먼저 만난 ≥60 때문에 D, switch case 7에서는 C로 달라진다.
+④ 60은 if의 ≥60과 case 6에서 모두 D다.
+
+시험 포인트:
+else-if는 조건을 수학적 크기순이 아니라 작성된 위쪽부터 평가한다. 따라서 ≥70 분기는 ≥60 아래에 있어 결코 도달하지 못하는 죽은 코드다. switch에는 각 case의 break가 있어 fall-through는 발생하지 않는다.
+
+핵심 정리:
+else-if는 위에서 처음 참인 분기만 실행하므로 조건의 배치 순서가 중요하다.

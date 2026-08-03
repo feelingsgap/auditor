@@ -1,0 +1,18 @@
+정답: ④ (4번)
+
+해설:
+MVC에서는 Controller가 입력 처리 전략을 교체할 수 있어 Strategy, Model의 변경을 View에 알리는 데 Observer, 복합 View 구조에 Composite 패턴을 활용할 수 있다.
+
+Chain of Responsibility는 요청을 처리 객체의 사슬을 따라 전달하는 패턴으로 MVC의 대표적 구성 패턴에 해당하지 않는다.
+
+각 보기 분석:
+① Strategy는 Controller의 입력 처리 정책을 교체하는 데 활용되므로 적절하다.
+② Observer는 Model 변경을 여러 View에 통지하는 구조와 잘 맞는다.
+③ Composite는 View를 단일 객체와 복합 객체로 동일하게 다루는 데 쓰인다.
+④ Chain of Responsibility는 처리자를 연결해 요청을 넘기는 패턴으로 MVC 핵심 협력 구조를 설명하지 못한다.
+
+시험 포인트:
+웹 프레임워크 내부에서 책임 연쇄가 사용될 수 있다는 사실과, 고전적 MVC를 구성하는 대표 패턴인지를 구분해야 한다.
+
+핵심 정리:
+MVC와 관련된 대표 패턴은 Strategy, Observer, Composite다.

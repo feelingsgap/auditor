@@ -1,0 +1,18 @@
+정답: ③ (3번)
+
+해설:
+Java의 implements는 UML에서 인터페이스 실체화(realization), 즉 점선과 속이 빈 삼각형 화살표로 표현한다. 따라서 Proxy와 RealSubject에서 Subject로 향하는 두 관계는 모두 점선 실체화 관계여야 한다.
+
+Proxy의 private RealSubject realSubject 필드는 Proxy가 RealSubject를 참조하는 단방향 연관이므로 Proxy에서 RealSubject로 향하는 실선 화살표로 표현한다. 이를 모두 만족하는 것은 ③이다.
+
+각 보기 분석:
+① Subject 관계를 실선 일반화로 그려 클래스 상속처럼 표현했으므로 틀리다.
+② 인터페이스 실체화는 맞지만 Proxy의 필드 관계를 점선 의존으로 표현했다.
+③ 두 implements를 점선 실체화로, realSubject 필드를 실선 단방향 연관으로 정확히 표현한다.
+④ 필드 관계까지 점선 의존으로 표시하여 실제 보유 관계를 충분히 표현하지 못한다.
+
+시험 포인트:
+속이 빈 삼각형만 보고 판단하지 말고 선이 실선인지 점선인지 확인한다. 클래스 extends는 일반화(실선), interface implements는 실체화(점선)다.
+
+핵심 정리:
+implements = 점선 실체화, 객체 타입 필드 = 실선 연관 관계다.

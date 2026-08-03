@@ -1,0 +1,15 @@
+정답: ④ (4번)
+
+해설:
+인공지능(AI) 및 머신러닝 모델에 대한 대표적인 공격 유형인 데이터 포이즈닝(Data Poisoning)과 적대적 공격(Adversarial Attack)을 매칭하는 문항입니다.
+
+상세 분석:
+* **A (ㄷ):** 학습 단계(training phase)에서 조작된 데이터나 잘못된 라벨을 주입하여 모델의 학습 패턴 자체를 오염시키는 공격은 **Data Poisoning Attack (데이터 포이즈닝 공격)**입니다.
+* **B (ㄹ):** 이미 학습된 모델의 추론 단계(inference phase)에서 노이즈나 미세 변형(perturbation)을 가해 사람 눈에는 정상으로 보이지만 모델이 잘못된 분류를 하도록 유도하는 공격은 **Adversarial Attack (적대적 공격)**입니다.
+* 따라서 A-ㄷ, B-ㄹ 로 짝지어진 **④번**이 정답입니다.
+
+📌 학습 포인트:
+* Data Poisoning: 학습 단계 공격 (학습 데이터 오염)
+* Adversarial Attack: 추론 단계 공격 (입력 데이터 미세 변형/노이즈 추가)
+* Model Extraction: 모델 복제/추출 공격
+* Model Inversion: 학습 데이터 역추적/복원 공격.

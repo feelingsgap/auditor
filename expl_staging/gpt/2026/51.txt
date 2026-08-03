@@ -1,0 +1,18 @@
+정답: ③ (3번)
+
+해설:
+먼저 자바 응용 프로그램이 DriverManager.getConnection()을 호출한다(다). DriverManager는 등록된 드라이버 중 URL을 처리할 적합한 드라이버를 선택하여 연결을 위임한다(나). 드라이버가 DBMS와 네트워크 연결을 설정하고(라), 연결 객체로 Statement 또는 PreparedStatement를 생성한다(마). 이후 전달된 SQL을 DBMS가 실행한다(가).
+
+따라서 다 → 나 → 라 → 마 → 가이다.
+
+각 보기 분석:
+① 드라이버 선택이 애플리케이션의 getConnection 호출보다 먼저라 틀리다.
+② DB 실행을 드라이버 선택과 Statement 생성보다 앞에 두었다.
+③ 호출→선택→연결→문장 객체→실행의 계층을 정확히 따른다.
+④ 드라이버 선택을 SQL 실행 직전으로 잘못 배치했다.
+
+시험 포인트:
+드라이버 등록은 제시 단계 이전에 완료되었다고 본다. getConnection은 실제 SQL 실행이 아니라 Connection 획득 과정이며, SQL은 Statement의 execute 계열 호출을 통해 DBMS에 전달된다.
+
+핵심 정리:
+getConnection 호출 → 드라이버 선택 → 물리적 연결 → Statement 생성 → SQL 실행 순이다.

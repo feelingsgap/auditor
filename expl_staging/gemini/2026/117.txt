@@ -1,0 +1,13 @@
+정답: ① (1번)
+
+해설:
+웹 애플리케이션에 대한 DoS(서비스 거부) 공격 유형 중 설명이 적절하지 않은 항목을 찾는 문제입니다.
+
+상세 분석:
+* **① (정답):** "동적 HTTP Reply 공격"은 웹 DoS 공격의 표준 용어 및 개념이 아닙니다. DoS 공격은 서버의 리소스를 고갈시키기 위해 요청(Request)을 과도하게 보내는 공격이며, 응답(Reply) 메시지를 지속적으로 요구한다는 설명은 부적절합니다.
+* **② (오답):** Slow HTTP Header DoS(Slowloris)는 HTTP 헤더의 끝을 알리는 개행문자를 완성하지 않고 개별 헤더 라인을 천천히 전송하여 연결 커넥션을 고갈시키는 공격입니다.
+* **③ (오답):** Slow HTTP POST(RUDY)는 Content-Length를 크게 설정한 후 요청 바디 데이터를 1바이트씩 매우 느리게 전송하여 커넥션을 장시간 점유하는 공격입니다.
+* **④ (오답):** HTTP GET Flooding은 대량의 HTTP GET 요청을 특정 웹 페이지에 집중시켜 웹 서버 및 DB 리소스를 고갈시키는 공격입니다.
+
+📌 학습 포인트:
+* Slow HTTP DoS 계열: Slowloris (Header), RUDY (POST Body), Read DoS (Window Size 조작).

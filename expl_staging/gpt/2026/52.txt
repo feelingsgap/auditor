@@ -1,0 +1,18 @@
+정답: ④ (4번)
+
+해설:
+ON DELETE RESTRICT는 부모 테이블의 행을 자식 테이블이 참조하고 있으면 부모 행 삭제를 거절한다. 따라서 EMP가 참조 중인 DEPT 행은 삭제할 수 없다.
+
+①은 SET NULL, ②는 CASCADE, ③은 SET DEFAULT의 동작이다.
+
+각 보기 분석:
+① 자식 외래키를 NULL로 바꾸는 ON DELETE SET NULL이다.
+② 자식 행까지 지우는 ON DELETE CASCADE다.
+③ 자식 외래키를 기본값으로 바꾸는 SET DEFAULT다.
+④ 자식 EMP가 참조하는 동안 부모 DEPT 삭제를 거절하는 RESTRICT다.
+
+시험 포인트:
+RESTRICT와 NO ACTION은 DBMS와 검사 시점에 따라 세부 차이가 있을 수 있지만 시험에서는 모두 참조 중인 부모 삭제를 허용하지 않는 정책으로 구분한다. 외래키가 있는 EMP가 참조하는 쪽이다.
+
+핵심 정리:
+RESTRICT는 참조 행이 존재할 때 삭제를 금지하여 참조 무결성을 보존한다.

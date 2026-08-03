@@ -1,0 +1,16 @@
+정답: ③ (3번)
+
+해설:
+Concolic Testing은 concrete execution과 symbolic execution을 결합한 기법이다. 실제 입력으로 프로그램을 실행하면서 경로 조건을 기호식으로 수집하고, 조건을 변형·해결하여 새로운 실행 경로를 탐색할 입력을 자동 생성한다.
+
+각 보기 분석:
+① Regression Testing은 변경 후 기존 기능의 퇴행 여부를 재검사한다.
+② Stress Testing은 한계 이상의 부하에서 안정성과 복구를 평가한다.
+③ 실제 실행과 기호 실행을 함께 수행해 경로 조건 기반 입력을 만든다.
+④ Random Testing은 입력을 무작위 생성하며 경로 제약을 체계적으로 푸는 기법이 아니다.
+
+시험 포인트:
+‘자동 입력 생성’만 보고 Random Testing을 고르면 안 된다. symbolic execution과 concrete execution의 결합이 결정적 단서다.
+
+핵심 정리:
+실제 실행(concrete)과 기호 실행(symbolic)의 결합이 concolic testing이다.

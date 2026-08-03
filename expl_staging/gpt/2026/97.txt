@@ -1,0 +1,16 @@
+정답: ④ (4번)
+
+해설:
+IPv6의 Fragment, Destination Options, ESP는 확장 헤더에 해당한다. Hop Limit은 IPv6 기본 헤더에 포함되는 필드로 IPv4의 TTL과 유사한 역할을 한다.
+
+각 보기 분석:
+① Fragmentation — IPv6의 Fragment 확장 헤더다. IPv6 라우터는 중간에서 단편화하지 않고 송신지가 필요할 때 이 헤더를 붙인다.
+② Destination — 목적지 노드가 처리할 선택사항을 담는 Destination Options 확장 헤더다.
+③ ESP — IPsec에서 기밀성 등을 제공하는 Encapsulating Security Payload 확장 헤더다.
+④ Hop Limit — 트래픽 클래스, 플로 레이블, 다음 헤더 등과 함께 고정 길이 IPv6 기본 헤더 안에 있다. 정답이다.
+
+시험 포인트:
+확장 헤더는 기본 헤더의 Next Header 필드가 가리키며 필요한 기능만 연쇄적으로 붙는다. Hop Limit은 모든 IPv6 패킷에 필요한 루프 방지 필드이므로 기본 헤더에 포함된다. Hop-by-Hop Options는 확장 헤더지만 Hop Limit은 기본 헤더다. 이름에 Hop이 공통으로 들어가므로 둘을 구분해야 한다.
+
+핵심 정리:
+IPv6의 Hop Limit은 확장 헤더가 아니라 기본 헤더 필드다.
