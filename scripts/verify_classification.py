@@ -2,6 +2,8 @@ import json
 import os
 from collections import defaultdict
 
+from years import available_years
+
 def verify_classification():
     json_path = "analyze/subjects_data.json"
     if not os.path.exists(json_path):
@@ -15,14 +17,15 @@ def verify_classification():
     classified = defaultdict(set)
     
     for major_subject, major_data in data.items():
-        for sub_subject, questions in major_data["sub_subjects"].items():
-            for q in questions:
+        for sub_subject, sub_data in major_data["sub_subjects"].items():
+            # sub_data 는 {"questions": [...], ...} 구조
+            for q in sub_data["questions"]:
                 year = q['year']
                 q_num = q['question_num']
                 classified[year].add(q_num)
 
     # Check for missing questions
-    years = range(2021, 2026)
+    years = available_years()
     total_missing = 0
     
     print("=== 미분류 문항 분석 ===")

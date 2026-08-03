@@ -14,8 +14,7 @@ import argparse
 import json
 import os
 
-
-YEARS = [2025, 2024, 2023, 2022, 2021]  # 내림차순 (기본 처리 순서)
+from years import available_years
 
 
 def load_questions(base_dir: str, years: list[int]) -> list[dict]:
@@ -39,13 +38,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="expl 해설 생성 진행 상황 조회")
     parser.add_argument("--staging-dir", default="expl_staging/claude",
                         help="스테이징 루트 (기본: expl_staging/claude)")
-    parser.add_argument("--years", nargs="+", type=int, default=YEARS)
+    parser.add_argument("--years", nargs="+", type=int, default=None)
     parser.add_argument("--base-dir", default=".")
     parser.add_argument("--list-remaining", action="store_true",
                         help="남은 문항 목록 출력 (연도, 번호)")
     args = parser.parse_args()
 
-    questions = load_questions(args.base_dir, args.years)
+    years = args.years if args.years else sorted(
+        available_years(args.base_dir), reverse=True
+    )
+    questions = load_questions(args.base_dir, years)
     total = len(questions)
     done = 0
     remaining = []

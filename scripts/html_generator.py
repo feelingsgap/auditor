@@ -3,6 +3,8 @@ import os
 from jinja2 import Environment, FileSystemLoader
 from typing import Dict, List
 
+from years import available_years
+
 class HTMLGenerator:
     def __init__(self, template_dir: str = "templates"):
         self.template_dir = template_dir
@@ -70,8 +72,12 @@ class HTMLGenerator:
     def generate_for_single_year(self, year: int, base_dir: str = "."):
         return self.generate_html([year], f"{year}_questions.html", base_dir)
     
-    def generate_for_all_years(self, start_year: int = 2021, end_year: int = 2025, base_dir: str = "."):
-        years = list(range(start_year, end_year + 1))
+    def generate_for_all_years(self, start_year: int = None, end_year: int = None, base_dir: str = "."):
+        years = available_years(base_dir)
+        if start_year is not None:
+            years = [y for y in years if y >= start_year]
+        if end_year is not None:
+            years = [y for y in years if y <= end_year]
         return self.generate_html(years, "index.html", base_dir)
 
 

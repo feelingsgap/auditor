@@ -10,6 +10,8 @@ import os
 import sys
 import re
 
+from years import available_years
+
 # macOS Homebrew 라이브러리 경로 설정 (WeasyPrint가 libgobject 등을 찾을 수 있도록)
 _homebrew_lib = '/opt/homebrew/lib'
 if os.path.isdir(_homebrew_lib):
@@ -160,7 +162,7 @@ def main():
         print(f"\n과목별 완료: {len(subjects_data)}개 PDF")
 
     if args.mode in ('year', 'all'):
-        years = list(range(2021, 2026))
+        years = available_years()
         print("\n=== 연도별 PDF 생성 ===")
         generated = 0
         for year in years:

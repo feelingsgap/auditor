@@ -4,6 +4,8 @@ import os
 import re
 from typing import Dict, List, Tuple
 
+from years import available_years
+
 class DetailedSubjectAggregator:
     def parse_md_file(self, md_path: str) -> Tuple[OrderedDict, Dict, Dict]:
         if not os.path.exists(md_path):
@@ -254,7 +256,7 @@ class DetailedSubjectAggregator:
 
 if __name__ == "__main__":
     aggregator = DetailedSubjectAggregator()
-    years_to_process = list(range(2021, 2026))
+    years_to_process = available_years()
     md_file_path = os.path.join("analyze", "0.시험범위 및 기출분석.md")
 
     try:
