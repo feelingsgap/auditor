@@ -56402,6 +56402,41 @@ SLE는 보통 자산가치에 노출계수를 곱해 구하고, ARO는 연간 �
                                             </div>
                                             
                                             <div class="study-cluster">
+                                                <div class="study-cluster-title">OWASP Top 10 for LLM Applications 2026 (OWASP GenAI Security Project, 2026.9 — 웹 Top 10과 별개)</div>
+                                                
+                                                <ul class="study-cluster-items">
+                                                    
+                                                    <li>LLM01 Prompt Injection (프롬프트 인젝션): 입력에 악성 지시를 넣어 모델 지침을 우회. 직접 주입(사용자 입력) / **간접 주입(웹페이지·문서에 숨긴 지시)**.</li>
+                                                    
+                                                    <li>LLM02 Sensitive Information Disclosure (민감정보 노출): 학습 데이터·대화 속 개인정보·기밀이 응답에 노출.</li>
+                                                    
+                                                    <li>LLM03 **Excessive Agency (과도한 권한)**: 도구 호출·실행 권한이 과도한 LLM이 의도치 않은 작업 수행. 대응: 최소 권한, 중요 작업 전 사람 승인(human-in-the-loop). 2025 6위 → 3위.</li>
+                                                    
+                                                    <li>LLM04 Supply Chain (공급망): 오염된 사전학습 모델, 서드파티 데이터셋·플러그인·LoRA 어댑터.</li>
+                                                    
+                                                    <li>LLM05 Data and Model Poisoning (데이터·모델 오염): 학습·파인튜닝 데이터 조작으로 백도어·편향 삽입.</li>
+                                                    
+                                                    <li>LLM06 Unbounded Consumption (무제한 자원 소비): 호출량·토큰 제한 부재로 비용 폭증·DoS, 모델 추출 포함.</li>
+                                                    
+                                                    <li>LLM07 Misinformation (허위정보): 환각(hallucination)·과신으로 틀린 정보를 사실처럼 제공.</li>
+                                                    
+                                                    <li>LLM08 **Hidden Context Exposure (숨겨진 컨텍스트 노출)** [신규]: 시스템 프롬프트 등 숨겨진 컨텍스트를 추출·추론·재구성. 2025판 LLM07 System Prompt Leakage 자리를 대체.</li>
+                                                    
+                                                    <li>LLM09 Vector and Embedding Weaknesses (벡터·임베딩 약점): RAG 벡터DB 접근통제 미흡, 임베딩 역추적, 검색 결과 오염.</li>
+                                                    
+                                                    <li>LLM10 Improper Output Handling (부적절한 출력 처리): LLM 출력을 검증 없이 하위 시스템에 전달 → XSS·SQL Injection·RCE. 2025 5위 → 10위.</li>
+                                                    
+                                                    <li>구분 요령: **입력 조작 = Prompt Injection / 출력 맹신 = Improper Output Handling**. 데이터 직접 조작 = Poisoning, 외부 모델·구성요소 문제 = Supply Chain.</li>
+                                                    
+                                                    <li>함정: 2026판에 **System Prompt Leakage 독립 항목 없음**. 1·2위(Prompt Injection, Sensitive Information Disclosure)는 2025판과 동일.</li>
+                                                    
+                                                    <li>별도 목록: OWASP Top 10 for **Agentic Applications** 2026 (ASI01~10) — Agent Goal Hijack, Tool Misuse and Exploitation, Identity and Privilege Abuse, Agentic Supply Chain, Unexpected Code Execution, Memory & Context Poisoning, Insecure Inter-Agent Communication, Cascading Failures, Human-Agent Trust Exploitation, Rogue Agents.</li>
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                            
+                                            <div class="study-cluster">
                                                 <div class="study-cluster-title">클라우드 보안</div>
                                                 
                                                     
